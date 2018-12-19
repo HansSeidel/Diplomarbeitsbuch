@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="308d919c-26f6-45b5-b42c-1d6d1cf4b554" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Diplomarbeitsbuch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTL3RLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTL3RLogoRGB.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplom.bib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomarbeit.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/make-pandoc1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/make-zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/make.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makeWin.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makeWin1.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makehtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown/diplomarbeit2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown/einstellungen.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/00_abstract.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/00_erklaerung.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/00_kurzfassung.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/00_latex_shortcuts.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/00_pandoclisting.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/demo_fuelltext.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/demo_kap1.tex" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-17612698">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="aux" value="1" />
+          <entry key="tex" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="LaTeX source file" value="6" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="tex" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="LaTeX source file" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+              <folding>
+                <element signature="e#1203#1227#2" expanded="true" />
+                <element signature="e#1257#1293#2" expanded="true" />
+                <element signature="e#1341#1362#2" expanded="true" />
+                <element signature="e#1449#1478#2" expanded="true" />
+                <element signature="e#1586#1606#2" expanded="true" />
+                <element signature="e#1608#1627#2" expanded="true" />
+                <element signature="e#1629#1650#2" expanded="true" />
+                <element signature="e#1678#1703#2" expanded="true" />
+                <element signature="e#1762#1790#2" expanded="true" />
+                <element signature="e#1829#1846#2" expanded="true" />
+                <element signature="e#1848#1870#2" expanded="true" />
+                <element signature="e#1917#1946#2" expanded="true" />
+                <element signature="e#1968#1992#2" expanded="true" />
+                <element signature="e#2068#2089#2" expanded="true" />
+                <element signature="e#2680#2698#2" expanded="true" />
+                <element signature="e#3765#3845#2" expanded="true" />
+                <element signature="e#4658#4679#2" expanded="true" />
+                <element signature="e#5070#5090#2" expanded="true" />
+                <element signature="e#5126#5291#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>input</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1300" />
+    <option name="height" value="1400" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>JBoss Seam</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="308d919c-26f6-45b5-b42c-1d6d1cf4b554" name="Default Changelist" comment="" />
+      <created>1545234893913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545234893913</updated>
+      <workItem from="1545234897079" duration="297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="297000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24975026" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32930514" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/text/00_latex_shortcuts.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_kurzfassung.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_erklaerung.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_abstract.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_pandoclisting.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplomarbeit.aux">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+          <folding>
+            <element signature="e#1203#1227#2" expanded="true" />
+            <element signature="e#1257#1293#2" expanded="true" />
+            <element signature="e#1341#1362#2" expanded="true" />
+            <element signature="e#1449#1478#2" expanded="true" />
+            <element signature="e#1586#1606#2" expanded="true" />
+            <element signature="e#1608#1627#2" expanded="true" />
+            <element signature="e#1629#1650#2" expanded="true" />
+            <element signature="e#1678#1703#2" expanded="true" />
+            <element signature="e#1762#1790#2" expanded="true" />
+            <element signature="e#1829#1846#2" expanded="true" />
+            <element signature="e#1848#1870#2" expanded="true" />
+            <element signature="e#1917#1946#2" expanded="true" />
+            <element signature="e#1968#1992#2" expanded="true" />
+            <element signature="e#2068#2089#2" expanded="true" />
+            <element signature="e#2680#2698#2" expanded="true" />
+            <element signature="e#3765#3845#2" expanded="true" />
+            <element signature="e#4658#4679#2" expanded="true" />
+            <element signature="e#5070#5090#2" expanded="true" />
+            <element signature="e#5126#5291#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
