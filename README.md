@@ -1,6 +1,17 @@
 # Diplomarbeitsbuch
 Dieses Repository enthält das Diplomarbeitsbuch von "Graveyard of Immortals".
 
+## Benötigte Programme
+Benötigte Programme befinden sich unter 
+> Seidel Hans - G.O.I\05_Management\Diplomarbeitsbuch_Programme
+
+* Pandoc 
+    * Wird für das Übersetzen von .md zu .tex benötigt.
+* TeXiFy IDEA & LaTeX
+    * Sind Plugins für IntelliJ für die Autovervollständigung von .tex code. 
+    Nachdem es in IntelliJ neben Plugins auch ein Terminal gibt und eine gute Veranschaulichung der Gitversionierung, wird es empfohlen 
+    dieses Programm zu verwenden.
+
 ## Files richtig erstellen.
 1. Eigenen Branch erstellen.
 
