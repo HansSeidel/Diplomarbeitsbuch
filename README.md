@@ -1,7 +1,7 @@
 # Diplomarbeitsbuch
 Dieses Repository enthält das Diplomarbeitsbuch von "Graveyard of Immortals".
 
-##Files richtig erstellen.
+## Files richtig erstellen.
 1. Eigenen Branch erstellen.
 
 2. Die Files als .md im Ordner "markdown" speichern oder als .tex im Ordner "text" speichern. 
