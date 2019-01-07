@@ -1,0 +1,63 @@
+\section{Eine Überschrift}
+\todo{Ein Todo}
+\subsection{Eine Unterüberschrift}
+\todo{Noch ein TODO}
+
+Die Beschreibung kann im Ordner text im File Formatierung gefunden werden.
+\underline{underline} \textit{kursiv} \textbf{fett}
+
+Für einen neuen Absatz einfach eine Zeile auslassen.
+
+Unordered List \verb-:-
+\begin{itemize}
+    \item  Item 1
+    \item  Item 2
+\end{itemize}
+
+Nested List mit Nummern am Anfang \verb-:-
+\begin{enumerate}
+    \item First level item
+    \item First level item
+    \begin{enumerate}
+        \item Second level item
+        \item Second level item
+    \end{enumerate}
+\end{enumerate}
+
+Hier ein Link \verb-:- \verb+->+
+\href{http://detexify.kirelabs.org/classify.html}{Linkname}
+\verb+<-+ Bitte Hovern.
+
+Sonderzeichen werden bei Latex mit einem Backslash (\textbackslash) maskiert oder mit Befehlen erzeugt. z.B. \textdollar\ \&\ \%\ \#\ \textbar\ \{\ \}\ \S\ \P\ \textbullet\ \copyright\
+
+Zeichen schreibt man mit \textbackslash verb \verb-+- Ein Zeichen \verb-+- Die zwei \verb-+- können
+beliebige Zeichen sein und geben den Anfang und den Schluss an.
+
+Fußnoten\footnote{Die erste Fußnote} mit \LaTeX\ sind kein Problem\footnote{Die zweite Fußnote} Dank des Befehls \textbackslash footnote.
+
+Zitate:
+
+\begin{quote}
+    Die quote-Umgebung ist nicht nur für Zitate eine beliebte Form
+    der Texthervorhebung, bei der der Text beidseitig eingerückt wird.
+\end{quote}
+
+
+Falls das Bild keinen richtigen Abstand hat, keine Panik! Bitte beim Lokalen TEX-Verwalter melden.
+Bilder können sehr viele Formate haben und müssen nicht umbedingt ein png sein.
+Für Screenshots kann ich das Programm Lightshot nur empfehlen.
+
+Eine referenz zum Bild \verb+->+ \ref{chapter:image} Bitte raufklicken.
+
+Das Bild sollte bei allen eine einheitliche Größe haben. (max. 2 verschieden Größen). Wir sollten das noch absprechen,
+bzw. ausprobieren wie es am Besten passt.
+
+In Firefox kann man irgendwie mit erhöhter Auflösung Screenshots machen, für gschmeidige Bilder \verb-:)-
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{chapter_image.png}
+    \caption{Ein Bild im Kapitel Chapter mit dem Namen image}
+    \label{chapter:image}
+\end{figure}
+

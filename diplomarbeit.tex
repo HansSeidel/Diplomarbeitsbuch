@@ -15,7 +15,7 @@
     bibliography=totoc, % Literaturverzeichnis im Inhaltsverzeichnis aufführen 
     %index=totoc, % Index im Inhaltsverzeichnis aufführen 
     %captions=tableheading, % Beschriftung von Tabellen für Ausgabe oberhalb
-                           % der Tabelle formatieren 
+                           % der Tabelle formatieren
     %draft % Status des Dokuments (final/draft) draft hinzufügen zum anziegen 
     %%der zeilen ende
     a4paper,DIV=14,
@@ -45,6 +45,7 @@
 \usepackage{xspace}
 
 \usepackage{graphicx}
+\graphicspath{{./images/}}
 
 %%? \usepackage{textcomp}
 \usepackage[hyphens]{url}
@@ -289,13 +290,23 @@ Mögliche Gliederung (nach \cite{leitfaden})
  und der gewählten Vorgehensweise)
 \end{itemize}
 
-
 \chapter{Formatierung}
-\todo{Durch Kapitel ersetzen}
+\todo{Ein Kapitel}
 % wer hat diese Kapitel geschrieben oder leer
-\renewcommand{\kapitelautor}{Autor: Hans Huber}
+\renewcommand{\kapitelautor}{Autor: Benjamin Lichtenstein}
 
-%\input{text/demo_kap1.tex}
+\input{text/Formatierung.tex}
+%Kapitel einfügen
+%Ende des Kapitel
+
+\chapter{Animation}
+\todo{Ein Kapitel}
+% wer hat diese Kapitel geschrieben oder leer
+\renewcommand{\kapitelautor}{Autor: Stefan Hillinger}
+
+%\input{text/Formatierung.tex}
+%Kapitel einfügen
+%Ende des Kapitel
 
 
 \chapter{Planung}
@@ -320,7 +331,7 @@ was auch immer: technische Dokumentationen etc.
 Zusätzlich sollte es geben: 
 \begin{itemize}
 \item Abkürzungsverzeichnis
-\item Quellenverzeichnis (hier: Bibtex im Stil plaindin)
+\item Quellenverzeichnis (hier: Bibtex im Stil plaindin) \todo{Wie geht das?}
 \end{itemize}
 \printindex{}
 
