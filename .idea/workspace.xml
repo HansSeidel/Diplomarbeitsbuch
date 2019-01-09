@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="308d919c-26f6-45b5-b42c-1d6d1cf4b554" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/text/Formatierung.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/Modellierung.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom.bib" beforeDir="false" afterPath="$PROJECT_DIR$/diplom.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.tex" afterDir="false" />
     </list>
@@ -54,87 +55,140 @@
     <session id="1356840763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="bib" value="46" />
           <entry key="md" value="521" />
-          <entry key="tex" value="2792" />
+          <entry key="tex" value="6732" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="LaTeX source file" value="2792" />
+          <entry key="BibTeX bibliography file" value="46" />
+          <entry key="LaTeX source file" value="6732" />
           <entry key="Markdown" value="521" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="md" value="2" />
-          <entry key="tex" value="25" />
+          <entry key="bib" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="md" value="3" />
+          <entry key="png" value="1" />
+          <entry key="tex" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="LaTeX source file" value="25" />
-          <entry key="Markdown" value="2" />
+          <entry key="BibTeX bibliography file" value="1" />
+          <entry key="Image" value="1" />
+          <entry key="LaTeX source file" value="27" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
-              <caret line="340" column="13" selection-start-line="340" selection-start-column="13" selection-end-line="340" selection-end-column="13" />
-              <folding>
-                <element signature="e#1206#1230#2" expanded="true" />
-                <element signature="e#1260#1296#2" expanded="true" />
-                <element signature="e#1344#1365#2" expanded="true" />
-                <element signature="e#1452#1481#2" expanded="true" />
-                <element signature="e#1589#1609#2" expanded="true" />
-                <element signature="e#1611#1630#2" expanded="true" />
-                <element signature="e#1632#1653#2" expanded="true" />
-                <element signature="e#1681#1706#2" expanded="true" />
-                <element signature="e#1765#1793#2" expanded="true" />
-                <element signature="e#1832#1849#2" expanded="true" />
-                <element signature="e#1851#1873#2" expanded="true" />
-                <element signature="e#1920#1949#2" expanded="true" />
-                <element signature="e#1971#1995#2" expanded="true" />
-                <element signature="e#2071#2092#2" expanded="true" />
-                <element signature="e#2683#2701#2" expanded="true" />
-                <element signature="e#3768#3848#2" expanded="true" />
-                <element signature="e#4661#4682#2" expanded="true" />
-                <element signature="e#5073#5093#2" expanded="true" />
-                <element signature="e#5129#5294#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/Formatierung.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1">
+                  <caret line="282" column="13" lean-forward="true" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#1202#1226#2" expanded="true" />
+                    <element signature="e#1256#1292#2" expanded="true" />
+                    <element signature="e#1340#1361#2" expanded="true" />
+                    <element signature="e#1448#1477#2" expanded="true" />
+                    <element signature="e#1585#1605#2" expanded="true" />
+                    <element signature="e#1607#1626#2" expanded="true" />
+                    <element signature="e#1628#1649#2" expanded="true" />
+                    <element signature="e#1704#1729#2" expanded="true" />
+                    <element signature="e#1788#1816#2" expanded="true" />
+                    <element signature="e#1855#1872#2" expanded="true" />
+                    <element signature="e#1874#1896#2" expanded="true" />
+                    <element signature="e#1943#1972#2" expanded="true" />
+                    <element signature="e#1994#2018#2" expanded="true" />
+                    <element signature="e#2094#2115#2" expanded="true" />
+                    <element signature="e#2706#2724#2" expanded="true" />
+                    <element signature="e#3791#3871#2" expanded="true" />
+                    <element signature="e#4684#4705#2" expanded="true" />
+                    <element signature="e#5096#5116#2" expanded="true" />
+                    <element signature="e#5152#5317#2" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/text/Modellierung.tex">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="447">
+                  <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/diplom.bib">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="711">
+                  <caret line="74" column="45" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/markdown/einstellungen.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="196">
+                    <caret line="325" column="37" selection-start-line="325" selection-start-column="28" selection-end-line="325" selection-end-column="37" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/text/Formatierung.tex">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="11" column="14" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/text/Formatierung.tex">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="540">
+                  <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>einstellungen</find>
-      <find>\input{text/00_pandoclisting.tex}</find>
-      <find>Mitarbeiter</find>
       <find>Benjamin</find>
       <find>ehrenwörtli</find>
       <find>Hillinger</find>
@@ -162,6 +216,9 @@
       <find>chapter</find>
       <find>Quell</find>
       <find>Diplomprüfung,</find>
+      <find>citep</find>
+      <find>hagenberg</find>
+      <find>einstellungen.md</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,9 +231,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/text/00_erklaerung.tex" />
         <option value="$PROJECT_DIR$/text/Animation.tex" />
-        <option value="$PROJECT_DIR$/text/Formatierung.tex" />
-        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
         <option value="$PROJECT_DIR$/text/demo_fuelltext.tex" />
+        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
+        <option value="$PROJECT_DIR$/diplom.bib" />
+        <option value="$PROJECT_DIR$/text/Formatierung.tex" />
+        <option value="$PROJECT_DIR$/text/Modellierung.tex" />
       </list>
     </option>
   </component>
@@ -191,7 +250,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="1299" />
+    <option name="width" value="1300" />
     <option name="height" value="1400" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -212,7 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,17 +303,23 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="version&#9;ACTION&#9;ActivateVersionControlToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546902720211" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547056982698" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Benjamin\Documents\Diplomarbeitsbuch\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -290,6 +354,16 @@
       </texify-bibtex>
       <method v="2" />
     </configuration>
+    <configuration name="Modellierung bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler>BIBTEX</compiler>
+        <compiler-path />
+        <compiler-arguments />
+        <main-file>$PROJECT_DIR$/text/Modellierung.tex</main-file>
+        <aux-dir />
+      </texify-bibtex>
+      <method v="2" />
+    </configuration>
     <configuration name="diplomarbeit bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
         <compiler>BIBTEX</compiler>
@@ -304,6 +378,7 @@
       <item itemvalue="BibTeX.diplomarbeit bibliography" />
       <item itemvalue="BibTeX.00_erklaerung bibliography" />
       <item itemvalue="BibTeX.Formatierung bibliography" />
+      <item itemvalue="BibTeX.Modellierung bibliography" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -323,17 +398,21 @@
       <workItem from="1545338946263" duration="1372000" />
       <workItem from="1545742981470" duration="6558000" />
       <workItem from="1546792030047" duration="418000" />
-      <workItem from="1546865377444" duration="10472000" />
+      <workItem from="1546865377444" duration="10807000" />
+      <workItem from="1546932665904" duration="181000" />
+      <workItem from="1546947694501" duration="557000" />
+      <workItem from="1547039645375" duration="8702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27134000" />
+    <option name="totallyTimeSpent" value="36909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23176824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1958042" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -362,7 +441,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23176824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1958042" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -370,7 +449,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -481,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/Formatierung.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/demo_kap1.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -516,31 +588,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="340" column="13" selection-start-line="340" selection-start-column="13" selection-end-line="340" selection-end-column="13" />
+        <state relative-caret-position="1">
+          <caret line="282" column="13" lean-forward="true" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="13" />
           <folding>
-            <element signature="e#1206#1230#2" expanded="true" />
-            <element signature="e#1260#1296#2" expanded="true" />
-            <element signature="e#1344#1365#2" expanded="true" />
-            <element signature="e#1452#1481#2" expanded="true" />
-            <element signature="e#1589#1609#2" expanded="true" />
-            <element signature="e#1611#1630#2" expanded="true" />
-            <element signature="e#1632#1653#2" expanded="true" />
-            <element signature="e#1681#1706#2" expanded="true" />
-            <element signature="e#1765#1793#2" expanded="true" />
-            <element signature="e#1832#1849#2" expanded="true" />
-            <element signature="e#1851#1873#2" expanded="true" />
-            <element signature="e#1920#1949#2" expanded="true" />
-            <element signature="e#1971#1995#2" expanded="true" />
-            <element signature="e#2071#2092#2" expanded="true" />
-            <element signature="e#2683#2701#2" expanded="true" />
-            <element signature="e#3768#3848#2" expanded="true" />
-            <element signature="e#4661#4682#2" expanded="true" />
-            <element signature="e#5073#5093#2" expanded="true" />
-            <element signature="e#5129#5294#2" expanded="true" />
+            <element signature="e#1202#1226#2" expanded="true" />
+            <element signature="e#1256#1292#2" expanded="true" />
+            <element signature="e#1340#1361#2" expanded="true" />
+            <element signature="e#1448#1477#2" expanded="true" />
+            <element signature="e#1585#1605#2" expanded="true" />
+            <element signature="e#1607#1626#2" expanded="true" />
+            <element signature="e#1628#1649#2" expanded="true" />
+            <element signature="e#1704#1729#2" expanded="true" />
+            <element signature="e#1788#1816#2" expanded="true" />
+            <element signature="e#1855#1872#2" expanded="true" />
+            <element signature="e#1874#1896#2" expanded="true" />
+            <element signature="e#1943#1972#2" expanded="true" />
+            <element signature="e#1994#2018#2" expanded="true" />
+            <element signature="e#2094#2115#2" expanded="true" />
+            <element signature="e#2706#2724#2" expanded="true" />
+            <element signature="e#3791#3871#2" expanded="true" />
+            <element signature="e#4684#4705#2" expanded="true" />
+            <element signature="e#5096#5116#2" expanded="true" />
+            <element signature="e#5152#5317#2" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown/einstellungen.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="196">
+            <caret line="325" column="37" selection-start-line="325" selection-start-column="28" selection-end-line="325" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="74" column="45" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/chapter_image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/Formatierung.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/Modellierung.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
       </provider>
     </entry>
