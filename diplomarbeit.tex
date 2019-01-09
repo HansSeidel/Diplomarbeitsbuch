@@ -5,18 +5,18 @@
     numbers=noenddot,% Keine Punkte am Ende der Gliederungsnummern und davon
                      % abgeleiteten Nummern
     toc=flat, %Flache TOC --- kann man anpassen (auskommentieren)
-    12pt, % Schriftgröße 
-    titlepage, % es wird eine Titelseite verwendet 
-    parskip=full, % Abstand zwischen Absätzen (ganze Zeile) 
-    listof=totoc, % Verzeichnisse im Inhaltsverzeichnis aufführen 
+    12pt, % Schriftgröße
+    titlepage, % es wird eine Titelseite verwendet
+    parskip=full, % Abstand zwischen Absätzen (ganze Zeile)
+    listof=totoc, % Verzeichnisse im Inhaltsverzeichnis aufführen
     listof=flat, % mehr Abstand für grosse Zahlen
-    numbers=noenddot, % kein Punkt am Ende bei Nummern 
+    numbers=noenddot, % kein Punkt am Ende bei Nummern
     %%enlargefirstpage,% Gibt es bei scrartcl nicht!!!!
-    bibliography=totoc, % Literaturverzeichnis im Inhaltsverzeichnis aufführen 
-    %index=totoc, % Index im Inhaltsverzeichnis aufführen 
+    bibliography=totoc, % Literaturverzeichnis im Inhaltsverzeichnis aufführen
+    %index=totoc, % Index im Inhaltsverzeichnis aufführen
     %captions=tableheading, % Beschriftung von Tabellen für Ausgabe oberhalb
                            % der Tabelle formatieren
-    %draft % Status des Dokuments (final/draft) draft hinzufügen zum anziegen 
+    %draft % Status des Dokuments (final/draft) draft hinzufügen zum anziegen
     %%der zeilen ende
     a4paper,DIV=14,
     BCOR=15mm,
@@ -173,7 +173,7 @@
 %% schöner: 10000 -- gar keine, 1000 als Mittelweg
 \clubpenalty = 1000 % Schusterjungen verhindern
 \widowpenalty = 1000 % Hurenkinder verhindern
-\displaywidowpenalty = 1000 
+\displaywidowpenalty = 1000
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -238,7 +238,7 @@ Sturm Gerhard
 
 \begin{center}
 \vspace{5mm}
-Wien, \today 
+Wien, \today
 \par\end{center}
 
 \end{titlepage}%%%%%%%%%%%%%%%%%%%%% Ende Titelseite %%%%%%%%%%%%%%%%%%%%%%
@@ -311,7 +311,7 @@ Mögliche Gliederung (nach \cite{leitfaden})
 
 \chapter{Planung}
 \todo{Durch Kapitel ersetzen}
-% Das komplette nächste Kapitel wird in der externen Datei diplomarbeit2.tex gespeichert. 
+% Das komplette nächste Kapitel wird in der externen Datei diplomarbeit2.tex gespeichert.
 % Es wird an dieser Stelle im Dokument eingebaut.
 % Damit ist es möglich, mehrere Personen an diversen Teilen der Diplomarbeit arbeiten zu lassen.
 
@@ -328,7 +328,7 @@ Mögliche Gliederung (nach \cite{leitfaden})
 
 was auch immer: technische Dokumentationen etc.
 
-Zusätzlich sollte es geben: 
+Zusätzlich sollte es geben:
 \begin{itemize}
 \item Abkürzungsverzeichnis
 \item Quellenverzeichnis (hier: Bibtex im Stil plaindin) \todo{Wie geht das?}
@@ -348,7 +348,7 @@ Zusätzlich sollte es geben:
 \linethickness{0.05mm}%
 \put(0,0){\dashbox{0.2}(#1,#2)%
 {\parbox{#1mm}{%
-\centering\footnotesize  
+\centering\footnotesize
 %{\bf MESSBOX}\\
 % if \textrm fails use \rm
 Breite $ = #1 {\textrm\ mm}$\\
@@ -363,5 +363,5 @@ Höhe $ = #2 {\textrm\ mm}$
 
 {\Large --- Diese Seite nach dem Druck entfernen! ---}
 \todo{Diese Seite nach dem Druck entfernen!}
-\end{center} 
+\end{center}
 \end{document}

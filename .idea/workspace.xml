@@ -4,6 +4,7 @@
     <list default="true" id="308d919c-26f6-45b5-b42c-1d6d1cf4b554" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/Formatierung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/Formatierung.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,12 +64,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="521" />
-          <entry key="tex" value="2862" />
+          <entry key="tex" value="2878" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="LaTeX source file" value="2862" />
+          <entry key="LaTeX source file" value="2878" />
           <entry key="Markdown" value="521" />
         </counts>
       </usages-collector>
@@ -95,8 +96,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="339" column="44" selection-start-line="339" selection-start-column="44" selection-end-line="339" selection-end-column="44" />
+                <state relative-caret-position="516">
+                  <caret line="308" column="17" lean-forward="true" selection-start-line="308" selection-start-column="17" selection-end-line="308" selection-end-column="17" />
                   <folding>
                     <element signature="e#1202#1226#2" expanded="true" />
                     <element signature="e#1256#1292#2" expanded="true" />
@@ -125,7 +126,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/diplom.bib">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="711">
+                <state relative-caret-position="581">
                   <caret line="74" selection-start-line="74" selection-end-line="74" />
                 </state>
               </provider>
@@ -146,8 +147,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/text/Formatierung.tex">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="13" column="14" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="14" />
+                <state relative-caret-position="527">
+                  <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -155,12 +156,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/text/Formatierung.tex">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="501">
-                  <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+                <state relative-caret-position="520">
+                  <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -192,7 +193,6 @@
       <find>HTL3RLogoRGB</find>
       <find>.md</find>
       <find>input</find>
-      <find>formatierung</find>
       <find>Animation</find>
       <find>hover</find>
       <find>graphic</find>
@@ -201,6 +201,7 @@
       <find>chapter</find>
       <find>Quell</find>
       <find>Diplomprüfung,</find>
+      <find>formatierung</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -213,9 +214,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/text/00_erklaerung.tex" />
         <option value="$PROJECT_DIR$/text/Animation.tex" />
-        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
         <option value="$PROJECT_DIR$/text/demo_fuelltext.tex" />
         <option value="$PROJECT_DIR$/text/Formatierung.tex" />
+        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
       </list>
     </option>
   </component>
@@ -251,6 +252,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,8 +285,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,13 +368,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27543000" />
+    <option name="totallyTimeSpent" value="27767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1958042" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1978022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -388,7 +389,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.326284" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.326284" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3282981" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -554,15 +555,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/Formatierung.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="527">
+          <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="339" column="44" selection-start-line="339" selection-start-column="44" selection-end-line="339" selection-end-column="44" />
+        <state relative-caret-position="516">
+          <caret line="308" column="17" lean-forward="true" selection-start-line="308" selection-start-column="17" selection-end-line="308" selection-end-column="17" />
           <folding>
             <element signature="e#1202#1226#2" expanded="true" />
             <element signature="e#1256#1292#2" expanded="true" />
