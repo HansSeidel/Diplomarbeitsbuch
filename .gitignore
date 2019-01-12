@@ -23,6 +23,7 @@ images/*
 *.xhtml
 *.epub
 .directory
+.idea
 diplomarbeit2.tex
 diplomarbeit2.pdf
 DA_Vorlage_Deutsch_v3.odt
