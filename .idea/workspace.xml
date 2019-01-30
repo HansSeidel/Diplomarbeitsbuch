@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/text/blender/c_blender.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/planung/c_planung.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/sound/c_sound.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/unrealEngine.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/website/c_website.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/team_grafiken.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/formatierung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/formatierung.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="1171">
               <caret line="343" column="17" lean-forward="true" selection-start-line="343" selection-start-column="17" selection-end-line="343" selection-end-column="17" />
               <folding>
                 <element signature="e#1194#1218#2" expanded="true" />
@@ -47,6 +39,15 @@
                 <element signature="e#5099#5119#2" expanded="true" />
                 <element signature="e#5155#5320#2" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -128,6 +129,7 @@
         <option value="$PROJECT_DIR$/text/sound/c_sound.tex" />
         <option value="$PROJECT_DIR$/text/planung/c_planung.tex" />
         <option value="$PROJECT_DIR$/diplomarbeit.tex" />
+        <option value="$PROJECT_DIR$/text/formatierung.tex" />
       </list>
     </option>
   </component>
@@ -189,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548858113804" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548858882174" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -257,18 +259,18 @@
       <workItem from="1548492820899" duration="1001000" />
       <workItem from="1548663663491" duration="994000" />
       <workItem from="1548682732608" duration="3154000" />
-      <workItem from="1548854388660" duration="3725000" />
+      <workItem from="1548854388660" duration="4480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12764000" />
+    <option name="totallyTimeSpent" value="13519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2117882" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2117882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -283,7 +285,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32930514" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32595575" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32595575" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3279678" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -400,13 +402,6 @@
     <entry file="file://$PROJECT_DIR$/text/lic_lighting.tex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -434,9 +429,6 @@
     <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/sound/c_sound.tex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -449,9 +441,12 @@
     <entry file="file://$PROJECT_DIR$/text/blender/c_blender.tex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="1171">
           <caret line="343" column="17" lean-forward="true" selection-start-line="343" selection-start-column="17" selection-end-line="343" selection-end-column="17" />
           <folding>
             <element signature="e#1194#1218#2" expanded="true" />
@@ -474,6 +469,13 @@
             <element signature="e#5099#5119#2" expanded="true" />
             <element signature="e#5155#5320#2" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
