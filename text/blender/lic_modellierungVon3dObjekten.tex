@@ -27,11 +27,26 @@ Nun modelliert man mit Formen das Grab nach und verschiebt im Editmode einzelne 
 durch eine Schätzung der Größen nachmodelliert worden.
 
 \subsubsection{Vase}
+
+
 \subsubsection{Gesicht}
+Für die Modellierung des Gesichts, wurde ein Brush verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
+aber notwendig, damit nachher noch eine andere Textur mit einer eigenen Bumpmap verwendet werden kann. Um das Gesicht zu erstellen wurde zuerst auf einer Seite der Säule,
+die Fläche mit dem Shortcut W \verb-+- Subdivide (Edit Mode) unterteilt. Dann wurde im Sculptmode eine Schwarzweiß Textur eingefügt (Abbildung \ref{Paracelsus_Grab:image4}),
+damit man mit dem Brush Höhen und Tiefen Zeichnen kann. Außerdem wurden die Werte Strenght und Radius angepasst.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_BandW.png}
+    \caption{Einfügen der Schwarz/Weiß Textur}
+    \label{Paracelsus_Grab:image4}
+\end{figure}
+
 \subsubsection{Verzierungen}
-Nachdem die Verzierung des Paracelsus Grabes (Abbildung \ref{Paracelsus_Grab:image3})) sehr ähnlich einer bereits vorhandenen Form sieht, nämlich der Verzierung des Mausoleums, wurde diese übernommen und
+Nachdem die Verzierung des Paracelsus Grabes (Abbildung \ref{Paracelsus_Grab:image3}) sehr ähnlich einer bereits vorhandenen Form sieht, nämlich der Verzierung des Mausoleums, wurde diese übernommen und
 mit dem Sockel des Grabes zusammengefügt. Dazu wurde zuerst mit einem Würfel und dem Boolean-Modifikator ein Stück aus dem Sockel herauseschnitten, damit
-sich die Verzierung nicht mit dem Sockel überschneidet. Danach wurden der Sockel und die Verzierung mit STRG \verb-+- J zusammengefügt.
+sich die Verzierung nicht mit dem Sockel überschneidet. Danach wurden der Sockel und die Verzierung mit STRG \verb-+- J zusammengefügt. Die Verzierung selber, wurde mit einer
+Fläche modelliert, die dann im Editmode so angepasst wurde, dass sie aussieht wie eine Verzierung.
 \begin{figure}[h]
     \centering
     \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_Verzierung.png}
