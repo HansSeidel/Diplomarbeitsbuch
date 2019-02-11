@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/diplomarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/c_blender.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/c_blender.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/planung/c_planung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/planung/c_planung.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/sound/c_sound.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/sound/c_sound.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/00_vorlage/00_erklaerung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/00_vorlage/00_erklaerung.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,25 +20,21 @@
         <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="326" column="17" lean-forward="true" selection-start-line="326" selection-start-column="17" selection-end-line="326" selection-end-column="17" />
+            <state relative-caret-position="197">
+              <caret line="251" column="17" selection-start-line="251" selection-start-column="6" selection-end-line="251" selection-end-column="17" />
               <folding>
                 <element signature="e#1194#1218#2" expanded="true" />
                 <element signature="e#1248#1284#2" expanded="true" />
@@ -66,25 +61,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
+        <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="49" column="5" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="5" />
+            <state relative-caret-position="100">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_erklaerung.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
+        <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_abstract.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
@@ -93,39 +88,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/blender/c_blender.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="360">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/planung/c_planung.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/sound/c_sound.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -156,6 +139,7 @@
       <find>t</find>
       <find>todo</find>
       <find>\todo{Korrektur lesen}</find>
+      <find>kurzfassung</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -194,6 +178,9 @@
         <option value="$PROJECT_DIR$/text/sound/c_sound.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex" />
         <option value="$PROJECT_DIR$/diplomarbeit.tex" />
+        <option value="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" />
+        <option value="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" />
+        <option value="$PROJECT_DIR$/text/00_vorlage/00_erklaerung.tex" />
       </list>
     </option>
   </component>
@@ -240,6 +227,12 @@
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
               <item name="text" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
+              <item name="00_vorlage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
@@ -402,7 +395,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35932000" />
+    <option name="totallyTimeSpent" value="37746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -432,7 +425,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897383" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4995005" visible="true" weight="0.3249497" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4995005" visible="true" weight="0.32595575" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004995" side_tool="true" weight="0.3249497" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32595575" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -648,50 +641,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/c_blender.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="360">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text/planung/c_planung.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/text/sound/c_sound.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="326" column="17" lean-forward="true" selection-start-line="326" selection-start-column="17" selection-end-line="326" selection-end-column="17" />
+        <state relative-caret-position="197">
+          <caret line="251" column="17" selection-start-line="251" selection-start-column="6" selection-end-line="251" selection-end-column="17" />
           <folding>
             <element signature="e#1194#1218#2" expanded="true" />
             <element signature="e#1248#1284#2" expanded="true" />
@@ -713,6 +690,27 @@
             <element signature="e#5099#5119#2" expanded="true" />
             <element signature="e#5155#5320#2" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_abstract.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_erklaerung.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
