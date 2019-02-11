@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="312">
+              <caret line="36" column="129" selection-start-line="36" selection-start-column="129" selection-end-line="36" selection-end-column="129" />
             </state>
           </provider>
         </entry>
@@ -165,6 +164,17 @@
               <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
+              <item name="blender" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -296,7 +306,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42687000" />
+    <option name="totallyTimeSpent" value="43310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,7 +321,7 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20479521" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20479521" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -326,7 +336,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897383" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4995005" visible="true" weight="0.32595575" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4995005" weight="0.32595575" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004995" side_tool="true" weight="0.3249497" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32595575" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -596,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="312">
+          <caret line="36" column="129" selection-start-line="36" selection-start-column="129" selection-end-line="36" selection-end-column="129" />
         </state>
       </provider>
     </entry>
