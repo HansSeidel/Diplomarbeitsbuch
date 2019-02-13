@@ -26,8 +26,25 @@ Nun modelliert man mit Formen das Grab nach und verschiebt im Editmode einzelne 
 (Abbildung \ref{Paracelsus_Grab:image2}) Verzerrungen aufgrund des Aufnahmewinkels des Fotos auftreten, deshalb sind einige Stellen nicht genau, sondern
 durch eine Schätzung der Größen nachmodelliert worden.
 
-\subsubsection{Vase}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_Nachmodellierung.png}
+    \caption{Paracelsus Grab Nachmodellierung}
+    \label{Paracelsus_Grab:image2}
+\end{figure}
 
+\subsubsection{Vase}
+Um die Vase für das Paracelsusgrab zu modellieren, wurde eine Sphere benutzt und anschließend im Editmode verändert. Anschließend wurden die Verzierungen für die Vase gemacht.
+Dazu wurde zwei Curves erstellt (Abbildung \ref{Paracelsus_Grab:image5}), die obere für die Einkerbungen und die untere für die Verzierung der Vase. Damit die Curves eine
+Breite haben, muss man sie mit einem Bezier-Circle verbinden, der die Breite bestimmt. Nach dem erstellen der Curve,
+wurde sie mit Alt \verb-+- C zu einem Mesh konvertiert, damit sie dann mit der Vase verbunden werden können.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_Vase-Curve.png}
+    \caption{Eine Curve}
+    \label{Paracelsus_Grab:image5}
+\end{figure}
 
 \subsubsection{Gesicht}
 Für die Modellierung des Gesichts, wurde ein Brush verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
@@ -44,7 +61,7 @@ Decimate-Modifikator so viele Flächen wie möglich entfernt worden, ohne dass d
 \end{figure}
 
 \subsubsection{Verzierungen}
-Nachdem die Verzierung des Paracelsus Grabes (Abbildung \ref{Paracelsus_Grab:image3}) sehr ähnlich einer bereits vorhandenen Form sieht, nämlich der Verzierung des Mausoleums, wurde diese übernommen und
+Nachdem die Verzierung des Paracelsus Grabes (Abbildung \ref{Paracelsus_Grab:image3}) einer bereits vorhandenen Form sehr ähnlich sieht, nämlich der Verzierung des Mausoleums, wurde diese übernommen und
 mit dem Sockel des Grabes zusammengefügt. Dazu wurde zuerst mit einem Würfel und dem Boolean-Modifikator ein Stück aus dem Sockel herauseschnitten, damit
 sich die Verzierung nicht mit dem Sockel überschneidet. Danach wurden der Sockel und die Verzierung mit STRG \verb-+- J zusammengefügt. Die Verzierung selber, wurde mit einer
 Fläche modelliert, die dann im Editmode so angepasst wurde, dass sie aussieht wie eine Verzierung.
@@ -55,12 +72,18 @@ Fläche modelliert, die dann im Editmode so angepasst wurde, dass sie aussieht w
     \label{Paracelsus_Grab:image3}
 \end{figure}
 
+\subsection{Bettdecke}
+Die Bettdecke sollte etwas zerknüllt aussehen. Deshalb wurde sie mit einer Simulation modelliert. Damit die Decke sich verformt, muss sie genug Flächen haben.
+Dies kann man erreichen, indem man eine Plane erstellt, in den Editmode wechselt und mit W \verb-+- Subdivide meherere Flächen erzeugt. Anschließend wurde auf die Decke ein Solidify Modifikator
+angewendet, damit die sie auch eine Dicke hat.
+Dann wurden Forcefields hinzugefügt (Abbildung \ref{Bettdecke:image1}) um die Decke in Bewegung zu bringen. Damit sich die Decke aber auch wirklich bewegt muss man die Decke auswählen,
+in den Physics Tab wechseln und Cloth auswählen. Jetzt verhält sich die Decke wie ein Stoffstück. Wenn man nun auf der Timeline auf Play drückt, bewegt sich die Bettdecke und verformt sich.
+Wenn die Form passt, pausiert man die Simulation. Dann drückt man Alt \verb-+- C und wählt Mesh from Curve\verb-/-Meta\verb-/-Surf\verb-/-Text aus, somit kann man das fertige Modell
+frei bewegen.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_Nachmodellierung.png}
-    \caption{Paracelsus Grab Nachmodellierung}
-    \label{Paracelsus_Grab:image2}
+    \includegraphics[width=.8\textwidth]{images/Bettdecke_Forcefields.png}
+    \caption{Bettdecke mit Forcefields(orange)}
+    \label{Bettdecke:image1}
 \end{figure}
-\subsection{Bettdecke}
-\todo{Gehört die Bettdecke zu Simulationen?}
