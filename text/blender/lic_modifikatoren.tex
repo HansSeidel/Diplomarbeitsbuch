@@ -1,5 +1,31 @@
 \section{Modifikatoren}
+In diesem Kapitel, werden die Modifikatoren beschrieben, die für dieses Projekt oft verwendet wurden.
+
+Allgemein kann man zu Modikfikatoren noch sagen, dass sie Objekte in einer gewissen Art und weiße, abhängig davon welcher Modifikator verwendet wird, verändern.
 \subsection{Boolean}
+\citep{blender:boolean_modifier} Der Boolean Modifikator macht aus zwei Objekten ein Objekt. Dazu gibt es
+drei Boolean-Operationen, die man anwenden kann.
+
+Diese heißen:
+\begin{itemize}
+    \item  Difference
+    \item  Union
+    \item  Intersect
+\end{itemize}
+
+Bei Difference werden bei zwei überlappenden Objekten, die überlappenden Teile ausgeschnitten. Beim Zielobjekt ist nun ein Loch an der Gewünschten stelle (Abbildung \ref{modifikatoren:image1} links).
+
+Bei Union werden zwei Objekte zu einem Objekt zusammengfügt (Abbildung \ref{modifikatoren:image1} mitte).
+
+Bei Intersect wird das Objekt mit dem Modifier, an den Überschneidenden stellen in das Zielobjekt eingefügt (Abbildung \ref{modifikatoren:image1} rechts).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Boolean.png}
+    \caption{Difference-, Union- und Intersect-Modifikator}
+    \label{modifikatoren:image1}
+\end{figure}
+
 \subsection{Mirror}
 \subsection{Array}
 \subsection{Curve}
