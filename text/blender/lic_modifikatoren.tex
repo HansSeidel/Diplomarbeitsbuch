@@ -1,5 +1,6 @@
 \section{Modifikatoren}
-In diesem Kapitel, werden die Modifikatoren beschrieben, die für dieses Projekt oft verwendet wurden.
+In diesem Kapitel, werden die Modifikatoren beschrieben, die für dieses Projekt oft verwendet wurden. Es werden nur Funktionen außerdem nur
+Funktionen der Modifikatoren beschrieben, die von uns genutzt wurden.
 
 Allgemein kann man zu Modikfikatoren noch sagen, dass sie Objekte in einer gewissen Art und weiße, abhängig davon welcher Modifikator verwendet wird, verändern.
 \subsection{Boolean}
@@ -22,11 +23,25 @@ Bei Intersect wird das Objekt mit dem Modifier, an den Überschneidenden stellen
 \begin{figure}[h]
     \centering
     \includegraphics[width=.8\textwidth]{images/Modifikatoren-Boolean.png}
-    \caption{Difference-, Union- und Intersect-Modifikator}
+    \caption{Difference-, Union- und Intersect Modifikator}
     \label{modifikatoren:image1}
 \end{figure}
 
 \subsection{Mirror}
+\citep{blender:mirror_modifier} Der Mirror Modifikator spiegelt ein Objekt um den eigenen Mittelpunkt.
+Den Mittelpunkt kann man festlegen indem man im Editmode einen Punkt auswählt
+und mit SHIFT \verb-+- S \verb+->+ Cursor to Selected den Cursor setzt und anschließend im Objectmode mit STRG \verb-+- SHIFT \verb-+- ALT \verb-+- C \verb+->+
+Origin to 3D Cursor den Mittelpunkt setzt.
+
+In Abbildung \ref{modifikatoren:image2} kann man die Anwendung des Mirror Modifikatoren sehen. Der Orangene Teil des Objekts, ist in allen drei Beispielen das
+Grundobjekt, welches gespiegelt wird.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Mirror.png}
+    \caption{Mirror Modifikator mit spiegelung um die Z-, Y- und X-Achse}
+    \label{modifikatoren:image2}
+\end{figure}
 \subsection{Array}
 \subsection{Curve}
 \subsection{Bevel}
