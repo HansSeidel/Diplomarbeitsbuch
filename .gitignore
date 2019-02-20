@@ -23,6 +23,7 @@ images/*
 *.xhtml
 *.epub
 .directory
+.images_old
 .idea
 .idea/
 diplomarbeit2.tex
