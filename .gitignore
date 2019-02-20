@@ -3,6 +3,7 @@
 *.txt
 diplomarbeit/*
 images/*
+images_old/*
 *.zip
 *.pdf
 !diplomarbeit.pdf
@@ -23,9 +24,8 @@ images/*
 *.xhtml
 *.epub
 .directory
-.images_old
 .idea
-.idea/
+.idea/*
 diplomarbeit2.tex
 diplomarbeit2.pdf
 DA_Vorlage_Deutsch_v3.odt
