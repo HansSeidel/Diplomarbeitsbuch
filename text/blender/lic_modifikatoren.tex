@@ -1,8 +1,98 @@
 \section{Modifikatoren}
+In diesem Kapitel, werden die Modifikatoren beschrieben, die für dieses Projekt oft verwendet wurden. Es werden nur Funktionen außerdem nur
+Funktionen der Modifikatoren beschrieben, die von uns genutzt wurden.
+
+Allgemein kann man zu Modikfikatoren noch sagen, dass sie Objekte in einer gewissen Art und weiße, abhängig davon welcher Modifikator verwendet wird, verändern.
 \subsection{Boolean}
+\citep{blender:boolean_modifier} Der Boolean Modifikator macht aus zwei Objekten ein Objekt. Dazu gibt es
+drei Boolean-Operationen, die man anwenden kann.
+
+Diese heißen:
+\begin{itemize}
+    \item  Difference
+    \item  Union
+    \item  Intersect
+\end{itemize}
+
+Bei Difference werden bei zwei überlappenden Objekten, die überlappenden Teile ausgeschnitten. Beim Zielobjekt ist nun ein Loch an der Gewünschten stelle (Abbildung \ref{modifikatoren:image1} links).
+
+Bei Union werden zwei Objekte zu einem Objekt zusammengfügt (Abbildung \ref{modifikatoren:image1} mitte).
+
+Bei Intersect wird das Objekt mit dem Modifier, an den Überschneidenden stellen in das Zielobjekt eingefügt (Abbildung \ref{modifikatoren:image1} rechts).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Boolean.png}
+    \caption{Difference-, Union- und Intersect Modifikator}
+    \label{modifikatoren:image1}
+\end{figure}
+
 \subsection{Mirror}
+\citep{blender:mirror_modifier} Der Mirror Modifikator spiegelt ein Objekt um den eigenen Mittelpunkt.
+Den Mittelpunkt kann man festlegen indem man im Editmode einen Punkt auswählt
+und mit SHIFT \verb-+- S \verb+->+ Cursor to Selected den Cursor setzt und anschließend im Objectmode mit STRG \verb-+- SHIFT \verb-+- ALT \verb-+- C \verb+->+
+Origin to 3D Cursor den Mittelpunkt setzt.
+
+In Abbildung \ref{modifikatoren:image2} kann man die Anwendung des Mirror Modifikatoren sehen. Der Orangene Teil des Objekts, ist in allen drei Beispielen das
+Grundobjekt, welches gespiegelt wird.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Mirror.png}
+    \caption{Mirror Modifikator mit spiegelung um die Z-, Y- und X-Achse}
+    \label{modifikatoren:image2}
+\end{figure}
+
 \subsection{Array}
+\citep{blender:array_modifier} Der Array Modifier vervielfacht ein Objekt entlang einer Achse. Außerdem kann man den relativen oder absoluten Abstand zwischen den Objekten
+angeben, damit diese regelmäßig wiederholt werden. In Abbildung \ref{modifikatoren:image3} sieht man den angewendeten Array Modifikator. Die ausgewählten (orange umrandeten) Würfel werden auf der Y-Achse
+wiederholt, die anderen auf der Y- und Z-Achse.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Array.png}
+    \caption{Array Modifikator}
+    \label{modifikatoren:image3}
+\end{figure}
+
 \subsection{Curve}
+\citep{blender:curve_modifier} Mit dem Curve Modifikator, kann man ein beliebiges Objekt an eine Bezierkurve anpassen. In Abbildung \ref{modifikatoren:image4} sieht man
+in der oberen Hälfte, das Objekt und die Bezierkurve, in der unteren beide Zusammengefügt.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Curve.png}
+    \caption{Curve Modifikator}
+    \label{modifikatoren:image4}
+\end{figure}
+
 \subsection{Bevel}
+Mit dem Bevel Modifikator \citep{blender:bevel_modifier} kann man Kanten durch Flächen, die nahe der Kanten hinzugefügt werden, abrunden (Abbildung \ref{modifikatoren:image5}).
+Wichtige Einstellungen sind der Abstand von der am äußersten hinzugefügten und der ursprünglichen Kante und die Anzahl der Kanten die hinzugefügt werden.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Bevel.png}
+    \caption{Bevel Modifikator}
+    \label{modifikatoren:image5}
+\end{figure}
+
 \subsection{Decimate}
+Mit dem Decimate Modifier \citep{blender:decimate_modifier} kann man bei einem Objekt die Faces reduzieren. Zum Einsatz kommt der
+Decimate Modifier bei komplizierten Objekten die viele Faces brauchen um detailiert modelliert zu werden. Man entfernt dann aber so viele Faces wieder, dass das Objekt
+noch gut genug Aussieht. Dieser Prozess verbessert am Ende sehr stark die Performance.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Decimate.png}
+    \caption{Decimate Modifikator}
+    \label{modifikatoren:image6}
+\end{figure}
+
 \subsection{EdgeSplit}
+Mit dem Edgesplit Modifikator kann man \citep{blender:edgesplit_modifier} bei einem Objekt bestimmen, ab welchem Winkel Smooth Shading angewendet wird.
+In Abbildung \ref{modifikatoren:image7} links, wird Smooth Shading gar nicht angewendet, in der Mitte wird es nur an den Kanten mit den geringsten Winkel zu den Flächen
+angewendet und rechts wird Smooth Shading überall angwendet.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Modifikatoren-Edgesplit.png}
+    \caption{Edgesplit Modifikator}
+    \label{modifikatoren:image7}
+\end{figure}
