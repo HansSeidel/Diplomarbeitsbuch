@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/planung/sei_planung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/planung/sei_planung.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,33 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/sei_charakterGestaltung.tex">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/planung/c_planung.tex">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/planung/sei_planung.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7613">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -50,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_abstract.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="320">
+              <caret line="16" column="73" lean-forward="true" selection-start-line="16" selection-start-column="73" selection-end-line="17" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -59,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="300">
+              <caret line="15" column="158" selection-start-line="15" selection-start-column="158" selection-end-line="15" selection-end-column="158" />
             </state>
           </provider>
         </entry>
@@ -107,9 +83,10 @@
         <option value="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien" />
         <option value="$PROJECT_DIR$/text/blender/sei_charakterGestaltung.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" />
-        <option value="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" />
         <option value="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" />
         <option value="$PROJECT_DIR$/text/planung/sei_planung.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
+        <option value="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" />
       </list>
     </option>
   </component>
@@ -132,7 +109,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,6 +186,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,7 +230,7 @@
         <compiler>BIBTEX</compiler>
         <compiler-path />
         <compiler-arguments />
-        <main-file>$PROJECT_DIR$/text/lic_modellierung.tex</main-file>
+        <main-file />
         <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
@@ -292,13 +269,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19392000" />
+    <option name="totallyTimeSpent" value="21055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21778221" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22277722" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -423,9 +400,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/lic_modellierung.tex">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/text/lic_modellierung.tex" />
     <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_erklaerung.tex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -471,15 +446,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_abstract.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="320">
+          <caret line="16" column="73" lean-forward="true" selection-start-line="16" selection-start-column="73" selection-end-line="17" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="300">
+          <caret line="15" column="158" selection-start-line="15" selection-start-column="158" selection-end-line="15" selection-end-column="158" />
         </state>
       </provider>
     </entry>
