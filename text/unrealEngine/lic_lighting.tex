@@ -1,7 +1,30 @@
 \section{Lighting}
+Die Unterkapitel des Lighting, bis auf das Vorwissen, beziehen sich auf die Beleuchtung in der Unreal Engine.
+
 \subsection{Vorwissen}
-\subsubsection{3-Punkt-Beleuchtung}
+Eine uns bekannte und Beleuchtungsmethode ist die 3\verb+-+Punkt\verb+-+Beleuchtung. Bei ihr wird klassischer weiße ein Objekt
+von 3 Seiten mittels Key-, Fill- und Backlight ausgeleuchtet. Dadurch entsteht eine Tiefe und eine Stimmung die je nach Lichteinfall und
+Lichtstärke variieren kann.
+
+Es gibt verschiedene Lampen, um Personen oder Objekte auszuleichten. Je konzentrierter das Licht von einer Lampe wegstrahlt und auf ein Objekt
+fällt, desto härter ist der Schatten den es wirft. Wenn eine Lampe weiter weg ist, kommt weniger Licht am Objekt an.
+
 \subsection{Directional Light}
+\citep{unreal:directional_light} Das Directional Light simuliert ein Licht was unendlicht weit weg ist. Deshalb kann man es gut als Sonne verwenden.\todo{Zitat - übersetzt}
+\todo{Die Settings im Spiel für Licht dokumentieren}
+
 \subsection{Sky Light}
 \subsection{Exponential Height Fog}
 \subsection{Light Mobility}
+\subsubsection{Static}
+Beim Static Light wird das Licht direkt am Anfang berechnet. Das heißt man kann es wärend dem Spiel nicht ändern, dafür wird die Performance verbessert, da
+die Schatten nicht immer neu berechnet werden müssen. \todo{Mehr darüber - Quelle..?}
+\todo{Wie genau muss die Quelle sein? reicht types of lighst?}
+\citep{unreal:types_of_lights}
+
+\subsubsection{Stationary}
+Das Stationary Light kann man während dem Spielen nicht bewegen, allerdings kann man die Farbe und die Intensität verändern. Somit stellt es vom Rechenaufwand und
+der Funktion einen Kompromiss zwischen Static und Movable Light da. \todo{Mehr darüber - Quelle..?}
+
+\subsubsection{Movable}
+\todo{Mehr darüber - Quelle..?}
