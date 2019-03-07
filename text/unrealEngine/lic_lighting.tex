@@ -46,3 +46,54 @@ Das Movable Light kann man während dem Spielen vollständig verändern. Dadurch
 ist es das Performancelastigste Light.
 
 \subsection{Das Lighting im Spiel}
+Das Ziel beim Lighting im Spiel war es, eine düstere Stimmung zu bekommen. Dazu mussten mehrere Objekte die das Licht und den Himmel bestimmen aufeinander abgestimmt werden.
+
+Diese Objekte sind:
+\begin{enumerate}
+    \item Directional Light
+    \item Sky Light
+    \item Sky Sphere
+    \item Post Process Volume
+    \item Exponential Height Fog
+    \item Lightmass Importance Volume
+\end{enumerate}
+
+Um die Farben abzustimmen und die gesamt Helligkeit zu regeln, muss man an drei Objekten einstellungen vornehmen.
+\begin{enumerate}
+    \item Directional Light
+    \begin{enumerate}
+              \item Das Licht fällt von einer Seite auf ein Objekt.
+    \end{enumerate}
+    \item Sky Light
+    \begin{enumerate}
+        \item Das Licht fällt von allen Seiten auf ein Objekt.
+    \end{enumerate}
+    \item Sky Sphere
+    \begin{enumerate}
+        \item Bestimmt die Farbe des Himmels in relation zu dem Directional Light und dem Sky Light.
+    \end{enumerate}
+\end{enumerate}
+
+Um das ganze zu veranschaulichen, wurden die Werte etwas verändert und in die Lighting Only Ansicht der Unreal Engine gewechselt.
+In Abbildung \ref{lighting:Lighting-Sky_Directional} kann man nun sehen,
+dass von der Sonnenseite ein helles lilanes Licht (das Licht des Directional Lights), und von der Schattenseite ein eher dunkles, blaues Licht
+(das Licht des Sky Lights) kommt.
+Die Farbe des Himmels ist violett. Dies wurde durch die Sky Sphere bestimmt.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{Lighting-Sky_Directional.png}
+    \caption{Objekte in der Lighting Only Ansicht von Unreal Engine}
+    \label{lighting:Lighting-Sky_Directional}
+\end{figure}
+
+Um eine Nachtatmossphere zu bekommen, wurde die Sonne auf der y\verb+-+Achse auf 90$^\circ$ gesetzt. Dadurch kann man nun Sterne sehen,
+welche in der Sky Sphere heller oder dünkler stellen kann.
+
+Um ein die Umgebungshelligkeit anzupassen, wurde in der Post Process Volume, die Helligkeit auf einen bestimmten Wert eingegrenzt.
+
+Damit das Spiel eine düstere Stimmung bekommt, wurde noch Nebel hinzugefügt. Die effizienteste Methode war, einen Exponential Height Fog einzubauen, welcher
+Nebel im ganzen Spiel erzeugt. Dieser wurde relativ Dicht eingestellt und hat eine zum Himmel passende Farbe bekommen. Zusätzlich wurden in der Sky Sphere noch die Wolken
+und Sterne angepasst, damit man sie noch gut durch den Nebel sehen kann.
+
+Damit die Beleuchtung nicht zu viel Rechenaufwand in anspruch nimmt, wurde noch eine Lightmass Importance Volume hinzugefügt, welche den Bereich eingrenzt,
+indem das Licht genau berechnet wird. Dieser Bereich liegt über der Spielwelt.
