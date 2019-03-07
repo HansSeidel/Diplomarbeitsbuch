@@ -10,23 +10,39 @@ Es gibt verschiedene Lampen, um Personen oder Objekte auszuleichten. Je konzentr
 fällt, desto härter ist der Schatten den es wirft. Wenn eine Lampe weiter weg ist, kommt weniger Licht am Objekt an.
 
 \subsection{Directional Light}
-\citep{unreal:directional_light} Das Directional Light simuliert ein Licht was unendlicht weit weg ist. Deshalb kann man es gut als Sonne verwenden.\todo{Zitat - übersetzt}
-\todo{Die Settings im Spiel für Licht dokumentieren}
+Das Directional Light simuliert ein Licht was unendlicht weit weg ist. Somit kommt das Licht nur von einer Seite, weshalb
+man es gut als Sonne verwenden. \citep{unreal:directional_light}
 
 \subsection{Sky Light}
+Das Sky Light strahlt Licht von allen Seiten aus. Man kann somit die Farbe und Lichtstärke auf der Rückseite von Objekten kontrollieren.
+
+\subsection{Sky Sphere}
+Die Sky Sphere gibt definiert den Himmel in Unreal Engine. Mit ihr, kann man Wolken und Sterne bearbeiten. Manche Einstellungen funktionieren nur in Relation mit anederen
+Lichtquellen. Man kann zum Beispiel nur Sterne sehen, wenn man die Sonne in einem bestimmten Winkel platziert.
+Außerdem kann man mehrere Farbeinstellungen für den Himmel vornehmen.
+
+\subsection{Post Process Volume}
+Mit der Post Process Volume kann man das Aussehen im Spiel nachbearbeiten. \citep{unreal:postProcessVolume} Wir haben sie dazu benutzt um die Helligkeit im Spiel auf einen gewissen Bereich zu beschränken.
+
 \subsection{Exponential Height Fog}
+Mit dem Exponential Height Fog kann man Nebel über die ganze Welt erzeugen. Dieser Nebel hat unten eine höhere Dichte als weiter oben. Weiters kann man zwei Farben einstellen.
+Die von der Seite wo das Sonnenlicht kommt und die von der Gegenüberliegenden Seite, das heißt der Nebel hat je nach Seitenansicht eine andere Farbe. \citep{unreal:exponentialHeightFog}
+
+\subsection{Lightmass Importance Volume}
+Mit der Lightmass Importance Volume, kann man Bereiche im Spiel einstellen, wo das Licht genau berechnet werden soll. Das ist besonders wichtig, da der Spieler nur in einem
+Bestimmten Bereich Licht mit guter Qualität sehen kann und somit Rechenaufwand für Bereiche in denen es nicht so ist, gespart wird. \citep{unreal:lightmassImportanceVolume}
+
 \subsection{Light Mobility}
 \subsubsection{Static}
 Beim Static Light wird das Licht direkt am Anfang berechnet. Das heißt man kann es wärend dem Spiel nicht ändern, dafür wird die Performance verbessert, da
-die Schatten nicht immer neu berechnet werden müssen. \todo{Mehr darüber - Quelle..?}
-\todo{Wie genau muss die Quelle sein? reicht types of lighst?}
-\citep{unreal:types_of_lights}
+die Schatten nicht immer neu berechnet werden müssen. \citep{unreal:types_of_light}
 
 \subsubsection{Stationary}
 Das Stationary Light kann man während dem Spielen nicht bewegen, allerdings kann man die Farbe und die Intensität verändern. Somit stellt es vom Rechenaufwand und
-der Funktion einen Kompromiss zwischen Static und Movable Light da. \todo{Mehr darüber - Quelle..?}
+der Funktion einen Kompromiss zwischen Static und Movable Light da. \citep{unreal:types_of_light}
 
 \subsubsection{Movable}
-\todo{Mehr darüber - Quelle..?}
+Das Movable Light kann man während dem Spielen vollständig verändern. Dadurch dass man seine Position verändern kann und die Schatten dadurch neu berechnet werden müssen,
+ist es das Performancelastigste Light.
 
 \subsection{Das Lighting im Spiel}
