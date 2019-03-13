@@ -3,15 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplom.bib" beforeDir="false" afterPath="$PROJECT_DIR$/diplom.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/blender/lic_editMode.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_editMode.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_einleitung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_einleitung.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_objectMode.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_objectMode.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,21 +19,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_modifikatoren.tex">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+            <state relative-caret-position="299">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="160">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_editMode.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -43,19 +51,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>modellierung</find>
-      <find>\section</find>
-      <find>edit mode</find>
-      <find>edit Mode</find>
-      <find>array</find>
-      <find>exportieren</find>
-      <find>[H]</find>
-      <find>float</find>
-      <find>lighting im Spiel</find>
-      <find>Lightmass</find>
-      <find>ima</find>
-      <find>exportier</find>
-      <find>Origin</find>
       <find>smooth</find>
       <find>item</find>
       <find>slash</find>
@@ -64,7 +59,6 @@
       <find>ergibt</find>
       <find>literaturver</find>
       <find>biblio</find>
-      <find>todo</find>
       <find>Kanten</find>
       <find>Modifier</find>
       <find>modifier</find>
@@ -73,6 +67,20 @@
       <find>Edgesplit</find>
       <find>siehe</find>
       <find>Boolean</find>
+      <find>ort</find>
+      <find>dass es</find>
+      <find>durchsi</find>
+      <find>so dass sie</find>
+      <find>achten</find>
+      <find>b</find>
+      <find>Ebe</find>
+      <find>Exportier</find>
+      <find>Alembi</find>
+      <find>vor den</find>
+      <find>gut als s</find>
+      <find>Spiel nicht ändern</find>
+      <find>Sterne sehe</find>
+      <find>todo</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -108,20 +116,20 @@
         <option value="$PROJECT_DIR$/text/planung/sei_planung.tex" />
         <option value="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" />
         <option value="$PROJECT_DIR$/text/blender/c_blender.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" />
         <option value="$PROJECT_DIR$/text/formatierung.tex" />
-        <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_einleitung.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_editMode.tex" />
         <option value="$PROJECT_DIR$/diplomarbeit.tex" />
         <option value="$PROJECT_DIR$/diplom.bib" />
         <option value="$PROJECT_DIR$/text/blender/lic_objectMode.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" />
+        <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_editMode.tex" />
       </list>
     </option>
   </component>
@@ -129,9 +137,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="width" value="1573" />
+    <option name="width" value="1179" />
     <option name="height" value="1398" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -142,6 +150,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,15 +229,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552220346649" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552502227530" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -266,7 +274,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_editMode.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -276,7 +284,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex</main-file>
-        <aux-dir>C:/Windows/System32</aux-dir>
+        <aux-dir />
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -316,7 +324,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_modifikatoren.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -326,7 +334,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_objectMode.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -389,19 +397,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61647000" />
+    <option name="totallyTimeSpent" value="64948000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="1258" height="1118" extended-state="0" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29465777" />
-      <window_info id="Structure" order="1" weight="0.24955909" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Designer" order="5" />
-      <window_info id="UI Designer" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1933067" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Structure" order="6" weight="0.24915062" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -410,7 +418,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279678" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3296146" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32897383" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -585,44 +593,6 @@
     <entry file="file://$PROJECT_DIR$/images/Lighting-Sky_Directional.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="68" column="62" lean-forward="true" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
-          <folding>
-            <element signature="e#5080#5085#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="79" column="90" selection-start-line="79" selection-start-column="90" selection-end-line="79" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_einleitung.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -634,20 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_editMode.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -684,8 +640,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_modifikatoren.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="51">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+          <folding>
+            <element signature="e#5089#5094#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_editMode.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
