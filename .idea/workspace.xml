@@ -4,13 +4,9 @@
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_editMode.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_editMode.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_objectMode.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_objectMode.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/formatierung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/formatierung.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,30 +15,61 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
+        <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="400">
+              <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+              <folding>
+                <element signature="e#1194#1218#2" expanded="true" />
+                <element signature="e#1248#1284#2" expanded="true" />
+                <element signature="e#1332#1353#2" expanded="true" />
+                <element signature="e#1440#1469#2" expanded="true" />
+                <element signature="e#1577#1597#2" expanded="true" />
+                <element signature="e#1599#1618#2" expanded="true" />
+                <element signature="e#1620#1641#2" expanded="true" />
+                <element signature="e#1697#1722#2" expanded="true" />
+                <element signature="e#1780#1808#2" expanded="true" />
+                <element signature="e#1847#1864#2" expanded="true" />
+                <element signature="e#1866#1888#2" expanded="true" />
+                <element signature="e#1935#1964#2" expanded="true" />
+                <element signature="e#1986#2010#2" expanded="true" />
+                <element signature="e#2086#2107#2" expanded="true" />
+                <element signature="e#2741#2759#2" expanded="true" />
+                <element signature="e#3826#3906#2" expanded="true" />
+                <element signature="e#4719#4740#2" expanded="true" />
+                <element signature="e#5142#5162#2" expanded="true" />
+                <element signature="e#5198#5363#2" expanded="true" />
+                <element signature="e#5519#5540#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_einleitung.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="240">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_editMode.tex">
+        <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="545">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -51,12 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>smooth</find>
-      <find>item</find>
-      <find>slash</find>
-      <find>Im</find>
-      <find>In diesem</find>
-      <find>ergibt</find>
       <find>literaturver</find>
       <find>biblio</find>
       <find>Kanten</find>
@@ -81,6 +102,12 @@
       <find>Spiel nicht ändern</find>
       <find>Sterne sehe</find>
       <find>todo</find>
+      <find>usepackeg</find>
+      <find>url</find>
+      <find>let</find>
+      <find>hyphens</find>
+      <find>footmisc</find>
+      <find>usepackage</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -116,12 +143,8 @@
         <option value="$PROJECT_DIR$/text/planung/sei_planung.tex" />
         <option value="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" />
         <option value="$PROJECT_DIR$/text/blender/c_blender.tex" />
-        <option value="$PROJECT_DIR$/text/formatierung.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_einleitung.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" />
-        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
         <option value="$PROJECT_DIR$/diplom.bib" />
-        <option value="$PROJECT_DIR$/text/blender/lic_objectMode.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" />
@@ -130,6 +153,10 @@
         <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_editMode.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_objectMode.tex" />
+        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_einleitung.tex" />
+        <option value="$PROJECT_DIR$/text/formatierung.tex" />
       </list>
     </option>
   </component>
@@ -138,9 +165,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1179" />
-    <option name="height" value="1398" />
+    <option name="x" value="-9" />
+    <option name="width" value="1180" />
+    <option name="height" value="1399" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -235,7 +262,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552502227530" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552560154519" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -278,13 +305,23 @@
       </texify-bibtex>
       <method v="2" />
     </configuration>
+    <configuration name="lic_einleitung bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler>BIBTEX</compiler>
+        <compiler-path />
+        <compiler-arguments />
+        <main-file>$PROJECT_DIR$/text/blender/lic_einleitung.tex</main-file>
+        <aux-dir />
+      </texify-bibtex>
+      <method v="2" />
+    </configuration>
     <configuration name="lic_exportierenVonBenderZuUnrealEngine4 bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
         <compiler>BIBTEX</compiler>
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -393,17 +430,18 @@
       <workItem from="1551972243144" duration="2703000" />
       <workItem from="1552120866302" duration="9431000" />
       <workItem from="1552216064045" duration="4279000" />
+      <workItem from="1552558311388" duration="1774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64948000" />
+    <option name="totallyTimeSpent" value="66730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1933067" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1973027" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -418,7 +456,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279678" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32897383" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32897383" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -433,13 +471,13 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29465777" />
-      <window_info id="Structure" order="1" weight="0.24955909" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Designer" order="5" />
-      <window_info id="UI Designer" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1973027" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Structure" order="6" weight="0.24915062" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -448,7 +486,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279678" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3296146" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897383" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -571,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/c_blender.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="115" column="17" lean-forward="true" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -593,13 +631,6 @@
     <entry file="file://$PROJECT_DIR$/images/Lighting-Sky_Directional.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_einleitung.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -607,34 +638,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="229" column="27" selection-start-line="229" selection-start-column="27" selection-end-line="229" selection-end-column="27" />
-          <folding>
-            <element signature="e#2086#2107#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diplom.bib">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2640">
           <caret line="132" column="36" lean-forward="true" selection-start-line="132" selection-start-column="36" selection-end-line="132" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="68" lean-forward="true" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -676,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -694,6 +694,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" column="102" selection-start-line="13" selection-start-column="102" selection-end-line="13" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_einleitung.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+          <folding>
+            <element signature="e#1194#1218#2" expanded="true" />
+            <element signature="e#1248#1284#2" expanded="true" />
+            <element signature="e#1332#1353#2" expanded="true" />
+            <element signature="e#1440#1469#2" expanded="true" />
+            <element signature="e#1577#1597#2" expanded="true" />
+            <element signature="e#1599#1618#2" expanded="true" />
+            <element signature="e#1620#1641#2" expanded="true" />
+            <element signature="e#1697#1722#2" expanded="true" />
+            <element signature="e#1780#1808#2" expanded="true" />
+            <element signature="e#1847#1864#2" expanded="true" />
+            <element signature="e#1866#1888#2" expanded="true" />
+            <element signature="e#1935#1964#2" expanded="true" />
+            <element signature="e#1986#2010#2" expanded="true" />
+            <element signature="e#2086#2107#2" expanded="true" />
+            <element signature="e#2741#2759#2" expanded="true" />
+            <element signature="e#3826#3906#2" expanded="true" />
+            <element signature="e#4719#4740#2" expanded="true" />
+            <element signature="e#5142#5162#2" expanded="true" />
+            <element signature="e#5198#5363#2" expanded="true" />
+            <element signature="e#5519#5540#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
