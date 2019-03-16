@@ -1,4 +1,5 @@
 \section{Modellierung von 3D Objekten}
+\label{sec:Modellierung_von_3D_Objekten}
 Ein großer Teil um das Spiel zu machen, war das modellieren. In diesem Kapitel wird gezeigt, wie man etwas kompliziertere
 Modelle macht und auf was man achten muss.
 
@@ -11,11 +12,13 @@ Weiters gibt es einige Objekte die für die Story relevant sind und Objekte die 
 \todo{Modellierte Objekte referenzieren}
 
 Auflistung der Objekte:
+\todo{Kapitel Dusche schreiben}
+\todo{Kapitel schreiben}
 
 \begin{tabular}{l|l|l|l}
     \textbf{Zweck} & \textbf{Objekt} & \textbf{Entwickelt von} & \textbf{Anmerkung} \\
     \hline
-    \textbf{Haus} &  &  & \\
+    \textbf{Haus} &  &  & Kapitel \ref{haus:ref1}\\
     \hline
     & Stufen & Lichtenstein & \\
     & Haustür & Lichtenstein & \\
@@ -26,7 +29,7 @@ Auflistung der Objekte:
     & Waschbecken & Lichtenstein & \\
     & Dusche & Lichtenstein & \\
     & Bett & Lichtenstein & \\
-    & Bettdecke & Lichtenstein & \\
+    & Bettdecke & Lichtenstein & Kapitel \ref{bettdecke:ref1}\\
     & Polster & Lichtenstein & \\
     & Nachtkasten & Lichtenstein & \\
     & Nachtkastenlampe & Lichtenstein & \\
@@ -59,14 +62,14 @@ Auflistung der Objekte:
     & Nebengrab 2 & Lichtenstein & \\
     & Nebengrab 3 & Lichtenstein & \\
     & Nebengrab 4 & Lichtenstein & \\
-    & Paracelsus Grab & Lichtenstein & \\
+    & Paracelsus Grab & Lichtenstein & Kapitel \ref{paracelsusgrab:ref1} \\
     & Fass & Lichtenstein & \\
     & Türstopper & Lichtenstein & \\
     \hline
 \end{tabular}
 
-\label{sec:Modellierung_von_3D_Objekten}
 \subsection{Paracelsus Grab}
+\label{paracelsusgrab:ref1}
 Das Grab des Paracelsus ist ein Modell, welches einem echten Objekt entspricht. Um ein originalgetreues Ergebnis zu erhalten,
 modelliert man das Objekt von einem Foto nach. Dazu muss man ein Foto in Blender importieren. Um ein Foto zu importieren muss man sich im Object Mode befinden und \keys{N}
 drücken. Im Menü sieht man dann das Feld \menu{Background Images} (Abbildung \ref{Paracelsus_Grab:image1}). Dort kann man dann den Pfad des Bildes angeben
@@ -88,7 +91,7 @@ durch eine Schätzung der Größen nachmodelliert worden.
 \begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_Nachmodellierung.png}
-    \caption{Paracelsus Grab Nachmodellierung}
+    \caption{Paracelsus Grab Nachmodellierung (Lizenz zum Bild: \citep{paracelsusgrab:bild})}
     \label{Paracelsus_Grab:image2}
 \end{figure}
 \todo{Muss man Nutzungsrechte für das Bild einfügen?}
@@ -109,14 +112,15 @@ wurde sie mit \keys{\Alt + C} zu einem Mesh konvertiert, damit sie dann mit der 
 \subsubsection{Gesicht}
 Für die Modellierung des Gesichts, wurde ein Brush verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
 aber notwendig, damit nachher noch eine andere Textur mit einer eigenen Bumpmap verwendet werden kann. Um das Gesicht zu erstellen wurde zuerst auf einer Seite der Säule,
-die Fläche mit dem Shortcut \keys{W} \menu{Subdivide} (Edit Mode) unterteilt. Dann wurde im Sculptmode eine Schwarzweiß Textur eingefügt (Abbildung \ref{Paracelsus_Grab:image4}),
+die Fläche mit dem Shortcut \keys{W} \menu{Subdivide} (Edit Mode) unterteilt. Dann wurde im Sculpt Mode eine Schwarzweiß Textur, gefertigt aus dem ursprünglichen Bild des Paracelsus Grabes
+eingefügt (Abbildung \ref{Paracelsus_Grab:image4}),
 damit man mit dem Brush Höhen und Tiefen Zeichnen kann. Außerdem wurden die Werte Strenght und Radius angepasst. Nun wurde der Brush angewendet. Danach sind noch mit dem
 Decimate-Modifikator so viele Flächen wie möglich entfernt worden, ohne dass das Aussehen der Statue stark beeinträchtigt wurde.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_Brush.png}
-    \caption{Einfügen der Schwarz/Weiß Textur}
+    \caption{Einfügen der Schwarz/Weiß Textur (Lizenz zum ursprünglichen Bild der Schwarz/Weiß Textur: \citep{paracelsusgrab:bild})}
     \label{Paracelsus_Grab:image4}
 \end{figure}
 
@@ -133,6 +137,7 @@ Fläche modelliert, die dann im Edit Mode so angepasst wurde, dass sie aussieht 
 \end{figure}
 
 \subsection{Bettdecke}
+\label{bettdecke:ref1}
 Die Bettdecke sollte etwas zerknüllt aussehen. Deshalb wurde sie mit einer Simulation modelliert. Damit sich die Decke verformt, muss sie genug Flächen haben.
 Dies kann man erreichen, indem man eine Plane erstellt, in den Edit Mode wechselt und mit \keys{W} \menu{Subdivide} meherere Flächen erzeugt. Anschließend wurde auf die Decke ein Solidify Modifikator
 angewendet, damit die sie auch eine Dicke hat.

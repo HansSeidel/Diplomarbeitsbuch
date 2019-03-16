@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom.bib" beforeDir="false" afterPath="$PROJECT_DIR$/diplom.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" afterDir="false" />
     </list>
@@ -17,8 +17,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="73" column="65" lean-forward="true" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
+            <state relative-caret-position="236">
+              <caret line="95" column="12" lean-forward="true" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diplom.bib">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="211" column="29" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -27,12 +45,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Lightmass</find>
-      <find>point</find>
-      <find>todo</find>
-      <find>mittelpunkt</find>
-      <find>Mittelpunkt</find>
-      <find>Kapitel</find>
       <find>ref</find>
       <find>Boolean</find>
       <find>Abschnitt</find>
@@ -57,6 +69,12 @@
       <find>file</find>
       <find>Lampe</find>
       <find>Parac</find>
+      <find>Bett</find>
+      <find>Hauptgrab</find>
+      <find>todo</find>
+      <find>Muss mann</find>
+      <find>paracelsus grab</find>
+      <find>Sculpt Mode</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -98,7 +116,6 @@
         <option value="$PROJECT_DIR$/text/formatierung.tex" />
         <option value="$PROJECT_DIR$/text/blender/c_blender.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_objekteUebersicht.tex" />
-        <option value="$PROJECT_DIR$/diplom.bib" />
         <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_editMode.tex" />
@@ -108,6 +125,7 @@
         <option value="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
+        <option value="$PROJECT_DIR$/diplom.bib" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" />
       </list>
     </option>
@@ -214,7 +232,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552747193828" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552755202361" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -303,7 +321,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex</main-file>
-        <aux-dir>C:/Windows/System32</aux-dir>
+        <aux-dir />
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -385,12 +403,12 @@
       <workItem from="1552558311388" duration="1774000" />
       <workItem from="1552690277156" duration="17064000" />
       <workItem from="1552749629142" duration="804000" />
-      <workItem from="1552750826688" duration="1655000" />
+      <workItem from="1552750826688" duration="4349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95703000" />
+    <option name="totallyTimeSpent" value="98397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -587,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="196" column="110" selection-start-line="196" selection-start-column="110" selection-end-line="196" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -681,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -695,10 +699,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="211" column="29" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="73" column="65" lean-forward="true" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
+        <state relative-caret-position="236">
+          <caret line="95" column="12" lean-forward="true" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
         </state>
       </provider>
     </entry>
