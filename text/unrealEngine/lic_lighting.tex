@@ -6,7 +6,18 @@ Eine uns bekannte Beleuchtungsmethode ist die 3\verb+-+Punkt\verb+-+Beleuchtung.
 von 3 Seiten mittels Key-, Fill- und Backlight ausgeleuchtet. Dadurch entsteht eine Tiefe und eine Stimmung die je nach Lichteinfall und
 Lichtstärke variieren kann.
 
-Es gibt verschiedene Lampen, um Personen oder Objekte auszuleuchten. Je konzentrierter das Licht von einer Lampe wegstrahlt und auf ein Objekt
+Weiters ist sind uns verschiedene Lichtarten bereits aus Blender bekannt, die es in Unreal Engine auch gibt.
+
+Dazu zählen:
+
+\begin{enumerate}
+    \item Point Light
+    \item Sun (entspricht dem Directional Light in Unreal Engine)
+    \item Spot Light
+    \item Hemi (entspricht dem Skylight in Unreal Engine)
+\end{enumerate}
+
+Außerdem gibt es verschiedene Lampen, um Personen oder Objekte auszuleuchten. Je konzentrierter das Licht von einer Lampe wegstrahlt und auf ein Objekt
 fällt, desto härter ist der Schatten, den es wirft. Wenn eine Lampe weiter weg ist, kommt weniger Licht am Objekt an.
 
 \subsection{Directional Light}
@@ -29,21 +40,31 @@ Mit dem Exponential Height Fog kann man Nebel über die ganze Welt erzeugen. Die
 Die von der Seite wo das Sonnenlicht kommt und die von der Gegenüberliegenden Seite, das heißt der Nebel hat je nach Seitenansicht eine andere Farbe. \citep{unreal:exponentialHeightFog}
 
 \subsection{Lightmass Importance Volume}
-Mit der Lightmass Importance Volume, kann man Bereiche im Spiel einstellen, wo das Licht genau berechnet werden soll. Das ist besonders wichtig, da der Spieler nur in einem
-Bestimmten Bereich Licht mit guter Qualität sehen kann und somit Rechenaufwand für Bereiche, in denen es nicht so ist, gespart wird. \citep{unreal:lightmassImportanceVolume}
+Mit der Lightmass Importance Volume, kann man Bereiche im Spiel einstellen, wo das Licht genau berechnet werden soll. In Bereichen in denen das
+Licht genauer berechnet wird, prallt das Licht öfters von Oberflächen ab und wird pro abprallen (Bounce) schwächer und erzeugt somit genauere Schatten.
+Das ist besonders wichtig, da der Spieler nur in einem Bestimmten Bereich Licht mit guter Qualität sehen kann und somit Rechenaufwand für Bereiche,
+in denen es nicht so ist, gespart wird. \citep{unreal:lightmassImportanceVolume}
+
+\subsection{Point Light}
+Das Point Light strahlt in alle Richtungen für eine begrenzte Reichweite. Daher eignet es sich gut als Lampe.
+
+\subsection{Spot Light}
+Das Spotlight leuchtet in eine Richtung für eine begrenzte Reichweite. Es eignet sich ebenfalls gut als Lampe.
 
 \subsection{Light Mobility}
 \subsubsection{Static}
-Beim Static Light wird das Licht direkt am Anfang berechnet. Das heißt man kann es während dem Spiel nicht ändern. Dafür wird die Performance verbessert, da
-die Schatten nicht immer neu berechnet werden müssen. \citep{unreal:types_of_light}
+Beim Static Light wird das Licht direkt am Anfang berechnet und in einer Lightmap gespeichert. Das heißt man kann es während dem Spiel nicht ändern.
+Dafür wird die Performance verbessert, da die Schatten nicht immer neu berechnet werden müssen. \citep{unreal:static_light}
 
 \subsubsection{Stationary}
-Das Stationary Light kann man während dem Spielen nicht bewegen, allerdings kann man die Farbe und die Intensität verändern. Somit stellt es vom Rechenaufwand und
-der Funktion einen Kompromiss zwischen Static und Movable Light da. \citep{unreal:types_of_light}
+Das Stationary Light kann man während dem Spielen nicht bewegen, allerdings kann man die Farbe und die Intensität verändern. Es kann aber nur das direkte Licht, also kein
+abprallendes Licht (Licht prallt normalerweise öfters ab und wird immer schwächer) verändert werden.
+Somit stellt es vom Rechenaufwand und der Funktion einen Kompromiss zwischen Static und Movable Light da. \citep{unreal:stationary_light}
 
 \subsubsection{Movable}
-Das Movable Light kann man während dem Spielen vollständig verändern. Dadurch dass man seine Position verändern kann und die Schatten dadurch neu berechnet werden müssen,
-ist es das Performance lastigste Light.
+Das Movable Light wird während dem Spiel berechnet.
+Dadurch kann man es während dem Spiel bewegen und vollständig ändern.
+Es ist das Performance lastigste Light. \citep{unreal:movable_light}
 
 \subsection{Das Lighting im Spiel}
 Das Ziel beim Lighting im Spiel war es, eine düstere Stimmung zu bekommen. Dazu mussten mehrere Objekte die das Licht und den Himmel bestimmen aufeinander abgestimmt werden.
@@ -56,6 +77,8 @@ Diese Objekte sind:
     \item Post Process Volume
     \item Exponential Height Fog
     \item Lightmass Importance Volume
+    \item Point Light
+    \item Spot Light
 \end{enumerate}
 
 Um die Farben abzustimmen und die gesamt Helligkeit zu regeln, muss man an drei Objekten einstellungen vornehmen.
@@ -94,6 +117,8 @@ Um ein die Umgebungshelligkeit anzupassen, wurde in der Post Process Volume die 
 Damit das Spiel eine düstere Stimmung bekommt, wurde noch Nebel hinzugefügt. Die effizienteste Methode war, einen Exponential Height Fog einzubauen, welcher
 Nebel im ganzen Spiel erzeugt. Dieser wurde relativ dicht eingestellt und hat eine zum Himmel passende Farbe bekommen. Zusätzlich wurden in der Sky Sphere noch die Wolken
 und Sterne angepasst, damit man sie noch gut durch den Nebel sehen kann.
+
+Um eine passende Atmosphäre in den Gebäuden zu schaffen wurden je nach Lampenart, Spot Lights oder Point Lights verwendet.
 
 Damit die Beleuchtung nicht zu viel Rechenaufwand in Anspruch nimmt, wurde noch eine Lightmass Importance Volume hinzugefügt, welche den Bereich eingrenzt,
 indem das Licht genau berechnet wird. Dieser Bereich liegt über der Spielwelt.
