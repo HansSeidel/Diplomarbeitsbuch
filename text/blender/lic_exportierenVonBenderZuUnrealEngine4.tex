@@ -3,26 +3,26 @@
 Damit alle Objekte die in Blender modelliert wurden, richtig in der Unreal Engine anzeigen zu können, muss man ein paar
 Einstellungen an den Objekten machen und die Maße in der Datei verändern.
 
-Für die Datei selbst, muss man im Property-Panel Length auf Metric, den Angle auf Degree und die Unit Scale auf 0.01 stellen.
+Für die Datei selbst, muss man im Property-Panel die Length auf Metric, den Angle auf Degree und die Unit Scale auf 0.01 stellen.
 Das ist notwendig, damit die Objekte in der Unreal Engine die richtige Skalierung haben. Damit man diese Einstellungen nicht bei
-jeder Datei neu einstellen muss, kann man die Einstellungen im Info-Panel unter File \verb+->+ Save Startup File speichern.
+jeder Datei neu einstellen muss, kann man die Einstellungen im Info-Panel unter \menu{File > Save Startup File} speichern.
 
 Bei allen Objekten, die man exportieren möchte, muss man darauf achten, dass das Objekt auf den Location Koordinaten
-den Wert 0 hat, damit das Objekt in der Unreal Engine seinen Mittelpunkt in der Mitte des Objektes hat und um diesen gedreht, verschoben und skaliert werden kann.
-Um das Objekt entsprechend auf 0 zu verschieben wird der Mittelpunkt des Objektes mittig im Objekt gesetzt. Dazu drückt man SHIFT \verb-+- STRG \verb-+- ALT \verb-+- C und
-wählt Origin to Center of Mass (Volume) aus. Damit wurde der Mittelpunkt des Objektes neu gesetzt. Das ist sehr nützlich, falls der Mittelpunkt wo anders ist und man das
-Objekt nicht um seine eigene Achse drehen, verschieben und skalieren kann. Anschließend setzt man mit ALT \verb-+- G die Location Koordinaten auf 0.
+den Wert 0 hat, damit das Objekt in der Unreal Engine seinen Origin in der Mitte des Objektes hat und um diesen gedreht, verschoben und skaliert werden kann.
+Um das Objekt entsprechend auf 0 zu verschieben wird der Origin des Objektes mittig im Objekt gesetzt. Dazu drückt man \keys{\shift + \ctrl + \Alt + C} und
+wählt \menu{Origin to Center of Mass (Volume)} aus. Damit wurde der Origin des Objektes neu gesetzt. Das ist sehr nützlich, falls der Origin wo anders ist und man das
+Objekt nicht um seine eigene Achse drehen, verschieben und skalieren kann. Anschließend setzt man mit \keys{ALT + G} die Location Koordinaten auf 0.
 
 Zum Schluss ist es noch wichtig welches Dateiformat benutzt wird, um die Daten so zu speichern, dass beide Programme die enthaltene
 Information lesen können. Die Wahl des richtigen Formates, wird in den Unterkapiteln abgedeckt.
 
 \subsection{3D Modelle}
 Um 3d Modelle zu exportieren, muss man sie mit Dateien der Endung .fbx exportieren. Damit man nicht etwas falsches exportiert, ist es empfehlenswert
-nur ausgewählte Objekte zu exportieren. Dazu wählt man dann alle Objekte aus die man exportieren möchte, wählt im Info-Panel File \verb+->+
-Export \verb+->+ FBX (.fbx) aus und wählt dann in den Exporteinstellungen unter Main den Punkt Selected Objects aus. Um Smooth Shading auch zu exportieren,
-muss man unter Geometrie im Punkt Smoothing den Wert Face angeben. Jetzt kann man die Datei mit Export FBX exportieren.
+nur ausgewählte Objekte zu exportieren. Dazu wählt man dann alle Objekte aus die man exportieren möchte, wählt im Info-Panel \menu{File >
+Export > FBX (.fbx)} aus und wählt dann in den Exporteinstellungen unter Main den Punkt \menu{Selected Objects} aus. Um Smooth Shading auch zu exportieren,
+muss man unter \menu{Geometrie} im Punkt \menu{Smoothing} den Wert \menu{Face} angeben. Jetzt kann man die Datei mit \menu{Export FBX} exportieren.
 
 \subsection{Simulationen}
 Bei Simulationen, muss man die Dateien als Alembic Datei exportieren. Dazu wählt man wieder alle Objekte aus, die man exportieren möchte und
-wählt diesmal beim Exportieren das Dateiformat Alembic (.abc) aus. Bei den Exporteinstellungen kann man vor dem Exportieren den Punkt Triangulate auswählen.
+wählt diesmal beim Exportieren das Dateiformat \menu{Alembic (.abc)} aus. Bei den Exporteinstellungen kann man vor dem Exportieren den Punkt \menu{Triangulate} auswählen.
 Es kann nämlich sein, dass die Dateien in der Unreal Engine sonst nicht erkannt werden.
