@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/Stufen-Haus_Stufen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="200">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -225,7 +223,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552820355969" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552823625217" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -399,12 +397,12 @@
       <workItem from="1552749629142" duration="804000" />
       <workItem from="1552750826688" duration="4962000" />
       <workItem from="1552814686520" duration="94000" />
-      <workItem from="1552814807685" duration="4583000" />
+      <workItem from="1552814807685" duration="6486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103687000" />
+    <option name="totallyTimeSpent" value="105590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -711,8 +709,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="200">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
