@@ -1,5 +1,6 @@
 \section{Modellierung von 3D Objekten}
 \label{sec:Modellierung_von_3D_Objekten}
+\todo{Alle "Kapitel" gleich referenzieren. z.B. Kapitel 1 Kapitelname}
 Ein großer Teil um das Spiel zu machen, war das modellieren. In diesem Kapitel wird gezeigt, wie man etwas kompliziertere
 Modelle macht und auf was man achten muss.
 
@@ -21,7 +22,7 @@ Auflistung der Objekte:
     \hline
     \textbf{Haus} &  &  & Kapitel \ref{haus:ref1}\\
     \hline
-    & Stufen & Lichtenstein & \\
+    & Stufen & Lichtenstein & Kapitel \ref{Stufen_Im_Haus:Heading}\\
     & Haustür & Lichtenstein & \\
     & Tür & Lichtenstein & \\
     & Fenster & Lichtenstein & \\
@@ -142,6 +143,24 @@ Fläche modelliert, die dann im Edit Mode so angepasst wurde, dass sie aussieht 
 \end{figure}
 
 Verwendete Modifikatoren: Kapitel \ref{Boolean:heading} Boolean
+
+\subsection{Stufen im Haus}
+\label{Stufen_Im_Haus:Heading}
+Um die Stufen (Abbildung \ref{Stufen_Im_Haus:Bild}) zu Modellieren, wurden echte Stufen abgemessen, um einen Eindruck von der Höhe der Stufen zu bekommen.
+Die Stufen wurden mit einem Würfel modelliert, der mit einem Array Modifikator wiederholt wurde. Das Geländer und die Halterung des Handlaufes zur Wand
+wurde mit den gleichen Verfahren gefertigt, nur das als Basisobjekt kein Würfel sondern ein Zylinder genommen wurde.
+Die Stufen sind ein relativ einfaches Modell, jedoch ist es wichtig zu beachten, dass die Abstände überall passen.
+
+Damit das Geländer dann von der Höhe an das Haus anzupassen, wurden sie zum Schluss mit einem Boolean Modifikator abgeschnitten.
+Der Handlauf wurde ebenfalls mit einem Boolean Modifikator gekürzt. Das gesamte Geländer wurde mit Smooth Shading (Kapitel \ref{objectMode:smoothshading})
+versehen, damit es runder aussieht.
+
+\begin{figure}[H]
+     \centering
+     \includegraphics[width=.8\textwidth]{images/Stufen-Haus_Stufen.png}
+     \caption{Stufen mit Geländer}
+     \label{Stufen_Im_Haus:Bild}
+\end{figure}
 
 \subsection{Bettdecke}
 \label{bettdecke:ref1}
