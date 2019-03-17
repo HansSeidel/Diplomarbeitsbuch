@@ -13,7 +13,8 @@ Weiters gibt es einige Objekte die für die Story relevant sind und Objekte die 
 
 Auflistung der Objekte:
 \todo{Kapitel Dusche schreiben}
-\todo{Kapitel schreiben}
+\todo{Kapitel Hauptgrab schreiben}
+\todo{Kapitel Stufen - Haus schreiben}
 
 \begin{tabular}{l|l|l|l}
     \textbf{Zweck} & \textbf{Objekt} & \textbf{Entwickelt von} & \textbf{Anmerkung} \\
@@ -100,7 +101,8 @@ durch eine Schätzung der Größen nachmodelliert worden.
 Um die Vase für das Paracelsus Grab zu modellieren, wurde eine Sphere benutzt und anschließend im Edit Mode verändert. Anschließend wurden die Verzierungen für die Vase gemacht.
 Dazu wurde zwei Curves erstellt (Abbildung \ref{Paracelsus_Grab:image5}), die obere für die Einkerbungen und die untere für die Verzierung der Vase. Damit die Curves eine
 Breite haben, muss man sie mit einem Bezier-Circle verbinden, der die Breite bestimmt. Nach dem Erstellen der Curve,
-wurde sie mit \keys{\Alt + C} zu einem Mesh konvertiert, damit sie dann mit der Vase verbunden werden können.
+wurde sie mit \keys{\Alt + C} zu einem Mesh konvertiert, damit sie dann mit der Vase, mittels Boolean Modifikator verbunden
+bzw. ausgeschnitten werden können werden können.
 
 \begin{figure}[H]
     \centering
@@ -109,14 +111,17 @@ wurde sie mit \keys{\Alt + C} zu einem Mesh konvertiert, damit sie dann mit der 
     \label{Paracelsus_Grab:image5}
 \end{figure}
 
+Verwendete Modifikatoren: Kapitel \ref{Curve:heading} Curve \verb+;+ Kapitel \ref{Boolean:heading} Boolean
+
 \subsubsection{Gesicht}
 Für die Modellierung des Gesichts, wurde ein Brush verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
 aber notwendig, damit nachher noch eine andere Textur mit einer eigenen Bumpmap verwendet werden kann. Um das Gesicht zu erstellen wurde zuerst auf einer Seite der Säule,
 die Fläche mit dem Shortcut \keys{W} \menu{Subdivide} (Edit Mode) unterteilt. Dann wurde im Sculpt Mode eine Schwarzweiß Textur, gefertigt aus dem ursprünglichen Bild des Paracelsus Grabes
 eingefügt (Abbildung \ref{Paracelsus_Grab:image4}),
 damit man mit dem Brush Höhen und Tiefen Zeichnen kann. Außerdem wurden die Werte Strenght und Radius angepasst. Nun wurde der Brush angewendet. Danach sind noch mit dem
-Decimate-Modifikator so viele Flächen wie möglich entfernt worden, ohne dass das Aussehen der Statue stark beeinträchtigt wurde.
+Decimate Modifikator so viele Flächen wie möglich entfernt worden, ohne dass das Aussehen der Statue stark beeinträchtigt wurde.
 
+Verwendete Modifikatoren: Kapitel \ref{Decimate:heading} Decimate
 \begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_Brush.png}
@@ -136,13 +141,15 @@ Fläche modelliert, die dann im Edit Mode so angepasst wurde, dass sie aussieht 
     \label{Paracelsus_Grab:image3}
 \end{figure}
 
+Verwendete Modifikatoren: Kapitel \ref{Boolean:heading} Boolean
+
 \subsection{Bettdecke}
 \label{bettdecke:ref1}
 Die Bettdecke sollte etwas zerknüllt aussehen. Deshalb wurde sie mit einer Simulation modelliert. Damit sich die Decke verformt, muss sie genug Flächen haben.
 Dies kann man erreichen, indem man eine Plane erstellt, in den Edit Mode wechselt und mit \keys{W} \menu{Subdivide} meherere Flächen erzeugt. Anschließend wurde auf die Decke ein Solidify Modifikator
 angewendet, damit die sie auch eine Dicke hat.
 Dann wurden Forcefields hinzugefügt (Abbildung \ref{Bettdecke:image1}) um die Decke in Bewegung zu bringen. Damit sich die Decke aber auch wirklich bewegt muss man die Decke auswählen,
-in den Physics Tab wechseln und Cloth auswählen. Jetzt verhält sich die Decke wie ein Stoffstück. Wenn man nun auf der Timeline auf Play drückt, bewegt sich die Bettdecke und verformt sich.
+in den Physics Tab wechseln und \menu{Cloth} auswählen. Jetzt verhält sich die Decke wie ein Stoffstück. Wenn man nun auf der Timeline auf Play drückt, bewegt sich die Bettdecke und verformt sich.
 Wenn die Form passt, pausiert man die Simulation. Dann drückt man \keys{\Alt + C} und wählt \menu{Mesh from Curve/Meta/Surf/Text} aus, somit kann man das fertige Modell
 frei bewegen.
 
