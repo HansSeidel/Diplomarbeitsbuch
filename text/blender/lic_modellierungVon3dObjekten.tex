@@ -14,12 +14,12 @@ Weiters gibt es einige Objekte die für die Story relevant sind und Objekte die 
 
 Auflistung der Objekte:
 
-\begin{tabular}{l|l|l|l}
+\begin{tabular}{p{3.4cm}|p{3.4cm}|p{3.4cm}|p{3.4cm}}
     \textbf{Zweck} & \textbf{Objekt} & \textbf{Entwickelt von} & \textbf{Anmerkung} \\
     \hline
-    \textbf{Haus} &  &  & Kapitel \ref{haus:ref1}\\
+    \textbf{Haus} &  &  & \textit{Kapitel \ref{haus:ref1} \dq Haus\dq}\\
     \hline
-    & Stufen & Lichtenstein & Kapitel \ref{Stufen_Im_Haus:Heading}\\
+    & Stufen & Lichtenstein & \textit{Kapitel \ref{Stufen_Im_Haus:Heading} \dq Stufen im Haus\dq}\\
     & Haustür & Lichtenstein & \\
     & Tür & Lichtenstein & \\
     & Fenster & Lichtenstein & \\
@@ -28,7 +28,7 @@ Auflistung der Objekte:
     & Waschbecken & Lichtenstein & \\
     & Dusche & Lichtenstein & \\
     & Bett & Lichtenstein & \\
-    & Bettdecke & Lichtenstein & Kapitel \ref{bettdecke:ref1}\\
+    & Bettdecke & Lichtenstein & \textit{Kapitel \ref{bettdecke:ref1} \dq Bettdecke\dq}\\
     & Polster & Lichtenstein & \\
     & Nachtkasten & Lichtenstein & \\
     & Nachtkastenlampe & Lichtenstein & \\
@@ -61,7 +61,7 @@ Auflistung der Objekte:
     & Nebengrab 2 & Lichtenstein & \\
     & Nebengrab 3 & Lichtenstein & \\
     & Nebengrab 4 & Lichtenstein & \\
-    & Paracelsus Grab & Lichtenstein & Kapitel \ref{paracelsusgrab:ref1} \\
+    & Paracelsus Grab & Lichtenstein & \textit{Kapitel \ref{paracelsusgrab:ref1} \dq Paracelsus Grab\dq} \\
     & Fass & Lichtenstein & \\
     & Türstopper & Lichtenstein & \\
     \hline
@@ -82,7 +82,7 @@ Der Griff wurde mittel Array-Modifikator vervielfältigt und im passenden Winkel
     \label{Hauptgrab:Image1}
 \end{figure}
 
-Verwendete Modifikatoren: Kapitel \ref{Bevel:heading} Bevel \verb+;+ Kapitel \ref{Boolean:heading} Boolean \verb+;+ Kapitel \ref{Array:heading} Array
+Verwendete Modifikatoren: \textit{Kapitel \ref{Bevel:heading} \dq Bevel\dq}\verb+;+ \textit{Kapitel \ref{Boolean:heading} \dq Boolean\dq}\verb+;+ \textit{Kapitel \ref{Array:heading} \dq Array\dq}
 
 \subsection{Paracelsus Grab}
 \label{paracelsusgrab:ref1}
@@ -126,7 +126,7 @@ bzw. ausgeschnitten werden können werden können.
     \label{Paracelsus_Grab:image5}
 \end{figure}
 
-Verwendete Modifikatoren: Kapitel \ref{Curve:heading} Curve \verb+;+ Kapitel \ref{Boolean:heading} Boolean
+Verwendete Modifikatoren: \textit{Kapitel \ref{Curve:heading} \dq Curve\dq}\verb+;+ \textit{Kapitel \ref{Boolean:heading} \dq Boolean\dq}
 
 \subsubsection{Gesicht}
 Für die Modellierung des Gesichts, wurde ein Brush verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
@@ -136,7 +136,7 @@ eingefügt (Abbildung \ref{Paracelsus_Grab:image4}),
 damit man mit dem Brush Höhen und Tiefen Zeichnen kann. Außerdem wurden die Werte Strenght und Radius angepasst. Nun wurde der Brush angewendet. Danach sind noch mit dem
 Decimate Modifikator so viele Flächen wie möglich entfernt worden, ohne dass das Aussehen der Statue stark beeinträchtigt wurde.
 
-Verwendete Modifikatoren: Kapitel \ref{Decimate:heading} Decimate
+Verwendete Modifikatoren: \textit{Kapitel \ref{Decimate:heading} \dq Decimate\dq}
 \begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Paracelsus-Grab_Brush.png}
@@ -156,7 +156,7 @@ Fläche modelliert, die dann im Edit Mode so angepasst wurde, dass sie aussieht 
     \label{Paracelsus_Grab:image3}
 \end{figure}
 
-Verwendete Modifikatoren: Kapitel \ref{Boolean:heading} Boolean
+Verwendete Modifikatoren: \textit{Kapitel \ref{Boolean:heading} \dq Boolean\dq}
 
 \subsection{Stufen im Haus}
 \label{Stufen_Im_Haus:Heading}
@@ -166,7 +166,7 @@ wurde mit den gleichen Verfahren gefertigt, nur das als Basisobjekt kein Würfel
 Die Stufen sind ein relativ einfaches Modell, jedoch ist es wichtig zu beachten, dass die Abstände überall passen.
 
 Damit das Geländer dann von der Höhe an das Haus anzupassen, wurden sie zum Schluss mit einem Boolean Modifikator abgeschnitten.
-Der Handlauf wurde ebenfalls mit einem Boolean Modifikator gekürzt. Das gesamte Geländer wurde mit Smooth Shading (Kapitel \ref{objectMode:smoothshading})
+Der Handlauf wurde ebenfalls mit einem Boolean Modifikator gekürzt. Das gesamte Geländer wurde mit Smooth Shading (\textit{Kapitel \ref{objectMode:smoothshading} \dq Smooth Shading\dq})
 versehen, damit es runder aussieht.
 
 \begin{figure}[H]
