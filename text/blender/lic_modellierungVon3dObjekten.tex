@@ -1,7 +1,7 @@
 \section{Modellierung von 3D Objekten}
 \label{sec:Modellierung_von_3D_Objekten}
 \todo{Alle "Kapitel" gleich referenzieren. z.B. Kapitel 1 Kapitelname}
-Ein großer Teil um das Spiel zu machen, war das Modellieren. In diesem Kapitel wird gezeigt, wie man etwas kompliziertere
+Ein großer Teil im für die Spielentwicklung, war das Modellieren. In diesem Kapitel wird gezeigt, wie man kompliziertere
 Modelle macht und auf was man achten muss.
 
 Es ist sehr wichtig, dass das Spiel mit einer guten Performance spielbar ist. Deswegen wurde beim Modellieren darauf geachtet,
@@ -9,7 +9,7 @@ dass es pro Modell so wenig Flächen wie möglich gibt \citep{unreal:modellierun
 Darunter kann dann die Performance im Spiel leiden.
 \todo{Bei Mausoleum und Cutscene wurde das auch gemacht adden.}
 Zwei wesentliche Gebäude des Spieles, sind das Haus des Grabwächters und das Mausoleum inklusive aller enthaltenen Objekte.
-Weiters gibt es einige Objekte die für die Story relevant sind und Objekte die für modelliert wurden um das Spiel zu füllen.
+Weiters gibt es einige Objekte die für die Story relevant sind und Objekte, die modelliert wurden um das Spiel zu füllen.
 \todo{Modellierte Objekte referenzieren}
 
 Auflistung der Objekte:
@@ -71,7 +71,7 @@ Auflistung der Objekte:
 \label{Hauptgrab:Heading}
 Das Hauptgrab, ist einem echten Grab, welches unser Team auf einem Friedhof gesehen hat, nachempfunden. Der Grabsockel besteht aus einem angepassten Würfel
 mit einem Bevel Modifikator. Der Grabdeckel wurde ebenfalls aus einem Würfel modelliert und anschließend mit einem Bevel-Modifikator so bearbeitet, dass
-er seine Einkerbungen bekommen hat. Der Griff ist, ein mit einem Boolean-Modifikator zusammengefügter Würfel und Torus.
+er seine Einkerbungen bekommen hat. Der Griff ist, ein mit einem Boolean-Modifikator zusammengefügter Würfel und Torus\footnote{Der Torus ist ein Objekt in Blender. Seine Gestalt ähnelt der eines Rings.}.
 Der Griff wurde mittel Array-Modifikator vervielfältigt und im passenden Winkel am Grabdeckel angebracht. Mit \keys{\ctrl + J} wurden beide Objekte zusammengefügt.
 
 \raggedbottom
@@ -86,11 +86,11 @@ Verwendete Modifikatoren: \textit{Kapitel \ref{Bevel:heading} \dq Bevel\dq}\verb
 
 \subsection{Paracelsus Grab}
 \label{paracelsusgrab:ref1}
-Das Grab des Paracelsus ist ein Modell, welches einem echten Objekt entspricht. Um ein originalgetreues Ergebnis zu erhalten,
+Das Grab des Paracelsus ist ein Modell, welches einem echten Objekt nachempfunden ist. Um ein möglichst originalgetreues Ergebnis zu erhalten,
 modelliert man das Objekt von einem Foto nach. Dazu muss man ein Foto in Blender importieren. Um ein Foto zu importieren muss man sich im Object Mode befinden und \keys{N}
 drücken. Im Menü sieht man dann das Feld \menu{Background Images} (\textit{Abbildung \ref{Paracelsus_Grab:image1}}). Dort kann man dann den Pfad des Bildes angeben
 und einstellen bei welchen Winkel zu welcher Achse sichtbar ist. In diesem Fall ist das Bild sichtbar, wenn man genau auf die Achsen X und Z schaut. Man kann außerdem die
-Durchsichtigkeit (Opacity) des Bildes einstellen, in diesem Fall ist es zu 100\% sichtbar, damit man während dem modellieren die Linien im Bild noch gut erkennt.
+Durchsichtigkeit (Opacity) des Bildes einstellen, in diesem Fall ist es zu 100\% sichtbar, damit man während dem Modellieren die Linien im Bild noch gut erkennt.
 
 \raggedbottom
 \begin{figure}[H]
@@ -100,8 +100,9 @@ Durchsichtigkeit (Opacity) des Bildes einstellen, in diesem Fall ist es zu 100\%
     \label{Paracelsus_Grab:image1}
 \end{figure}
 
-Nun modelliert man mit Formen das Grab nach und verschiebt im Edit Mode einzelne Punkte, so dass sie passen. Man muss allerdings darauf achten, dass in diesem Bild
-(\textit{Abbildung \ref{Paracelsus_Grab:image2}}) Verzerrungen aufgrund des Aufnahmewinkels des Fotos auftreten, deshalb sind einige Stellen nicht genau, sondern
+Nun modelliert man mit Formen das Grab nach und verschiebt im Edit Mode einzelne Punkte, so dass sie die gewünschte Form darstellen.
+Man muss allerdings darauf achten, dass in diesem Bild (\textit{Abbildung \ref{Paracelsus_Grab:image2}}) Verzerrungen aufgrund des
+Aufnahmewinkels des Fotos auftreten, deshalb sind einige Stellen nicht genau, sondern
 durch eine Schätzung der Größen nachmodelliert worden.
 
 \begin{figure}[H]
