@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_cutscene.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_cutscene.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +14,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
+        <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="29" column="109" lean-forward="true" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
+            <state relative-caret-position="487">
+              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+              <folding>
+                <element signature="e#6088#6093#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,18 +29,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>torus</find>
-      <find>einkerbung</find>
-      <find>paracelsus grab</find>
-      <find>entspricht</find>
-      <find>modellieren</find>
-      <find>dem modellieren</find>
-      <find>original</find>
-      <find>Punkte</find>
-      <find>ganze</find>
-      <find>einzeln</find>
-      <find>origin</find>
-      <find>mirror</find>
       <find>key</find>
       <find>anschlie</find>
       <find>Hauptgrab</find>
@@ -59,6 +47,18 @@
       <find>Stufen</find>
       <find>Location</find>
       <find>exportieren möchte</find>
+      <find>Vorwissen</find>
+      <find>und</find>
+      <find>Schtten</find>
+      <find>Dire</find>
+      <find>Post Process Volume</find>
+      <find>Point light</find>
+      <find>light mobility</find>
+      <find>Um Farb</find>
+      <find>Height Fog</find>
+      <find>Damit das</find>
+      <find>Damit</find>
+      <find>eingrenzt</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -103,7 +103,6 @@
         <option value="$PROJECT_DIR$/text/blender/c_blender.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_einleitung.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" />
-        <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_editMode.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_objectMode.tex" />
@@ -113,6 +112,7 @@
         <option value="$PROJECT_DIR$/text/blender/lic_cutscene.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
+        <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
       </list>
     </option>
   </component>
@@ -217,7 +217,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553209272978" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553210987383" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -422,16 +422,15 @@
       <workItem from="1552750826688" duration="4962000" />
       <workItem from="1552814686520" duration="94000" />
       <workItem from="1552814807685" duration="7756000" />
-      <workItem from="1553075795171" duration="35623000" />
+      <workItem from="1553075795171" duration="37334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146316000" />
+    <option name="totallyTimeSpent" value="148027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2112887" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -649,16 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
-          <folding>
-            <element signature="e#6088#6093#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -756,8 +745,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="29" column="109" lean-forward="true" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
+        <state relative-caret-position="480">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="e#6088#6093#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

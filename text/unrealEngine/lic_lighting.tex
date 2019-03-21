@@ -3,7 +3,7 @@ Die Unterkapitel des Lighting, bis auf das Vorwissen, beziehen sich auf die Bele
 
 \subsection{Vorwissen}
 Eine uns bekannte Beleuchtungsmethode ist die 3\verb+-+Punkt\verb+-+Beleuchtung. Bei ihr wird klassischer weiße ein Objekt
-von 3 Seiten mittels Key-, Fill- und Backlight ausgeleuchtet. Dadurch entsteht eine Tiefe und eine Stimmung die je nach Lichteinfall und
+von 3 Seiten mittels Key-, Fill- und Backlight ausgeleuchtet. Dadurch entsteht eine Tiefe und somit eine Stimmung die je nach Lichteinfall und
 Lichtstärke variieren kann.
 
 Weiters ist sind uns verschiedene Lichtarten bereits aus Blender bekannt, die es in Unreal Engine auch gibt.
@@ -18,22 +18,24 @@ Dazu zählen:
 \end{enumerate}
 
 Außerdem gibt es verschiedene Lampen, um Personen oder Objekte auszuleuchten. Je konzentrierter das Licht von einer Lampe wegstrahlt und auf ein Objekt
-fällt, desto härter ist der Schatten, den es wirft. Wenn eine Lampe weiter weg ist, kommt weniger Licht am Objekt an.
+fällt, desto härter ist der Schatten den es wirft. Wenn eine Lampe weiter weg ist, kommt weniger Licht am Objekt an.
 
 \subsection{Directional Light}
-Das Directional Light simuliert ein Licht was unendlich weit weg ist. Somit kommt das Licht nur von einer Seite, weshalb
+Das Directional Light simuliert ein Licht was unendlich weit weg ist. Somit strahlt das Licht nur aus einer Richtung, weshalb
 man es gut als Sonne verwenden kann. \citep{unreal:directional_light}
 
 \subsection{Sky Light}
 Das Sky Light strahlt Licht von allen Seiten aus. Man kann somit die Farbe und Lichtstärke auf der Rückseite von Objekten kontrollieren.
 
 \subsection{Sky Sphere}
-Die Sky Sphere gibt definiert den Himmel in Unreal Engine. Mit ihr, kann man Wolken und Sterne bearbeiten. Manche Einstellungen funktionieren nur in Relation mit anderen
+Die Sky Sphere definiert die Struktur Himmels in Unreal Engine.
+Mit ihr, kann man Wolken und Sterne bearbeiten. Manche Einstellungen funktionieren nur in Relation mit anderen
 Lichtquellen. Man kann zum Beispiel nur Sterne sehen, wenn man die Sonne in einem bestimmten Winkel platziert.
 Außerdem kann man mehrere Farbeinstellungen für den Himmel vornehmen.
 
 \subsection{Post Process Volume}
-Mit der Post Process Volume kann man das Aussehen im Spiel nachbearbeiten. \citep{unreal:postProcessVolume} Wir haben sie dazu benutzt um die Helligkeit im Spiel auf einen gewissen Bereich zu beschränken.
+Mit der Post Process Volume kann man das Aussehen im Spiel nachbearbeiten. \citep{unreal:postProcessVolume}
+Wir haben sie dazu benutzt um die Helligkeit im Spiel auf einen gewissen Bereich zu beschränken.
 
 \subsection{Exponential Height Fog}
 Mit dem Exponential Height Fog kann man Nebel über die ganze Welt erzeugen. Dieser Nebel hat unten eine höhere Dichte als weiter oben. Weiters kann man zwei Farben einstellen.
@@ -46,7 +48,7 @@ Das ist besonders wichtig, da der Spieler nur in einem Bestimmten Bereich Licht 
 in denen es nicht so ist, gespart wird. \citep{unreal:lightmassImportanceVolume}
 
 \subsection{Point Light}
-Das Point Light strahlt in alle Richtungen für eine begrenzte Reichweite. Daher eignet es sich gut als Lampe.
+Das Point Light strahlt in alle Richtungen für eine begrenzte Reichweite, daher eignet es sich gut als Lampe.
 
 \subsection{Spot Light}
 Das Spotlight leuchtet in eine Richtung für eine begrenzte Reichweite. Es eignet sich ebenfalls gut als Lampe.
@@ -81,7 +83,7 @@ Diese Objekte sind:
     \item Spot Light
 \end{enumerate}
 
-Um die Farben abzustimmen und die gesamt Helligkeit zu regeln, muss man an drei Objekten einstellungen vornehmen.
+Um die Farben abzustimmen und die Gesamthelligkeit zu regeln, muss man an drei Objekten Einstellungen vornehmen.
 \begin{enumerate}
     \item Directional Light
     \begin{enumerate}
@@ -114,12 +116,12 @@ welche man in der Sky Sphere heller oder dunkler stellen kann.
 
 Um ein die Umgebungshelligkeit anzupassen, wurde in der Post Process Volume die Helligkeit auf einen bestimmten Wert eingegrenzt.
 
-Damit das Spiel eine düstere Stimmung bekommt, wurde noch Nebel hinzugefügt. Die effizienteste Methode war, einen Exponential Height Fog einzubauen, welcher
+Damit das Spiel eine düstere Stimmung bekommt, wurde noch Nebel hinzugefügt. Die effizienteste Methode war, einen Exponential Height Fog zu Verwenden, welcher
 Nebel im ganzen Spiel erzeugt. Dieser wurde relativ dicht eingestellt und hat eine zum Himmel passende Farbe bekommen. Zusätzlich wurden in der Sky Sphere noch die Wolken
 und Sterne angepasst, damit man sie noch gut durch den Nebel sehen kann.
 
 Um eine passende Atmosphäre in den Gebäuden zu schaffen wurden je nach Lampenart, Spot Lights oder Point Lights verwendet.
 
-Damit die Beleuchtung nicht zu viel Rechenaufwand in Anspruch nimmt, wurde noch eine Lightmass Importance Volume hinzugefügt, welche den Bereich eingrenzt,
+Damit die Beleuchtung nicht zu viel Rechenaufwand in Anspruch nimmt, wurde noch eine Lightmass Importance Volume hinzugefügt, welche den Bereich eingrenzt
 indem das Licht genau berechnet wird. Dieser Bereich liegt über der Spielwelt.
 
