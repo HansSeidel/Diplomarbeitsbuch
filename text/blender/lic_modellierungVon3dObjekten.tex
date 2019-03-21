@@ -1,6 +1,5 @@
 \section{Modellierung von 3D Objekten}
 \label{sec:Modellierung_von_3D_Objekten}
-\todo{Alle "Kapitel" gleich referenzieren. z.B. Kapitel 1 Kapitelname}
 Ein großer Teil in der Spielentwicklung, war das Modellieren. In diesem Kapitel wird gezeigt, wie man kompliziertere
 Modelle macht und auf was man achten muss.
 
@@ -111,7 +110,6 @@ durch eine Schätzung der Größen nachmodelliert worden.
     \caption{Paracelsus Grab Nachmodellierung (Lizenz zum Bild: \citep{paracelsusgrab:bild}, Autor: unbekannt - Wikimedia)}
     \label{Paracelsus_Grab:image2}
 \end{figure}
-\todo{Muss man Nutzungsrechte für das Bild einfügen?}
 
 \subsubsection{Vase}
 Um die Vase für das Paracelsus Grab zu modellieren, wurde eine Sphere benutzt und anschließend im Edit Mode verändert. Anschließend wurden die Verzierungen für die Vase gemacht.
@@ -130,13 +128,13 @@ bzw. ausgeschnitten werden können.
 Verwendete Modifikatoren: \textit{Kapitel \ref{Curve:heading} \dq Curve\dq}\verb+;+ \textit{Kapitel \ref{Boolean:heading} \dq Boolean\dq}
 
 \subsubsection{Gesicht}
-Für die Modellierung des Gesichts wurde ein Brush verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
-aber notwendig, damit nachher noch eine andere Textur mit einer eigenen Bumpmap\todo{Referenz bei Hans} verwendet werden kann. Um das Gesicht zu erstellen wurde zuerst auf einer Seite der Säule,
+Für die Modellierung des Gesichts wurde ein Brush\todo{Referenz zu Hans oder Fußnote} verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
+aber notwendig, damit nachher noch eine andere Textur mit einer eigenen Bumpmap\todo{Referenz zu Hans} verwendet werden kann. Um das Gesicht zu erstellen wurde zuerst auf einer Seite der Säule,
 die Fläche unterteilt. Dann wurde im Sculpt Mode eine Schwarzweiß Textur, welche aus dem ursprünglichen Bild des Paracelsus Grabes gefertigt wurde,
 eingefügt (\textit{Abbildung \ref{Paracelsus_Grab:image4}, rotes Rechteck}).
 Somit kann man mit dem Brush, Höhen und Tiefen Zeichnen. Außerdem wurden die Werte Strenght und Radius angepasst, damit die Brushstärke so hoch ist, das bei der Bearbeitung die Flächen weit genug verschoben werden
 und die Brushfläche groß genug ist, damit das Gesicht auf das Grab hinauf passt. Danach wurde der Brush angewendet. Letztendlich sind noch mit dem Decimate Modifikator so viele Flächen wie
-möglich entfernt worden, ohne dass das Aussehen der Statue stark beeinträchtigt wurde.\todo{Proofreading}
+möglich entfernt worden, ohne dass das Aussehen der Statue stark beeinträchtigt wurde.
 
 Verwendete Modifikatoren: \textit{Kapitel \ref{Decimate:heading} \dq Decimate\dq}
 \begin{figure}[H]
@@ -187,9 +185,8 @@ Dann wurden Forcefields hinzugefügt (\textit{Abbildung \ref{Bettdecke:image1}})
 Damit sich die Decke aber auch wirklich bewegt muss man sie auswählen,
 in den Physics Tab wechseln und die Option Cloth auswählen, damit sich die Decke wie ein Stoffstück verhält.
 Wenn man nun auf der Timeline auf Play drückt, bewegt und verformt sich die Bettdecke.
-Wenn die Form passend ist pausiert man die Simulation. Dadurch, das die Decke animiert wurde, ist sie kein Objekt mehr.
-Deshalb muss man sie am Schluss noch in ein Objekt umformen, damit man die Decke frei bewegen kann, ohne das sie in die Form vor der Simulation zurückspringt.
-\todo{Proofreading}
+Wenn die Form passend ist pausiert man die Simulation. Dadurch, das die Decke animiert wurde, ist sie kein Objekt mehr, deshalb muss man sie
+am Schluss noch in ein Objekt umformen, damit man die Decke frei bewegen kann, ohne das sie in die Form vor der Simulation zurückspringt.
 
 \begin{figure}[H]
     \centering
