@@ -162,12 +162,12 @@ Verwendete Modifikatoren: \textit{Kapitel \ref{Boolean:heading} \dq Boolean\dq}
 
 \subsection{Stufen im Haus}
 \label{Stufen_Im_Haus:Heading}
-Um die Stufen (\textit{Abbildung \ref{Stufen_Im_Haus:Bild}}) zu Modellieren, wurden echte Stufen abgemessen, um einen Eindruck von der Höhe der Stufen zu bekommen.
+Um die Stufen (\textit{Abbildung \ref{Stufen_Im_Haus:Bild}}) zu modellieren, wurden echte Stufen abgemessen, um die Stufen mit einer möglichst realistischen Höhe und Tiefe modellieren zu können.
 Die Stufen wurden mit einem Würfel modelliert, der mit einem Array Modifikator wiederholt wurde. Das Geländer und die Halterung des Handlaufes zur Wand
-wurde mit den gleichen Verfahren gefertigt, nur das als Basisobjekt kein Würfel sondern ein Zylinder genommen wurde.
-Die Stufen sind ein relativ einfaches Modell, jedoch ist es wichtig zu beachten, dass die Abstände überall passen.
+wurden mit den gleichen Verfahren wie die Stufen gefertigt, nur dass als Basisobjekt kein Würfel sondern ein Zylinder genommen wurde.
+Die Stufen sind ein relativ einfaches Modell, jedoch ist es wichtig zu beachten, dass die Abstände sowohl im Modell selbst, als auch innerhalb des Hauses realistisch sind.
 
-Damit das Geländer dann von der Höhe an das Haus anzupassen, wurden sie zum Schluss mit einem Boolean Modifikator abgeschnitten.
+Um das Gelände von der Höhe an das Haus anzupassen, wurde es zum Schluss mit einem Boolean-Modifikator abgeschnitten.
 Der Handlauf wurde ebenfalls mit einem Boolean Modifikator gekürzt. Das gesamte Geländer wurde mit Smooth Shading (\textit{Kapitel \ref{objectMode:smoothshading} \dq Smooth Shading\dq})
 versehen, damit es runder aussieht.
 
@@ -181,12 +181,15 @@ versehen, damit es runder aussieht.
 \subsection{Bettdecke}
 \label{bettdecke:ref1}
 Die Bettdecke sollte etwas zerknüllt aussehen. Deshalb wurde sie mit einer Simulation modelliert. Damit sich die Decke verformt, muss sie genug Flächen haben.
-Dies kann man erreichen, indem man eine Plane erstellt, in den Edit Mode wechselt und mit \keys{W} \menu{Subdivide} meherere Flächen erzeugt. Anschließend wurde auf die Decke ein Solidify Modifikator
-angewendet, damit die sie auch eine Dicke hat.
-Dann wurden Forcefields hinzugefügt (\textit{Abbildung \ref{Bettdecke:image1}}) um die Decke in Bewegung zu bringen. Damit sich die Decke aber auch wirklich bewegt muss man die Decke auswählen,
-in den Physics Tab wechseln und \menu{Cloth} auswählen. Jetzt verhält sich die Decke wie ein Stoffstück. Wenn man nun auf der Timeline auf Play drückt, bewegt sich die Bettdecke und verformt sich.
-Wenn die Form passt, pausiert man die Simulation. Dann drückt man \keys{\Alt + C} und wählt \menu{Mesh from Curve/Meta/Surf/Text} aus, somit kann man das fertige Modell
-frei bewegen.
+Dies kann man erreichen, indem man eine Plane\footnote{Eine Plane ist ein Objekt in Blender, welches einer Fläche gleicht.} erstellt, in den Edit Mode wechselt und diese in mehrere Flächen unterteilt.
+Anschließend wurde auf die Decke ein Solidify-Modifikator angewendet, damit diese auch eine Dicke hat.
+Dann wurden Forcefields hinzugefügt (\textit{Abbildung \ref{Bettdecke:image1}}) um die Decke in Bewegung zu versetzen.
+Damit sich die Decke aber auch wirklich bewegt muss man sie auswählen,
+in den Physics Tab wechseln und die Option Cloth auswählen, damit sich die Decke wie ein Stoffstück verhält.
+Wenn man nun auf der Timeline auf Play drückt, bewegt und verformt sich die Bettdecke.
+Wenn die Form passend ist pausiert man die Simulation. Dadurch, das die Decke animiert wurde, ist sie kein Objekt mehr.
+Deshalb muss man sie am Schluss noch in ein Objekt umformen, damit man die Decke frei bewegen kann, ohne das sie in die Form vor der Simulation zurückspringt.
+\todo{Proofreading}
 
 \begin{figure}[H]
     \centering
