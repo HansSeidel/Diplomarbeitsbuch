@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplom.bib" beforeDir="false" afterPath="$PROJECT_DIR$/diplom.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_objectMode.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_objectMode.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Modifikatoren-Decimate.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Modifikatoren-Decimate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,16 +19,54 @@
         <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="8" column="187" selection-start-line="8" selection-start-column="187" selection-end-line="8" selection-end-column="187" />
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_modifikatoren.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="108" column="14" lean-forward="true" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="152" column="33" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
+              <folding>
+                <element signature="e#1194#1218#2" expanded="true" />
+                <element signature="e#1248#1284#2" expanded="true" />
+                <element signature="e#1332#1353#2" expanded="true" />
+                <element signature="e#1440#1469#2" expanded="true" />
+                <element signature="e#1577#1597#2" expanded="true" />
+                <element signature="e#1599#1618#2" expanded="true" />
+                <element signature="e#1620#1641#2" expanded="true" />
+                <element signature="e#1780#1808#2" expanded="true" />
+                <element signature="e#1847#1864#2" expanded="true" />
+                <element signature="e#1866#1888#2" expanded="true" />
+                <element signature="e#1935#1964#2" expanded="true" />
+                <element signature="e#1986#2010#2" expanded="true" />
+                <element signature="e#2086#2107#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/Modifikatoren-Decimate.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -37,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diplom.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="200" column="20" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
+            <state relative-caret-position="196">
+              <caret line="88" column="22" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -47,11 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Wand</find>
-      <find>Bettdecke</find>
-      <find>damit</find>
-      <find>Spiel</find>
-      <find>Keyframes</find>
       <find>orthogonal</find>
       <find>file</find>
       <find>Stufen</find>
@@ -77,6 +109,11 @@
       <find>o</find>
       <find>todo</find>
       <find>kapitel</find>
+      <find>differene</find>
+      <find>decimat</find>
+      <find>screen</find>
+      <find>boolean</find>
+      <find>boole</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -125,12 +162,12 @@
         <option value="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_cutscene.tex" />
         <option value="$PROJECT_DIR$/diplom.bib" />
         <option value="$PROJECT_DIR$/text/blender/lic_objectMode.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" />
       </list>
     </option>
   </component>
@@ -198,6 +235,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Benjamin\Documents\Diplomarbeitsbuch\images" />
       <recent name="C:\Users\Benjamin\Documents\Diplomarbeitsbuch\text" />
       <recent name="C:\Users\Benjamin\Documents\Diplomarbeitsbuch\text\00_vorlage" />
     </key>
@@ -417,7 +455,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151819000" />
+    <option name="totallyTimeSpent" value="156115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -646,28 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2400">
-          <caret line="134" column="9" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
-          <folding>
-            <element signature="e#1194#1218#2" expanded="true" />
-            <element signature="e#1248#1284#2" expanded="true" />
-            <element signature="e#1332#1353#2" expanded="true" />
-            <element signature="e#1440#1469#2" expanded="true" />
-            <element signature="e#1577#1597#2" expanded="true" />
-            <element signature="e#1599#1618#2" expanded="true" />
-            <element signature="e#1620#1641#2" expanded="true" />
-            <element signature="e#1780#1808#2" expanded="true" />
-            <element signature="e#1847#1864#2" expanded="true" />
-            <element signature="e#1866#1888#2" expanded="true" />
-            <element signature="e#1935#1964#2" expanded="true" />
-            <element signature="e#1986#2010#2" expanded="true" />
-            <element signature="e#2086#2107#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_editMode.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -702,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_modifikatoren.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -730,24 +739,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom.bib">
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="200" column="20" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
+        <state relative-caret-position="260">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="8" column="187" selection-start-line="8" selection-start-column="187" selection-end-line="8" selection-end-column="187" />
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
+    <entry file="file://$PROJECT_DIR$/images/Modifikatoren-Decimate.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="380">
+          <caret line="152" column="33" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
+          <folding>
+            <element signature="e#1194#1218#2" expanded="true" />
+            <element signature="e#1248#1284#2" expanded="true" />
+            <element signature="e#1332#1353#2" expanded="true" />
+            <element signature="e#1440#1469#2" expanded="true" />
+            <element signature="e#1577#1597#2" expanded="true" />
+            <element signature="e#1599#1618#2" expanded="true" />
+            <element signature="e#1620#1641#2" expanded="true" />
+            <element signature="e#1780#1808#2" expanded="true" />
+            <element signature="e#1847#1864#2" expanded="true" />
+            <element signature="e#1866#1888#2" expanded="true" />
+            <element signature="e#1935#1964#2" expanded="true" />
+            <element signature="e#1986#2010#2" expanded="true" />
+            <element signature="e#2086#2107#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="88" column="22" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Modifikatoren-Decimate.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_modifikatoren.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="108" column="14" lean-forward="true" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
         </state>
       </provider>
     </entry>

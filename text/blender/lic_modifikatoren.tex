@@ -4,10 +4,10 @@ Modikfikatoren verändern Objekte in einer gewissen Art und Weiße. Die Verände
 In diesem Kapitel, werden die Modifikatoren beschrieben, die für dieses Projekt oft verwendet wurden.
 Es werden außerdem nur Funktionen der Modifikatoren beschrieben, die von uns genutzt wurden.
 
-\subsection{Boolean-Modifikator\citep{blender:boolean_modifier}}
+\subsection{Boolean-Modifikator}
 \label{Boolean:heading}
 Der Boolean-Modifikator verändert ein Objekt mittels einem zweiten Objekt. Dazu gibt es
-drei Boolean-Operationen, die man anwenden kann.
+drei Boolean-Operationen, die man anwenden kann.\citep{blender:boolean_modifier}
 
 Diese heißen:
 \begin{itemize}
@@ -16,11 +16,11 @@ Diese heißen:
     \item  Intersect
 \end{itemize}
 
-Bei Difference werden bei zwei überlappenden Objekten die überlappenden Teile ausgeschnitten. Beim Zielobjekt ist nun ein Loch an der Gewünschten stelle (\textit{Abbildung \ref{modifikatoren:image1}, links}).
+Bei Difference werden bei zwei überlappenden Objekten die überlappenden Teile ausgeschnitten. Beim Zielobjekt ist nun ein Loch an der gewünschten Stelle (\textit{Abbildung \ref{modifikatoren:image1}, links. Das Zielobjekt ist orange markiert.}).
 
 Bei Union werden zwei Objekte zu einem Objekt zusammengefügt (\textit{Abbildung \ref{modifikatoren:image1}, mittig}).
 
-Bei Intersect wird das Objekt mit dem Modifikator an den überschneidenden Stellen in das Zielobjekt eingefügt (\textit{Abbildung \ref{modifikatoren:image1}, rechts}).
+Bei Intersect wird das Objekt mit dem Modifikator an den überschneidenden Stellen in das Zielobjekt eingefügt (\textit{Abbildung \ref{modifikatoren:image1}, rechts. Das Zielobjekt ist orange markiert.}).
 
 \begin{figure}[h]
     \centering
@@ -29,9 +29,9 @@ Bei Intersect wird das Objekt mit dem Modifikator an den überschneidenden Stell
     \label{modifikatoren:image1}
 \end{figure}
 
-\subsection{Mirror-Modifikator\citep{blender:mirror_modifier}}
+\subsection{Mirror-Modifikator}
 \label{Mirror:heading}
-Der Mirror-Modifikator spiegelt ein Objekt um den Origin.
+Der Mirror-Modifikator spiegelt ein Objekt um seinen Origin.\citep{blender:mirror_modifier}
 Den Origin kann man festlegen indem man im Edit Mode einen Punkt im Koordinatensystem auswählt, dann die Position des Cursors setzt
 und anschließend im Object Mode den Origin setzt.
 
@@ -45,10 +45,10 @@ Grundobjekt, welches gespiegelt wird.
     \label{modifikatoren:image2}
 \end{figure}
 
-\subsection{Array-Modifikator\citep{blender:array_modifier}}
+\subsection{Array-Modifikator}
 \label{Array:heading}
 Der Array-Modifikator vervielfacht ein Objekt entlang einer Achse. Man kann den relativen oder absoluten Abstand zwischen den Objekten
-angeben, damit diese regelmäßig wiederholt werden. In \textit{Abbildung \ref{modifikatoren:image3}} sieht man den angewendeten Array-Modifikator.
+angeben, damit diese regelmäßig wiederholt werden.\citep{blender:array_modifier} In \textit{Abbildung \ref{modifikatoren:image3}} sieht man den angewendeten Array-Modifikator.
 Die ausgewählten (orange umrandeten) Würfel werden auf der Y-Achse
 wiederholt, die anderen auf der Y- und Z-Achse.
 \begin{figure}[h]
@@ -58,9 +58,9 @@ wiederholt, die anderen auf der Y- und Z-Achse.
     \label{modifikatoren:image3}
 \end{figure}
 
-\subsection{Curve-Modifikator\citep{blender:curve_modifier}}
+\subsection{Curve-Modifikator}
 \label{Curve:heading}
-Mit dem Curve-Modifikator, kann man ein beliebiges Objekt an eine Bezierkurve anpassen. In \textit{Abbildung \ref{modifikatoren:image4}} sieht man
+Mit dem Curve-Modifikator, kann man ein beliebiges Objekt an eine Bezierkurve anpassen.\citep{blender:curve_modifier} In \textit{Abbildung \ref{modifikatoren:image4}} sieht man
 in der oberen Hälfte das Objekt und die Bezierkurve, in der unteren beide zusammengefügt.
 Außerdem zu erwähnen ist, dass das Rechteck mehrfach unterteilt ist damit es sich der Bezierkurve anpassen kann.
 \begin{figure}[h]
@@ -70,9 +70,9 @@ Außerdem zu erwähnen ist, dass das Rechteck mehrfach unterteilt ist damit es s
     \label{modifikatoren:image4}
 \end{figure}
 
-\subsection{Bevel-Modifikator\citep{blender:bevel_modifier}}
+\subsection{Bevel-Modifikator}
 \label{Bevel:heading}
-Mit dem Bevel-Modifikator kann man Kanten, durch Flächen, die nahe der Kanten hinzugefügt werden, abrunden (\textit{Abbildung \ref{modifikatoren:image5}}).
+Mit dem Bevel-Modifikator kann man Kanten, durch Flächen, die nahe der Kanten hinzugefügt werden, abrunden (\textit{Abbildung \ref{modifikatoren:image5}}).\citep{blender:bevel_modifier}
 Wichtige Einstellungen sind der Abstand von der am äußersten hinzugefügten und der ursprünglichen Kante und die Anzahl der Kanten die hinzugefügt werden.
 Der Bevel Modifikator wurde oft verwendet, damit die erstellten Objekte echt aussehen, weil jedes Objekt z.B. eine Tischkante nie abrupt
 aufhört, sondern zumindest ein bisschen abgerundet ist.
@@ -83,9 +83,9 @@ aufhört, sondern zumindest ein bisschen abgerundet ist.
     \label{modifikatoren:image5}
 \end{figure}
 
-\subsection{Decimate-Modifikator\citep{blender:decimate_modifier}}
+\subsection{Decimate-Modifikator}
 \label{Decimate:heading}
-Mit dem Decimate-Modifikator kann man bei einem Objekt die Flächen reduzieren. Zum Einsatz kommt er bei komplizierten
+Mit dem Decimate-Modifikator kann man bei einem Objekt die Flächen reduzieren.\citep{blender:decimate_modifier} Zum Einsatz kommt er bei komplizierten
 Objekten, die viele Flächen brauchen, damit sie detailliert genug dargestellt werden können. Man entfernt dann aber möglichst viele Flächen
 wieder, so dass das Objekt noch gut genug aussieht. Das entfernen der überflüssigen Flächen verbessert die Performance sehr stark.
 In \textit{Abbildung \ref{modifikatoren:image6}} sieht man den ursprünglichen Würfel (orange) und den Würfel mit dem angewendeten
@@ -98,9 +98,9 @@ Decimate Modifikator.
     \label{modifikatoren:image6}
 \end{figure}
 
-\subsection{Edge-Split-Modifikator\citep{blender:edgesplit_modifier}}
+\subsection{Edge-Split-Modifikator}
 \label{Edge_Split:heading}
-Mit dem Edge Split Modifikator kann man bei einem Objekt bestimmen, ab welchem Winkel Smooth Shading angewendet wird.
+Mit dem Edge Split Modifikator kann man bei einem Objekt bestimmen, ab welchem Winkel Smooth Shading angewendet wird.\citep{blender:edgesplit_modifier}
 In \textit{Abbildung \ref{modifikatoren:image7}} links, wird Smooth Shading gar nicht angewendet, in der Mitte wird es nur an
 den Kanten, mit dem geringsten Winkel zu den Flächen angewendet und rechts wird Smooth Shading überall angewendet.
 
