@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_cutscene.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_cutscene.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom.bib" beforeDir="false" afterPath="$PROJECT_DIR$/diplom.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/blender/lic_objectMode.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_objectMode.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,57 +15,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="105" selection-start-line="6" selection-start-column="105" selection-end-line="6" selection-end-column="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="50" selection-start-column="46" selection-end-column="50" />
+            <state relative-caret-position="160">
+              <caret line="8" column="187" selection-start-line="8" selection-start-column="187" selection-end-line="8" selection-end-column="187" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_cutscene.tex">
+        <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="37" selection-start-column="37" selection-end-column="37" />
+            <state relative-caret-position="260">
+              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
+        <entry file="file://$PROJECT_DIR$/diplom.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_modifikatoren.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+            <state relative-caret-position="-19">
+              <caret line="200" column="20" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -73,7 +47,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Die Verzierung</find>
       <find>Wand</find>
       <find>Bettdecke</find>
       <find>damit</find>
@@ -103,6 +76,7 @@
       <find>Muss man</find>
       <find>o</find>
       <find>todo</find>
+      <find>kapitel</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -142,21 +116,21 @@
         <option value="$PROJECT_DIR$/text/formatierung.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_objekteUebersicht.tex" />
         <option value="$PROJECT_DIR$/diplomarbeit.tex" />
-        <option value="$PROJECT_DIR$/diplom.bib" />
         <option value="$PROJECT_DIR$/text/blender/lic_Simulation.tex" />
         <option value="$PROJECT_DIR$/text/blender/c_blender.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_einleitung.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_editMode.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_objectMode.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modifikatoren.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_cutscene.tex" />
+        <option value="$PROJECT_DIR$/diplom.bib" />
+        <option value="$PROJECT_DIR$/text/blender/lic_objectMode.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_viewportShading.tex" />
       </list>
     </option>
   </component>
@@ -164,9 +138,9 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1300" />
-    <option name="height" value="1400" />
+    <option name="x" value="-8" />
+    <option name="width" value="1658" />
+    <option name="height" value="1398" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -176,8 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,38 +160,12 @@
             <path>
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="images_old" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="markdown" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
               <item name="text" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="00_vorlage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
@@ -231,30 +177,14 @@
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
               <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="planung" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="sound" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
               <item name="unrealEngine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,7 +221,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/diplomarbeit.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -331,7 +261,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_einleitung.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -341,7 +271,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -351,7 +281,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -371,7 +301,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -411,7 +341,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/lic_viewportShading.tex</main-file>
-        <aux-dir />
+        <aux-dir>C:/Windows/System32</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -425,6 +355,22 @@
       </texify-bibtex>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="BibTeX.hil_animation bibliography" />
+      <item itemvalue="BibTeX.lic_cutscene bibliography" />
+      <item itemvalue="BibTeX.lic_viewportShading bibliography" />
+      <item itemvalue="BibTeX.diplomarbeit bibliography" />
+      <item itemvalue="BibTeX.lic_editMode bibliography" />
+      <item itemvalue="BibTeX.lic_einleitung bibliography" />
+      <item itemvalue="BibTeX.lic_exportierenVonBenderZuUnrealEngine4 bibliography" />
+      <item itemvalue="BibTeX.lic_lighting bibliography" />
+      <item itemvalue="BibTeX.lic_modellierung bibliography" />
+      <item itemvalue="BibTeX.lic_modellierungVon3dObjekten bibliography" />
+      <item itemvalue="BibTeX.lic_modifikatoren bibliography" />
+      <item itemvalue="BibTeX.lic_objectMode bibliography" />
+      <item itemvalue="BibTeX.lic_texturierungVorarbeiten bibliography" />
+      <item itemvalue="BibTeX.lic_zusammensetzungMehrerer3dObjekte bibliography" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -471,13 +417,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149158000" />
+    <option name="totallyTimeSpent" value="151819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2112887" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24025974" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -492,7 +438,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279678" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32696176" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32696176" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -722,24 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1240">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_editMode.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -770,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_modifikatoren.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -802,6 +727,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="200" column="20" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_objectMode.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="187" selection-start-line="8" selection-start-column="187" selection-end-line="8" selection-end-column="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
