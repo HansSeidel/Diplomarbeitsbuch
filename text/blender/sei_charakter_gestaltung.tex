@@ -1,0 +1,93 @@
+\section{Charakter Gestaltung}
+Bevor man Blender öffnet und beginnt einen Charakter zu gestalten, ist es wichtig sich ein Bild von
+dem Charakter zu machen. Wenn man das erste Mal einen Charakter gestaltet, unterläuft vielen der
+Fehler, dass sie den Charakter aus dem Kopf heraus modellieren. Allerdings passiert es dann sehr
+schneller, dass man ein Modell entwickelt, welches einem nicht gefällt oder welches nicht
+gebrauchen kann. Daher ist es wichtig, den Charakter zuerst auf Papier zu zeichnen. Auch wenn das
+Endresultat eines Charakters neutral sein sollte, ist es hilfreich sich bereits im Vorhinein einige
+Eigenschaften des Charakters zu überlegen.
+
+Ist der Charakter eher ein grimmiger Mensch oder ein sehr freundlicher? Ist er überhaupt ein
+Mensch? Wie kleidet er sich? Wie bewegt er sich? Hat er irgendwelche Verletzung?
+
+Diese Details helfen, den Charakter bereits am Papier detailliert darzustellen und seine Rolle im Spiel
+authentischer zu gestalten.
+
+%----------Skizzen zu dem Modell-------Skizzen zu dem Modell-------Skizzen zu dem Modell-------Skizzen zu dem Modell----
+\subsection{Skizzen zu dem Modell}
+
+In unserem Fall haben wir die beiden Hauptcharaktere gleich zu Beginn des Objektes charakterisiert.
+Mit Beispielbildern und einer Personenbeschreibung war für alle Teammitglieder ein klares Bild der
+Charaktere vor Augen. Vor allem wenn man beginnt Charaktere zu modellieren, sollte man sich
+Vorbilder nehmen. Niemand wird bei seinem ersten Versuch einen perfekten Charakter modellieren
+können. Für Übungszwecke ist es daher hilfreich sich bereits vorhandenen Charakteren als Vorlage
+zu verwenden.
+
+Sobald die erste Vorstellung des Charakters entstanden ist, kann man beginnen die Skizzen zu
+entwerfen. Die Skizzen sollen ein klareres und einheitlicheres Bild erstellen. Sie transportieren die
+Vorstellung des Charakters auf Papier. Für 3D-Entwickler ist es am angenehmsten, wenn die Skizzen ein Modell
+(in diesem Fall den Charakter) von drei Seiten anzeigen. Eine Front-Perspektive, eine Right-Perspektive und eine
+Top-Perspektive. Für die Entwicklung des Charakters kann man diese Skizzen leicht in Blender einfügen und genau
+in diesen Perspektiven anzeigen.
+
+
+
+Einfügen von Skizzen in Blender \citep{blender:background_images}:
+
+In der 3D-View von Blender gibt es die Möglichkeit Bilder dem Hintergrund hinzuzufügen. Diese
+Bilder sind jedoch nur in der orthographischen Ansicht verfügbar. Die orthographische Ansicht ist
+eine zwei Dimensionale Darstellung aus der Sicht einer bestimmten Achse.
+Wenn sich der Mauszeiger in der 3D-View befindet und die Taste \keys{N} gedrückt wird, öffnet sich
+auf der linken Seite des Fensters die Properties Region. Unter dem Bereich: Background-Images kann
+man die Skizzen nun hinzufügen. Sobald man ein Bild hinzugefügt hat, kann dieses mit
+den vorhandenen Einstellungen so angepasst werden, dass es am angenehmsten zum Arbeiten ist.
+Hier sind einige der wichtigsten Einstellungen kurz beschrieben.
+
+
+\begin{tabular}{p{3.4cm}|p{3.4cm}|p{3.4cm}|p{3.4cm}}
+    \textbf{Einstellung} & \textbf{Beschreibung} \hline
+    Axis & Die Achsen Einstellung gibt die Möglichkeit auszuwählen von welcher Seite
+    das Bild angezeigt werden soll.    Es wird dann nur angezeigt, wenn man in der
+    3D-View sich in dieser Seite befindet.\hline
+    Opacity & Die Opacity bestimmt zu wie viel Prozent das Bild sichtbar ist.
+    (0 = Komplett transparent, 1 = 1 überhaupt nicht transparent.\hline
+    Back/Front & Diese Einstellung bestimmt, ob das Bild das Objekt verdecken soll
+    (Front) oder nicht (Back) \hline
+    X/Y/Rotation/Size & Mit diesen Einstellungen kann man die Skizzen dann perfekt
+    an das Modell anpassen. \hline
+\end{tabular}
+
+
+%----------Menschliche Relationen------Menschliche Relationen------Menschliche Relationen------Menschliche Relationen---
+\subsection{Menschliche Relationen}
+    Wenn man erst seit kurzen Charaktere modelliert, passiert es sehr schnell, dass die Proportionen
+    nicht korrekt sind. Unabhängig davon, ob man Charaktere im 3-Dimensionalen Bereich oder auf Papier
+    designt, sollte man einige Proportionsregeln beachten und diese einzeichnen bevor man mit dem
+    Modellieren beginnt. (Auch Blender hat eine Möglichkeit zu skizieren. Allerdings wird das nicht in
+    diesem Buch behandelt \citep{blender:grease_pencil}.)
+
+Einige Linien in einem erwachsenen Gesicht, stehen immer in einem bestimmten Verhältnis zueinander
+(Siehe Abbildung \ref{blender:proportions}). Die Linie \textbf{A} grenzt die Schädeldecke ab. Von
+der Schädeldecke bis zum Stirnansatz ist zirka ein Abstand von 1/7 der Gesichtsgröße. Die Linie
+\textbf{C} zeigt, dass die Augenbrauen und der Abschluss der Ohren auf gleicher Höhe sein sollten.
+\textbf{C.1} verbindet das obere Ende der Nase mit der Mitte des Auges und dem Ansatz der Ohren.
+Außerdem sollte die Linie  \textbf{C.1} genau in der Mitte des Gesichts liegen. Auf der Linie
+\textbf{D} befindet sich das Ohrläppchen und der Ansatz der Nase. Linie  \textbf{E} stellt das Kinn
+und den Abschluss des Gesichtes dar. Da dieser Charakter übergewichtig modelliert wurde, ragt sein
+Doppelkinn über die Linie hinaus. Die Linie  \textbf{D.1} zeigt die untere Grenze des Mundes.
+Aus der frontalen Ansicht kann man auch vertikale Linien ziehen. Diese würden die Tränendrüse mit den Nasenflügeln
+verbinden und die Iris mit den Mundwinkeln. \citep{book:kunst_des_zeichnens}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{SEI_CharakterGestaltung_MenschlicheRelationen_KopfInRealtionen.png}
+    \caption{Proportionen im Gesicht eines Erwachsenen}
+    \label{blender:proportions}
+\end{figure}
+
+%----------Menschliche Relationen------Menschliche Relationen------Menschliche Relationen------Menschliche Relationen---
+\subsection{Arten der Charakter-Modellierung}
+\subsection{Sculpting}
+\subsection{Grundmodellierung}
+\subsection{UV-Unwrapping}
+\subsection{Normal Baking}
+\subsection{Texture Painting}
