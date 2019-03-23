@@ -591,4 +591,154 @@ Normal-Textur abspeichern.
 \end{figure}
 
 
+
+
+%-----------------Texture Painting-----------------Texture Painting------------------Texture Painting-------------------
 \subsection{Texture Painting}
+\label{sec:texture_painting}
+
+Bevor man mit der Texturing des Charakters beginnt sollte man sich überlegen welchen Stil man verfolgen möchte. Um
+einen fotorealistischen Stil zu erreichen, ist die beste Möglichkeit, sich das UV-Layout zu exportieren und mittels
+Fotografien, Körperteile und Kleidung auf das UV-Layout zu übertragen.
+Eine andere Möglichkeit bietet der Blender Texture-Paint Modus\citep{blender:tex_painting}. Dieser wird eher selten
+für fotorealistische Texturierung verwendet. Obwohl wir einen fotorealistische Stil verfolgen, haben wir trotzdem
+den Blender Texture Paint Modus verwendet, da wir alle Texturen im Laufe dieser Diplomarbeit selbst erstellt haben.
+Die erste alternative hätte erfordert, dass wir das passende Gewand kaufen, abfotografieren und dann dem UV-Layout
+anpassen. Ein passendes Gesicht für den Antagonisten zu finden und abzufotografieren, wäre die echte Herausforderung
+geworden.
+
+Um das Texture-Painting Tool von Blender gut zu verwenden, ist es praktisch den UV/Image Editor neben der 3D-View
+geöffnet zu haben (Siehe Abbildung \ref{picture:tex_painting_windows}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-Layout.png}
+    \caption{Empfohlene Fensteraufteilung im Texture-Paint Modus}
+    \label{picture:tex_painting_windows}
+\end{figure}
+
+Bevor man beginnt Texturen zu zeichnen muss der Charakter ein fertiges UV-Layout und ein Material mit einer Textur
+besitzen. Das Material-Prinzip von Blender \citep{blender:materials_blender} wird in diesem Buch nicht behandelt.
+Die Materialien für dieses Projekt wurden in der Unreal-Engine erstellt (Siehe Kapitel \ref{sec:materials}).
+Weitere Voreinstellungen sollten in dem "Slots" Bereich vorgenommen werden:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-Slots.png}
+    \caption{Der "Slots" Bereich }
+    \label{picture:tex_painting_slots}
+\end{figure}
+
+Slots Einstellungen:
+
+
+    Painting Mode:
+
+    Der Painting Mode wird auf Image gewechselt.
+
+
+    Canvas Image:
+
+    Um das korrekte Canvas Image auszuwählen muss es als erstes Erstellt werden.
+    Dafür wird das Modell im Edit-Modus markiert, damit das UV-Layout
+    anzeigezeigt wird. Dann klickt man im UV-/Image Editor auf das  Plus neben
+    dem "Image-Icon". Wenn man die gewünschte Resolution eingestellt hat klickt man
+    auf okay (Siehe Abbildung \ref{picture:new_image}).
+
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-NeuesBild.png}
+        \caption{Empfohlene Fensteraufteilung im Texture-Paint Modus}
+        \label{picture:new_image}
+    \end{figure}
+
+
+    Über den Bereich "Image" -> "Save Image", kann man das Bild abspeichern.
+    Im Texture-Bereich von Blender kann man dieses Image dann importieren (Am
+    besten gleich auf dem Material, welches man zum Zwecke des Texture-Paintings
+    erstellt hat). Nach diesen Schritten muss unter der Einstellung Canvas Image
+    direkt die richtige Textur ausgewählt werden.
+
+
+    Save All Images:
+
+    Dieser Button speichert alle Veränderungen in den Bild-Dateien, die auf den Texturen
+    gezeichnet wurden.
+
+
+Sobald die Voreinstellung vorhanden sind, kann man auch schon beginnen die Textur zu zeichnen. Um auch wirklich das
+erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen, die den Pinsel beeinflussen:
+
+
+"Tools" Bereich:
+
+    Brush:
+    \begin{longtable}{|p{4cm}|p{9.6cm}|}
+        \hline
+        \endfirsthead
+        & \textbf{Pinsel/Einstellung} & \textbf{Beschreibung} &\\
+        \hline
+        \endhead
+
+        & Fill & Befüllt die ausgewählte Textur mit einer Basis-Farbe & \\
+        & Smear & Dieser Pinsel verschmiert die Farbe ineinander. Er wird verwendet um einen sanften Farbübergang zu gestalten & \\
+        & Soften & Dieser Pinsel lässt die Pixel verschwimmen. Er wird verwendet um Farbkanten abzurunden & \\
+        & TexDraw & Dieser Pinsel zeichnet eine ausgewählte Farbe auf Textur & \\
+
+        \caption{Pinsel des Texture Painting Modus}
+        \label{table:tex_painting_brushes}
+    \end{longtable}
+
+    Blend:
+
+    Der Blend Type bestimmt, welche Methode der Pinsel verwendet um Farbe hinzuzufügen. Es wurden nur Mix und Add für
+    das Projekt verwendet.
+
+        Mix:
+
+        Überdeckt die Farben. Die stärkere Farbe bleibt daher mehr erhalten als die Schwächerer
+        (abhängig von den Farbwerten).
+
+        Add:
+
+        Fügt eine Farbe der vorhandenen hinzu. Gut verwendbar mit der traditionellen Farbenlehre (Auf eine rote Fläche
+        wird mittels der Add-Funktionen Grün hinzugefügt. Das Ergebnis ist Gelb).
+        Die Add Funktion ist auch sehr hilfreich um eine Property-Map zu erstellen.
+        (Mehr Informationen zu einer Property gibt es in dem Kapitel \ref{sec:tex_inside_engine})
+
+
+
+    Texture:
+
+    In dem Texture-Bereich gibt es die Möglichkeit eine Textur hinzuzufügen, die als Vorlage für den Pinsel dient.
+    Wenn man auf dem Objekt zeichnet, wird nicht die ausgewählte Farbe, sondern die Textur gezeichnet. Diese
+    Einstellung kann gut für Sommersprossen verwendet werden.
+
+
+    Texture Mask:
+
+    Die Texture Mask Einstellung hat die gleiche Auswirkung wie der Texture Bereich in dem Kapitel \ref{sec:sculpting}.
+    Es wird ein bestimmter Bereich der Zeichenfläche nicht verwendet. Das ist von der geladenen Textur abhängig.
+    Die geladenen Textur nennt man eine Maske (Masken sind in den meisten Fällen schwarz-weiß Texturen).
+    Eine Maske zu erstellen ist relativ einfach. Dafür kann ein beliebiges Fotoprogramm oder Blender selbst verwendet
+    werden. Im UV-/ Image Editor muss ein neues schwarzes Bild erstellt werden. Nachdem das getan wurde, wechselt man
+    auf den Paint - Mode (Siehe Abbildung \ref{picture:paint_mode}).
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-MaskeErstellen.png}
+        \caption{Empfohlene Fensteraufteilung im Texture-Paint Modus}
+        \label{picture:paint_mode}
+    \end{figure}
+
+    Um dann eine Maske zu zeichnen ist es nur wichtig, dass man nur mit Grauwerten arbeitet. Dafür ist es hilfreich,
+    die Farbauswahl des Pinsel mittels dem HSV - Farbcode zu bestimmen. Der H-Wert (Hue) und S-Wert (Saturation) wird
+    auf null gesetzt. Der V-Wert (Value) bestimmt die Graustufe (Siehe Abbildung \ref{picture:hsv_color_code}).
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-HSV.png}
+        \caption{HSV-Farbcode}
+        \label{picture:hsv_color_code}
+    \end{figure}
