@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="" />
+    <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom.bib" beforeDir="false" afterPath="$PROJECT_DIR$/diplom.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_Arten_händisch_Abbildungx.x-Extruding.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_händisch-Extruding.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_Arten_händisch_Abbildungx.x-LoopCuts.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_händisch-LoopCuts.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_Arten_händisch_Abbildungx.x-Protagonist.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_händisch-protagonist.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_Arten_händisch_Abbildungx.x-Standard Charakter.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_händisch-baseCharakter.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_UV_Normal_Baking_Abbildungx.x-LowHighPoli.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/SEI_CharakterGestaltung_UV_Normal_Baking-LowHighPoli.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_UV_Normal_Baking_Abbildungx.x-Normal_Maps.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/SEI_CharakterGestaltung_UV_Normal_Baking-Normal_Maps.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_UV_Unwrapping_Abbildungx.x-UV-Layouts.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/SEI_CharakterGestaltung_UV_Unwrapping-UV-Layouts.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="386" column="29" lean-forward="true" selection-start-line="386" selection-start-column="29" selection-end-line="386" selection-end-column="29" />
+            <state relative-caret-position="82">
+              <caret line="406" column="9" lean-forward="true" selection-start-line="406" selection-start-column="9" selection-end-line="406" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -23,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
-              <caret line="164" column="18" lean-forward="true" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
+              <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
               <folding>
                 <element signature="e#5575#5597#2" expanded="true" />
               </folding>
@@ -35,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="26" />
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -43,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diplom.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="222" column="24" lean-forward="true" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="24" />
+            <state relative-caret-position="212">
+              <caret line="254" column="28" lean-forward="true" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -53,12 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Boolean</find>
-      <find>ort</find>
-      <find>dass es</find>
-      <find>durchsi</find>
-      <find>so dass sie</find>
-      <find>achten</find>
       <find>b</find>
       <find>Ebe</find>
       <find>Exportier</find>
@@ -80,9 +87,15 @@
       <find>Beim static</find>
       <find>{{</find>
       <find>https://docs.blender.org/manual/en/dev/sculpt_paint/sculpting</find>
-      <find>menuk</find>
       <find>https://docs.blender.org/manual/en/dev/sculpt_paint/texture_tex_mask.html#texture</find>
       <find>subdi</find>
+      <find>https://docs.blender.org/manual/en/latest/editors/uv_image/uv/editing/unwrapping/mapping_types.html#smart-uv-project</find>
+      <find>https://docs.blender.org/manual/en/latest/editors/uv_image/uv/editing/unwrapping/mapping_types.html#unwrap</find>
+      <find>https://docs.blender.org/manual/en/latest/editors/uv_image/uv/editing/unwrapping/seams.html</find>
+      <find>menuk</find>
+      <find>texturierung</find>
+      <find>sculpting:process</find>
+      <find>loop</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -132,9 +145,9 @@
         <option value="$PROJECT_DIR$/text/formatierung.tex" />
         <option value="$PROJECT_DIR$/text/blender/c_blender.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
+        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
         <option value="$PROJECT_DIR$/diplom.bib" />
         <option value="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" />
-        <option value="$PROJECT_DIR$/diplomarbeit.tex" />
         <option value="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" />
       </list>
     </option>
@@ -235,6 +248,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="A:\Users\Hans314159\Desktop\CJSGameEngine\Diplomarbeitsbuch\images" />
+      <recent name="A:\Users\Hans314159\Desktop\CJSGameEngine\Diplomarbeitsbuch\images\charakter_modellierung" />
       <recent name="C:\Users\hansj\Desktop\5AI\DIPL\Diplomarbeitsbuch\images" />
       <recent name="C:\Users\Benjamin\Documents\Diplomarbeitsbuch\text" />
       <recent name="C:\Users\Benjamin\Documents\Diplomarbeitsbuch\text\00_vorlage" />
@@ -429,15 +443,16 @@
       <workItem from="1552558311388" duration="1774000" />
       <workItem from="1553239163598" duration="6188000" />
       <workItem from="1553348954440" duration="47000" />
-      <workItem from="1553349011355" duration="9939000" />
+      <workItem from="1553349011355" duration="14960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89285000" />
+    <option name="totallyTimeSpent" value="94306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2971549" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -502,19 +517,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/diplomarbeit.lof" />
-    <entry file="file://$PROJECT_DIR$/text/modellierung_section/README.md" />
-    <entry file="file://$PROJECT_DIR$/text/README.md" />
-    <entry file="file://$PROJECT_DIR$/markdown/einstellungen.md" />
-    <entry file="file://$PROJECT_DIR$/text/team_grafiken.tex" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/lic_modellierung.tex" />
     <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -666,9 +668,6 @@
     <entry file="file://$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_Textur_Painting_Abbildungx.x-Layout.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/charakter_modellierung/SEI_CharakterGestaltung_Arten_händisch_Abbildungx.x-Standard Charakter.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_Sculpting-Brushes.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -677,30 +676,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_Sculpting-StrukturFehler.PNG">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="164" column="18" lean-forward="true" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
-          <folding>
-            <element signature="e#5575#5597#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diplom.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="222" column="24" lean-forward="true" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_Sculpting-SculptMask.PNG">
       <provider selected="true" editor-type-id="images" />
@@ -729,10 +704,58 @@
     <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_Sculpting-GWKopfModellierungProzess.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_händisch-LoopCuts.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_händisch-Extruding.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_händisch-baseCharakter.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_Arten_händisch-protagonist.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
+          <folding>
+            <element signature="e#5575#5597#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_UV_Unwrapping-UV-Layouts.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_UV_Normal_Baking-LowHighPoli.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_UV_Normal_Baking-bakeSection.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SEI_CharakterGestaltung_UV_Normal_Baking-Normal_Maps.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="254" column="28" lean-forward="true" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="386" column="29" lean-forward="true" selection-start-line="386" selection-start-column="29" selection-end-line="386" selection-end-column="29" />
+        <state relative-caret-position="82">
+          <caret line="406" column="9" lean-forward="true" selection-start-line="406" selection-start-column="9" selection-end-line="406" selection-end-column="9" />
         </state>
       </provider>
     </entry>

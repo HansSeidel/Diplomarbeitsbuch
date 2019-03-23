@@ -103,7 +103,7 @@ Ein Charakter, der mittels des Sculpt-Tools modelliert wird kann meistens nicht 
 Detailarbeit die bei dem Sculpting durchgeführt wird generiert zu viele Polygone (Flächen) auf dem Charakter. Diese
 Anzahl an Flächen kann der Computer nicht berechnen. (Im Falle des Antagonisten sind zirka 1.5 Millionen Flächen und 2
 Millionen Punkte entstanden.) Das fertige Modell wird verwendet, um Graphiken zu erstellen, welche die Details des
-Modells \textit{faken}. Diese Graphiken werden Normal-Maps genannt (\textit{Kapitel\ref{texturierung:bnTex}}).
+Modells \textit{faken}. Diese Graphiken werden Normal-Maps genannt (\textit{Kapitel\ref{sec:tex_normal}}).
 
 Bei der Subdivision Modellierung hat der Entwickler eine größere Kontrolle über die Flächenanzahl. Allerdings ist es
 dafür schwieriger Details oder Gesichtszüge zu modellieren. Diese müssen im Nachhinein gezeichnet oder entwickelt
@@ -115,7 +115,7 @@ Körperteile erstellt in dem man die Flächen des Objektes einzeln vervielfälti
 erklären werden die Prozesse der verschiedenen Methoden beschrieben, um ein Auge zu modellieren.
 
 Sculpting-Methode:
-Mittels verschiedenen Pinseln (\textit{siehe Kapitel\ref{sculpting:process}}) drückt man Teile des Objekte ein,
+Mittels verschiedenen Pinseln (\textit{siehe Kapitel\ref{sec:sculpting}}) drückt man Teile des Objekte ein,
 hebt andere hervor, verschiebt sie, glättet sie ab und flacht sie ab. Während dieser Prozesse werden (mit den richtigen
 Einstellungen) so viele Fläche erstellt, wie es die Detailarbeit verlangt.
 
@@ -131,7 +131,7 @@ DYNTOPO).
 
 %--------------------------Sculpting--------------------------Sculpting--------------------------Sculpting--------------
 \subsection{Sculpting}
-\label{sculpting:process}
+\label{sec:sculpting}
 
 Das Sculpt-Tool von Blender teilt sich in die Bereiche \textit{Brush, Texture, Stroke, Curve, Dyntopo, Symmetry}
 und \textit{History} auf. Die wichtigsten Bereiche, die auch bei der Umsetzung des Antagonisten verwendet wurden sind
@@ -391,7 +391,204 @@ Wenn man sich mit der mittleren Maustaste nur um sich selbst drehen kann und nic
 so nahe herangezoomt, dass man sich genau auf dem Sichtpunkt befindet. In diesem Fall muss man herauszoomen, bis
 man sich wieder bewegen kann.
 
+
+
+%---------------Subdivision Modelling--------------Subdivision Modelling---------------Subdivision Modelling------------
 \subsection{Subdivision Modelling}
+\label{sec:subdivision}
+Bei der Subdivision-Methode werden einige Modifikatoren, Modi und Tools verwendet, die unten angeführt sind:
+
+Edit Modus\citep{blender:edit_mode}:
+
+Der Edit Modus in Blender wird verwendet um ein Grundobjekt zu manipulieren. Entgegengesetzt zum Objekt Modus - in
+welchem man die Größe, Position und Rotation verändern kann - kann man in dem Edit-Modus die Flächen, Punkte und Kanten
+eines Objektes manipulieren.
+
+Loop-Cuts\citep{blender:loop_cut_slide}:
+
+Ein Loop-Cut wird eine umrundete Unterteilung eines Objektes genannt. Bei quadratischen Flächen ist ein Loop-Cut leicht
+zu erstellen. Flächen die von der Kantenanzahl unterschiedlich sind können keinen durchgängigen Loop-Cut zulassen.
+Standard-Mäßig wird der Loop-Cut in der Mitte des Objektes gesetzt. Durch die Tastenkombination \keys{STRG+R},
+wird ein Loop-Cut gesetzt. Mittles dem Mausrad wird die Anzahl der Unterteilungen verändert. Die rechte Maustaste
+platziert den Loop-Cut / die Loop-Cuts in kontinuierlichen Abständen; beginnend in der Mitte. Die linke Maustaste
+platziert den Loop-Cut an der aktuellen Position. Wenn ein Loop-Cut an einer komplexen Stelle gesetzt wurde kann dieser
+mit \keys{ALT + Rechtsklick} markiert werden und mit \keys{2xG} im relativen Weg zu dem Objekt verschoben werden.
+(Siehe Abbildung \ref{picture:loop_cut_slide})
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_haendisch-LoopCuts.png}
+    \caption{Verschiedene Loop-Cuts bei einfachen und komplexen Objekten}
+    \label{picture:loop_cut_slide}
+\end{figure}
+
+
+Subdivision Surface Modifikator\citep{blender:mod_subd}:
+
+Der Subdivision Surface Modifikator fügt einem Objekt eine bestimmte Iteration an Flächen hinzu. Dadurch wird ein
+glatter und detailliertere Effekt erzielt.
+
+
+Mirror Modifikator\citep{blender:mod_mirror}:
+Der Mirror-Modifikator spiegelt das Objekt in einer bestimmten Achse um den Ursprung des Objektes.
+(Der Ursprung des Objektes ist der orange kleine Punkt. Der Ursprung kann mit \keys{STRG + SHIFT + ALT + C} neu gesetzt werden.)
+
+Extrudieren\citep{blender:extrude}:
+Extrudieren bedeutet, dass man eine Kopie einer Auswahl erstellt und diese automatisch mit der Auswahl verbindet.
+Wenn man einen Punkt auswählt und extrudiert (Shortcut \keys{E}), wird ein weiterer Punkt und eine Kante erstellt.
+Bei einer Kante, eine weitere Kante und eine Fläche, bei einer Fläche mit vier Punkten werden 5 weitere Flächen erstellt
+(Siehe Abbildung\ref{picture:extrude}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_haendisch-Extruding.png}
+    \caption{Die verschiedenen Möglichkeiten zu extrudieren}
+    \label{picture:extrude}
+\end{figure}
+
+
+Proportional Edit\citep{blender:prop_editing}:
+Beim proportional Editing werden die Punkte in einem bestimmten Bereich ebenfalls von einer Manipulation beeinflusst.
+Die Stärke und Art der Beeinflussung wird selbst bestimmt.
+
+
+Wenn man den Charakter mittels der Subdivision-Methode modelliert beginnt man in den meisten Fällen mit einem Würfel.
+Mittles Loop-Cut and Slide halbiert man den Würfel und entfernt eine Hälfte des Würfels. Man fügt dem Objekt einen
+Mirror-Modifikator hinzu, um nur eine Seite des Charakters zu modellieren. Dann erstellt man die Grund-Struktur des
+Körpers (Siehe Abbildung\ref{picture:base_body}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_haendisch-baseCharakter.png}
+    \caption{Der erste Schritt der Subdivision-Methode}
+    \label{picture:base_body}
+\end{figure}
+
+Nachdem man die Grund-Struktur hat, kann man den Subdivision-Modifikator auf dem Objekt anwenden. Im Edit-Modus
+modelliert man dann diverse Details in das Modell. Um die Details zu modellieren ohne die Struktur des Objektes
+zu beschädigen kann man Proportional Edit aktivieren. Bei der Entwicklung des Hauptcharakters wurde das Gesicht
+nur schemenhaft modelliert, da das Spiel in der Ego-Perspektive umgesetzt wird (Siehe Abbildung\ref{picture:protagonist}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_haendisch-protagonist.png}
+    \caption{Der Protagonist mit dem Subdivision Surface Modifikator}
+    \label{picture:protagonist}
+\end{figure}
+
+
+%---------------------UV-Unwrapping--------------------UV-Unwrapping---------------------UV-Unwrapping------------------
 \subsection{UV-Unwrapping}
+\label{sec:unwrapping}
+
+Um einen Charakter zu Texturieren, muss man diesen als erstes \texit{unwrappen}. Unwrappen bedeutet, dass man die Flächen
+eines Objektes aufklappt und zweidimensional darstellt. Blender bietet mehrere Möglichkeiten an, ein Objekt zu
+\texit{unwrappen}. Die meist verwendeten sind "Smart UV-Projekt"\citep{blender:smart_uv} und
+"Unwrap"\citep{blender:unwrap}. Für das Projekt wurde die "Unwrap" Methode verwendet. Um eine UV-Layout
+(die zweidimensionale Darstellung der Objektflächen) mittels der Unwrap Methode zu erstellen, müssen zuerst sogenannte
+Seams erstellt werden\citep{blender:seams}. Seams werden erstellt, indem man Kanten des Objektes selektiert und mittels
+dem UV-Menü (Shortcut \keys{U}) "Mark Seam" auswählt. Wenn Seams gesetzt wurden, werden diese Kanten Rot dargestellt.
+Wenn man dann das Objekt mit "Unwrap" - ebenfalls in dem UV-Menü - aufklappt, werden die durch Seams abgetrennten
+Flächen auch in dem UV-Layout abgetrennt.
+
+Dieses Layout ist an das Mesh gebunden. Das heißt, dass das UV-Layout nach einem Export und Import vorhanden bleibt.
+UV-Layouts müssen in Blender erstellt werden, da Unreal-Engine keine Möglichkeit bietet, UV-Layouts zu erstellen oder
+zu bearbeiten. Die Seams sollten bedacht gesetzt werden, um die Übersicht nicht zu verlieren. UV-Layouts können
+mittels dem Image/UV-Editor noch bearbeitet werden, damit keine Flächen übereinanderliegen (In diesem Fall
+würden sie sich die gleichen Pixel teilen). Falls man eine UV-Map in einem Fotobearbeitungsprogramm bearbeiten möchte,
+sollte man die einzelnen Teile des Objektes klar ersichtlich in der UV-Map gestalten, damit zuordenbar, welcher Bereich
+der UV-Map zu welchen Flächen des Objektes gehört.
+
+Bei der Umsetzung der Charaktere, wurde für jeden Teil ein eigenes UV-Layouts generiert. Es gibt auch die Möglichkeit,
+ein UV-Layout für den gesamten Charakter zu erstellen, wodurch weniger Materials benötigt werden. Jedes Material kann
+nur eine UV-Map texturieren (Siehe Abbildung\ref{picture:uv_layouts}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_UV_Unwrapping-UV-Layouts.PNG}
+    \caption{Die UV Layouts des Antagonisten}
+    \label{picture:uv_layouts}
+\end{figure}
+
+Bei High-Resolution Modellen, wie dem Antagonisten wird kein UV-Layout erstellt. Das UV-Unwrapping folgt in solchen
+Fällen etwas später (Siehe Kapitel \ref{sec:normal_baking}).
+
+
+%---------------------Normal Baking--------------------Normal Baking---------------------Normal Baking------------------
 \subsection{Normal Baking}
+\label{sec:normal_baking}
+
+Das Modell des Antagonist ist zu detailreich modelliert um es für ein Spiel zu verwenden. Da der Charakter mit dem
+Sculpt-Tool von Blender und der aktivierten \textit{Dyntopo} Einstellung (Siehe Kapitel\ref{sec:sculpting})modelliert
+wurde, sind über eine Million
+Flächen entstanden. Dieses Modell des Antagonisten wird als High-Resolution Modell bezeichnet. Um einen verwendbaren
+Charakter zu erstellen muss man aus dem High-Resolution Modell ein Low-Resolution Modell erstellen und dann die
+Details mittels einer Normal-Textur \textit{gefälscht} darstellen (Mehr Informationen zu Normal Texturen im Kapitel\ref{sec:tex_normal}).
+Um ein Low-Resolution Modell des Antagonisten zu bekommen haben wir den Decimate-Modifikator verwendet\citep{blender:mod_decimate}.
+
+Der Decimate-Modifikator besitzt drei primäre Einstellungen:
+
+Collapse:
+
+In diesem Modus werden Punkte miteinander in der Mitte verbunden und dadurch Flächen dezimiert. Die Form des Meshes
+kann dadurch sehr stark beeinflusst werden.
+
+Un-Subdived:
+
+Diese Methode löscht umrundenden Kanten. Es ist der gegenteilige Prozess von Loop-Cuts (Siehe Kapitel \ref{sec:subdivision}).
+Daher würde diese Methode nichts bei dem Antagonisten bewirken, weil er durch die \textit{Dyntopo} Einstellung aus
+Dreiecken besteht.
+
+Planar
+In dieser Einstellung kann man einen Winkel bestimmen, in welchem die Flächen verbunden werden sollen.
+Unterscheiden sich zwei Flächen von ihrer Rotation unter X°, werden sie zu einer Fläche verbunden.
+
+
+Die Planar Einstellung dezimiert das Modell am besten. Die Form bleibt relative in Takt und die Flächen werden auf eine
+geringere Anzahl reduziert. Allerdings würde das Low-Resolution Modell nicht für Animationen geeignet sein, wenn die
+Planar Einstellung verwendet wird, da die Flächen die sich entlang des Ellbogen und des Armes befinden ebenfalls
+verbinden würden. Dadurch würde man den Arm nicht mehr korrekt animieren können. Für den Antagonisten wurde die
+Collapse Methode verwendet. Eine optimale Flächenanzahl befindet sich zwischen 1000 und 2000 Flächen. Das garantiert
+einen flüssigen Programmablauf, die Möglichkeit gute Animationen zu gestalten und mittels UV-Unwrapping ein UV-Layout
+mit relativ wenig Aufwand zu gestalten.
+
+Nachdem man das Objekt verringert hat, sollte noch im Edit-Modus kontrolliert werden, ob noch obsulete Flächen entfernt
+werden können (Siehe Abbildung \ref{picture:antagonist_decimated}). Wenn man das fertige Low-Resolution Modell hat,
+erstellt man ein UV-Layout (Kapitel \ref{sec:unwrapping}).
+Das UV-Layout wird benötigt, damit eine Normal-Textur (Kapitel \ref{sec:tex_normal}) erstellt werden kann.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_UV_Normal_Baking-LowHighPoli.png}
+    \caption{Die beiden Modelle auf der linken Seite sind mittels des Decimate-Modifikators reduziert worden. Die Modelle auf der rechten Seite sind nicht reduziert}
+    \label{picture:antagonist_decimated}
+\end{figure}
+
+
+
+Nun kann man die Normals des High-Resolution Modells generieren. Dafür müssen das High-Resolution und Low-Resolution
+Modell die exakt gleiche Position in der 3D-Welt haben. Im Properties Modus unter dem Bereich: "Bake" wählt man als
+Bake Mode: "Normals" aus. Der Normal Space wird auf: "Tangent" gesetzt. Das Auswahlkästchen "Selected to Active" muss
+noch angehakt werden (Siehe Abbildung \ref{picture:baking_settings}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_UV_Normal_Baking-bakeSection.png}
+    \caption{Die Einstellungen um eine Normal-Textur aus einem High-Resolution Modell zu generiern}
+    \label{picture:baking_settings}
+\end{figure}
+
+
+Die übrigen Einstellungen sind standardmäßig korrekt für diesen Prozess. Mit der Taste "Bake",
+wird die Normal-Textur erstellt. In dem Fesnter "UV/Image Editor" kann man überprüfen ob alles geklappt hat und die
+Normal-Textur abspeichern.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_UV_Normal_Baking-Normal_Maps.png}
+    \caption{Die erstellten Normal-Texturen des Antagonisten}
+    \label{picture:antagonist_normals}
+\end{figure}
+
+
 \subsection{Texture Painting}
