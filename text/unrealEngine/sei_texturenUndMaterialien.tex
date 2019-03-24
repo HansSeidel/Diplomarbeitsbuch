@@ -12,6 +12,7 @@ Allerdings werden Texturen nicht nur für die Farbe verwendet, sondern auch für
 Einige dieser Texturarten wurden für dieses Projekt verwendet und
 sind in den nächsten Kapiteln zu finden.
 
+%-----------------Mapping Methoden-----------------Mapping Methoden------------------Mapping Methoden-------------------
 \subsection{Mapping Methoden}
 \label{sec:tex_mapping}
 
@@ -68,7 +69,7 @@ Entwicklung und Bearbeitung dieser Texturen wurde das Programm "Materialize" - v
 Software\citep{bbs:materialize} - verwendet. Dieses Programm ist eine OpenSource Entwicklung, mit freier Lizenz.
 
 
-
+%-----------------Diffuse Texturen-----------------Diffuse Texturen------------------Diffuse Texturen-------------------
 \subsection{Diffuse Texturen}
 \label{sec:tex_diffuse}
 
@@ -77,6 +78,7 @@ Objektes.
 In vielen Fällen werden diffuse Texturen seamless gestaltet. Eine Textur ist seamless, wenn eine Kopie der Textur an
 jede Seite gelegt werden kann und trotzdem einen perfekten Übergang bildet.
 
+%----------Bump und Normal Texturen------Bump und Normal Texturen------------Bump und Normal Texturen-------------------
 \subsection{Bump und Normal Texturen}
 \label{sec:tex_normal}
 
@@ -111,11 +113,87 @@ Materialize\citep{bbs:materialize} relative einfach zu erstellen sind. Bump und 
 Fällen gleichwertig außer bei Objekten die Rundungen haben. In diesem Fall sind Normal-Texturen die bessere Wahl
 um Details von seitlicher Perspektive zu generieren.
 
+%----------------Roughness Texturen---------------Roughness Texturen---------------Roughness Texturen-------------------
 \subsection{Roughness Texturen}
 \label{sec:tex_roughness}
 
+Roughness Texturen werden für die Spiegelung verwendet. Die Roughness bestimmt, mit welcher Streuung das Objekt Licht
+reflektiert wird. Ein Roughness Wert von null (schwarz) entspricht kompletter Spiegelung. Ein Roughness Wert von eins
+(weiß) entspricht gar keiner Spiegelung (Siehe Abbildung \ref{picture:roughness_illustration}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Roughness-Roughness.png}
+    \caption{Darstellung der Lichtberechnung eines Roughness-Wertes}
+    \label{picture:roughness_illustration}
+\end{figure}
+
+
+Das Programm Materialize verwendet Smoothness-Maps. Wenn eine Smoothness-Map für den Roughness-Wert verwendet wird,
+muss er invertiert werden. In der Unreal-Engine funktioniert das mittels der 1-x Funktion (Siehe
+Kapitel \ref{sec:algorithms} oder Abbildung \ref{picture:tex_mat_roughness}).
+
+Im Normalfall befindet sich der Roughness-Wert zwischen 0,3 und 0,9. Allerdings wird für Materialien, die Wasser oder
+Pfützen darstellen sollen gerne ein Roughnesswert von 0 verwendet.
+
+%----------------Texturen in der Engine---------------Texturen in der Engine---------------Texturen in der Engine-------
 \subsection{Texturen in der Engine}
 \label{sec:tex_inside_engine}
+
+Für dieses Kapitel werden einige Informationen über Materials vorab beschrieben.
+
+
+Wenn in der Unreal-Engine ein neues Material erstellt wird, wird der Node-Editor\citep{ue:node_introduction} mit einer
+Material Output Node geöffnet. Die Node hat verschiedene Inputs, die die physikalischen Eigenschaften des Materials
+bestimmen. Die meisten Inputs akzeptieren eine konstante Value oder eine Textur. Bei einer Material Node sind nicht
+alle Inputs verfügbar. Welche Inputs verfügbar sind, ist von der Material-Art abhängig (Siehe
+Abbildung \ref{picture:mat_ue4_node}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Texturen in der Engine-MaterialOutput.png}
+    \caption{Eine Material Output Node und die aktiven Inputs}
+    \label{picture:mat_ue4_node}
+\end{figure}
+
+
+Um das System der Inputs genauer zu beschreiben verwendet wir den roughness Input. Nehmen wir als Beispiel ein Material
+für eine grüne Türe und ein Material für eine Terrasse (Siehe Abbildung \ref{picture:tex_mat_roughness}).
+Das erste Bild zeigt die grüne Türe. Die gesamte Türe ist ohne große Unterschiede. Die Türklinke und das Schloss haben
+eigene Materialien. Daher hat die Türe einen konstanten Roughness-Wert von 0,8 (Die linke Hälfte von dem Bild zeigt
+den Wert als Farbe an).
+
+Bei der Terrasse sollen die Ziegel eine etwas geringere Roughness besitzen als die Zwischenräume. Daher wurde eine
+Smoothness-Textur erstellt. Wie man sehen kann, sind die Zwischenräume der Textur dünkler, was bedeutet, dass die
+Zwischenräume eine geringer Roughness hätten als die Ziegel. Damit der erwünschte Effekt erzielt wird, wurde die
+1-X Node verwendet um die Textur zu invertieren.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Texturen in der Engine-InputMoeglichkeit.png}
+    \caption{Der Roughness input wurde einmal mit einem konstanten Wert verwendet und einmal mit einer Textur}
+    \label{picture:tex_mat_roughness}
+\end{figure}
+
+
+Property-Maps / Texture Masks\citep{ue:tex_property_map}:
+
+Die letzte Art von Texturen, die in diesem Buch näher gebracht wird, ist eine Property-Map. Property-Maps werden
+verwendet, um die Performance des Spiels zu optimieren. Bei Texturen, wie zum Beispiel eine Roughness-Textur oder eine
+Bump-Textur, werden nur die schwarz-weiß Informationen benötigt. Jede Textur wird allerdings einzeln von der Engine
+geladen, wenn das Spiel / Level gestartet wird. Um diesen Vorgang zu optimieren, kombiniert man 3 schwarz-weiß Texturen
+in einer Property-Map. Das bedeutet, dass man den Rot-Wert, den Grün-Wert und den Blau-Wert verwendet, um die
+Informationen zu speichern. Da man in der Unreal-Engine die Kanäle einzeln verwenden kann und diese nur einen Wert
+zwischen 0 und 1 ausgeben, funktioniert das einwandfrei. Damit hat man drei Texturen in einer
+Property-Map vereint und es muss nur eine Textur geladen werden. (Siehe Abildung \ref{picture:property_map})
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Texturen in der Engine-Property-Map.png}
+    \caption{Eine Property-Map und die einzelnen Informationen innerhalb der RGB-Kanäle}
+    \label{picture:property_map}
+\end{figure}
+
 
 \section{Materialien}
 \label{sec:materials}
