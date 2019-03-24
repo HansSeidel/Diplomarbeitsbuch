@@ -17,18 +17,99 @@ sind in den nächsten Kapiteln zu finden.
 
 Bei der Texturierung eines Objektes unterscheidet man zwischen verschiedenen Mapping Methoden. Mapping bezeichnet man
 den Prozess, eine Textur aus dem 2-Dimensionalen Bereich auf ein Objekt im 3-Dimensionalen Bereich zu übertragen. Die
-meist verwendeten Mapping Methoden sind das generierte Mapping und das UV-Mapping\citep{}:
+meist verwendeten Mapping Methoden sind das generierte Mapping und das UV-Mapping\citep{blender:tex_mapping_modes}:
 
-Generiertes Mapping
-Generiertes Mapping bedeutet, dass man die Grundform eines komplexen Objektes angibt (Z.b. Cube / Zylinder ). Die eingefügte Textur wird dann entsprechend der Grundform über das Objekt "gemappt". Die Angabe der Grundform beschreibt wie die 2-Dimensionale Textur in der 3Dimensionalen Welt auf dem Objekt angezeigt werden soll.
-Bei der generierten Texturierung kann es allerdings zu Fehlern kommen. Es kommt vor, dass die Textur von einer bestimmten Seiten korrekt und auf anderen Seite langezogen angezeigt wird. Dass liegt daran, dass die Pixel einer Textur (2Dimensionaler Bereich) auf eine 3Dimensionale Fläche projiziert werden in welcher sie keine Informationen über die dritte Achse besitzen. (Siehe Abbildung XX)
+
+Generiertes Mapping:
+
+Generiertes Mapping bedeutet, dass man die Grundform eines komplexen Objektes angibt (Z.b. Cube / Zylinder ). Die
+eingefügte Textur wird dann entsprechend der Grundform über das Objekt "gemappt". Die Angabe der Grundform beschreibt
+wie die 2-Dimensionale Textur in der 3Dimensionalen Welt auf dem Objekt angezeigt werden soll.
+Bei der generierten Texturierung kann es allerdings zu Fehlern kommen. Es kommt vor, dass die Textur von einer
+bestimmten Seiten korrekt und auf anderen Seite langezogen angezeigt wird. Dass liegt daran, dass die Pixel einer
+Textur (2Dimensionaler Bereich) auf eine 3Dimensionale Fläche projiziert werden, in welcher sie keine Informationen
+über die dritte Achse besitzen (Siehe Abbildung \ref{picture:tex_streching}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Methoden-Pixelstretching.png}
+    \caption{Die Pixel der Textur werden der Y-Achse entlang auf der oberen Fläche des Würfels gestreckt}
+    \label{picture:tex_streching}
+\end{figure}
+
+Der einfachste Weg, diesen Fehler zu umgehen ist es, ein UV-Layout zu generieren. Allerdings ist es auch mit dem
+Node-System der Unreal-Engine\citep{ue:node_introduction} möglich (Siehe Abbildung \ref{picture:tex_streching_solve}).
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Methoden-PixelstretchingMaterialKorrektur.png}
+    \caption{Eine komlexere Lösung der Fehler-Behebung. Die einfache Methode ist UV-Mapping}
+    \label{picture:tex_streching_solve}
+\end{figure}
+
+
+UV-Mapping:
+
+UV-Mapping ist eine sehr sichere Art der Texturierung. Beim UV-Mapping wird eine Textur dem UV-Layout des Objektes
+angepasst. Dies kann automatisch passieren oder bewusst beeinflusst. Bei komplexeren Objekten wird das UV-Layout
+exportiert und eine Textur mittels eines Fotoprogramms oder dem Blender Texture-Painting Tool erstellt
+(Mehr Informationen zu UV-Mapping und dem Blender Texture-Painting Tool sind in den Kapiteln \ref{sec:unwrapping} und
+dem Kapitel \ref{sec:texture_painting})
+
+
+Weiter aufbauende Mapping-Methoden die mittels dem Node-System der Unreal Engine möglich sind, sind die WorldAlign
+Mapping Methode, View-Ported Mapping Methode und die Objektrelative Mapping Methode. Diese Arten wurden im Laufe
+des Projektes nicht verwendet und sind daher nicht Teil dieses Buches.
+
+Die nächsten Kapitel (Diffuse Texturen, Bump- Normal-Texturen, Ambient Occlusion Texturen, Roughness Texturen)
+beschreiben verschiedene Textur-Arten, die am häufigsten bei der Spielentwicklung eingesetzt werden. Für die
+Entwicklung und Bearbeitung dieser Texturen wurde das Programm "Materialize" - von Bounding Box
+Software\citep{bbs:materialize} - verwendet. Dieses Programm ist eine OpenSource Entwicklung, mit freier Lizenz.
+
 
 
 \subsection{Diffuse Texturen}
 \label{sec:tex_diffuse}
 
+Diffuse Texturen\citep{blender:tex_introduction} bestimmen das grundlegende Aussehen des Objektes. Sie beinhalten die Farbinformationen des
+Objektes.
+In vielen Fällen werden diffuse Texturen seamless gestaltet. Eine Textur ist seamless, wenn eine Kopie der Textur an
+jede Seite gelegt werden kann und trotzdem einen perfekten Übergang bildet.
+
 \subsection{Bump und Normal Texturen}
 \label{sec:tex_normal}
+
+Eine Bump- oder Normal-Textur (meisten Bump- / Normal-Map genannt), simuliert die Höhen und Tiefen eines Objektes.
+Das funktioniert, indem das Licht auf dem Objekt verschieden berechnet wird.\citep{unity:normal_vs_bump}
+
+
+Bump-Maps:
+
+Bump-Maps sind die ältere Methode der Höhenberechnung. Bump-Maps sind schwarz-weiß Texturen. Die schwarzen Pixel
+zeigen Vertiefungen an, die weißen Pixel Erhöhungen. Je nachdem, wie die Normals der betreffenden Fläche ausgerichtet
+sind, wird diese Fläche an gewissen Stellen schwäche beleuchtet / reflektieren als an anderen Stellen. Die Normals
+einer Fläche sind die belichteten Seiten. Die Normal-Direction gibt an, aus welcher Richtung die Textur angezeigt
+wird und welche Neigung die Fläche hat (Siehe Abbildung \ref{picture:normals}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Bump-NormalTexturen-Normals.png}
+    \caption{In diesem Bild sieht man die Normal-Direction der verschiedenen Flächen}
+    \label{picture:normals}
+\end{figure}
+
+
+Normal-Maps:
+
+Normal-Texturen speichern etwas mehr Informationen. Während eine Bump-Textur nur die \textit{gefälschte} Tiefe
+speichert, beinhalten Normal-Texturen auch die Lichtberechnung aus verschiedenen Perspektiven (rechte Seite,
+linke obere Seite, frontale Seite). Diese Informationen werden in einer Normal-Map in den R-G-B Kanälen gespeichert.
+
+In unserer Diplomarbeit wurden ausschließlich Normal-Maps verwendet, da sie mittels dem Programm
+Materialize\citep{bbs:materialize} relative einfach zu erstellen sind. Bump und Normal-Texturen sind in den meisten
+Fällen gleichwertig außer bei Objekten die Rundungen haben. In diesem Fall sind Normal-Texturen die bessere Wahl
+um Details von seitlicher Perspektive zu generieren.
 
 \subsection{Roughness Texturen}
 \label{sec:tex_roughness}
