@@ -1,8 +1,28 @@
 \section{Texturierung}
 \label{sec:tex}
+Texturen geben dem erstellten Objekt komplexe Farben. Um einen Bezug zu realen Objekten zu schaffen, müssen Texturen
+auf 3Dimensionalen Objekten angewandt werden. Zum Beispiel kann man einen Baum bis
+zum kleinsten Detail modellieren und mittels verschiedener Materialien einfärben. Die Natürlichkeit
+eines echten Baums wird dieses Modell nicht erreichen.
+
+Es gibt Spiele, welche die Texturanzahl sehr gering halten. In diesem Fall wird eher ein Comic
+oder Low-Polygon Stil verfolgt.
+
+Allerdings werden Texturen nicht nur für die Farbe verwendet, sondern auch für Materialeinstellungen.
+Einige dieser Texturarten wurden für dieses Projekt verwendet und
+sind in den nächsten Kapiteln zu finden.
 
 \subsection{Mapping Methoden}
 \label{sec:tex_mapping}
+
+Bei der Texturierung eines Objektes unterscheidet man zwischen verschiedenen Mapping Methoden. Mapping bezeichnet man
+den Prozess, eine Textur aus dem 2-Dimensionalen Bereich auf ein Objekt im 3-Dimensionalen Bereich zu übertragen. Die
+meist verwendeten Mapping Methoden sind das generierte Mapping und das UV-Mapping\citep{}:
+
+Generiertes Mapping
+Generiertes Mapping bedeutet, dass man die Grundform eines komplexen Objektes angibt (Z.b. Cube / Zylinder ). Die eingefügte Textur wird dann entsprechend der Grundform über das Objekt "gemappt". Die Angabe der Grundform beschreibt wie die 2-Dimensionale Textur in der 3Dimensionalen Welt auf dem Objekt angezeigt werden soll.
+Bei der generierten Texturierung kann es allerdings zu Fehlern kommen. Es kommt vor, dass die Textur von einer bestimmten Seiten korrekt und auf anderen Seite langezogen angezeigt wird. Dass liegt daran, dass die Pixel einer Textur (2Dimensionaler Bereich) auf eine 3Dimensionale Fläche projiziert werden in welcher sie keine Informationen über die dritte Achse besitzen. (Siehe Abbildung XX)
+
 
 \subsection{Diffuse Texturen}
 \label{sec:tex_diffuse}
