@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" afterDir="false" />
     </list>
@@ -13,11 +14,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="172" column="47" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="47" />
+            <state relative-caret-position="260">
+              <caret line="62" column="43" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="156" column="12" lean-forward="true" selection-start-line="156" selection-start-column="12" selection-end-line="156" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="73" column="17" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="17" />
+              <folding>
+                <element signature="e#5604#5626#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,11 +57,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>usepackeg</find>
-      <find>url</find>
-      <find>let</find>
-      <find>hyphens</find>
-      <find>footmisc</find>
       <find>usepackage</find>
       <find>sei_</find>
       <find>textbf</find>
@@ -53,7 +70,6 @@
       <find>https://docs.blender.org/manual/en/latest/editors/uv_image/uv/editing/unwrapping/mapping_types.html#unwrap</find>
       <find>https://docs.blender.org/manual/en/latest/editors/uv_image/uv/editing/unwrapping/seams.html</find>
       <find>menuk</find>
-      <find>texturierung</find>
       <find>sculpting:process</find>
       <find>loop</find>
       <find>händis</find>
@@ -65,11 +81,17 @@
       <find>table</find>
       <find>sculpting</find>
       <find>&amp;</find>
+      <find>[H</find>
+      <find>float</find>
+      <find>[H]</find>
+      <find>ragged</find>
+      <find>texturierung</find>
+      <find>in der engine</find>
     </findStrings>
     <replaceStrings>
-      <replace>[H]</replace>
       <replace />
       <replace>Modifikator</replace>
+      <replace>[H]</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\hansj\Desktop\5AI\DIPL\Diplomarbeitsbuch</dir>
@@ -198,7 +220,7 @@
     <property name="SearchEverywhereHistoryKey" value="plugins&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553514898772" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553516657981" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -412,12 +434,12 @@
       <workItem from="1552558311388" duration="1774000" />
       <workItem from="1553239163598" duration="6188000" />
       <workItem from="1553418943558" duration="5938000" />
-      <workItem from="1553510879997" duration="3972000" />
+      <workItem from="1553510879997" duration="5714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89912000" />
+    <option name="totallyTimeSpent" value="91654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -427,7 +449,7 @@
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3001998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3001998" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -439,7 +461,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.48993963" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.48993963" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32997987" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Palette" />
@@ -703,15 +725,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="167" column="21" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="277" column="30" selection-start-line="277" selection-start-column="30" selection-end-line="277" selection-end-column="30" />
+        <state relative-caret-position="336">
+          <caret line="73" column="17" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="17" />
+          <folding>
+            <element signature="e#5604#5626#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -724,8 +742,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="172" column="47" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="47" />
+        <state relative-caret-position="260">
+          <caret line="62" column="43" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="156" column="12" lean-forward="true" selection-start-line="156" selection-start-column="12" selection-end-line="156" selection-end-column="12" />
         </state>
       </provider>
     </entry>
