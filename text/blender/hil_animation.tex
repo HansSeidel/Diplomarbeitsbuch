@@ -1,6 +1,245 @@
 \section{Animation}
-\subsection{Animationstheorie}
-\subsection{Geschichte}
-\subsection{3D-Animation}
+\subsection{Die 12 Prinzipien der Animation}
+\label{animation:principles}
+Die 12 Prinzipien der Animation wurden zuerst 1981 im Buch \dq The Illusion of Life: Disney Animation\dq, von Ollie Johnston und Frank Thomas,
+niedergeschrieben und veröffentlicht. Das Buch wird von vielen als \dq Die Bibel der Animation\dq bezeichnet. Der Sinn hinter diesen Prinzipien ist es eine möglichst
+akkurate Animation nach den Gesetzen der Physik zu zeichnen\verb-/- gestalten. Auch heutzutage lassen sich die Prinzipien auf moderne Computeranimation anwenden.
+
+\subsubsection{Squash and Stretch}
+Squash and Stretch (übersetzt: quetschen und dehnen) soll Objekten und Charakteren Gewicht und Flexibilität geben.
+ Umso schwere ein Gummiball ist umso mehr soll er sich, je nach Höhe, beim Aufprall eindrücken und dehnen.
+
+\subsubsection{Anticipation}
+Anticipation, auf Deutsch übersetzt \dq Erwartung\dq, soll in einer Animation gegeben sein, um den Zuseher auf gewisse Aktionen vorzubereiten.
+Besipiele: Bevor man springt biegt man sein Knie; Bevor man einen Fußball schießt holt man aus.
+
+\subsubsection{Staging}
+Staging, auf Deutsch übersetzt \dq Inszenierung\dq, besagt das es für jeden klar sein muss, was man mit einer Animation oder Zeichnung zeigen möchte.
+Als Beispiel: Szenario: Ball wird mit Wut geworfen; Ergebnis: Ball wird mit viel Schwung und passender Mimik geworfen.
+
+\subsubsection{Straight Ahead Action and Pose to Pose}
+Dieses Prinzip bezeichnet zwei verschiedene Herangehensweisen der Animation. Die Straight Ahead Action Methode ist jede Frame hintereinander zu zeichnen.
+Während man mit Pose to Pose verschiedene Posen zu verschiedenen Zeitpunkten zeichnet und später die Zwischenframes zeichnet.
+In der heutigen Computeranimation hat sich die Straight Ahead Action Methode kaum umgesetzt.
+Pose to Pose ist sehr praktisch heutzutage da man sich die Zwischenframes leicht mithilfe des Computers berechnen lassen kann. Es ist jedem belassen wie viele Posen er zeichnet \verb-/- posiert.
+
+\subsubsection{Follow Through and Overlapping Action}
+Follow Through bezieht sich auf in Verbindung stehenden Teile des Körpers, wie Arme oder Haare,
+und dessen Trägheit beim Abbremsen oder Beschleunigen. Overlapping Action bezieht sich darauf, dass verschiedene Körperteile wie Arme und Kopf verschieden schnell bewegen.
+
+\subsubsection{Timing}
+Je nach Gewicht reagieren viele Objekte auf eine von außen oder innen kommende Kraft langsamer oder schneller.
+
+\subsubsection{Exaggeration}
+Die Übertreibung von Bewegungen, kann helfen diese realistischer aussehen zu lassen, da oft realitätsnahe Bewegungen zu statisch auf den Menschen wirken.
+
+\subsubsection{Solid Drawing}
+Dieses Prinzip beschreibt, dass es wichtig ist zu wissen wie man
+drei-dimensionale Objekte, in verschiedenen Perspektiven mit leitenden Linien, zeichnet. Mit der 3D Animation hat sich dies stark geändert.
+
+\subsubsection{Appeal}
+Dies hat damit zu tun, den animierten Charakter, interessant für den Zuseher zu gestallten.
+
 \subsection{Animation in Blender}
+In Blender gibt es auch Funktionen und Tools, um Animationen umzusetzen. Außerdem gibt es eigene Fenster Konfigurationen.
+Besonders wichtig in der Animation sind Keyframes, die Timeline, das Dope Sheet,
+das Action Sheet und der Graph Editor. Mithilfe dieser Tools kann man Animationen in Blender erstellen, exportieren und rendern.
+
+\subsubsection{Keyframes}
+Keyframes werden gemeinsam mit der Timeline benützt. Sie werden verwendet, um Werte für einen gewissen Zeitpunkt zu speichern.
+Im Fall der Animation in Blender werden Werte wie Position, Rotation und Skalierung, als Beispiel, gespeichert. Wobei man selbst entscheiden
+kann was in einem Keyframe gespeichert werden soll. Keyframes ermöglichen es mit Pose to Pose zu arbeiten (\textit{Kapitel \dq \ref{animation:principles} Die 12 Prinzipien der Animation\dq}).
+Um einen Keyframe hinzuzufügen kann man im 3D View die Taste \keys{i} drücken und die gewünschte Option auswählen. Alle möglichen Optionen sind im Bild abgebildet.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_keyframes_options.PNG}
+    \caption{Alle möglichen Optionen für einen Keyframe}
+\end{figure}
+
+\subsubsection{Timeline}
+Die Timeline ist die gesamte angezeigte oder gerenderte Animation. Die Zeiteinheiten in Blender sind Frames.
+Die Länge ergibt sich aus den definierten Frames (z.B. von Frame 0 bis Frame 250) und der FPS (Bilder pro Sekunde).
+Keyframes werden in der Timeline gelb markiert angezeigt. Abspielen kann man die Timeline mit dem Tastenkürzel \keys{Alt + a}.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_timeline.PNG}
+    \caption{Beispiel einer Timeline mit Keyframes (gelb)}
+\end{figure}
+
+\subsubsection{Dope Sheet}
+Das Dope Sheet ist auch eine Art Timeline. Im ursprünglichen Sinne kommt das Dope Sheet aus der gezeichneten Animation,
+wo jede Änderung aufgezeichnet und dokumentiert wurde. In Blender dient das Dope Sheet dazu, dass man über die gesamte Animation,
+also auch über jedes Armature und Objekt, und deren Keyframes, einen Überblick hat. Jede Keyframe eines einzelnen Bones wird mithilfe einer Timeline und Reihen dargestellt.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_dope_sheet.PNG}
+    \caption{Beispiel eines Dope Sheets}
+\end{figure}
+
+\subsubsection{Action Editor}
+Das Action Sheet ist Teil des Dope Sheets und ist auch ähnlich aufgebaut. Nur bezieht sich das Action Sheet auf ein Objekt und dessen Actions.
+Actions kann man als Datentyp für Animationen sehen. Somit ist es logisch das man mit dem Action Editor die verschiedenen Actions verwalten und erstellen kann.
+
+\begin{figure}[H]
+                \centering
+
+                \includegraphics[width=.8\textwidth]{images/animation_action_editor.PNG}
+                \caption{Beispiel eines Action Editors}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_action_editor_actions.PNG}
+    \caption{Beispiel der Auswahl für die verschiedenen gespeicherten Actions}
+\end{figure}
+
+\subsubsection{Graph Editor}
+Der Graph Editor basiert auch auf einer Timeline. Im Graph Editor kann man sich einen, mehrere oder alle Bones anzeigen lassen.
+Im Vergleich zu dem Dope Sheet dient der Graph Editor jedoch dazu, alle Eigenschaften einer Animation (Rotation, Position, Skalierung etc.)
+und deren Intensität oder Verhalten anzuzeigen. Die Eigenschaften und Intensitäten werden mithilfe von F-Curves angezeigt und bearbeitet. F-Curves
+sind Kurven, sie können Konstante, Lineare oder eine Bezier Kurve sein.
+Wenn man Keyframes setzt, entsteht automatisch zwischen zwei Keyframes eine dieser Kurven, und im Graph Editor kann man diese Kurve genau bearbeiten.
+
+\begin{figure}[H]
+                \centering
+
+                \includegraphics[width=.8\textwidth]{images/animation_graph_editor.PNG}
+                \caption{Beispiel eines Graph Editors}
+\end{figure}
+
+Im Bild sieht man auf der Linken Seite alle Eigenschaften, diese kann man auch einzeln anzeigen. Auf der rechten Seite sieht man alle ausgewählten Kurven.
+Die schwarzen Quadrate auf den Kurven sind Ankerpunkte die auf dem gleichen Frame wie die Keyframes sitzen. Diese Ankerpunkte kann man einzeln oder in Gruppen auswählen.
+Wenn man einen Ankerpunkt auswählt erscheint am Ankerpunkt eine Tangente.
+Diese Tangente hat wiederum zwei Punkte, die man verschieben kann und somit die Ausrichtung der Kurve an diesem Ankerpunkt ändern kann.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_graph_editor_anker.PNG}
+    \caption{Beispiel eines ausgewählten Ankers}
+\end{figure}
+
+\subsubsection{Animationsarten}
+
+\paragraph{Mit Bones und Rigs:}
+Wie schon in der Umsetzung der Rigs erklärt, verwendet man am besten für Charaktere ein gebautes Armature aus Bones.
+Mithilfe diese Armatures kann man, als Beispiel, sehr flüssige Geh- und Renn-Animationen erzeugen.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_body.PNG}
+    \caption{Fertiges Rig eine Charakters}
+\end{figure}
+
+\paragraph{Mit Pfaden:}
+Ein Pfad ist nichts anderes als eine Kurve in Blender die nicht gerendert wird. In den meisten Fällen ist es eine Bezier Kurve mit einer beliebigen
+Anzahl an Ankerpunkten. Um ein Objekt an diesem Pfad entlang zu animieren braucht man den Constraint \dq Follow Path\dq.
+Bei dem Constraint sind folgende Optionen zu beachten: Target, Forward, Up und Offset. Mithilfe dieser Optionen kann man das Objekt auf dem Path richtig positionieren und ausrichten.
+Verwendungszweck für diese Animation ist z.B. einen Flieger fliegen zu lassen oder einen Charakter einen bestimmten weg abgehen lassen.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_path_constraint.png}
+    \caption{Menü für den Follow Path Constraint}
+\end{figure}
+
+\paragraph{Mit Shape Keys:}
+Diese Art der Animation wird häufig bei Gesichtern angewendet. Shape Key Animation eignen sich am besten, um Deformierungen an einem Mesh durchzuführen.
+Deswegen benutzt man sie hauptsächlich in Gesichtern, um Falten oder Münder zu bewegen.
+
 \subsection{Umsetzung der Animationen}
+Zu umsetzende Animationen für die beiden Charaktere sind jeweils \dq Idle\dq und \dq Walking\dq. Der Antagonist (Grabwächter)
+hat eine zusätzliche \dq Running\dq Animation. Oft sind die Bewegungen von echten Menschen zu gering und deswegen ist es wichtig das Animationsprinzip \dq Exaggeration\dq
+zu beachten. Animiert wird mithilfe des Pose to Pose Prinzip. Ein weiterer wichtiger Punkt ist es das die Animation in einer Endlosschleife
+ohne sichtbaren Ruckler spielt. Um dies zu erreichen muss die erste Pose ident mit der letzten Pose sein.
+
+\subsubsection{Die Idle Animation}
+Eine Idle Animation ist eine rastende Pose für den Charakter. Diese ist meistens stehend so auch wie für die beiden Charaktere.
+Da die stehende Pose von echten Menschen oft zu wenig deutlich ist und als Animation künstlich aussieht muss man sie deutlicher und übertriebener darstellen.
+
+Die Gestaltung der beiden Idle Animationen ist verschieden für beide Charaktere. Der Hauptcharakter ist neutral, während der Antagonist kräftig und angsteinflößend erscheinen soll.
+
+\paragraph{Hauptcharakter:}
+Für eine einfache Idle Animation braucht man nur zwei Posen. Generell sollten die Beine etwas breiter dastehen und die Füße werden leicht nach außen gedreht.
+Die Arme werden in ruhender Position nach unten bewegt. In der ersten Pose ist die Hüfte etwas höher und die Arme und Finger in einer Position gebracht.
+In der zweiten ist sie niedriger und die Arme und Finger haben sich ein kleines Stück bewegt. Damit die Animation eine Endlosschleife ist kopiert man die erste Pose \verb-/-
+Keyframes einfach auf die letzte Frame. Damit der erste und letzte Frame nicht gleich ist,
+was einen Ruckler erzeugen würde, setzt man die letzte angezeigte Frame, eine Frame vor der Pose. Das erste Bild zeigt Pose 1 und das zweite Pose 2.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_idle.png}
+    \caption{Die zwei Posen der Idle Animation}
+\end{figure}
+
+\paragraph{Antagonist / Grabwächter:}
+Die Animation für den Antagonisten ist ähnlich aufgebaut, der größte Unterschied ist der breitere Stand und aggressive Faust.
+Außerdem bewegt sich sein Kopf nach links und rechts da er nach dem Hauptcharakter sucht. Es ist wieder zu beachten das keine ruckelnde Endlosschleife entsteht.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_an_idle.PNG}
+    \caption{Eine Pose der Idle Animation des Antagonisten}
+\end{figure}
+
+\subsubsection{Die Walking Animation}
+Die Walking Animation, oder auch Walk Cycle genannt, ist komplizierter. Es gibt vier Posen und diese gibt es doppelt gespiegelt.
+Die Abstände der Frames zwischen diesen Posen ist gleich in einem typischem Walk Cycle. Ein Walk Cycle besteht aus der Contact,
+Up, Passing, Down, Reverse Contact, Reverse Up, Reverse Passing,
+Reverse Down und um eine Endlosschleife zu erzeugen, wieder die Contact Pose. Generell ist der Körper in der Walk Animation nach vorne gelehnt.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_walk_cycle.png}
+    \caption{Ein kompletter Walk Cycle}
+\end{figure}
+
+\paragraph{Hauptcharakter:}
+In der Contact Pose berühren beide Füße den Boden und die Arme schwingen am meisten aus. Die Arme schwingen gespiegelt von den Beinen.
+Die Hüfte ist dabei auf mittlerer Höhe. In der Down Pose ist die Hüfte am niedrigsten und die Arme schwingen wieder zurück.
+Ein Bein ist unter dem Körper und das andere schwingt zurück. In der Passing Pose schwingt das eine Bein wieder vorwärts während
+das andere unterm Körper bleibt. Die Hüfte ist wieder auf mittlerer Höhe und die Arme sind beide auf gleicher Höhe. In der Up Pose
+ist die Hüfte am höchsten, die Arme schwingen von einander weg und das Bein geht weiter vorwärts. Beide Beine setzen jetzt
+für die Reverse Contact Pose an. Um den Walk Cycle zu vervollständigen kann man die vorhandenen Posen nehmen und diese an den entsprechenden stellen spiegeln.
+
+\paragraph{Antagonist / Grabwächter:}
+Die Walk Animation ist im Grunde gleich zu der des Hauptcharakters.
+Um den Antagonisten aber besser darzustellen sind die Bewegungen stärker ausgeprägt, um dem Charakter mehr Gewicht zu geben.
+
+\subsubsection{Die Running Animation}
+Die Running Animation ist der Walking Animation sehr ähnlich.
+Es gibt auch die vier Posen Contact, Up, Down und Passing. Damit aber der Running Cycle auch wie rennen aussieht ist der Körper mehr nach vorne gebeugt,
+die Bewegungen mit dem Armen und Beinen intensiver und die Bewegungen rauf und runter sind schwerer gestaltet.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_run_cycle.png}
+    \caption{Ein kompletter Run Cycle}
+\end{figure}
+
+Ein weiterer Unterschied zum Walk Cycle ist, dass die Up Pose nicht in der Mitte von Passing und R Contact liegt,
+sondern kurz vor R Contact platziert ist. Das gibt der Animation mehr Gewicht. Im, Bild ist die grün markierte Keyframe die Up Pose.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/animation_run_an_timeline.png}
+    \caption{Die Timeline des Run Cycles}
+\end{figure}
+
+\subsubsection{Exportieren für Unreal Engine}
+Animationen können ohne Probleme als .fbx in die Unreal Engine exportiert werden. Das Einzige, das es zu beachten gibt, ist,
+dass Unreal Engine einen Root-Bone braucht. Dieser ist ohne Problem schnell hinzugefügt und mit dem Parent Constraint für das Armature ausgestattet.
