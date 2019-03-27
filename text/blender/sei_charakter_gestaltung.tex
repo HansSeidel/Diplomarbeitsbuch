@@ -1,0 +1,746 @@
+\section{Charakter Gestaltung}
+Bevor man Blender öffnet und beginnt einen Charakter zu gestalten, ist es wichtig sich ein Bild von
+dem Charakter zu machen. Wenn man das erste Mal einen Charakter gestaltet, unterläuft vielen der
+Fehler, dass sie den Charakter aus dem Kopf heraus modellieren. Allerdings passiert es dann sehr
+schneller, dass man ein Modell entwickelt, welches einem nicht gefällt oder welches nicht
+gebrauchen kann. Daher ist es wichtig, den Charakter zuerst auf Papier zu zeichnen. Auch wenn das
+Endresultat eines Charakters neutral sein sollte, ist es hilfreich sich bereits im Vorhinein einige
+Eigenschaften des Charakters zu überlegen.
+
+Ist der Charakter eher ein grimmiger Mensch oder ein sehr freundlicher? Ist er überhaupt ein
+Mensch? Wie kleidet er sich? Wie bewegt er sich? Hat er irgendwelche Verletzung?
+
+Diese Details helfen, den Charakter bereits am Papier detailliert darzustellen und seine Rolle im Spiel
+authentischer zu gestalten.
+
+%----------Skizzen zu dem Modell-------Skizzen zu dem Modell-------Skizzen zu dem Modell-------Skizzen zu dem Modell----
+\subsection{Skizzen zu dem Modell}
+
+In unserem Fall haben wir die beiden Hauptcharaktere gleich zu Beginn des Objektes charakterisiert.
+Mit Beispielbildern und einer Personenbeschreibung war für alle Teammitglieder ein klares Bild der
+Charaktere vor Augen. Vor allem wenn man beginnt Charaktere zu modellieren, sollte man sich
+Vorbilder nehmen. Niemand wird bei seinem ersten Versuch einen perfekten Charakter modellieren
+können. Für Übungszwecke ist es daher hilfreich sich bereits vorhandenen Charakteren als Vorlage
+zu verwenden.
+Sobald die erste Vorstellung des Charakters entstanden ist, kann man beginnen die Skizzen zu
+entwerfen. Die Skizzen sollen ein klareres und einheitlicheres Bild erstellen. Sie transportieren die
+Vorstellung des Charakters auf Papier. Für 3D-Entwickler ist es am angenehmsten, wenn die Skizzen ein Modell
+(in diesem Fall den Charakter) von drei Seiten anzeigen. Eine Front-Perspektive, eine Right-Perspektive und eine
+Top-Perspektive. Für die Entwicklung des Charakters kann man diese Skizzen leicht in Blender einfügen und genau
+in diesen Perspektiven anzeigen.
+
+
+
+Einfügen von Skizzen in Blender\citep{blender:background_images}:
+In der 3D-View von Blender gibt es die Möglichkeit Bilder dem Hintergrund hinzuzufügen. Diese
+Bilder sind jedoch nur in der orthographischen Ansicht verfügbar. Die orthographische Ansicht ist
+eine zwei Dimensionale Darstellung aus der Sicht einer bestimmten Achse.
+Wenn sich der Mauszeiger in der 3D-View befindet und die Taste \keys{N} gedrückt wird, öffnet sich
+auf der linken Seite des Fensters die Properties Region. Unter dem Bereich: Background-Images kann
+man die Skizzen nun hinzufügen. Sobald man ein Bild hinzugefügt hat, kann dieses mit
+den vorhandenen Einstellungen so angepasst werden, dass es am angenehmsten zum Arbeiten ist.
+Hier sind einige der wichtigsten Einstellungen kurz beschrieben.
+
+\raggedbottom
+\begin{longtable}{|p{4cm}|p{9.6cm}|}
+    \hline
+    \endhead
+    \textbf{Einstellung} & \textbf{Beschreibung} \\
+    \hline
+    \endhead
+    Axis & Die Achsen Einstellung gibt die Möglichkeit auszuwählen von welcher Seite
+    das Bild angezeigt werden soll. Es wird dann nur angezeigt, wenn man sich in der
+    3D-View in dieser Seite befindet \\
+    \hline
+    Opacity & Die Opacity bestimmt zu wie viel Prozent das Bild sichtbar ist. (0 = Komplett transparent, 1 = 1
+    überhaupt nicht transparent \\
+    \hline
+    Back/Front & Diese Einstellung bestimmt, ob das Bild das Objekt verdecken soll (Front) oder nicht (Back)\\
+    \hline
+    X/Y/Rotation/Size & Mit diesen Einstellungen kann man die Skizzen dann perfekt
+    an das Modell anpassen \\
+    \hline
+    \caption{Einstellungen um ein Bild in der Blender-View als Hintergrund zu importieren}
+\end{longtable}
+
+
+%----------Menschliche Relationen------Menschliche Relationen------Menschliche Relationen------Menschliche Relationen---
+\subsection{Menschliche Relationen}
+    Wenn man erst seit kurzen Charaktere modelliert, passiert es sehr schnell, dass die Proportionen
+    nicht korrekt sind. Unabhängig davon, ob man Charaktere im 3-Dimensionalen Bereich oder auf Papier
+    designt, sollte man einige Proportionsregeln beachten und diese einzeichnen bevor man mit dem
+    Modellieren beginnt. (Auch Blender hat eine Möglichkeit zu skizieren. Allerdings wird das nicht in
+    diesem Buch behandelt\citep{blender:grease_pencil}.)
+
+Einige Linien in einem erwachsenen Gesicht, stehen immer in einem bestimmten Verhältnis zueinander
+(Siehe Abbildung\ref{blender:proportions}). Die Linie \textbf{A} grenzt die Schädeldecke ab. Von
+der Schädeldecke bis zum Stirnansatz ist zirka ein Abstand von 1/7 der Gesichtsgröße. Die Linie
+\textbf{C} zeigt, dass die Augenbrauen und der Abschluss der Ohren auf gleicher Höhe sein sollten.
+\textbf{C.1} verbindet das obere Ende der Nase mit der Mitte des Auges und dem Ansatz der Ohren.
+Außerdem sollte die Linie  \textbf{C.1} genau in der Mitte des Gesichts liegen. Auf der Linie
+\textbf{D} befindet sich das Ohrläppchen und der Ansatz der Nase. Linie  \textbf{E} stellt das Kinn
+und den Abschluss des Gesichtes dar. Da dieser Charakter übergewichtig modelliert wurde, ragt sein
+Doppelkinn über die Linie hinaus. Die Linie  \textbf{D.1} zeigt die untere Grenze des Mundes.
+Aus der frontalen Ansicht kann man auch vertikale Linien ziehen. Diese würden die Tränendrüse mit den Nasenflügeln
+verbinden und die Iris mit den Mundwinkeln.\citep{book:kunst_des_zeichnens}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{SEI_CharakterGestaltung_MenschlicheRelationen_KopfInRealtionen.png}
+    \caption{Proportionen im Gesicht eines Erwachsenen}
+    \label{blender:proportions}
+\end{figure}
+
+%----------Arten der Charakter-Modellierung------Arten der Charakter-Modellierung------Arten der Charakter-Modellierung-
+\subsection{Arten der Charakter-Modellierung}
+Im Laufe der Diplomarbeit wurden bei der Entwicklung der zwei Hauptcharaktere zwei verschiedene Arten der
+Charakter-Modellierung verwendet. Der Protagonist wurde mittels der Subdivision-Methode modelliert. Der Antagonist
+wurde mittels dem Blender Sculpt Tool\citep{blender:sculpting_general} erstellt .
+Bei diesen Methoden gibt es zwei bedeutende Unterschiede.
+
+
+Ein Charakter, der mittels des Sculpt-Tools modelliert wird kann meistens nicht für ein Spiel verwendet werden. Die
+Detailarbeit die bei dem Sculpting durchgeführt wird generiert zu viele Polygone (Flächen) auf dem Charakter. Diese
+Anzahl an Flächen kann der Computer nicht berechnen. (Im Falle des Antagonisten sind zirka 1.5 Millionen Flächen und 2
+Millionen Punkte entstanden.) Das fertige Modell wird verwendet, um Graphiken zu erstellen, welche die Details des
+Modells \textit{faken}. Diese Graphiken werden Normal-Maps genannt (\textit{Kapitel\ref{sec:tex_normal}}).
+
+Bei der Subdivision Modellierung hat der Entwickler eine größere Kontrolle über die Flächenanzahl. Allerdings ist es
+dafür schwieriger Details oder Gesichtszüge zu modellieren. Diese müssen im Nachhinein gezeichnet oder entwickelt
+werden.
+
+Der zweite Unterschied der Methoden ist die tatsächliche Umsetzung des Charakters. Mit dem Sculpt-Tool von Blender
+kann man Objekte modellieren als wären sie aus Ton gemacht. Bei der Subdivision-Methode werden die einzelnen
+Körperteile erstellt in dem man die Flächen des Objektes einzeln vervielfältigt und manipuliert. Um das genauer zu
+erklären werden die Prozesse der verschiedenen Methoden beschrieben, um ein Auge zu modellieren.
+
+Sculpting-Methode:
+Mittels verschiedenen Pinseln (\textit{siehe Kapitel\ref{sec:sculpting}}) drückt man Teile des Objekte ein,
+hebt andere hervor, verschiebt sie, glättet sie ab und flacht sie ab. Während dieser Prozesse werden (mit den richtigen
+Einstellungen) so viele Fläche erstellt, wie es die Detailarbeit verlangt.
+
+Subdivision Modellierung:
+Man wählt direkt die Flächen aus, die sich bei dem Auge befinden (in den meisten Fällen zwischen 4 und 16 Flächen).
+Diese Flächen löscht man. Dann fügt man eine Kugel hinzu und passt sie dem Kopf an. Wenn die Position passt,
+verbindet man die zwei Objekte und entfernt die überflüssigen (nicht sichtbaren) Flächen. Bei diesem Prozess kann und
+muss selbst bestimmt werden, wie viele Flächen entfernt werden und wie viele mittels der Kugel hinzugefügt werden.
+
+Bei der Subdivision Modellierung wird auch gerne das Sculpt-Tool für den letzten Feinschliff verwendet. Es ist auch
+möglich das Sculpt-Tool zu verwenden, ohne das neue Fläche generiert werden (KORR: VERLINKEN MIT DEM KAPITEL
+DYNTOPO).
+
+%--------------------------Sculpting--------------------------Sculpting--------------------------Sculpting--------------
+\subsection{Sculpting}
+\label{sec:sculpting}
+
+Das Sculpt-Tool von Blender teilt sich in die Bereiche \textit{Brush, Texture, Stroke, Curve, Dyntopo, Symmetry}
+und \textit{History} auf. Die wichtigsten Bereiche, die auch bei der Umsetzung des Antagonisten verwendet wurden sind
+unten angeführt.
+
+Wenn man ein Objekt mit dem Sculpt-Tool bearbeiten möchte, ist die Verwendung von Short-Cuts
+sehr hilfreich. Erfahrungsgemäß sind Short-Cuts in Blender  der beste Weg um sich mindestens 20\% der Zeit zu
+sparen. Beim Sculpten bringen Short-Cuts sogar 40\% der Zeit zurück.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-SculptMode.png}
+    \caption{Der Sculpt-Mode von Blender ist über die Listenauswahl im unteren Bereich der 3D-View erreichbar}
+    \label{picture:sculpt_mode}
+\end{figure}
+
+\textit{Brush} Bereich\citep{blender:sculpting_brushes}:
+
+Der \textit{Brush} Bereich bestimmt die grundlegenden Einstellungen des Pinsels.
+Wenn man auf das Bild in dem Bereich klickt
+kann man den aktuellen Pinsel wechseln (Siehe Abbildung\ref{picture:sculpt_brushes}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-Brushes.png}
+    \caption{Der Sculpt-Mode von Blender ist über die Listenauswahl im unteren Bereich der 3D-View erreichbar}
+    \label{picture:sculpt_brushes}
+\end{figure}
+Die darunterliegenden Einstellungen bestimmen den Radius
+und die Intensität (Strength) des ausgewählten Pinsels. Die
+letzte wichtige Einstellung in diesem Bereich ist die
+Auswahlmöglichkeit zwischen Add oder Subtract.
+
+"Add" hebt die Fläche an, "Substract" druckt sie ein. (Diese Einstellung ist
+nicht bei allen Pinseln gleich). Wenn man zeitsparend und
+professionell das Sculpting-Tool verwendet, braucht man den
+\textit{Brush} Bereich nie zu öffnen, da alles mit Short-Cuts
+kontrollierbar ist. In der Tabelle (Siehe Tabelle\ref{table:sculpt_brushes}) sind die
+wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
+
+\begin{longtable}{|p{3.6cm}|p{3.6cm}|p{6.4cm}|}
+    \hline
+    \endfirsthead
+    \textbf{Pinsel/Einstellung} & \textbf{Shortcut} & \textbf{Beschreibung} \\
+    \hline
+    \endhead
+    \textbf{Pinsel/Einstellung} & \textbf{Shortcut} & \textbf{Beschreibung} \\
+    \hline
+
+     Verwenden & Linke Maustaste & Wendet den aktuellen Pinsel auf dem Objekt an  \\
+    \hline
+     Subtract & STRG + Linke Maustaste & Wendet die Gegenfunktion des aktuellen Pinsels auf dem Objekt an.
+    (Falls der ausgewählte Pinsel eine Gegenfunktion hat) \\
+    \hline
+    Radius & F & Ermöglicht den Pinselradius einzustellen  \\
+    \hline
+    Strength & Shift + F & Ermöglicht die Intensität des Pinsels einzustellen  \\
+    \hline
+    Clay Strips & 3 & Dieser Pinsel erhöht die Mitte und die Seiten des Pinselbereiches mit einer leichten Abstufung.
+    Die Erhöhung ist klar abgegrenzt und der Höhepunkt wird bis zum Rand abgeflacht. Der Rand des Pinsels bildet eine
+    Abstufung zum restlichen Objekt.
+
+    Dieser Pinsel kann gut verwendet werden um Haare, Muskeln und Venen darzustellen  \\
+    \hline
+    Flatten & Shift + T & Dieser Pinsel probiert den ausgewählten Bereich aus der eigenen Perspektive auszugleichen,
+    sodass er glatt ist. Allerdings sollte man bei diesem Pinsel aufpassen, dass man nicht zu viel Fläche eindrückt,
+    da der Pinsel bei jeder Bewegung die vorher abgeflachte Fläche, noch einmal zu glätten und sie daher eindrückt.
+    Dadurch wird die ausgewählte Stelle immer tiefer eingedrückt.
+
+    Dieser Pinsel kann gut verwendet werden um Irritationen zu entfernen (Zum Beispiel im Auge oder bei Zähnen)  \\
+    \hline
+    Grab & G & Mit diesem Pinsel kann man einen Bereich des Objektes verschieben. Die naheliegenden Flächen werden
+    in abgeschwächt Form mitgezogen, damit das Objekt nicht die Struktur verliert. Die Verschiebung ist immer von der
+    eigenen Perspektive abhängig.
+
+    Dieser Pinsel kann gut verwendet werden um Proportionen anzupassen und zu verbessern. (Zum Beispiel, wie sehr die
+    Nase absteht.) Allerding muss man aufpassen, dass man keine Shading-Fehler auslöst\ref{picture:shading_fehler}  \\
+    \hline
+    Inflate/Deflate & I & Dieser Pinsel erhebt die ausgewählte Stelle in einer gleichmäßigen Glockenform.
+
+    Dieser Pinsel wird verwendet um Schwellungen, Beulen, Pickel und ähnliche Hautirritationen zu modellieren  \\
+    \hline
+    Mask & M & Der Maskenpinsel verändert das Objekt nicht. Er wird verwendet um bestimmte Stellen von Manipulation
+    zu beschützen. Wenn man den Masken-Pinsel aufträgt wird das Objekt schwarz angezeichnet. Das sind die geschützten
+    Stellen. Die Maske bleibt erhalten wenn man auf einen anderen Pinsel wechselt.
+
+    Dieser Pinsel wird verwendet, um sehr detailreiche Stellen eines Objektes zu schützen während man einen anderen
+    Pinsel sehr großflächig verwenden möchte. Allerdings muss man darauf achten, keine intensiven Veränderungen
+    in der Nähe der Maske zu modellieren, da dies zu Shading-Fehlern\ref{picture:shading_fehler} führen kann oder die
+    Struktur\ref{picture:struktur_fehler} des Objektes an dieser Stelle stark beschädigt  \\
+    \hline
+    Maske aufheben & ALT + M & Die gezeichnete Maske wird aufgelöst  \\
+    \hline
+    Nudge & - & Dieser Pinsel verschiebt die Flächen in die Richtung, in die man streicht. Der Effekt ist kremig
+    und mit absteigendender Stärke zum Rand.
+
+    Dieser Pinsel wird verwendet um Falten oder Kleidung zu modellieren  \\
+    \hline
+    Sculpt & X & Der Sculpt-Pinsel ist dem Inflate Pinsel sehr ähnlich. Jedoch hat der Sculpt Pinsel eine sehr
+    viel schwächere Glockenform.
+
+    Dieser Pinsel wird verwendet, um grobe Strukturen einzuzeichnen, die später mit dem Smooth-Pinsel und dem
+    Clay Strips Pinsel verfeinert werden  \\
+    \hline
+    Smooth & S & Dieser Pinsel ist dem Flatten Pinsel sehr ähnlich. Während der Flatten-Pinsel aus der eigenen
+    Perspektive das Objekt abflacht, ist die Perspektive bei dem Smooth Pinsel nicht von Relevanz. Außerdem probiert
+    der Smooth-Pinsel die Flächen abzurunden und näher zueinander zu bringen.
+
+    Dieser Pinsel wird verwendet, um gröbere Hautirritationen zu entfernen, Objektstellen abzurunden und
+    glätter / sauberer wirken zu lassen. Der Smooth Pinsel kann auch direkt verwendet werden, ohne das man
+    ihn auswählt. Wenn man \keys{Shift + Rechte Maustaste} drückt, wird der Smooth-Pinsel mit den Einstellungen die man auf
+    dem Smooth-Pinsel eingestellt hat eingesetzt \\
+    \hline
+    \caption{Die verschiedenen Pinsel des Blender Scupting Tools}
+    \label{table:sculpt_brushes}
+\end{longtable}
+
+Shading-Fehler:
+
+Shading Fehler entstehen, wenn Flächen übereinander liegen oder wenn
+die innere Seite einer Fläche von außen ersichtlich ist. Shading-Fehler
+verursachen, dass das Licht falsch berechnet wird (Siehe Abbildung\ref{picture:shading_fehler}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-ShadingFehler.png}
+    \caption{Der blau markierte Bereich zeigt einen Shading-Fehler}
+    \label{picture:shading_fehler}
+\end{figure}
+
+
+Struktur-Fehler:
+
+Die Struktur wird beschädigt wenn eine größere Position-Veränderung von Flächen passiert, während die unmittelbar
+anliegenden Flächen nicht mitbewegt werden. Dadurch erscheinen die Flächen, welche die Verbindung bilden
+verhältnismäßig riesig (Siehe Abbildung\ref{picture:struktur_fehler}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-StrukturFehler.png}
+    \caption{Der blau markierte Bereich zeigt einen Struktur-Fehler}
+    \label{picture:struktur_fehler}
+\end{figure}
+
+
+
+Diese Fehler sind mit dem Smooth-Pinsel leicht zu korrigieren.
+Jedoch sind diese Fehler auch leicht zu übersehen.
+
+
+\textit{Texture} Bereich\citep{blender:tex_mask}:
+
+Im \textit{Texture} Bereich kann man dem Pinsel eine Maske hinzufügen. Eine Maske ist eine schwarz-weiß Textur.
+Die Maske bestimmt die Intensität des Pinsels. An den schwarzen Stellen der Textur wird das Objekt nicht
+beeinflusst. An den weißen Stellen wird der Pinsels mit eingestellten Intensität beeinflusst.
+An den grauen Stellen wird der Prozentsatz des Grauwert in Relation zu der eingestellten
+Stärke des Pinsels verwendet. (Siehe Abbildung\ref{picture:sculpt_tex_mask})
+(KORR:Mehr Informationen zu dem "Textur" Bereich sind in dem Kapitel TexturePainting unter Texture Mask)
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-SculptMask.png}
+    \caption{Die Auswirkung einer Textur-Maske auf den Sculpt-Pinsel}
+    \label{picture:sculpt_tex_mask}
+\end{figure}
+
+\textit{Dyntopo} Bereich\citep{blender:dyn_top}:
+
+Der \textit{Dyntopo} Bereich beinhaltet die Schlüsseleinstellungen um detaillierte Objekte zu erstellen.
+\textit{Dyntopo} ist die Abkürzung für \textit{Dynamic Topology}. Wenn die dynamische Topologie aktiviert ist,
+werden die meisten Pinsel dem Objekt Flächen hinzufügen. Deshalb wird bei der Subdivision Charaktermodellierung
+das Sculpt-Tool ohne \textit{Dyntopo} verwendet, da man die Anzahl der Flächen unter Kontrolle halten möchte.
+Sobald \textit{Dyntopo} aktiviert wird, wird das Objekt automatische in dreieckige Flächen eingeteilt.
+Die Detaileinstellungen können sehr schnell zu viele Flächen generieren, was zum Absturz von Blender führen kann,
+daher sollte man bei diesen Einstellungen vorsichtig vorgehen. Bei der Abbildung\ref{picture:dynTopo} wurden nur die
+Einstellungen im \textit{Dyntopo} Bereich geändert (Außer bei der Fläche im linken unteren Teil des Bildes, dort
+wurde auch der Radius des Pinsels verändert).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-Dyntopo.png}
+    \caption{Darstellung der verschiedenen \textit{Dyntopo} Einstellungen. (BU = Blender Units)}
+    \label{picture:dynTopo}
+\end{figure}
+
+Die erste Einstellung in dem Bereich \textit{Dyntopo} bestimmt, die Stärke der Unterteilungen. Diese Einstellung
+unterteilt sich - abhängig von der Einstellung Detail-Arten - in eine Auflösung in Blender-Einheit, in die
+Detailgröße in Prozenten und in die Detailgröße in Pixel.
+
+Die Detail-Art Einstellung unterteilt sich in Constant Detail, Brush Detail und Realtive Detail.
+
+Constant Detail fügt Details auf der gesamten Fläche hinzu (Diese Einstellung ist am Performance-
+lastigsten und kann sehr schnell zum Absturz führen).
+
+Brush Detail fügt Flächen in prozentualem Anteil zum eingestellten Radius des Pinsels hinzu.
+
+Relative Detail fügt Details abhängig von dem Radius und dem Abstand zum Objekt
+hinzu. Umso näher man ist, desto mehr Details werden hinzugefügt. Umso weiter entfernt man ist, desto
+weniger Details. Wenn man mit "Relative Detail" arbeitet, muss man aufpasse, nicht bereits modellierte Details
+zu zerstören, weil man mit einem Pinsel zu weit entfernt, an bereits vorhandenen detailreichen Stellen des
+Objektes arbeitet.
+
+\textit{Symetry / Lock} Bereich\citep{blender:sym_lock}:
+
+Im \textit{Symetry / Lock} Bereich kann man das symetrische Verhalten einstellen. Standardmäßig werden alle
+Manipulationen entlang der X-Achse gespiegelt. Das kann man im Bereich \textit{Symetry / Lock} unter Mirror
+deaktivieren. Die anderen Einstellungen wurden für die Modellierung des Antagonisten nicht verwendet.
+
+
+
+Umsetzung des Antagonisten:
+
+Der Antagonist wurde zum größten Teil mittels dem Sculpt-Tool erstellt. Die einzige Ausnahmen sind die Hände. Die
+Hände wurden zu beginn mittels der Subdivision-Methode modelliert und im Nachhinein mit dem Sculpt Tool verfeinert. Die Teile des
+Antagonisten (Kopf - Rüstung - Jacke - Hände - Hose - Schuhe) wurden einzeln erstellt und am Ende zusammengefügt.
+
+Die dynamische Topologie war bei der gesamten Entwicklung aktiviert. Als Detail-Art wurde Relative Detail
+verwendet. Die oben genannten Pinsel wurden verwendet um die einzelnen Teile zu modellieren.
+
+Zu Beginn wurde ein Objekt verwendet, welches die annähernde Grundform hat. Beim Kopf war das eine Kugel. Mit
+einem Pinsel, der bei aktiver Dyntopo details hinzufügt, wurde das Objekt in mehrere Flächen unterteilt (Wenn die
+Stärke des Pinsels auf 0 gesetzt ist, wird das Modell nicht verändert, allerdings werden Flächen hinzugefügt). In Folge
+wurde mit dem Grab-Pinsel die Grundform des Kopfes hergestellt. Der Schädel wurde heraus und
+das Kinn nach vorne gezogen. Dann wurde mit dem Sculpt-Pinsel das Gesicht vorgezeichnet (Nase, Ohren,
+Augen, Augenbrauen, Mund, Kinn, Wangen und Nacken). Ab dann begann das genauere Sculpten, wo regelmäßig zwischen den
+verschiedenen Pinseln gewechselt wurde. Nachdem das Gesicht und die Proportionen passten, wurden als letzten Schritt
+die Details hinzuzufügen: Narben, Gesichtsfalten, Hautirritationen, Beulen, etc. (Siehe Abbildung\ref{picture:antagonist_process})
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-GWKopfModellierungProzess.png}
+    \caption{Darstellung der verschiedenen \textit{Dyntopo} Einstellungen. (BU = Blender Units)}
+    \label{picture:antagonist_process}
+\end{figure}
+
+Wenn man das Sculpt-Tool von Blender produktiv verwenden möchte, muss man sich in der 3D-Welt bewegen
+können. Vorallem wenn man mit relativen Details arbeitet ist es wichtig immer die richtige Perspektive zu erreichen.
+Die Tabelle\ref{table:blender_movement}) zeigt die wichtigsten Shortcuts um sich in Blender richtig bewegen zu können.
+
+\begin{longtable}{|p{4cm}|p{9.6cm}|}
+    \hline
+    \endfirsthead
+    & \textbf{Shortcut} & \textbf{Beschreibung} &\\
+    \hline
+    \endhead
+
+    & MMB & Bewegung um den Sichtpunkt & \\
+    & NUMPAD(ENTF) & Setzt den Sichtpunkt auf das ausgewählte Objekt / die ausgewählten Objekte & \\
+    & SHIFT + Scrollen & Bewegung um den Sichtpunkt & \\
+    & ALT + Scrollen & Bewegt den Sichtpunkt nach rechts / links & \\
+    & SHIFT+ MMB & Bewegt den Sichtpunkt nach oben / unten / rechts / links & \\
+    & Scrollen & Zoomt grob heran / heraus & \\
+    & STRG + MMB & Zoomt fein heran / heraus & \\
+
+    \caption{Shortcuts um sich in Blender einfach zu bewegen. (MMB = Mittlere Maustaste)}
+    \label{table:blender_movement}
+\end{longtable}
+
+Wenn man sich mit der mittleren Maustaste nur um sich selbst drehen kann und nicht mehr bewegen kann, hat man
+so nahe herangezoomt, dass man sich genau auf dem Sichtpunkt befindet. In diesem Fall muss man herauszoomen, bis
+man sich wieder bewegen kann.
+
+
+
+%---------------Subdivision Modelling--------------Subdivision Modelling---------------Subdivision Modelling------------
+\subsection{Subdivision Modelling}
+\label{sec:subdivision}
+Bei der Subdivision-Methode werden einige Modifikatoren, Modi und Tools verwendet, die unten angeführt sind:
+
+Edit Modus\citep{blender:edit_mode}:
+
+Der Edit Modus in Blender wird verwendet um ein Grundobjekt zu manipulieren. Entgegengesetzt zum Objekt Modus - in
+welchem man die Größe, Position und Rotation verändern kann - kann man in dem Edit-Modus die Flächen, Punkte und Kanten
+eines Objektes manipulieren.
+
+Loop-Cuts\citep{blender:loop_cut_slide}:
+
+Ein Loop-Cut wird eine umrundete Unterteilung eines Objektes genannt. Bei quadratischen Flächen ist ein Loop-Cut leicht
+zu erstellen. Flächen die von der Kantenanzahl unterschiedlich sind können keinen durchgängigen Loop-Cut zulassen.
+Standard-Mäßig wird der Loop-Cut in der Mitte des Objektes gesetzt. Durch die Tastenkombination \keys{STRG+R},
+wird ein Loop-Cut gesetzt. Mittles dem Mausrad wird die Anzahl der Unterteilungen verändert. Die rechte Maustaste
+platziert den Loop-Cut / die Loop-Cuts in kontinuierlichen Abständen; beginnend in der Mitte. Die linke Maustaste
+platziert den Loop-Cut an der aktuellen Position. Wenn ein Loop-Cut an einer komplexen Stelle gesetzt wurde kann dieser
+mit \keys{ALT + Rechtsklick} markiert werden und mit \keys{2xG} im relativen Weg zu dem Objekt verschoben werden.
+(Siehe Abbildung \ref{picture:loop_cut_slide})
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_haendisch-LoopCuts.png}
+    \caption{Verschiedene Loop-Cuts bei einfachen und komplexen Objekten}
+    \label{picture:loop_cut_slide}
+\end{figure}
+
+
+Subdivision Surface Modifikator\citep{blender:mod_subd}:
+
+Der Subdivision Surface Modifikator fügt einem Objekt eine bestimmte Iteration an Flächen hinzu. Dadurch wird ein
+glatter und detailliertere Effekt erzielt.
+
+
+Mirror Modifikator\citep{blender:mod_mirror}:
+Der Mirror-Modifikator spiegelt das Objekt in einer bestimmten Achse um den Ursprung des Objektes.
+(Der Ursprung des Objektes ist der orange kleine Punkt. Der Ursprung kann mit \keys{STRG + SHIFT + ALT + C} neu gesetzt werden.)
+
+Extrudieren\citep{blender:extrude}:
+Extrudieren bedeutet, dass man eine Kopie einer Auswahl erstellt und diese automatisch mit der Auswahl verbindet.
+Wenn man einen Punkt auswählt und extrudiert (Shortcut \keys{E}), wird ein weiterer Punkt und eine Kante erstellt.
+Bei einer Kante, eine weitere Kante und eine Fläche, bei einer Fläche mit vier Punkten werden 5 weitere Flächen erstellt
+(Siehe Abbildung\ref{picture:extrude}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_haendisch-Extruding.png}
+    \caption{Die verschiedenen Möglichkeiten zu extrudieren}
+    \label{picture:extrude}
+\end{figure}
+
+
+Proportional Edit\citep{blender:prop_editing}:
+Beim proportional Editing werden die Punkte in einem bestimmten Bereich ebenfalls von einer Manipulation beeinflusst.
+Die Stärke und Art der Beeinflussung wird selbst bestimmt.
+
+
+Wenn man den Charakter mittels der Subdivision-Methode modelliert beginnt man in den meisten Fällen mit einem Würfel.
+Mittles Loop-Cut and Slide halbiert man den Würfel und entfernt eine Hälfte des Würfels. Man fügt dem Objekt einen
+Mirror-Modifikator hinzu, um nur eine Seite des Charakters zu modellieren. Dann erstellt man die Grund-Struktur des
+Körpers (Siehe Abbildung\ref{picture:base_body}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_haendisch-baseCharakter.png}
+    \caption{Der erste Schritt der Subdivision-Methode}
+    \label{picture:base_body}
+\end{figure}
+
+Nachdem man die Grund-Struktur hat, kann man den Subdivision-Modifikator auf dem Objekt anwenden. Im Edit-Modus
+modelliert man dann diverse Details in das Modell. Um die Details zu modellieren ohne die Struktur des Objektes
+zu beschädigen kann man Proportional Edit aktivieren. Bei der Entwicklung des Hauptcharakters wurde das Gesicht
+nur schemenhaft modelliert, da das Spiel in der Ego-Perspektive umgesetzt wird (Siehe Abbildung\ref{picture:protagonist}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_haendisch-protagonist.png}
+    \caption{Der Protagonist mit dem Subdivision Surface Modifikator}
+    \label{picture:protagonist}
+\end{figure}
+
+
+%---------------------UV-Unwrapping--------------------UV-Unwrapping---------------------UV-Unwrapping------------------
+\subsection{UV-Unwrapping}
+\label{sec:unwrapping}
+
+Um einen Charakter zu Texturieren, muss man diesen als erstes \texit{unwrappen}. Unwrappen bedeutet, dass man die Flächen
+eines Objektes aufklappt und zweidimensional darstellt. Blender bietet mehrere Möglichkeiten an, ein Objekt zu
+\texit{unwrappen}. Die meist verwendeten sind "Smart UV-Projekt"\citep{blender:smart_uv} und
+"Unwrap"\citep{blender:unwrap}. Für das Projekt wurde die "Unwrap" Methode verwendet. Um eine UV-Layout
+(die zweidimensionale Darstellung der Objektflächen) mittels der Unwrap Methode zu erstellen, müssen zuerst sogenannte
+Seams erstellt werden\citep{blender:seams}. Seams werden erstellt, indem man Kanten des Objektes selektiert und mittels
+dem UV-Menü (Shortcut \keys{U}) "Mark Seam" auswählt. Wenn Seams gesetzt wurden, werden diese Kanten Rot dargestellt.
+Wenn man dann das Objekt mit "Unwrap" - ebenfalls in dem UV-Menü - aufklappt, werden die durch Seams abgetrennten
+Flächen auch in dem UV-Layout abgetrennt.
+
+Dieses Layout ist an das Mesh gebunden. Das heißt, dass das UV-Layout nach einem Export und Import vorhanden bleibt.
+UV-Layouts müssen in Blender erstellt werden, da Unreal-Engine keine Möglichkeit bietet, UV-Layouts zu erstellen oder
+zu bearbeiten. Die Seams sollten bedacht gesetzt werden, um die Übersicht nicht zu verlieren. UV-Layouts können
+mittels dem Image/UV-Editor noch bearbeitet werden, damit keine Flächen übereinanderliegen (In diesem Fall
+würden sie sich die gleichen Pixel teilen). Falls man eine UV-Map in einem Fotobearbeitungsprogramm bearbeiten möchte,
+sollte man die einzelnen Teile des Objektes klar ersichtlich in der UV-Map gestalten, damit zuordenbar, welcher Bereich
+der UV-Map zu welchen Flächen des Objektes gehört.
+
+Bei der Umsetzung der Charaktere, wurde für jeden Teil ein eigenes UV-Layouts generiert. Es gibt auch die Möglichkeit,
+ein UV-Layout für den gesamten Charakter zu erstellen, wodurch weniger Materials benötigt werden. Jedes Material kann
+nur eine UV-Map texturieren (Siehe Abbildung\ref{picture:uv_layouts}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_UV_Unwrapping-UV-Layouts.PNG}
+    \caption{Die UV Layouts des Antagonisten}
+    \label{picture:uv_layouts}
+\end{figure}
+
+Bei High-Resolution Modellen, wie dem Antagonisten wird kein UV-Layout erstellt. Das UV-Unwrapping folgt in solchen
+Fällen etwas später (Siehe Kapitel \ref{sec:normal_baking}).
+
+
+%---------------------Normal Baking--------------------Normal Baking---------------------Normal Baking------------------
+\subsection{Normal Baking}
+\label{sec:normal_baking}
+
+Das Modell des Antagonist ist zu detailreich modelliert um es für ein Spiel zu verwenden. Da der Charakter mit dem
+Sculpt-Tool von Blender und der aktivierten \textit{Dyntopo} Einstellung (Siehe Kapitel\ref{sec:sculpting})modelliert
+wurde, sind über eine Million
+Flächen entstanden. Dieses Modell des Antagonisten wird als High-Resolution Modell bezeichnet. Um einen verwendbaren
+Charakter zu erstellen muss man aus dem High-Resolution Modell ein Low-Resolution Modell erstellen und dann die
+Details mittels einer Normal-Textur \textit{gefälscht} darstellen (Mehr Informationen zu Normal Texturen im Kapitel\ref{sec:tex_normal}).
+Um ein Low-Resolution Modell des Antagonisten zu bekommen haben wir den Decimate-Modifikator verwendet\citep{blender:mod_decimate}.
+
+Der Decimate-Modifikator besitzt drei primäre Einstellungen:
+
+Collapse:
+
+In diesem Modus werden Punkte miteinander in der Mitte verbunden und dadurch Flächen dezimiert. Die Form des Meshes
+kann dadurch sehr stark beeinflusst werden.
+
+Un-Subdived:
+
+Diese Methode löscht umrundenden Kanten. Es ist der gegenteilige Prozess von Loop-Cuts (Siehe Kapitel \ref{sec:subdivision}).
+Daher würde diese Methode nichts bei dem Antagonisten bewirken, weil er durch die \textit{Dyntopo} Einstellung aus
+Dreiecken besteht.
+
+Planar
+In dieser Einstellung kann man einen Winkel bestimmen, in welchem die Flächen verbunden werden sollen.
+Unterscheiden sich zwei Flächen von ihrer Rotation unter X°, werden sie zu einer Fläche verbunden.
+
+
+Die Planar Einstellung dezimiert das Modell am besten. Die Form bleibt relative in Takt und die Flächen werden auf eine
+geringere Anzahl reduziert. Allerdings würde das Low-Resolution Modell nicht für Animationen geeignet sein, wenn die
+Planar Einstellung verwendet wird, da die Flächen die sich entlang des Ellbogen und des Armes befinden ebenfalls
+verbinden würden. Dadurch würde man den Arm nicht mehr korrekt animieren können. Für den Antagonisten wurde die
+Collapse Methode verwendet. Eine optimale Flächenanzahl befindet sich zwischen 1000 und 2000 Flächen. Das garantiert
+einen flüssigen Programmablauf, die Möglichkeit gute Animationen zu gestalten und mittels UV-Unwrapping ein UV-Layout
+mit relativ wenig Aufwand zu gestalten.
+
+Nachdem man das Objekt verringert hat, sollte noch im Edit-Modus kontrolliert werden, ob noch obsulete Flächen entfernt
+werden können (Siehe Abbildung \ref{picture:antagonist_decimated}). Wenn man das fertige Low-Resolution Modell hat,
+erstellt man ein UV-Layout (Kapitel \ref{sec:unwrapping}).
+Das UV-Layout wird benötigt, damit eine Normal-Textur (Kapitel \ref{sec:tex_normal}) erstellt werden kann.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_UV_Normal_Baking-LowHighPoli.png}
+    \caption{Die beiden Modelle auf der linken Seite sind mittels des Decimate-Modifikators reduziert worden. Die Modelle auf der rechten Seite sind nicht reduziert}
+    \label{picture:antagonist_decimated}
+\end{figure}
+
+
+
+Nun kann man die Normals des High-Resolution Modells generieren. Dafür müssen das High-Resolution und Low-Resolution
+Modell die exakt gleiche Position in der 3D-Welt haben. Im Properties Modus unter dem Bereich: "Bake" wählt man als
+Bake Mode: "Normals" aus. Der Normal Space wird auf: "Tangent" gesetzt. Das Auswahlkästchen "Selected to Active" muss
+noch angehakt werden (Siehe Abbildung \ref{picture:baking_settings}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_UV_Normal_Baking-bakeSection.png}
+    \caption{Die Einstellungen um eine Normal-Textur aus einem High-Resolution Modell zu generiern}
+    \label{picture:baking_settings}
+\end{figure}
+
+
+Die übrigen Einstellungen sind standardmäßig korrekt für diesen Prozess. Mit der Taste "Bake",
+wird die Normal-Textur erstellt. In dem Fesnter "UV/Image Editor" kann man überprüfen ob alles geklappt hat und die
+Normal-Textur abspeichern.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_UV_Normal_Baking-Normal_Maps.png}
+    \caption{Die erstellten Normal-Texturen des Antagonisten}
+    \label{picture:antagonist_normals}
+\end{figure}
+
+
+
+
+%-----------------Texture Painting-----------------Texture Painting------------------Texture Painting-------------------
+\subsection{Texture Painting}
+\label{sec:texture_painting}
+
+Bevor man mit der Texturing des Charakters beginnt sollte man sich überlegen welchen Stil man verfolgen möchte. Um
+einen fotorealistischen Stil zu erreichen, ist die beste Möglichkeit, sich das UV-Layout zu exportieren und mittels
+Fotografien, Körperteile und Kleidung auf das UV-Layout zu übertragen.
+Eine andere Möglichkeit bietet der Blender Texture-Paint Modus\citep{blender:tex_painting}. Dieser wird eher selten
+für fotorealistische Texturierung verwendet. Obwohl wir einen fotorealistische Stil verfolgen, haben wir trotzdem
+den Blender Texture Paint Modus verwendet, da wir alle Texturen im Laufe dieser Diplomarbeit selbst erstellt haben.
+Die erste alternative hätte erfordert, dass wir das passende Gewand kaufen, abfotografieren und dann dem UV-Layout
+anpassen. Ein passendes Gesicht für den Antagonisten zu finden und abzufotografieren, wäre die echte Herausforderung
+geworden.
+
+Um das Texture-Painting Tool von Blender gut zu verwenden, ist es praktisch den UV/Image Editor neben der 3D-View
+geöffnet zu haben (Siehe Abbildung \ref{picture:tex_painting_windows}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-Layout.png}
+    \caption{Empfohlene Fensteraufteilung im Texture-Paint Modus}
+    \label{picture:tex_painting_windows}
+\end{figure}
+
+Bevor man beginnt Texturen zu zeichnen muss der Charakter ein fertiges UV-Layout und ein Material mit einer Textur
+besitzen. Das Material-Prinzip von Blender \citep{blender:materials_blender} wird in diesem Buch nicht behandelt.
+Die Materialien für dieses Projekt wurden in der Unreal-Engine erstellt (Siehe Kapitel \ref{sec:materials}).
+Weitere Voreinstellungen sollten in dem "Slots" Bereich vorgenommen werden:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-Slots.png}
+    \caption{Der "Slots" Bereich }
+    \label{picture:tex_painting_slots}
+\end{figure}
+
+Slots Einstellungen:
+
+
+    Painting Mode:
+
+    Der Painting Mode wird auf Image gewechselt.
+
+
+    Canvas Image:
+
+    Um das korrekte Canvas Image auszuwählen muss es als erstes Erstellt werden.
+    Dafür wird das Modell im Edit-Modus markiert, damit das UV-Layout
+    anzeigezeigt wird. Dann klickt man im UV-/Image Editor auf das  Plus neben
+    dem "Image-Icon". Wenn man die gewünschte Resolution eingestellt hat klickt man
+    auf okay (Siehe Abbildung \ref{picture:new_image}).
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-NeuesBild.png}
+        \caption{Empfohlene Fensteraufteilung im Texture-Paint Modus}
+        \label{picture:new_image}
+    \end{figure}
+
+
+    Über den Bereich "Image" -> "Save Image", kann man das Bild abspeichern.
+    Im Texture-Bereich von Blender kann man dieses Image dann importieren (Am
+    besten gleich auf dem Material, welches man zum Zwecke des Texture-Paintings
+    erstellt hat). Nach diesen Schritten muss unter der Einstellung Canvas Image
+    direkt die richtige Textur ausgewählt werden.
+
+
+    Save All Images:
+
+    Dieser Button speichert alle Veränderungen in den Bild-Dateien, die auf den Texturen
+    gezeichnet wurden.
+
+
+Sobald die Voreinstellung vorhanden sind, kann man auch schon beginnen die Textur zu zeichnen. Um auch wirklich das
+erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen, die den Pinsel beeinflussen:
+
+
+"Tools" Bereich:
+
+    Brush:
+    \begin{longtable}{|p{4cm}|p{9.6cm}|}
+        \hline
+        \endfirsthead
+        & \textbf{Pinsel/Einstellung} & \textbf{Beschreibung} &\\
+        \hline
+        \endhead
+
+        & Fill & Befüllt die ausgewählte Textur mit einer Basis-Farbe & \\
+        & Smear & Dieser Pinsel verschmiert die Farbe ineinander. Er wird verwendet um einen sanften Farbübergang zu gestalten & \\
+        & Soften & Dieser Pinsel lässt die Pixel verschwimmen. Er wird verwendet um Farbkanten abzurunden & \\
+        & TexDraw & Dieser Pinsel zeichnet eine ausgewählte Farbe auf Textur & \\
+
+        \caption{Pinsel des Texture Painting Modus}
+        \label{table:tex_painting_brushes}
+    \end{longtable}
+
+    Blend:
+
+    Der Blend Type bestimmt, welche Methode der Pinsel verwendet um Farbe hinzuzufügen. Es wurden nur Mix und Add für
+    das Projekt verwendet.
+
+        Mix:
+
+        Überdeckt die Farben. Die stärkere Farbe bleibt daher mehr erhalten als die Schwächerer
+        (abhängig von den Farbwerten).
+
+        Add:
+
+        Fügt eine Farbe der vorhandenen hinzu. Gut verwendbar mit der traditionellen Farbenlehre (Auf eine rote Fläche
+        wird mittels der Add-Funktionen Grün hinzugefügt. Das Ergebnis ist Gelb).
+        Die Add Funktion ist auch sehr hilfreich um eine Property-Map zu erstellen.
+        (Mehr Informationen zu einer Property gibt es in dem Kapitel \ref{sec:tex_inside_engine})
+
+
+
+    Texture:
+
+    In dem Texture-Bereich gibt es die Möglichkeit eine Textur hinzuzufügen, die als Vorlage für den Pinsel dient.
+    Wenn man auf dem Objekt zeichnet, wird nicht die ausgewählte Farbe, sondern die Textur gezeichnet. Diese
+    Einstellung kann gut für Sommersprossen verwendet werden.
+
+
+    Texture Mask:
+
+    Die Texture Mask Einstellung hat die gleiche Auswirkung wie der Texture Bereich in dem Kapitel \ref{sec:sculpting}.
+    Es wird ein bestimmter Bereich der Zeichenfläche nicht verwendet. Das ist von der geladenen Textur abhängig.
+    Die geladenen Textur nennt man eine Maske (Masken sind in den meisten Fällen schwarz-weiß Texturen).
+    Eine Maske zu erstellen ist relativ einfach. Dafür kann ein beliebiges Fotoprogramm oder Blender selbst verwendet
+    werden. Im UV-/ Image Editor muss ein neues schwarzes Bild erstellt werden. Nachdem das getan wurde, wechselt man
+    auf den Paint - Mode (Siehe Abbildung \ref{picture:paint_mode}).
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-MaskeErstellen.png}
+        \caption{Empfohlene Fensteraufteilung im Texture-Paint Modus}
+        \label{picture:paint_mode}
+    \end{figure}
+
+    Um dann eine Maske zu zeichnen ist es nur wichtig, dass man nur mit Grauwerten arbeitet. Dafür ist es hilfreich,
+    die Farbauswahl des Pinsel mittels dem HSV - Farbcode zu bestimmen. Der H-Wert (Hue) und S-Wert (Saturation) wird
+    auf null gesetzt. Der V-Wert (Value) bestimmt die Graustufe (Siehe Abbildung \ref{picture:hsv_color_code}).
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-HSV.png}
+        \caption{HSV-Farbcode}
+        \label{picture:hsv_color_code}
+    \end{figure}
+\flushbottom

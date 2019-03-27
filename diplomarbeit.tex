@@ -165,6 +165,9 @@
 \usepackage[os=win]{menukeys}
 \usepackage{longtable}
 
+%% Für Tabellen Formatierung
+\usepackage{longtable}
+
 %% for pandoc
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -249,16 +252,7 @@ Wien, \today
 
 \end{titlepage}%%%%%%%%%%%%%%%%%%%%% Ende Titelseite %%%%%%%%%%%%%%%%%%%%%%
 % \renewcommand{\kapitelautor}{}  % bleibt leer (allg. Teil)
-\chapter*{Kurzfassung}
-\input{text/00_vorlage/00_kurzfassung.tex}
 
-\chapter*{Abstract}
-\selectlanguage{english}
-\input{text/00_vorlage/00_abstract.tex}
-\selectlanguage{ngerman}
-
-\chapter*{Ehrenwörtliche Erklärung}
-\input{text/00_vorlage/00_erklaerung.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cleardoublepage{}
@@ -312,24 +306,6 @@ Kurz in Worten zusammengefasst, was die Ziele der Diplomarbeit sind.
 \renewcommand{\kapitelautor}{}
 
 \input{text/unrealEngine/c_unrealEngine.tex}
-%Kapitel einfügen
-%Ende des Kapitel
-
-\chapter{Sound}
-
-% wer hat diese Kapitel geschrieben oder leer
-\renewcommand{\kapitelautor}{}
-
-\input{text/sound/c_sound.tex}
-%Kapitel einfügen
-%Ende des Kapitel
-
-\chapter{Website}
-
-% wer hat diese Kapitel geschrieben oder leer
-\renewcommand{\kapitelautor}{}
-
-\input{text/website/c_website.tex}
 %Kapitel einfügen
 %Ende des Kapitel
 
