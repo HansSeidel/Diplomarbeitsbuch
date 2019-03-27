@@ -1,9 +1,9 @@
 \section{Exportieren von Blender zu Unreal Engine 4}
 \label{Exportieren_von_Blender_zu_Unreal_Engine_4:ref1}
-Damit alle Objekte die in Blender modelliert wurden, richtig in der Unreal Engine anzeigen zu können, muss man ein paar
-Einstellungen an den Objekten machen und die Maße in der Datei verändern.
+Um alle Objekte die in Blender modelliert wurden, richtig in der Unreal Engine anzeigen zu können, muss man ein paar
+Einstellungen an den Objekten vornehmen und die Maße in der Datei verändern.
 
-In der Datei selbst, muss man im Property-Panel die Länge auf metrisch, den Winkel auf Grad und die Skalierung auf 0.01 stellen.
+In der Datei selbst muss man im Property-Panel die Länge auf metrisch, den Winkel auf Grad und die Skalierung auf 0.01 stellen.
 Das ist notwendig, damit die Objekte in der Unreal Engine die richtige Skalierung haben. Damit man diese Einstellungen nicht bei
 jeder Datei neu einstellen muss, kann man die Einstellungen als Startup File speichern.
 
@@ -16,14 +16,14 @@ Zum Schluss ist es wichtig, welches Dateiformat benutzt wird, um die Daten so zu
 Information lesen können. Die Wahl des richtigen Formates wird in den Unterkapiteln abgedeckt.
 
 \subsection{3D-Modelle}
-Damit in Unreal Engine alles korrekt importiert werden kann, muss man die 3D-Modelle in Dateien der Endung .fbx exportieren.
-Damit man nicht etwas falsches exportiert, ist es empfehlenswert nur ausgewählte Objekte zu exportieren. Dazu wählt man dann alle
+Damit in die Unreal Engine alles korrekt importiert werden kann, muss man die 3D-Modelle in Dateien der Endung .fbx exportieren.
+Damit man nicht etwas falsches exportiert, ist es empfehlenswert nur ausgewählte Objekte zu exportieren. Dazu wählt man alle
 Objekte aus die man exportieren möchte, exportiert sie und wählt vor dem Bestätigen die Option Selected Objects aus.
 Um Smooth Shading (\textit{Kapitel \ref{objectMode:smoothshading} \dq Smooth Shading\dq})
 auch zu exportieren, muss man den Wert Face auswählen.
 
 \subsection{Simulationen}
 \label{Simulation_Heading}
-Bei Simulationen, muss man die Dateien als Alembic Datei exportieren. Dazu wählt man wieder alle Objekte aus, die man exportieren möchte und
+Bei Simulationen muss man die Dateien als Alembic Datei exportieren. Dazu wählt man wieder alle Objekte aus, die man exportieren möchte und
 wählt diesmal beim Exportieren das Dateiformat Alembic (.abc) aus. Bei den Exporteinstellungen kann man vor dem Exportieren den Wert Triangulate auswählen,
 es kann nämlich der Fall eintreten, dass die Dateien in der Unreal Engine sonst nicht richtig erkannt werden.
