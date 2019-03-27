@@ -1,5 +1,209 @@
-\section{Rigging}
-\subsection{Geschichte}
-\subsection{Allgemein Rigs}
-\subsection{Rigging in Blender}
-\subsection{Umsetzung der Rigs}
+\section{Rigging in Blender}
+Rigging ist ein allgemeiner Begriff der das Hinzufügen von Steuerelementen zu Objekten (Meshes) bezeichnet.
+Das riggen von Meshes funktioniert in Blender wie in vielen anderen Programmen.
+In Blender werden fünf Features oft benutzt. Dazu gehören die Armatures, Constraints, Lattice, Object Modifiers und Shape Keys.
+
+\subsection{Armatures}
+Ein Armature kann man sehr gut mit einem Skelett vergleichen.
+Wie ein echtes Skelett besteht ein Armature aus mehreren Knochen (Bones). Ein Armature hat so wie jedes Objekt eine Oirigin,
+Position und Rotation.
+
+\subsubsection{Bones}
+Bones sind einzelne Knochen eines Armatures und diese Knochen können einzeln bewegt werden.
+Alle Meshes die eine Verbindung \verb-/- Beziehung mit dem Bone eingehen, deformieren und bewegen sich je nach Bewegung einzelner oder mehrerer Knochen. Bones werden nicht gerendert.
+
+Es gibt zwei verschiedene Arten von Bones: Deforming Bones und Control Bones
+
+\paragraph{Deforming Bones:}
+Deforming Bones beeinflussen das in Beziehung stehende Mesh direkt und ändern es je nach Bewegung dieses Bones.
+
+\paragraph{Control Bones:}
+Control Bones beeinflussen nicht direkt Meshes, sondern dienen dazu, andere Bones und Objekte zu steuern, wie zum Beispiel ein Schalter.
+Als weiteres Beispiel können wir annehmen, dass ein Control Bone mit einem Deform Bone in Verbindung steht und sich dieser anders verhält, je nach Position des Control Bones.
+
+\paragraph{Aufbau eines einzelnen Bones}
+Jeder Bone hat drei Teile, die Root, den Body und die Tip. Die Root ist der Anfang eines Bones, der Body ist der eigentliche Bone und die Tip ist das Ende.
+Jeweils die Root und die Tip beschreiben die Position des eigentlichen Bones.
+Grundsätzlich wird der Weg in Richtung Root als Parents bezeichnet und der Weg in Richtung Tips Childs.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_bone.png}
+    \caption{Beispiel Bone mit markierter Root, Body und Tip}
+\end{figure}
+
+\paragraph{Beeinflussung eines Bones:}
+Einzelne Bones beeinflussen nicht das ganze Mesh, sondern einzelne, nahestehende, Vertices. Genauso wie die Knochen in unserem Körper die in der Nähe liegenden Muskeln und Haut beeinflussen.
+Wie stark die verschiedenen Vertices durch einen Bone beeinflusst werden kann man durch Weight Painting auf dem Mesh \dq aufmalen\dq.
+
+\paragraph{Bearbeiten eines Bones:}
+Wie Meshes kann ein Bone eine beliebige Größe haben, sowie in die Länge gezogen oder gedreht werden.
+Die Drehung oder \dq Bone Roll\dq hat einen Einfluss auf die Bewegung des Bones. Deswegen ist es wichtig, dass Bones die gleiche Rotation aufweisen. Das gilt besonders bei Charakter Models mit einer linken und rechten Seite.
+Wenn die Bones auf der rechten und linken Seite nicht die gleiche Rotation aufweisen, kann es passieren, dass sich die Bones anders verhalten, wenn man Posen von einer Seite zur anderen kopiert.
+Dies kann die ganze Pose kaputt machen und man muss sie manuell reparieren.
+
+Um die Rotation der Bones zu ändern, kann man das Armature auswählen und in den Edit Modus wechseln.
+Im Edit Modus wählt man mithilfe von der Taste \keys{a} alle Bones aus und mit dem Tastenkürzel \key{Ctrl + n} öffnet sich ein Menü, um die Rotation auf
+verschiedene Arten in verschiedene Positionen zu bringen.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/bone_roll_recalculate.png}
+    \caption{Menü um die Bone Roll zu ändern}
+\end{figure}
+
+\paragraph{Relationen und Bones:}
+Jeder Bone ist ein Parent (Elternteil) oder / und ein Child (Kind) eines anderen Bones.
+Diese Relation beschreibt die Beeinflussung eines Bones auf den anderen. Jeder Bone wird von seinem Parent beeinflusst und beeinflusst selbst seine Childs-Bones.
+Im Bild \ref{Rigging:ParentChild} sieht man einen markierten Bone. Dieser hat zur linken ein Parent und zur rechten ein Child.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/bone_parent_child.png}
+    \caption{Beispiel für Parents und Childs}
+    \label{Rigging:ParentChild}
+\end{figure}
+
+Wenn man nun den ausgewählten Bone im Pose Modus bewegt sieht man, dass das Child des Bones sich mitbewegt während der Parent Bone davon unbeeinflusst bleibt.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/bone_parent_child_demonstration.png}
+    \caption{Demonstration}
+\end{figure}
+
+Man kann die Relationen zwischen Bones einfach aufbauen in dem die Tip eines Bones extruded wird oder man die Relation manuell mithilfe von Constraints setzt.
+Durch Constraints kann man also auch Bones, die nicht direkt miteinander verbunden sind, einer Relation zuweisen.
+
+\paragraph{Naming Conventions:}
+Jedem Bone wird automatisch der Name \dq Bone.00X\dq zugewiesen wobei sich X automatisch erhöht. Wie man sich vorstellen kann bringen diese Namen keine Übersicht.
+Deswegen gibt es gewisse Naming Conventions. Grundsätzlich sollte ein Bone einen auschlaggebenden Namen haben wie z.B. \dq head\dq, \dq finger\dq, \dq leg\dq  etc.
+Control Bones bekommen im Normalfall eine kleine Beschreibung im Namen dazu z.B. \dq leg.IK\dq um zu verdeutlichen das es sich hierbei um einen Bone handelt der \dq Inverse Kinematics\dq anwendet.
+Bones die es doppelt gibt wie z.B. leg.L (links) und leg.R (rechts) sollten nach diesem Schema benannt sein.
+
+\subsubsection{Pose Mode}
+Der Pose Mode ist ähnlich wie der Edit Mode, im Sinne davon das nur ein Objekt bearbeitet wird, im Falle des Pose Modes aber ein Armature.
+Um in den Pose Mode zu kommen wählt man ein Armature aus und kann schon in den Pose Mode wechseln.
+Der Pose Mode ermöglicht es, das Armature mithilfe von Relationen und \ver-/- oder Constraints in Pose zu bringen. Der Edit Mode kann nicht mit Relationen oder Constraints arbeiten.
+Mithilfe des Armature Pose Panels kann man jede Position speichern, um später wieder auf diese zuzugreifen.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_pose_panel.png}
+    \caption{Beispiel für das Pose Panel}
+\end{figure}
+
+\subsubsection{Skinning - Verbindung zwischen Armature und Mesh}
+Ein fertiges Armature und Mesh zu verbinden ist grundsätzlich leicht. Indem man zuerst das Mesh und danach das Armature auswählt, und die Tastenkombination \keys{Ctrl + p} drückt,
+bekommt man ein Menü, um eine Relation zu erstellen. In diesem Fall bekommt man noch drei extra Optionen. Diese sind in der Abbildung \ref{rigging:parentmenu} gelb markiert.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_connecting_arm_and_mesh.PNG}
+    \caption{Parent Menü}
+    \label{rigging:parentmenu}
+\end{figure}
+
+Wichtig für uns ist nur die Option \dq With Automatic Weights\dq. Mit dieser Option erstellt Blender automatisch schon eine gute Basis für das sogenannte \dq Weight Painting\dq.
+Als gesamtes wird die Verbindung zwischen Armature und Mesh \dq Skinning\dq, wie in häuten, genannt.
+
+\subsubsection{Weight Painting}
+Weight Painting ist der Prozess nachdem man ein Armature mit einem Mesh verbunden hat. Da die \dq With Automatic Weight\dq Option nicht perfekt das Mesh \dq painted\dq (anmalt),
+gibt es die Option das man dieses anmalen noch manuell ändern kann. Das Weight Painting entscheidet wie stark jeder Bone, einen bestimmten Bereich im Mesh beeinflusst.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_weight_painting_example.PNG}
+    \caption{Beispiel für Weight Painting}
+\end{figure}
+
+Es gibt verschiedene \dq Pinsel\dq mit denen man auf verschiedene Arten, die Beeinflussung auf das Mesh eines Bones, von 0-100\%\ regulieren kann.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_weight_painting_tools.PNG}
+    \caption{Die verschiedenen Pinsel}
+\end{figure}
+
+\subsection{Constraints und Armatures}
+Constraints sind eine Möglichkeit um auf, Objekte sowie Armatures, bestimmte Limitierungen anzuwenden,
+oder um diese genauer zu steuern. Im Falle von Armatures kann man verschiedenste Constraints anwenden, die das Animieren einfacher und realistischer machen können.
+Welche Constraints verwendet wurden, wird in der Umsetzung erläutert und gezeigt.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_constraints_menu.png}
+    \caption{Mögliche Constraints}
+\end{figure}
+
+\section{Umsetzung der Rigs}
+Der Workflow bei dem Bau eines Rigs ist oft die halbe Arbeit. Wenn man von Anfang an beachtet,
+wo man den ersten Bone setzt, und aus diesem Bone die anderen Bones erstellt, hat man die meisten Relationen für ein Standard Human Armature hinter sich.
+Insgesamt verwenden wir nur zwei Rigs die von der Bone Struktur gleich aufgebaut sind.
+Diese haben aber jeweils andere Größen. Als erster wurde das Rig für den Hauptcharakter erstellt.
+
+\subsection{Der Start - Skelett aufbauen}
+Den ersten Bone setzte ich bei der Hüfte. Aus diesem Bone erstellte ich die direkt darüber liegenden Bones: Bauch, Brust, Genick und Kopf.
+Um eine gleichmäßige Symmetrie zwischen der rechten und linken Seite herzustellen, kann man zuerst eine Seite mit Bones ausstatten und diese dann auf die andere Seite spiegeln.
+Die Arme bekommen jeweils Schulter, Oberarm und Unterarm Bones, während die Beine mit zwei Knochen genug Kontrolle haben. Da die Finger einzeln animiert werden sollten,
+bekommt jeder Finger drei weitere Knochen mit Ausnahme des Daumens, dieser bekommt nur zwei. Da alle Charaktere Schuhe tragen reicht es einen Bone für den Fuß und einen weiteren
+für die Zehen zu verwenden.
+Zum Schluss wurden noch die Schulter und der Oberschenkel mit einem Constraint an die passenden Bones des Körpers verbunden.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_umsetzung.png}
+    \caption{Hand, Body und Fuß Rig}
+\end{figure}
+
+\subsection{Die Steuerung - Constraints einbauen}
+Da hauptsächlich Lauf-Animationen geplant sind lohnt es sich bei den Beinen, mit Constraints zu helfen.
+Als erster erzeugen wir zwei Control Bones. Um aus einem Deform Bone einen Control Bone zu erzeugen, entfernt man das Häkchen im Menü Unterpunkt
+\dq Deform\dq. Ein Control Bone kommt in die Höhe des Knies (PoleTarget), und der andere hinter der Ferse. Den Constraint den wir anwenden möchten ist
+\dq Inverse Kinematics\dq. Um ihn richtig einzusetzen wählt man zuerst den unteren Bein Bone und danach den Control Bone aus. Im Bone Constraint Menü fügt man für den Fersen Control Bone
+Inverse Kinematics hinzu. Zu beachten sind die Optionen: Target, IK Bone, Pole Target, Pole Target Bone. Sowie der Pole Angle als auch die Chain Length. Als Target verwenden wir das Skelett.
+Der Bone, verantwortlich für die IK,
+wird der Control Bone bei der Ferse (LegIK.L). Als Pole Target wählt man das gleiche Skelett aus und der Pole Target Bone wird der Control Bone bei dem Knie (PoleTarget.L)
+
+Nachdem man die IK angewendet hat kann es sein, dass sich die Bones in die falsche Richtung drehen.
+Dies kann man mit dem Pole Angle reparieren. Als letzter die Chain Length. Da wir natürlich nicht das ganze Skelett, sondern nur das Bein beeinflussen wollen, geben wir den Wert,
+in diesem Fall, auf zwei. Mit der Cain Length entscheidet man wie viele Bones beeinflusst werden sollen.
+Nun kann man durch bewegen des PoleTargets und LegIK.L, das ganze Bein bequem in Position bringen und es leichter animieren.
+
+Als zweiten Constraint benutzen wir \dq Copy Rotation \dq.
+Dafür verwenden wir wieder den LegIK.L und den Fuß Bone. Mit diesem Constraint ist es nun möglich den LegIK.L zu rotieren und der ganze Fuß bewegt sich mit.
+
+\begin{figure}[H]
+    \centering
+
+    \includegraphics[width=.8\textwidth]{images/rigging_inverse_kinematics.png}
+    \caption{Das Menü für den Constraint Inverse Kinematics}
+\end{figure}
+
+\subsection{Fertigstellung des Rigs - Links und Rechts}
+Eine Seite unseres Rigs ist fertig nachdem wir jeden Bone sinnvoll benannt haben. Um Zeit zu sparen, kann man die fertige Seite auf die andere Seite spiegeln.
+Dabei ist zu beachten, dass die Bones markiert sind mit \dq BoneName.L\dq oder \dq .R\dq. Diese Namensgebung ermöglicht uns die
+gespiegelten Bones auszuwählen und mit der Option \dq Flip Names\dq, die Namen für die andere Seite anzupassen. Beispiel: \dq UpperLeg.L\dq wird zu \dq UpperLeg.R\dq.
+
+Damit ist das Rig fertig und bereit für das Skinning. Da es zwei Charaktere gibt wird das fertige Rig einfach exportiert und zum anderen Charakter importiert.
+Dabei löscht man eine Seite des Rigs wieder, passt die übrige Seite dem Charakter an und wiederholt den Prozess des Spiegelns.
+
+Damit ist das Rig fertig und bereit für das Skinning. Da es zwei Charaktere gibt wird das fertige Rig einfach exportiert und zum anderen Charakter importiert.
+Dabei löscht man eine Seite des Rigs wieder, passt die übrige Seite dem Charakter an und wiederholt den Prozess des Spiegelns.
+
+\subsection{Skinning - Vor und während dem Animieren}
+Wie schon einmal erwähnt ist die beste Möglichkeit ein Skelett zu skinnen die, dass man es mit der Automatic Weight Option macht.
+Dies bietet einen guten Startpunkt, ist aber noch lange nicht ideal. Offensichtliche Fehler sind schnell ausgebessert, andere Fehler entdeckt man erst wenn man
+anfängt den Charakter in Pose zu bringen. Diese Fehler können zum Beispiel unrealistische Bewegung oder herausragende Körperteile sein.
+Es lohnt sich deswegen während des Animationsprozesses, immer wieder genauer auf das Verhalten des Meshes zu achten.
+
