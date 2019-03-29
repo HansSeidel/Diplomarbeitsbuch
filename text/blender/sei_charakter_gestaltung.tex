@@ -43,8 +43,8 @@ Hier sind einige der wichtigsten Einstellungen kurz beschrieben.
 
 \raggedbottom
 \begin{longtable}{|p{4cm}|p{9.6cm}|}
-    \hline
     \endhead
+    \hline
     \textbf{Einstellung} & \textbf{Beschreibung} \\
     \hline
     \endhead
@@ -372,17 +372,18 @@ Die Tabelle\ref{table:blender_movement}) zeigt die wichtigsten Shortcuts um sich
 \begin{longtable}{|p{4cm}|p{9.6cm}|}
     \hline
     \endfirsthead
-    & \textbf{Shortcut} & \textbf{Beschreibung} &\\
+    \textbf{Shortcut} & \textbf{Beschreibung} \\
     \hline
     \endhead
 
-    & MMB & Bewegung um den Sichtpunkt & \\
-    & NUMPAD(ENTF) & Setzt den Sichtpunkt auf das ausgewählte Objekt / die ausgewählten Objekte & \\
-    & SHIFT + Scrollen & Bewegung um den Sichtpunkt & \\
-    & ALT + Scrollen & Bewegt den Sichtpunkt nach rechts / links & \\
-    & SHIFT+ MMB & Bewegt den Sichtpunkt nach oben / unten / rechts / links & \\
-    & Scrollen & Zoomt grob heran / heraus & \\
-    & STRG + MMB & Zoomt fein heran / heraus & \\
+     MMB & Bewegung um den Sichtpunkt \\
+     NUMPAD(ENTF) & Setzt den Sichtpunkt auf das ausgewählte Objekt / die ausgewählten Objekte \\
+     SHIFT + Scrollen & Bewegung um den Sichtpunkt \\
+     ALT + Scrollen & Bewegt den Sichtpunkt nach rechts / links  \\
+     SHIFT+ MMB & Bewegt den Sichtpunkt nach oben / unten / rechts / links  \\
+     Scrollen & Zoomt grob heran / heraus \\
+     STRG + MMB & Zoomt fein heran / heraus  \\
+    \hline
 
     \caption{Shortcuts um sich in Blender einfach zu bewegen. (MMB = Mittlere Maustaste)}
     \label{table:blender_movement}
@@ -482,9 +483,9 @@ nur schemenhaft modelliert, da das Spiel in der Ego-Perspektive umgesetzt wird (
 \subsection{UV-Unwrapping}
 \label{sec:unwrapping}
 
-Um einen Charakter zu Texturieren, muss man diesen als erstes \texit{unwrappen}. Unwrappen bedeutet, dass man die Flächen
+Um einen Charakter zu Texturieren, muss man diesen als erstes \textit{unwrappen}. Unwrappen bedeutet, dass man die Flächen
 eines Objektes aufklappt und zweidimensional darstellt. Blender bietet mehrere Möglichkeiten an, ein Objekt zu
-\texit{unwrappen}. Die meist verwendeten sind "Smart UV-Projekt"\citep{blender:smart_uv} und
+\textit{unwrappen}. Die meist verwendeten sind "Smart UV-Projekt"\citep{blender:smart_uv} und
 "Unwrap"\citep{blender:unwrap}. Für das Projekt wurde die "Unwrap" Methode verwendet. Um eine UV-Layout
 (die zweidimensionale Darstellung der Objektflächen) mittels der Unwrap Methode zu erstellen, müssen zuerst sogenannte
 Seams erstellt werden\citep{blender:seams}. Seams werden erstellt, indem man Kanten des Objektes selektiert und mittels
@@ -542,7 +543,7 @@ Dreiecken besteht.
 
 Planar
 In dieser Einstellung kann man einen Winkel bestimmen, in welchem die Flächen verbunden werden sollen.
-Unterscheiden sich zwei Flächen von ihrer Rotation unter X°, werden sie zu einer Fläche verbunden.
+Unterscheiden sich zwei Flächen von ihrer Rotation unter X$^\circ$, werden sie zu einer Fläche verbunden.
 
 
 Die Planar Einstellung dezimiert das Modell am besten. Die Form bleibt relative in Takt und die Flächen werden auf eine
@@ -678,15 +679,15 @@ erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen,
     \begin{longtable}{|p{4cm}|p{9.6cm}|}
         \hline
         \endfirsthead
-        & \textbf{Pinsel/Einstellung} & \textbf{Beschreibung} &\\
+        \textbf{Pinsel/Einstellung} & \textbf{Beschreibung} \\
         \hline
         \endhead
 
-        & Fill & Befüllt die ausgewählte Textur mit einer Basis-Farbe & \\
-        & Smear & Dieser Pinsel verschmiert die Farbe ineinander. Er wird verwendet um einen sanften Farbübergang zu gestalten & \\
-        & Soften & Dieser Pinsel lässt die Pixel verschwimmen. Er wird verwendet um Farbkanten abzurunden & \\
-        & TexDraw & Dieser Pinsel zeichnet eine ausgewählte Farbe auf Textur & \\
-
+        Fill & Befüllt die ausgewählte Textur mit einer Basis-Farbe \\
+        Smear & Dieser Pinsel verschmiert die Farbe ineinander. Er wird verwendet um einen sanften Farbübergang zu gestalten \\
+        Soften & Dieser Pinsel lässt die Pixel verschwimmen. Er wird verwendet um Farbkanten abzurunden \\
+        TexDraw & Dieser Pinsel zeichnet eine ausgewählte Farbe auf Textur \\
+        \hline
         \caption{Pinsel des Texture Painting Modus}
         \label{table:tex_painting_brushes}
     \end{longtable}
