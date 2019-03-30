@@ -48,6 +48,7 @@ Hier sind einige der wichtigsten Einstellungen kurz beschrieben.
     \textbf{Einstellung} & \textbf{Beschreibung} \\
     \hline
     \endhead
+
     Axis & Die Achsen Einstellung gibt die Möglichkeit auszuwählen von welcher Seite
     das Bild angezeigt werden soll. Es wird dann nur angezeigt, wenn man sich in der
     3D-View in dieser Seite befindet \\
@@ -55,7 +56,7 @@ Hier sind einige der wichtigsten Einstellungen kurz beschrieben.
     Opacity & Die Opacity bestimmt zu wie viel Prozent das Bild sichtbar ist. (0 = Komplett transparent, 1 = 1
     überhaupt nicht transparent \\
     \hline
-    Back/Front & Diese Einstellung bestimmt, ob das Bild das Objekt verdecken soll (Front) oder nicht (Back)\\
+    Back/Front & Diese Einstellung bestimmt, ob das Bild das Objekt verdecken soll (Front) oder nicht (Back) \\
     \hline
     X/Y/Rotation/Size & Mit diesen Einstellungen kann man die Skizzen dann perfekt
     an das Modell anpassen \\
@@ -176,42 +177,49 @@ wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
     \textbf{Pinsel/Einstellung} & \textbf{Shortcut} & \textbf{Beschreibung} \\
     \hline
     \endhead
-    \textbf{Pinsel/Einstellung} & \textbf{Shortcut} & \textbf{Beschreibung} \\
+
+
+    Verwenden & Linke Maustaste & Wendet den aktuellen Pinsel auf dem Objekt an \\
     \hline
 
-     Verwenden & Linke Maustaste & Wendet den aktuellen Pinsel auf dem Objekt an  \\
-    \hline
-     Subtract & STRG + Linke Maustaste & Wendet die Gegenfunktion des aktuellen Pinsels auf dem Objekt an.
+    Subtract & STRG + Linke Maustaste & Wendet die Gegenfunktion des aktuellen Pinsels auf dem Objekt an.
     (Falls der ausgewählte Pinsel eine Gegenfunktion hat) \\
     \hline
-    Radius & F & Ermöglicht den Pinselradius einzustellen  \\
+
+    Radius & F & Ermöglicht den Pinselradius einzustellen \\
     \hline
-    Strength & Shift + F & Ermöglicht die Intensität des Pinsels einzustellen  \\
+
+    Strength & Shift + F & Ermöglicht die Intensität des Pinsels einzustellen \\
     \hline
+
     Clay Strips & 3 & Dieser Pinsel erhöht die Mitte und die Seiten des Pinselbereiches mit einer leichten Abstufung.
     Die Erhöhung ist klar abgegrenzt und der Höhepunkt wird bis zum Rand abgeflacht. Der Rand des Pinsels bildet eine
     Abstufung zum restlichen Objekt.
 
-    Dieser Pinsel kann gut verwendet werden um Haare, Muskeln und Venen darzustellen  \\
+    Dieser Pinsel kann gut verwendet werden um Haare, Muskeln und Venen darzustellen \\
     \hline
+
     Flatten & Shift + T & Dieser Pinsel probiert den ausgewählten Bereich aus der eigenen Perspektive auszugleichen,
     sodass er glatt ist. Allerdings sollte man bei diesem Pinsel aufpassen, dass man nicht zu viel Fläche eindrückt,
     da der Pinsel bei jeder Bewegung die vorher abgeflachte Fläche, noch einmal zu glätten und sie daher eindrückt.
     Dadurch wird die ausgewählte Stelle immer tiefer eingedrückt.
 
-    Dieser Pinsel kann gut verwendet werden um Irritationen zu entfernen (Zum Beispiel im Auge oder bei Zähnen)  \\
+    Dieser Pinsel kann gut verwendet werden um Irritationen zu entfernen (Zum Beispiel im Auge oder bei Zähnen) \\
     \hline
+
     Grab & G & Mit diesem Pinsel kann man einen Bereich des Objektes verschieben. Die naheliegenden Flächen werden
     in abgeschwächt Form mitgezogen, damit das Objekt nicht die Struktur verliert. Die Verschiebung ist immer von der
     eigenen Perspektive abhängig.
 
     Dieser Pinsel kann gut verwendet werden um Proportionen anzupassen und zu verbessern. (Zum Beispiel, wie sehr die
-    Nase absteht.) Allerding muss man aufpassen, dass man keine Shading-Fehler auslöst\ref{picture:shading_fehler}  \\
+    Nase absteht.) Allerding muss man aufpassen, dass man keine Shading-Fehler auslöst\ref{picture:shading_fehler} \\
     \hline
+
     Inflate/Deflate & I & Dieser Pinsel erhebt die ausgewählte Stelle in einer gleichmäßigen Glockenform.
 
-    Dieser Pinsel wird verwendet um Schwellungen, Beulen, Pickel und ähnliche Hautirritationen zu modellieren  \\
+    Dieser Pinsel wird verwendet um Schwellungen, Beulen, Pickel und ähnliche Hautirritationen zu modellieren \\
     \hline
+
     Mask & M & Der Maskenpinsel verändert das Objekt nicht. Er wird verwendet um bestimmte Stellen von Manipulation
     zu beschützen. Wenn man den Masken-Pinsel aufträgt wird das Objekt schwarz angezeichnet. Das sind die geschützten
     Stellen. Die Maske bleibt erhalten wenn man auf einen anderen Pinsel wechselt.
@@ -219,21 +227,25 @@ wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
     Dieser Pinsel wird verwendet, um sehr detailreiche Stellen eines Objektes zu schützen während man einen anderen
     Pinsel sehr großflächig verwenden möchte. Allerdings muss man darauf achten, keine intensiven Veränderungen
     in der Nähe der Maske zu modellieren, da dies zu Shading-Fehlern\ref{picture:shading_fehler} führen kann oder die
-    Struktur\ref{picture:struktur_fehler} des Objektes an dieser Stelle stark beschädigt  \\
+    Struktur\ref{picture:struktur_fehler} des Objektes an dieser Stelle stark beschädigt \\
     \hline
-    Maske aufheben & ALT + M & Die gezeichnete Maske wird aufgelöst  \\
+
+    Maske aufheben & ALT + M & Die gezeichnete Maske wird aufgelöst \\
     \hline
+
     Nudge & - & Dieser Pinsel verschiebt die Flächen in die Richtung, in die man streicht. Der Effekt ist kremig
     und mit absteigendender Stärke zum Rand.
 
-    Dieser Pinsel wird verwendet um Falten oder Kleidung zu modellieren  \\
+    Dieser Pinsel wird verwendet um Falten oder Kleidung zu modellieren \\
     \hline
+
     Sculpt & X & Der Sculpt-Pinsel ist dem Inflate Pinsel sehr ähnlich. Jedoch hat der Sculpt Pinsel eine sehr
     viel schwächere Glockenform.
 
     Dieser Pinsel wird verwendet, um grobe Strukturen einzuzeichnen, die später mit dem Smooth-Pinsel und dem
-    Clay Strips Pinsel verfeinert werden  \\
+    Clay Strips Pinsel verfeinert werden \\
     \hline
+
     Smooth & S & Dieser Pinsel ist dem Flatten Pinsel sehr ähnlich. Während der Flatten-Pinsel aus der eigenen
     Perspektive das Objekt abflacht, ist die Perspektive bei dem Smooth Pinsel nicht von Relevanz. Außerdem probiert
     der Smooth-Pinsel die Flächen abzurunden und näher zueinander zu bringen.
@@ -243,7 +255,8 @@ wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
     ihn auswählt. Wenn man \keys{Shift + Rechte Maustaste} drückt, wird der Smooth-Pinsel mit den Einstellungen die man auf
     dem Smooth-Pinsel eingestellt hat eingesetzt \\
     \hline
-    \caption{Die verschiedenen Pinsel des Blender Scupting Tools}
+
+    \caption{Einstellungen um ein Bild in der Blender-View als Hintergrund zu importieren}
     \label{table:sculpt_brushes}
 \end{longtable}
 
@@ -372,17 +385,24 @@ Die Tabelle\ref{table:blender_movement}) zeigt die wichtigsten Shortcuts um sich
 \begin{longtable}{|p{4cm}|p{9.6cm}|}
     \hline
     \endfirsthead
-    & \textbf{Shortcut} & \textbf{Beschreibung} &\\
+    \textbf{Shortcut} & \textbf{Beschreibung}\\
     \hline
     \endhead
 
-    & MMB & Bewegung um den Sichtpunkt & \\
-    & NUMPAD(ENTF) & Setzt den Sichtpunkt auf das ausgewählte Objekt / die ausgewählten Objekte & \\
-    & SHIFT + Scrollen & Bewegung um den Sichtpunkt & \\
-    & ALT + Scrollen & Bewegt den Sichtpunkt nach rechts / links & \\
-    & SHIFT+ MMB & Bewegt den Sichtpunkt nach oben / unten / rechts / links & \\
-    & Scrollen & Zoomt grob heran / heraus & \\
-    & STRG + MMB & Zoomt fein heran / heraus & \\
+    MMB & Bewegung um den Sichtpunkt \\
+    \hline
+    NUMPAD(ENTF) & Setzt den Sichtpunkt auf das ausgewählte Objekt / die ausgewählten Objekte \\
+    \hline
+    SHIFT + Scrollen & Bewegung um den Sichtpunkt \\
+    \hline
+    ALT + Scrollen & Bewegt den Sichtpunkt nach rechts / links \\
+    \hline
+    SHIFT+ MMB & Bewegt den Sichtpunkt nach oben / unten / rechts / links \\
+    \hline
+    Scrollen & Zoomt grob heran / heraus \\
+    \hline
+    STRG + MMB & Zoomt fein heran / heraus \\
+    \hline
 
     \caption{Shortcuts um sich in Blender einfach zu bewegen. (MMB = Mittlere Maustaste)}
     \label{table:blender_movement}
@@ -678,14 +698,18 @@ erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen,
     \begin{longtable}{|p{4cm}|p{9.6cm}|}
         \hline
         \endfirsthead
-        & \textbf{Pinsel/Einstellung} & \textbf{Beschreibung} &\\
+        \textbf{Pinsel/Einstellung} & \textbf{Beschreibung}\\
         \hline
         \endhead
 
-        & Fill & Befüllt die ausgewählte Textur mit einer Basis-Farbe & \\
-        & Smear & Dieser Pinsel verschmiert die Farbe ineinander. Er wird verwendet um einen sanften Farbübergang zu gestalten & \\
-        & Soften & Dieser Pinsel lässt die Pixel verschwimmen. Er wird verwendet um Farbkanten abzurunden & \\
-        & TexDraw & Dieser Pinsel zeichnet eine ausgewählte Farbe auf Textur & \\
+        Fill & Befüllt die ausgewählte Textur mit einer Basis-Farbe \\
+    \hline
+        Smear & Dieser Pinsel verschmiert die Farbe ineinander. Er wird verwendet um einen sanften Farbübergang zu gestalten \\
+    \hline
+        Soften & Dieser Pinsel lässt die Pixel verschwimmen. Er wird verwendet um Farbkanten abzurunden \\
+    \hline
+        TexDraw & Dieser Pinsel zeichnet eine ausgewählte Farbe auf Textur \\
+    \hline
 
         \caption{Pinsel des Texture Painting Modus}
         \label{table:tex_painting_brushes}
