@@ -20,12 +20,12 @@ In unserem Fall haben wir die beiden Hauptcharaktere gleich zu Beginn des Objekt
 Mit Beispielbildern und einer Personenbeschreibung war für alle Teammitglieder ein klares Bild der
 Charaktere vor Augen. Vor allem wenn man beginnt Charaktere zu modellieren, sollte man sich
 Vorbilder nehmen. Niemand wird bei seinem ersten Versuch einen perfekten Charakter modellieren
-können. Für Übungszwecke ist es daher hilfreich sich bereits vorhandenen Charakteren als Vorlage
+können. Für Übungszwecke ist es daher hilfreich bereits vorhandene Charaktere als Vorlage
 zu verwenden.
 Sobald die erste Vorstellung des Charakters entstanden ist, kann man beginnen die Skizzen zu
 entwerfen. Die Skizzen sollen ein klareres und einheitlicheres Bild erstellen. Sie transportieren die
 Vorstellung des Charakters auf Papier. Für 3D-Entwickler ist es am angenehmsten, wenn die Skizzen ein Modell
-(in diesem Fall den Charakter) von drei Seiten anzeigen. Eine Front-Perspektive, eine Right-Perspektive und eine
+(in diesem Fall den Charakter) von drei Seiten beleuchten. Eine Front-Perspektive, eine Right-Perspektive und eine
 Top-Perspektive. Für die Entwicklung des Charakters kann man diese Skizzen leicht in Blender einfügen und genau
 in diesen Perspektiven anzeigen.
 
@@ -66,7 +66,7 @@ Hier sind einige der wichtigsten Einstellungen kurz beschrieben.
 
 
 %----------Menschliche Relationen------Menschliche Relationen------Menschliche Relationen------Menschliche Relationen---
-\subsection{Menschliche Relationen}
+\subsection{Menschliche Proportionen}
     Wenn man erst seit kurzen Charaktere modelliert, passiert es sehr schnell, dass die Proportionen
     nicht korrekt sind. Unabhängig davon, ob man Charaktere im 3-Dimensionalen Bereich oder auf Papier
     designt, sollte man einige Proportionsregeln beachten und diese einzeichnen bevor man mit dem
@@ -111,7 +111,7 @@ werden.
 
 Der zweite Unterschied der Methoden ist die tatsächliche Umsetzung des Charakters. Mit dem Sculpt-Tool von Blender
 kann man Objekte modellieren als wären sie aus Ton gemacht. Bei der Subdivision-Methode werden die einzelnen
-Körperteile erstellt in dem man die Flächen des Objektes einzeln vervielfältigt und manipuliert. Um das genauer zu
+Körperteile erstellt indem man die Flächen des Objektes einzeln vervielfältigt und manipuliert. Um das genauer zu
 erklären werden die Prozesse der verschiedenen Methoden beschrieben, um ein Auge zu modellieren.
 
 Sculpting-Methode:
@@ -121,13 +121,13 @@ Einstellungen) so viele Fläche erstellt, wie es die Detailarbeit verlangt.
 
 Subdivision Modellierung:
 Man wählt direkt die Flächen aus, die sich bei dem Auge befinden (in den meisten Fällen zwischen 4 und 16 Flächen).
-Diese Flächen löscht man. Dann fügt man eine Kugel hinzu und passt sie dem Kopf an. Wenn die Position passt,
+Diese Flächen löscht man. Dann fügt man eine Kugel hinzu und passt sie dem Kopf an. Wenn die Position stimmt,
 verbindet man die zwei Objekte und entfernt die überflüssigen (nicht sichtbaren) Flächen. Bei diesem Prozess kann und
 muss selbst bestimmt werden, wie viele Flächen entfernt werden und wie viele mittels der Kugel hinzugefügt werden.
 
 Bei der Subdivision Modellierung wird auch gerne das Sculpt-Tool für den letzten Feinschliff verwendet. Es ist auch
-möglich das Sculpt-Tool zu verwenden, ohne das neue Fläche generiert werden (KORR: VERLINKEN MIT DEM KAPITEL
-DYNTOPO).
+möglich das Sculpt-Tool zu verwenden, ohne dass neue Flächen generiert werden
+(Kapitel \ref{sec:sculpting} - \textit{DynTopo}).
 
 %--------------------------Sculpting--------------------------Sculpting--------------------------Sculpting--------------
 \subsection{Sculpting}
@@ -156,7 +156,7 @@ kann man den aktuellen Pinsel wechseln (Siehe Abbildung\ref{picture:sculpt_brush
 \begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-Brushes.png}
-    \caption{Der Sculpt-Mode von Blender ist über die Listenauswahl im unteren Bereich der 3D-View erreichbar}
+    \caption{Die verschiedenen Pinsel}
     \label{picture:sculpt_brushes}
 \end{figure}
 Die darunterliegenden Einstellungen bestimmen den Radius
@@ -164,7 +164,7 @@ und die Intensität (Strength) des ausgewählten Pinsels. Die
 letzte wichtige Einstellung in diesem Bereich ist die
 Auswahlmöglichkeit zwischen Add oder Subtract.
 
-"Add" hebt die Fläche an, "Substract" druckt sie ein. (Diese Einstellung ist
+"Add" hebt die Fläche an, "Substract" drückt sie ein. (Diese Einstellung ist
 nicht bei allen Pinseln gleich). Wenn man zeitsparend und
 professionell das Sculpting-Tool verwendet, braucht man den
 \textit{Brush} Bereich nie zu öffnen, da alles mit Short-Cuts
@@ -201,14 +201,14 @@ wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
 
     Flatten & Shift + T & Dieser Pinsel probiert den ausgewählten Bereich aus der eigenen Perspektive auszugleichen,
     sodass er glatt ist. Allerdings sollte man bei diesem Pinsel aufpassen, dass man nicht zu viel Fläche eindrückt,
-    da der Pinsel bei jeder Bewegung die vorher abgeflachte Fläche, noch einmal zu glätten und sie daher eindrückt.
+    da der Pinsel bei jeder Bewegung die vorher abgeflachte Fläche noch einmal glättet und sie daher eindrückt.
     Dadurch wird die ausgewählte Stelle immer tiefer eingedrückt.
 
     Dieser Pinsel kann gut verwendet werden um Irritationen zu entfernen (Zum Beispiel im Auge oder bei Zähnen) \\
     \hline
 
     Grab & G & Mit diesem Pinsel kann man einen Bereich des Objektes verschieben. Die naheliegenden Flächen werden
-    in abgeschwächt Form mitgezogen, damit das Objekt nicht die Struktur verliert. Die Verschiebung ist immer von der
+    in abgeschwächter Form mitgezogen, damit das Objekt nicht die Struktur verliert. Die Verschiebung ist immer von der
     eigenen Perspektive abhängig.
 
     Dieser Pinsel kann gut verwendet werden um Proportionen anzupassen und zu verbessern. (Zum Beispiel, wie sehr die
@@ -220,11 +220,11 @@ wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
     Dieser Pinsel wird verwendet um Schwellungen, Beulen, Pickel und ähnliche Hautirritationen zu modellieren \\
     \hline
 
-    Mask & M & Der Maskenpinsel verändert das Objekt nicht. Er wird verwendet um bestimmte Stellen von Manipulation
-    zu beschützen. Wenn man den Masken-Pinsel aufträgt wird das Objekt schwarz angezeichnet. Das sind die geschützten
+    Mask & M & Der Maskenpinsel verändert das Objekt nicht. Er wird verwendet um bestimmte Stellen vor Manipulation
+    zu schützen. Wenn man den Masken-Pinsel aufträgt wird das Objekt schwarz angezeichnet. Das sind die geschützten
     Stellen. Die Maske bleibt erhalten wenn man auf einen anderen Pinsel wechselt.
 
-    Dieser Pinsel wird verwendet, um sehr detailreiche Stellen eines Objektes zu schützen während man einen anderen
+    Dieser Pinsel wird verwendet, um sehr detailreiche Stellen eines Objektes zu bewahren während man einen anderen
     Pinsel sehr großflächig verwenden möchte. Allerdings muss man darauf achten, keine intensiven Veränderungen
     in der Nähe der Maske zu modellieren, da dies zu Shading-Fehlern\ref{picture:shading_fehler} führen kann oder die
     Struktur\ref{picture:struktur_fehler} des Objektes an dieser Stelle stark beschädigt \\
@@ -251,12 +251,12 @@ wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
     der Smooth-Pinsel die Flächen abzurunden und näher zueinander zu bringen.
 
     Dieser Pinsel wird verwendet, um gröbere Hautirritationen zu entfernen, Objektstellen abzurunden und
-    glätter / sauberer wirken zu lassen. Der Smooth Pinsel kann auch direkt verwendet werden, ohne das man
+    glätter / sauberer wirken zu lassen. Der Smooth Pinsel kann auch direkt verwendet werden, ohne dass man
     ihn auswählt. Wenn man \keys{Shift + Rechte Maustaste} drückt, wird der Smooth-Pinsel mit den Einstellungen die man auf
     dem Smooth-Pinsel eingestellt hat eingesetzt \\
     \hline
 
-    \caption{Einstellungen um ein Bild in der Blender-View als Hintergrund zu importieren}
+    \caption{Die einzelnen Pinzel des Sculpting-Tools}
     \label{table:sculpt_brushes}
 \end{longtable}
 
@@ -298,7 +298,7 @@ Jedoch sind diese Fehler auch leicht zu übersehen.
 Im \textit{Texture} Bereich kann man dem Pinsel eine Maske hinzufügen. Eine Maske ist eine schwarz-weiß Textur.
 Die Maske bestimmt die Intensität des Pinsels. An den schwarzen Stellen der Textur wird das Objekt nicht
 beeinflusst. An den weißen Stellen wird der Pinsels mit eingestellten Intensität beeinflusst.
-An den grauen Stellen wird der Prozentsatz des Grauwert in Relation zu der eingestellten
+An den grauen Stellen wird der Prozentsatz des Grauwerts in Relation zu der eingestellten
 Stärke des Pinsels verwendet. (Siehe Abbildung\ref{picture:sculpt_tex_mask})
 
 
@@ -315,7 +315,7 @@ Der \textit{Dyntopo} Bereich beinhaltet die Schlüsseleinstellungen um detaillie
 \textit{Dyntopo} ist die Abkürzung für \textit{Dynamic Topology}. Wenn die dynamische Topologie aktiviert ist,
 werden die meisten Pinsel dem Objekt Flächen hinzufügen. Deshalb wird bei der Subdivision Charaktermodellierung
 das Sculpt-Tool ohne \textit{Dyntopo} verwendet, da man die Anzahl der Flächen unter Kontrolle halten möchte.
-Sobald \textit{Dyntopo} aktiviert wird, wird das Objekt automatische in dreieckige Flächen eingeteilt.
+Sobald \textit{Dyntopo} aktiviert wird, wird das Objekt automatisch ein dreieckige Flächen eingeteilt.
 Die Detaileinstellungen können sehr schnell zu viele Flächen generieren, was zum Absturz von Blender führen kann,
 daher sollte man bei diesen Einstellungen vorsichtig vorgehen. Bei der Abbildung\ref{picture:dynTopo} wurden nur die
 Einstellungen im \textit{Dyntopo} Bereich geändert (Außer bei der Fläche im linken unteren Teil des Bildes, dort
@@ -341,7 +341,7 @@ Brush Detail fügt Flächen in prozentualem Anteil zum eingestellten Radius des 
 
 Relative Detail fügt Details abhängig von dem Radius und dem Abstand zum Objekt
 hinzu. Umso näher man ist, desto mehr Details werden hinzugefügt. Umso weiter entfernt man ist, desto
-weniger Details. Wenn man mit "Relative Detail" arbeitet, muss man aufpasse, nicht bereits modellierte Details
+weniger Details. Wenn man mit "Relative Detail" arbeitet, muss man aufpassen, nicht bereits modellierte Details
 zu zerstören, weil man mit einem Pinsel zu weit entfernt, an bereits vorhandenen detailreichen Stellen des
 Objektes arbeitet.
 
@@ -355,8 +355,8 @@ deaktivieren. Die anderen Einstellungen wurden für die Modellierung des Antagon
 
 Umsetzung des Antagonisten:
 
-Der Antagonist wurde zum größten Teil mittels dem Sculpt-Tool erstellt. Die einzige Ausnahmen sind die Hände. Die
-Hände wurden zu beginn mittels der Subdivision-Methode modelliert und im Nachhinein mit dem Sculpt Tool verfeinert. Die Teile des
+Der Antagonist wurde zum größten Teil mittels dem Sculpt-Tool erstellt. Die einzige Ausnahme sind die Hände. Die
+Hände wurden zu Beginn mittels der Subdivision-Methode modelliert und im Nachhinein mit dem Sculpt Tool verfeinert. Die Teile des
 Antagonisten (Kopf - Rüstung - Jacke - Hände - Hose - Schuhe) wurden einzeln erstellt und am Ende zusammengefügt.
 
 Die dynamische Topologie war bei der gesamten Entwicklung aktiviert. Als Detail-Art wurde Relative Detail
@@ -368,13 +368,13 @@ Stärke des Pinsels auf 0 gesetzt ist, wird das Modell nicht verändert, allerdi
 wurde mit dem Grab-Pinsel die Grundform des Kopfes hergestellt. Der Schädel wurde heraus und
 das Kinn nach vorne gezogen. Dann wurde mit dem Sculpt-Pinsel das Gesicht vorgezeichnet (Nase, Ohren,
 Augen, Augenbrauen, Mund, Kinn, Wangen und Nacken). Ab dann begann das genauere Sculpten, wo regelmäßig zwischen den
-verschiedenen Pinseln gewechselt wurde. Nachdem das Gesicht und die Proportionen passten, wurden als letzten Schritt
-die Details hinzuzufügen: Narben, Gesichtsfalten, Hautirritationen, Beulen, etc. (Siehe Abbildung\ref{picture:antagonist_process})
+verschiedenen Pinseln gewechselt wurde. Nachdem das Gesicht und die Proportionen passten, wurden als letzter Schritt
+die Details hinzugefügt: Narben, Gesichtsfalten, Hautirritationen, Beulen, etc. (Siehe Abbildung\ref{picture:antagonist_process})
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-GWKopfModellierungProzess.png}
-    \caption{Darstellung der verschiedenen \textit{Dyntopo} Einstellungen. (BU = Blender Units)}
+    \caption{Der Prozess des Sculpten anhand des Kopfes}
     \label{picture:antagonist_process}
 \end{figure}
 
@@ -428,9 +428,9 @@ eines Objektes manipulieren.
 Loop-Cuts\citep{blender:loop_cut_slide}:
 
 Ein Loop-Cut wird eine umrundete Unterteilung eines Objektes genannt. Bei quadratischen Flächen ist ein Loop-Cut leicht
-zu erstellen. Flächen die von der Kantenanzahl unterschiedlich sind können keinen durchgängigen Loop-Cut zulassen.
-Standard-Mäßig wird der Loop-Cut in der Mitte des Objektes gesetzt. Durch die Tastenkombination \keys{STRG+R},
-wird ein Loop-Cut gesetzt. Mittles dem Mausrad wird die Anzahl der Unterteilungen verändert. Die rechte Maustaste
+zu erstellen. Flächen die von der Kantenanzahl unterschiedlich sind können keinen durchgängigen Loop-Cut durchführen.
+Standardmäßig wird der Loop-Cut in Mitte des Objektes gesetzt. Durch die Tastenkombination \keys{STRG+R},
+wird ein Loop-Cut gesetzt. Mittels dem Mausrad wird die Anzahl der Unterteilungen verändert. Die rechte Maustaste
 platziert den Loop-Cut / die Loop-Cuts in kontinuierlichen Abständen; beginnend in der Mitte. Die linke Maustaste
 platziert den Loop-Cut an der aktuellen Position. Wenn ein Loop-Cut an einer komplexen Stelle gesetzt wurde kann dieser
 mit \keys{ALT + Rechtsklick} markiert werden und mit \keys{2xG} im relativen Weg zu dem Objekt verschoben werden.
@@ -447,7 +447,7 @@ mit \keys{ALT + Rechtsklick} markiert werden und mit \keys{2xG} im relativen Weg
 Subdivision Surface Modifikator\citep{blender:mod_subd}:
 
 Der Subdivision Surface Modifikator fügt einem Objekt eine bestimmte Iteration an Flächen hinzu. Dadurch wird ein
-glatter und detailliertere Effekt erzielt.
+glatter und detaillierter Effekt erzielt.
 
 
 Mirror Modifikator\citep{blender:mod_mirror}:
@@ -513,7 +513,7 @@ Wenn man dann das Objekt mit "Unwrap" - ebenfalls in dem UV-Menü - aufklappt, w
 Flächen auch in dem UV-Layout abgetrennt.
 
 Dieses Layout ist an das Mesh gebunden. Das heißt, dass das UV-Layout nach einem Export und Import vorhanden bleibt.
-UV-Layouts müssen in Blender erstellt werden, da Unreal-Engine keine Möglichkeit bietet, UV-Layouts zu erstellen oder
+UV-Layouts müssen in Blender erstellt werden, da Unreal-Engine keine Möglichkeit bietet UV-Layouts zu erstellen oder
 zu bearbeiten. Die Seams sollten bedacht gesetzt werden, um die Übersicht nicht zu verlieren. UV-Layouts können
 mittels dem Image/UV-Editor noch bearbeitet werden, damit keine Flächen übereinanderliegen (In diesem Fall
 würden sie sich die gleichen Pixel teilen). Falls man eine UV-Map in einem Fotobearbeitungsprogramm bearbeiten möchte,
@@ -539,8 +539,8 @@ Fällen etwas später (Siehe Kapitel \ref{sec:normal_baking}).
 \subsection{Normal Baking}
 \label{sec:normal_baking}
 
-Das Modell des Antagonist ist zu detailreich modelliert um es für ein Spiel zu verwenden. Da der Charakter mit dem
-Sculpt-Tool von Blender und der aktivierten \textit{Dyntopo} Einstellung (Siehe Kapitel\ref{sec:sculpting})modelliert
+Das Modell des Antagonisten ist zu detailreich modelliert um es für ein Spiel zu verwenden. Da der Charakter mit dem
+Sculpt-Tool von Blender und der aktivierten \textit{Dyntopo} Einstellung (Siehe Kapitel \ref{sec:sculpting})modelliert
 wurde, sind über eine Million
 Flächen entstanden. Dieses Modell des Antagonisten wird als High-Resolution Modell bezeichnet. Um einen verwendbaren
 Charakter zu erstellen muss man aus dem High-Resolution Modell ein Low-Resolution Modell erstellen und dann die
@@ -551,12 +551,12 @@ Der Decimate-Modifikator besitzt drei primäre Einstellungen:
 
 Collapse:
 
-In diesem Modus werden Punkte miteinander in der Mitte verbunden und dadurch Flächen dezimiert. Die Form des Meshes
+In diesem Modus werden Punkte miteinander in der Mitte verbunden und dadurch Flächen dezimiert. Die Form des Objektes
 kann dadurch sehr stark beeinflusst werden.
 
 Un-Subdived:
 
-Diese Methode löscht umrundenden Kanten. Es ist der gegenteilige Prozess von Loop-Cuts (Siehe Kapitel \ref{sec:subdivision}).
+Diese Methode löscht Kanten, die das Modell unkreisen. Es ist der gegenteilige Prozess von Loop-Cuts (Siehe Kapitel \ref{sec:subdivision}).
 Daher würde diese Methode nichts bei dem Antagonisten bewirken, weil er durch die \textit{Dyntopo} Einstellung aus
 Dreiecken besteht.
 
@@ -565,9 +565,9 @@ In dieser Einstellung kann man einen Winkel bestimmen, in welchem die Flächen v
 Unterscheiden sich zwei Flächen von ihrer Rotation unter X$^\circ$, werden sie zu einer Fläche verbunden.
 
 
-Die Planar Einstellung dezimiert das Modell am besten. Die Form bleibt relative in Takt und die Flächen werden auf eine
+Die Planar Einstellung dezimiert das Modell am besten. Die Form bleibt relativ in Takt und die Flächen werden auf eine
 geringere Anzahl reduziert. Allerdings würde das Low-Resolution Modell nicht für Animationen geeignet sein, wenn die
-Planar Einstellung verwendet wird, da die Flächen die sich entlang des Ellbogen und des Armes befinden ebenfalls
+Planar Einstellung verwendet wird, da sich die Flächen die sich entlang des Ellbogens und des Armes befinden ebenfalls
 verbinden würden. Dadurch würde man den Arm nicht mehr korrekt animieren können. Für den Antagonisten wurde die
 Collapse Methode verwendet. Eine optimale Flächenanzahl befindet sich zwischen 1000 und 2000 Flächen. Das garantiert
 einen flüssigen Programmablauf, die Möglichkeit gute Animationen zu gestalten und mittels UV-Unwrapping ein UV-Layout
@@ -618,13 +618,13 @@ Normal-Textur abspeichern.
 \subsection{Texture Painting}
 \label{sec:texture_painting}
 
-Bevor man mit der Texturing des Charakters beginnt sollte man sich überlegen welchen Stil man verfolgen möchte. Um
+Bevor man mit der Texturing des Charakters beginnt sollte man sich überlegen welchen Stil man umsetzen möchte. Um
 einen fotorealistischen Stil zu erreichen, ist die beste Möglichkeit, sich das UV-Layout zu exportieren und mittels
 Fotografien, Körperteile und Kleidung auf das UV-Layout zu übertragen.
 Eine andere Möglichkeit bietet der Blender Texture-Paint Modus\citep{blender:tex_painting}. Dieser wird eher selten
-für fotorealistische Texturierung verwendet. Obwohl wir einen fotorealistische Stil verfolgen, haben wir trotzdem
+für fotorealistische Texturierung verwendet. Obwohl wir einen fotorealistischen Stil anstreben, haben wir trotzdem
 den Blender Texture Paint Modus verwendet, da wir alle Texturen im Laufe dieser Diplomarbeit selbst erstellt haben.
-Die erste alternative hätte erfordert, dass wir das passende Gewand kaufen, abfotografieren und dann dem UV-Layout
+Die erste Alternative hätte erfordert, dass wir das passende Gewand kaufen, abfotografieren und dann dem UV-Layout
 anpassen. Ein passendes Gesicht für den Antagonisten zu finden und abzufotografieren, wäre die echte Herausforderung
 geworden.
 
@@ -660,9 +660,9 @@ Slots Einstellungen:
 
     Canvas Image:
 
-    Um das korrekte Canvas Image auszuwählen muss es als erstes Erstellt werden.
+    Um das korrekte Canvas Image auszuwählen muss es zuerst erstellt werden.
     Dafür wird das Modell im Edit-Modus markiert, damit das UV-Layout
-    anzeigezeigt wird. Dann klickt man im UV-/Image Editor auf das  Plus neben
+    angezeigt wird. Dann klickt man im UV-/Image Editor auf das  Plus neben
     dem "Image-Icon". Wenn man die gewünschte Resolution eingestellt hat klickt man
     auf okay (Siehe Abbildung \ref{picture:new_image}).
 
@@ -670,7 +670,7 @@ Slots Einstellungen:
     \begin{figure}[H]
         \centering
         \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Textur_Painting-NeuesBild.png}
-        \caption{Empfohlene Fensteraufteilung im Texture-Paint Modus}
+        \caption{Ein neues Bild in Blender hinzufügen}
         \label{picture:new_image}
     \end{figure}
 
@@ -688,7 +688,7 @@ Slots Einstellungen:
     gezeichnet wurden.
 
 
-Sobald die Voreinstellung vorhanden sind, kann man auch schon beginnen die Textur zu zeichnen. Um auch wirklich das
+Sobald die Voreinstellungen vorhanden sind, kann man auch schon beginnen die Textur zu zeichnen. Um auch wirklich das
 erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen, die den Pinsel beeinflussen:
 
 
@@ -704,7 +704,7 @@ erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen,
 
         Fill & Befüllt die ausgewählte Textur mit einer Basis-Farbe \\
     \hline
-        Smear & Dieser Pinsel verschmiert die Farbe ineinander. Er wird verwendet um einen sanften Farbübergang zu gestalten \\
+        Smear & Dieser Pinsel verschmiert die Farben ineinander. Er wird verwendet um einen sanften Farbübergang zu gestalten \\
     \hline
         Soften & Dieser Pinsel lässt die Pixel verschwimmen. Er wird verwendet um Farbkanten abzurunden \\
     \hline
@@ -722,7 +722,7 @@ erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen,
 
         Mix:
 
-        Überdeckt die Farben. Die stärkere Farbe bleibt daher mehr erhalten als die Schwächerer
+        Überdeckt die Farben. Die stärkere Farbe bleibt daher mehr erhalten als die schwächere
         (abhängig von den Farbwerten).
 
         Add:

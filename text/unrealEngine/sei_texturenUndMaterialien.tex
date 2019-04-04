@@ -16,7 +16,7 @@ sind in den nächsten Kapiteln zu finden.
 \subsection{Mapping Methoden}
 \label{sec:tex_mapping}
 
-Bei der Texturierung eines Objektes unterscheidet man zwischen verschiedenen Mapping Methoden. Mapping bezeichnet man
+Bei der Texturierung eines Objektes unterscheidet man zwischen verschiedenen Mapping Methoden. Als Mapping bezeichnet man
 den Prozess, eine Textur aus dem 2-Dimensionalen Bereich auf ein Objekt im 3-Dimensionalen Bereich zu übertragen. Die
 meist verwendeten Mapping Methoden sind das generierte Mapping und das UV-Mapping\citep{blender:tex_mapping_modes}:
 
@@ -27,7 +27,7 @@ Generiertes Mapping bedeutet, dass man die Grundform eines komplexen Objektes an
 eingefügte Textur wird dann entsprechend der Grundform über das Objekt "gemappt". Die Angabe der Grundform beschreibt
 wie die 2-Dimensionale Textur in der 3Dimensionalen Welt auf dem Objekt angezeigt werden soll.
 Bei der generierten Texturierung kann es allerdings zu Fehlern kommen. Es kommt vor, dass die Textur von einer
-bestimmten Seiten korrekt und auf anderen Seite langezogen angezeigt wird. Dass liegt daran, dass die Pixel einer
+bestimmten Seite korrekt und auf der anderen Seite langezogen angezeigt wird. Das liegt daran, dass die Pixel einer
 Textur (2Dimensionaler Bereich) auf eine 3Dimensionale Fläche projiziert werden, in welcher sie keine Informationen
 über die dritte Achse besitzen (Siehe Abbildung \ref{picture:tex_streching}).
 
@@ -90,7 +90,7 @@ Bump-Maps:
 
 Bump-Maps sind die ältere Methode der Höhenberechnung. Bump-Maps sind schwarz-weiß Texturen. Die schwarzen Pixel
 zeigen Vertiefungen an, die weißen Pixel Erhöhungen. Je nachdem, wie die Normals der betreffenden Fläche ausgerichtet
-sind, wird diese Fläche an gewissen Stellen schwäche beleuchtet / reflektieren als an anderen Stellen. Die Normals
+sind, wird diese Fläche an gewissen Stellen schwächer beleuchtet / reflektiert als an anderen Stellen. Die Normals
 einer Fläche sind die belichteten Seiten. Die Normal-Direction gibt an, aus welcher Richtung die Textur angezeigt
 wird und welche Neigung die Fläche hat (Siehe Abbildung \ref{picture:normals}).
 
@@ -109,15 +109,15 @@ speichert, beinhalten Normal-Texturen auch die Lichtberechnung aus verschiedenen
 linke obere Seite, frontale Seite). Diese Informationen werden in einer Normal-Map in den R-G-B Kanälen gespeichert.
 
 In unserer Diplomarbeit wurden ausschließlich Normal-Maps verwendet, da sie mittels dem Programm
-Materialize\citep{bbs:materialize} relative einfach zu erstellen sind. Bump und Normal-Texturen sind in den meisten
-Fällen gleichwertig außer bei Objekten die Rundungen haben. In diesem Fall sind Normal-Texturen die bessere Wahl
-um Details von seitlicher Perspektive zu generieren.
+Materialize\citep{bbs:materialize} relativ einfach zu erstellen sind. Bump und Normal-Texturen sind in den meisten
+Fällen gleichwertig, außer bei Objekten die Rundungen haben. In diesem Fall sind Normal-Texturen die bessere Wahl
+um Details seitlicher Perspektive zu generieren.
 
 %----------------Roughness Texturen---------------Roughness Texturen---------------Roughness Texturen-------------------
 \subsection{Roughness Texturen}
 \label{sec:tex_roughness}
 
-Roughness Texturen werden für die Spiegelung verwendet. Die Roughness bestimmt, mit welcher Streuung das Objekt Licht
+Roughness Texturen werden für die Spiegelung verwendet. Die Roughness bestimmt, mit welcher Streuung das Objektlicht
 reflektiert wird. Ein Roughness Wert von null (schwarz) entspricht kompletter Spiegelung. Ein Roughness Wert von eins
 (weiß) entspricht gar keiner Spiegelung (Siehe Abbildung \ref{picture:roughness_illustration}).
 
@@ -133,7 +133,7 @@ Das Programm Materialize verwendet Smoothness-Maps. Wenn eine Smoothness-Map fü
 muss er invertiert werden. In der Unreal-Engine funktioniert das mittels der 1-x Funktion (Siehe
 Kapitel \ref{sec:algorithms} oder Abbildung \ref{picture:tex_mat_roughness}).
 
-Im Normalfall befindet sich der Roughness-Wert zwischen 0,3 und 0,9. Allerdings wird für Materialien, die Wasser oder
+Im Normalfall befindet sich der Roughness-Wert zwischen 0,3 und 0,9. Allerdings wird für Materialien die Wasser oder
 Pfützen darstellen sollen gerne ein Roughnesswert von 0 verwendet.
 
 %----------------Texturen in der Engine---------------Texturen in der Engine---------------Texturen in der Engine-------
@@ -151,26 +151,26 @@ Abbildung \ref{picture:mat_ue4_node}).
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Texturen in der Engine-MaterialOutput.png}
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-MaterialOutput.png}
     \caption{Eine Material Output Node und die aktiven Inputs}
     \label{picture:mat_ue4_node}
 \end{figure}
 
 
-Um das System der Inputs genauer zu beschreiben verwendet wir den roughness Input. Nehmen wir als Beispiel ein Material
+Um das System der Inputs genauer zu beschreiben verwenden wir den roughness Input. Nehmen wir als Beispiel ein Material
 für eine grüne Türe und ein Material für eine Terrasse (Siehe Abbildung \ref{picture:tex_mat_roughness}).
 Das erste Bild zeigt die grüne Türe. Die gesamte Türe ist ohne große Unterschiede. Die Türklinke und das Schloss haben
-eigene Materialien. Daher hat die Türe einen konstanten Roughness-Wert von 0,8 (Die linke Hälfte von dem Bild zeigt
+eigene Materialien. Daher hat die Türe einen konstanten Roughness-Wert von 0,8 (Die linke Hälfte des Bildes zeigt
 den Wert als Farbe an).
 
 Bei der Terrasse sollen die Ziegel eine etwas geringere Roughness besitzen als die Zwischenräume. Daher wurde eine
 Smoothness-Textur erstellt. Wie man sehen kann, sind die Zwischenräume der Textur dünkler, was bedeutet, dass die
-Zwischenräume eine geringer Roughness hätten als die Ziegel. Damit der erwünschte Effekt erzielt wird, wurde die
+Zwischenräume eine geringere Roughness hätten als die Ziegel. Damit der erwünschte Effekt erzielt wird, wurde die
 1-X Node verwendet um die Textur zu invertieren.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Texturen in der Engine-InputMoeglichkeit.png}
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-InputMoeglichkeit.png}
     \caption{Der Roughness input wurde einmal mit einem konstanten Wert verwendet und einmal mit einer Textur}
     \label{picture:tex_mat_roughness}
 \end{figure}
@@ -179,7 +179,7 @@ Zwischenräume eine geringer Roughness hätten als die Ziegel. Damit der erwüns
 Property-Maps / Texture Masks\citep{ue:tex_property_map}:
 
 Die letzte Art von Texturen, die in diesem Buch näher gebracht wird, ist eine Property-Map. Property-Maps werden
-verwendet, um die Performance des Spiels zu optimieren. Bei Texturen, wie zum Beispiel eine Roughness-Textur oder eine
+verwendet, um die Performance des Spiels zu optimieren. Bei Texturen, wie zum Beispiel einer Roughness-Textur oder einer
 Bump-Textur, werden nur die schwarz-weiß Informationen benötigt. Jede Textur wird allerdings einzeln von der Engine
 geladen, wenn das Spiel / Level gestartet wird. Um diesen Vorgang zu optimieren, kombiniert man 3 schwarz-weiß Texturen
 in einer Property-Map. Das bedeutet, dass man den Rot-Wert, den Grün-Wert und den Blau-Wert verwendet, um die
@@ -189,7 +189,7 @@ Property-Map vereint und es muss nur eine Textur geladen werden. (Siehe Abildung
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Texturen in der Engine-Property-Map.png}
+    \includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-Property-Map.png}
     \caption{Eine Property-Map und die einzelnen Informationen innerhalb der RGB-Kanäle}
     \label{picture:property_map}
 \end{figure}
@@ -202,7 +202,7 @@ Property-Map vereint und es muss nur eine Textur geladen werden. (Siehe Abildung
 Texturen und Materialien sind eng miteinander verbunden. Texturen werden verwendet, um Materialien zu erstellen.
 
 Eine Diffuse-Textur gibt dem Material nur verschiedene Farben. Bump-Texturen, Normal-Texturen, Roughness-Texturen, usw.
-sind werden für die Verwendung innerhalb Materialien erstellt. Um ein Objekt weich, oder hart wirken zu lassen, dem
+werden für die Verwendung innerhalb Materialien erstellt. Um ein Objekt weich, oder hart wirken zu lassen, dem
 Objekt Tiefe zu geben oder um zu bestimmen ob das Objekt metallisch oder nicht ist, muss ein Material erstellt werden.
 Diese Aspekte wurden auch bei der Umsetzung der Materialien im Rahmen dieser Diplomarbeit berücksichtig. Weiterführend
 können Materialien auch das Objekt \textit{verformen} oder physikalische Prozesse simulieren (Schmelzen, Glühen,
@@ -228,7 +228,7 @@ Projektes verwendet wurden unter die Lupe genommen:
 
     Metallic & Der Metallic Input bestimmt, ob das Material ein Metall ist oder nicht. Im Normalfall wird für
     diesen Wert 0 oder 1 verwendet. 0 bedeutet, das Material ist metallisch, 1 bedeutet, es ist nicht
-    Metallisch. Ein Wert zwischen 0 und 1 lässt das Material unrealistisch erscheinen, was gerne
+    metallisch. Ein Wert zwischen 0 und 1 lässt das Material unrealistisch erscheinen, was gerne
     für Science-Fiction Materialien verwendet wird (z.B. organisches Metall) \\
     \hline
 
@@ -273,8 +273,8 @@ Material-Ebenen werden verwendet um verschiedene Materialien übereinander darzu
 Landscape-Materials verwendet. Ein Material wird Landscape-Material genannt, wenn es für den Boden der Spiel-Welt
 verwendet wird. Um ein Landscape-Material zu erstellen muss zuerst im Details Bereich der Material Output Node, ein
 Häkchen in dem Kontrollkästchen "Use Material Attributes" gesetzt werden. Dadurch wird die Material Output Node auf
-einen Input reduziert: "Material Attributes". Mit einem Rechtklick im Material-Graphen kann man nach einer bestimmten
-Funktion suchen. Im Suchbereich mittels dem Suchbegriff "Landscape Layer Blend", kann eine Layer Blend Node hnizugefügt
+einen Input reduziert: "Material Attributes". Mit einem Rechtsklick im Material-Graphen kann man nach einer bestimmten
+Funktion suchen. Im Suchbereich mittels dem Suchbegriff "Landscape Layer Blend", kann eine Layer Blend Node hinzugefügt
 werden. Diese wird mit dem Material Attributes Input verbunden (Siehe Abbildung \ref{picture:layer_blend}).
 
 \begin{figure}[H]
@@ -287,8 +287,7 @@ werden. Diese wird mit dem Material Attributes Input verbunden (Siehe Abbildung 
 Wenn man nun die Layer Blend Node anklickt, kann man im Details Bereich Layers hinzufügen. Jeder hinzugefügte Layer
 ist ein Input in der Layer Blend Node (Siehe Abbildung \ref{picture:layers}). Die einzelnen Layers stellen am Ende die verschiedenen
 Materialien dar. Der Blend Type bestimmt, wie ein Material hinzugefügt wird und wie es sich zu anderen vorhandenen
-Materialien verhält. Das Material, dass das Basis Material sein wird, sollte die Einstellung "LB Weight Blend"
-verwenden.
+Materialien verhält. Der Layer Input, welcher für das Basis-Material verwendet wird, braucht die Einstellung "LB Weight Blend".
 
 \begin{figure}[H]
     \centering
@@ -298,7 +297,7 @@ verwenden.
 \end{figure}
 
 Um die Layer-Inputs verbinden zu können muss die "MakeMaterialAttributes"-Funktion verwendet werden. Dieser
-Funktions-Output wird mit dem "Layer <name>" Input der Layer Blend Node verbunden. Die
+Funktions-Output wird an den "Layer <name>" Input der Layer Blend Node gesteckt. Die
 "MakeMaterialAttributes"-Funktion wird wie eine normale Material Output Node verwendet. Der Height-Input wird mit einer
 Height-Textur (ähnlich einer Bump-Textur) verbunden.
 
@@ -306,7 +305,7 @@ Material-Funktionen\ref{sec:mat_lay_func_ins}:
 
 Unreal-Engine bietet die Möglichkeit, eigene Funktionen für Materialien zu schreiben. Mit einem Rechtsklick im
 Content-Browser kann man unter Materials & Textures eine neue Material Function erstellen (Siehe
-Abbildung \ref{picture:make_mat_func}). Eine Material-Function kann in jedem Material verwendet werden. Eingefügt wird sie, wie jede andere
+Abbildung \ref{picture:make_mat_func}). Eine Material-Function kann in jedem Material eingesetzt werden. Eingefügt wird sie, wie jede andere
 Funktion auch (Rechtsklick im Graph-Editor und nach dem Namen suchen). Material-Funktionen verwendet man, wenn man
 den gleichen Ablauf öfters mit verschiedenen Parameter wiederholen muss.
 
@@ -387,7 +386,7 @@ Funktionen aufgezählt und beschrieben, die im Laufe der Diplomarbeit verwendet 
     1-X & Invertiert den Wert \\
     \hline
 
-    Lerp (LinearInterpolation) & Dieser Algorithmus orientiert sich an einem Aplha Wert. Der Alpha Wert muss ein
+    Lerp (LinearInterpolation) & Dieser Algorithmus orientiert sich an einem Alpha Wert. Der Alpha Wert muss ein
     Input zwischen 0 und 1 sein. Wenn der Alpha Wert 0 ist wird als Output der Wert
     verwendet, welcher sich in dem A-Input befindet. Wenn der Alpha Wert 1 ist wird
     als Output der Wert verwendet, welcher sich in dem B-Input befindet. Wenn der
