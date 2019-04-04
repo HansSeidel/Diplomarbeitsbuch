@@ -29,7 +29,7 @@ wie die 2-Dimensionale Textur in der 3Dimensionalen Welt auf dem Objekt angezeig
 Bei der generierten Texturierung kann es allerdings zu Fehlern kommen. Es kommt vor, dass die Textur von einer
 bestimmten Seite korrekt und auf der anderen Seite langezogen angezeigt wird. Das liegt daran, dass die Pixel einer
 Textur (2Dimensionaler Bereich) auf eine 3Dimensionale Fläche projiziert werden, in welcher sie keine Informationen
-über die dritte Achse besitzen (Siehe Abbildung \ref{picture:tex_streching}).
+über die dritte Achse besitzen (\texit{Abbildung \ref{picture:tex_streching}}).
 
 \begin{figure}[H]
     \centering
@@ -39,7 +39,7 @@ Textur (2Dimensionaler Bereich) auf eine 3Dimensionale Fläche projiziert werden
 \end{figure}
 
 Der einfachste Weg, diesen Fehler zu umgehen ist es, ein UV-Layout zu generieren. Allerdings ist es auch mit dem
-Node-System der Unreal-Engine\citep{ue:node_introduction} möglich (Siehe Abbildung \ref{picture:tex_streching_solve}).
+Node-System der Unreal-Engine\citep{ue:node_introduction} möglich (\texit{Abbildung \ref{picture:tex_streching_solve}}).
 
 
 \begin{figure}[H]
@@ -55,8 +55,8 @@ UV-Mapping:
 UV-Mapping ist eine sehr sichere Art der Texturierung. Beim UV-Mapping wird eine Textur dem UV-Layout des Objektes
 angepasst. Dies kann automatisch passieren oder bewusst beeinflusst. Bei komplexeren Objekten wird das UV-Layout
 exportiert und eine Textur mittels eines Fotoprogramms oder dem Blender Texture-Painting Tool erstellt
-(Mehr Informationen zu UV-Mapping und dem Blender Texture-Painting Tool sind in den Kapiteln \ref{sec:unwrapping} und
-dem Kapitel \ref{sec:texture_painting})
+(Mehr Informationen zu UV-Mapping und dem Blender Texture-Painting Tool sind in den Kapiteln: \texit{Kapitel \ref{sec:unwrapping} UV-Unwrapping} und
+\texit{Kapitel \ref{sec:texture_painting} Texture Painting)
 
 
 Weiter aufbauende Mapping-Methoden die mittels dem Node-System der Unreal Engine möglich sind, sind die WorldAlign
@@ -92,7 +92,7 @@ Bump-Maps sind die ältere Methode der Höhenberechnung. Bump-Maps sind schwarz-
 zeigen Vertiefungen an, die weißen Pixel Erhöhungen. Je nachdem, wie die Normals der betreffenden Fläche ausgerichtet
 sind, wird diese Fläche an gewissen Stellen schwächer beleuchtet / reflektiert als an anderen Stellen. Die Normals
 einer Fläche sind die belichteten Seiten. Die Normal-Direction gibt an, aus welcher Richtung die Textur angezeigt
-wird und welche Neigung die Fläche hat (Siehe Abbildung \ref{picture:normals}).
+wird und welche Neigung die Fläche hat (\texit{Abbildung \ref{picture:normals}}).
 
 \begin{figure}[H]
     \centering
@@ -119,7 +119,7 @@ um Details seitlicher Perspektive zu generieren.
 
 Roughness Texturen werden für die Spiegelung verwendet. Die Roughness bestimmt, mit welcher Streuung das Objektlicht
 reflektiert wird. Ein Roughness Wert von null (schwarz) entspricht kompletter Spiegelung. Ein Roughness Wert von eins
-(weiß) entspricht gar keiner Spiegelung (Siehe Abbildung \ref{picture:roughness_illustration}).
+(weiß) entspricht gar keiner Spiegelung (\texit{Abbildung \ref{picture:roughness_illustration}}).
 
 \begin{figure}[H]
     \centering
@@ -130,8 +130,8 @@ reflektiert wird. Ein Roughness Wert von null (schwarz) entspricht kompletter Sp
 
 
 Das Programm Materialize verwendet Smoothness-Maps. Wenn eine Smoothness-Map für den Roughness-Wert verwendet wird,
-muss er invertiert werden. In der Unreal-Engine funktioniert das mittels der 1-x Funktion (Siehe
-Kapitel \ref{sec:algorithms} oder Abbildung \ref{picture:tex_mat_roughness}).
+muss er invertiert werden. In der Unreal-Engine funktioniert das mittels der 1-x Funktion
+(\textit{Kapitel \ref{sec:algorithms} Wichtige Algorithmen/Funktionen oder Abbildung \ref{picture:tex_mat_roughness}}).
 
 Im Normalfall befindet sich der Roughness-Wert zwischen 0,3 und 0,9. Allerdings wird für Materialien die Wasser oder
 Pfützen darstellen sollen gerne ein Roughnesswert von 0 verwendet.
@@ -146,8 +146,8 @@ Für dieses Kapitel werden einige Informationen über Materials vorab beschriebe
 Wenn in der Unreal-Engine ein neues Material erstellt wird, wird der Node-Editor\citep{ue:node_introduction} mit einer
 Material Output Node geöffnet. Die Node hat verschiedene Inputs, die die physikalischen Eigenschaften des Materials
 bestimmen. Die meisten Inputs akzeptieren eine konstante Value oder eine Textur. Bei einer Material Node sind nicht
-alle Inputs verfügbar. Welche Inputs verfügbar sind, ist von der Material-Art abhängig (Siehe
-Abbildung \ref{picture:mat_ue4_node}).
+alle Inputs verfügbar. Welche Inputs verfügbar sind, ist von der Material-Art abhängig
+(\texit{Abbildung \ref{picture:mat_ue4_node}}).
 
 \begin{figure}[H]
     \centering
@@ -158,7 +158,7 @@ Abbildung \ref{picture:mat_ue4_node}).
 
 
 Um das System der Inputs genauer zu beschreiben verwenden wir den roughness Input. Nehmen wir als Beispiel ein Material
-für eine grüne Türe und ein Material für eine Terrasse (Siehe Abbildung \ref{picture:tex_mat_roughness}).
+für eine grüne Türe und ein Material für eine Terrasse (\texit{Abbildung \ref{picture:tex_mat_roughness}}).
 Das erste Bild zeigt die grüne Türe. Die gesamte Türe ist ohne große Unterschiede. Die Türklinke und das Schloss haben
 eigene Materialien. Daher hat die Türe einen konstanten Roughness-Wert von 0,8 (Die linke Hälfte des Bildes zeigt
 den Wert als Farbe an).
@@ -185,7 +185,7 @@ geladen, wenn das Spiel / Level gestartet wird. Um diesen Vorgang zu optimieren,
 in einer Property-Map. Das bedeutet, dass man den Rot-Wert, den Grün-Wert und den Blau-Wert verwendet, um die
 Informationen zu speichern. Da man in der Unreal-Engine die Kanäle einzeln verwenden kann und diese nur einen Wert
 zwischen 0 und 1 ausgeben, funktioniert das einwandfrei. Damit hat man drei Texturen in einer
-Property-Map vereint und es muss nur eine Textur geladen werden. (Siehe Abildung \ref{picture:property_map})
+Property-Map vereint und es muss nur eine Textur geladen werden. (\texit{Abbildung \ref{picture:property_map}})
 
 \begin{figure}[H]
     \centering
@@ -212,7 +212,7 @@ gefrieren, etc.).
 \subsection{Material Inputs}
 \label{sec:mat_inputs}
 
-Wie in einem vorherigen Kapitel bereits erwähnt (Kapitel \ref{sec:tex_inside_engine}), wird eine Material-Output Node
+Wie in einem vorherigen Kapitel bereits erwähnt (\textit{Kapitel \ref{sec:tex_inside_engine} Texturen in der Engine}), wird eine Material-Output Node
 erstellt, wenn man ein neues Material hinzufügt. In diesem Kapitel werden die wichtigsten Inputs, die im Laufe des
 Projektes verwendet wurden unter die Lupe genommen:
 
@@ -241,9 +241,9 @@ Projektes verwendet wurden unter die Lupe genommen:
     \hline
 
     Opacity & Der Opacity Input ist standardmäßig nicht verfügbar. Um die Opacity zu verwenden, muss man die
-    Material-Node anklicken und im Details-Bereich den Blend-Mode auf "Translucent" umstellen (Siehe
-    Abbildung \ref{picture:translucent}). Der Opacity Input bestimmt, ob und wie stark man durch das Material hindurchsehen
-    kann. Dieser Input wird hauptsächlich durch Texture-Masken (Siehe Kapitel \ref{sec:texture_painting}) verwendet \\
+    Material-Node anklicken und im Details-Bereich den Blend-Mode auf "Translucent" umstellen
+    (\texit{Abbildung \ref{picture:translucent}}). Der Opacity Input bestimmt, ob und wie stark man durch das Material hindurchsehen
+    kann. Dieser Input wird hauptsächlich durch Texture-Masken (\textit{Kapitel \ref{sec:texture_painting} - Textur Mask}) verwendet \\
     \hline
 
     Normal & Der Normal Input ist für Normal-Texturen gedacht. Er bestimmt die \textit{gefälschte} Tiefe des Objektes \\
@@ -275,7 +275,7 @@ verwendet wird. Um ein Landscape-Material zu erstellen muss zuerst im Details Be
 Häkchen in dem Kontrollkästchen "Use Material Attributes" gesetzt werden. Dadurch wird die Material Output Node auf
 einen Input reduziert: "Material Attributes". Mit einem Rechtsklick im Material-Graphen kann man nach einer bestimmten
 Funktion suchen. Im Suchbereich mittels dem Suchbegriff "Landscape Layer Blend", kann eine Layer Blend Node hinzugefügt
-werden. Diese wird mit dem Material Attributes Input verbunden (Siehe Abbildung \ref{picture:layer_blend}).
+werden. Diese wird mit dem Material Attributes Input verbunden (\texit{Abbildung \ref{picture:layer_blend}}).
 
 \begin{figure}[H]
     \centering
@@ -285,7 +285,7 @@ werden. Diese wird mit dem Material Attributes Input verbunden (Siehe Abbildung 
 \end{figure}
 
 Wenn man nun die Layer Blend Node anklickt, kann man im Details Bereich Layers hinzufügen. Jeder hinzugefügte Layer
-ist ein Input in der Layer Blend Node (Siehe Abbildung \ref{picture:layers}). Die einzelnen Layers stellen am Ende die verschiedenen
+ist ein Input in der Layer Blend Node (\texit{Abbildung \ref{picture:layers}). Die einzelnen Layers stellen am Ende die verschiedenen
 Materialien dar. Der Blend Type bestimmt, wie ein Material hinzugefügt wird und wie es sich zu anderen vorhandenen
 Materialien verhält. Der Layer Input, welcher für das Basis-Material verwendet wird, braucht die Einstellung "LB Weight Blend".
 
@@ -301,11 +301,11 @@ Funktions-Output wird an den "Layer <name>" Input der Layer Blend Node gesteckt.
 "MakeMaterialAttributes"-Funktion wird wie eine normale Material Output Node verwendet. Der Height-Input wird mit einer
 Height-Textur (ähnlich einer Bump-Textur) verbunden.
 
-Material-Funktionen\ref{sec:mat_lay_func_ins}:
+Material-Funktionen\citep{ue:mat_function}:
 
 Unreal-Engine bietet die Möglichkeit, eigene Funktionen für Materialien zu schreiben. Mit einem Rechtsklick im
-Content-Browser kann man unter Materials & Textures eine neue Material Function erstellen (Siehe
-Abbildung \ref{picture:make_mat_func}). Eine Material-Function kann in jedem Material eingesetzt werden. Eingefügt wird sie, wie jede andere
+Content-Browser kann man unter Materials & Textures eine neue Material Function erstellen
+(\texit{Abbildung \ref{picture:make_mat_func}}). Eine Material-Function kann in jedem Material eingesetzt werden. Eingefügt wird sie, wie jede andere
 Funktion auch (Rechtsklick im Graph-Editor und nach dem Namen suchen). Material-Funktionen verwendet man, wenn man
 den gleichen Ablauf öfters mit verschiedenen Parameter wiederholen muss.
 
@@ -317,7 +317,7 @@ den gleichen Ablauf öfters mit verschiedenen Parameter wiederholen muss.
 \end{figure}
 
 Material-Funktionen haben Input und Output-Parameter. Diese bestimmen die Inputs und Outputs der Node, wenn die
-Funktion implementiert wird (Siehe Abbildung \ref{picture:use_mat_func}). Die Funktionen können entweder per Drag and
+Funktion implementiert wird (\texit{Abbildung \ref{picture:use_mat_func}}). Die Funktionen können entweder per Drag and
 Drop in einem Material hinzugefügt werden oder mittels der "MaterialFunctionCall" Funktion.
 
 \begin{figure}[H]
@@ -333,7 +333,7 @@ Material-Instanzen sind auf einem ähnlichen Prinzip aufgebaut wie Material-Funk
 Progammabläufe zu vereinein, damit man sie nicht doppelt schreiben muss. Der Entwickler kann dann innerhalb
 verschiedenen Instanzen kleinere Unterschiede des Basis- / Eltern-Materials bewirken. In unserem Projekt haben wir
 Material-Instanzen nur für die optionalen Erweiterungen entwickelt. Es wurde ein einfaches Metall-Material entwickelt,
-dass für verschiedene Objekte verwendet wurde (Siehe Abbildung \ref{picture:base_metal_material}). Die Unterschiede auf
+dass für verschiedene Objekte verwendet wurde (\texit{Abbildung \ref{picture:base_metal_material}}). Die Unterschiede auf
 den einzelnen Material-Instanzen sind: Die Metall-Farbe, ob das Metall Dellen hat, wie stark die Dellen sein sollen,
 welche Grundform die Dellen haben sollen, ob Rost vorhanden ist, wie viel des Metalls soll rostig sein und welche
 Grundform hat der Rost.
@@ -360,7 +360,7 @@ Material-Parameters:
 
 Die zwei größten Vorteile von Material-Instanzen sind, dass Änderungen sofort in der 3D-View ersichtlich sind und
 verschiedene Varianten eines Basis-Materials leicht zu erstellen sind. Die erstelleten Parameter kann man dann im
-Details Bereich der Material-Instanz einstellen (Siehe Abbildung \ref{picture:edit_mat_instance}).
+Details Bereich der Material-Instanz einstellen (\texit{Abbildung \ref{picture:edit_mat_instance}}).
 
 \begin{figure}[H]
     \centering

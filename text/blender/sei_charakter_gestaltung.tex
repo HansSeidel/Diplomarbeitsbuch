@@ -74,7 +74,7 @@ Hier sind einige der wichtigsten Einstellungen kurz beschrieben.
     diesem Buch behandelt\citep{blender:grease_pencil}.)
 
 Einige Linien in einem erwachsenen Gesicht, stehen immer in einem bestimmten Verhältnis zueinander
-(Siehe Abbildung\ref{blender:proportions}). Die Linie \textbf{A} grenzt die Schädeldecke ab. Von
+(\textit{Abbildung \ref{blender:proportions}}). Die Linie \textbf{A} grenzt die Schädeldecke ab. Von
 der Schädeldecke bis zum Stirnansatz ist zirka ein Abstand von 1/7 der Gesichtsgröße. Die Linie
 \textbf{C} zeigt, dass die Augenbrauen und der Abschluss der Ohren auf gleicher Höhe sein sollten.
 \textbf{C.1} verbindet das obere Ende der Nase mit der Mitte des Auges und dem Ansatz der Ohren.
@@ -103,7 +103,8 @@ Ein Charakter, der mittels des Sculpt-Tools modelliert wird kann meistens nicht 
 Detailarbeit die bei dem Sculpting durchgeführt wird generiert zu viele Polygone (Flächen) auf dem Charakter. Diese
 Anzahl an Flächen kann der Computer nicht berechnen. (Im Falle des Antagonisten sind zirka 1.5 Millionen Flächen und 2
 Millionen Punkte entstanden.) Das fertige Modell wird verwendet, um Graphiken zu erstellen, welche die Details des
-Modells \textit{faken}. Diese Graphiken werden Normal-Maps genannt (\textit{Kapitel\ref{sec:tex_normal}}).
+Modells \textit{faken}. Diese Graphiken werden Normal-Maps genannt
+(\textit{Kapitel \ref{sec:tex_normal} Bump und Normal Texturen}).
 
 Bei der Subdivision Modellierung hat der Entwickler eine größere Kontrolle über die Flächenanzahl. Allerdings ist es
 dafür schwieriger Details oder Gesichtszüge zu modellieren. Diese müssen im Nachhinein gezeichnet oder entwickelt
@@ -115,7 +116,7 @@ Körperteile erstellt indem man die Flächen des Objektes einzeln vervielfältig
 erklären werden die Prozesse der verschiedenen Methoden beschrieben, um ein Auge zu modellieren.
 
 Sculpting-Methode:
-Mittels verschiedenen Pinseln (\textit{siehe Kapitel\ref{sec:sculpting}}) drückt man Teile des Objekte ein,
+Mittels verschiedenen Pinseln (\textit{Kapitel \ref{sec:sculpting} Sculpting}) drückt man Teile des Objekte ein,
 hebt andere hervor, verschiebt sie, glättet sie ab und flacht sie ab. Während dieser Prozesse werden (mit den richtigen
 Einstellungen) so viele Fläche erstellt, wie es die Detailarbeit verlangt.
 
@@ -127,7 +128,7 @@ muss selbst bestimmt werden, wie viele Flächen entfernt werden und wie viele mi
 
 Bei der Subdivision Modellierung wird auch gerne das Sculpt-Tool für den letzten Feinschliff verwendet. Es ist auch
 möglich das Sculpt-Tool zu verwenden, ohne dass neue Flächen generiert werden
-(Kapitel \ref{sec:sculpting} - \textit{DynTopo}).
+(\textit{Kapitel \ref{sec:sculpting} Sculpting} - \textit{DynTopo}).
 
 %--------------------------Sculpting--------------------------Sculpting--------------------------Sculpting--------------
 \subsection{Sculpting}
@@ -152,7 +153,7 @@ sparen. Beim Sculpten bringen Short-Cuts sogar 40\% der Zeit zurück.
 
 Der \textit{Brush} Bereich bestimmt die grundlegenden Einstellungen des Pinsels.
 Wenn man auf das Bild in dem Bereich klickt
-kann man den aktuellen Pinsel wechseln (Siehe Abbildung\ref{picture:sculpt_brushes}).
+kann man den aktuellen Pinsel wechseln (\textit{Abbildung \ref{picture:sculpt_brushes}}).
 \begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{SEI_CharakterGestaltung_Arten_Sculpting-Brushes.png}
@@ -168,7 +169,7 @@ Auswahlmöglichkeit zwischen Add oder Subtract.
 nicht bei allen Pinseln gleich). Wenn man zeitsparend und
 professionell das Sculpting-Tool verwendet, braucht man den
 \textit{Brush} Bereich nie zu öffnen, da alles mit Short-Cuts
-kontrollierbar ist. In der Tabelle (Siehe Tabelle\ref{table:sculpt_brushes}) sind die
+kontrollierbar ist. In der Tabelle (\textit{Tabelle \ref{table:sculpt_brushes}}) sind die
 wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
 
 \begin{longtable}{|p{3.6cm}|p{3.6cm}|p{6.4cm}|}
@@ -212,7 +213,7 @@ wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
     eigenen Perspektive abhängig.
 
     Dieser Pinsel kann gut verwendet werden um Proportionen anzupassen und zu verbessern. (Zum Beispiel, wie sehr die
-    Nase absteht.) Allerding muss man aufpassen, dass man keine Shading-Fehler auslöst\ref{picture:shading_fehler} \\
+    Nase absteht.) Allerding muss man aufpassen, dass man keine Shading-Fehler auslöst \textit{Abbildung \ref{picture:shading_fehler}} \\
     \hline
 
     Inflate/Deflate & I & Dieser Pinsel erhebt die ausgewählte Stelle in einer gleichmäßigen Glockenform.
@@ -226,8 +227,8 @@ wichtigsten Pinsel und Einstellung mit Shortcuts ersichtlich.
 
     Dieser Pinsel wird verwendet, um sehr detailreiche Stellen eines Objektes zu bewahren während man einen anderen
     Pinsel sehr großflächig verwenden möchte. Allerdings muss man darauf achten, keine intensiven Veränderungen
-    in der Nähe der Maske zu modellieren, da dies zu Shading-Fehlern\ref{picture:shading_fehler} führen kann oder die
-    Struktur\ref{picture:struktur_fehler} des Objektes an dieser Stelle stark beschädigt \\
+    in der Nähe der Maske zu modellieren, da dies zu Shading-Fehlern \textit{Abbildung \ref{picture:shading_fehler}} führen kann oder die
+    Struktur \textit{Abbildung \ref{picture:struktur_fehler}} des Objektes an dieser Stelle stark beschädigt \\
     \hline
 
     Maske aufheben & ALT + M & Die gezeichnete Maske wird aufgelöst \\
@@ -264,7 +265,7 @@ Shading-Fehler:
 
 Shading Fehler entstehen, wenn Flächen übereinander liegen oder wenn
 die innere Seite einer Fläche von außen ersichtlich ist. Shading-Fehler
-verursachen, dass das Licht falsch berechnet wird (Siehe Abbildung\ref{picture:shading_fehler}).
+verursachen, dass das Licht falsch berechnet wird (\textit{Abbildung \ref{picture:shading_fehler}}).
 
 \begin{figure}[H]
     \centering
@@ -278,7 +279,7 @@ Struktur-Fehler:
 
 Die Struktur wird beschädigt wenn eine größere Position-Veränderung von Flächen passiert, während die unmittelbar
 anliegenden Flächen nicht mitbewegt werden. Dadurch erscheinen die Flächen, welche die Verbindung bilden
-verhältnismäßig riesig (Siehe Abbildung\ref{picture:struktur_fehler}).
+verhältnismäßig riesig (\textit{Abbildung \ref{picture:struktur_fehler}}).
 
 \begin{figure}[H]
     \centering
@@ -299,7 +300,7 @@ Im \textit{Texture} Bereich kann man dem Pinsel eine Maske hinzufügen. Eine Mas
 Die Maske bestimmt die Intensität des Pinsels. An den schwarzen Stellen der Textur wird das Objekt nicht
 beeinflusst. An den weißen Stellen wird der Pinsels mit eingestellten Intensität beeinflusst.
 An den grauen Stellen wird der Prozentsatz des Grauwerts in Relation zu der eingestellten
-Stärke des Pinsels verwendet. (Siehe Abbildung\ref{picture:sculpt_tex_mask})
+Stärke des Pinsels verwendet. (\textit{Abbildung \ref{picture:sculpt_tex_mask}})
 
 
 \begin{figure}[H]
@@ -317,7 +318,7 @@ werden die meisten Pinsel dem Objekt Flächen hinzufügen. Deshalb wird bei der 
 das Sculpt-Tool ohne \textit{Dyntopo} verwendet, da man die Anzahl der Flächen unter Kontrolle halten möchte.
 Sobald \textit{Dyntopo} aktiviert wird, wird das Objekt automatisch ein dreieckige Flächen eingeteilt.
 Die Detaileinstellungen können sehr schnell zu viele Flächen generieren, was zum Absturz von Blender führen kann,
-daher sollte man bei diesen Einstellungen vorsichtig vorgehen. Bei der Abbildung\ref{picture:dynTopo} wurden nur die
+daher sollte man bei diesen Einstellungen vorsichtig vorgehen. Bei der Abbildung (\textit{Abbildung \ref{picture:dynTopo}}) wurden nur die
 Einstellungen im \textit{Dyntopo} Bereich geändert (Außer bei der Fläche im linken unteren Teil des Bildes, dort
 wurde auch der Radius des Pinsels verändert).
 
@@ -369,7 +370,7 @@ wurde mit dem Grab-Pinsel die Grundform des Kopfes hergestellt. Der Schädel wur
 das Kinn nach vorne gezogen. Dann wurde mit dem Sculpt-Pinsel das Gesicht vorgezeichnet (Nase, Ohren,
 Augen, Augenbrauen, Mund, Kinn, Wangen und Nacken). Ab dann begann das genauere Sculpten, wo regelmäßig zwischen den
 verschiedenen Pinseln gewechselt wurde. Nachdem das Gesicht und die Proportionen passten, wurden als letzter Schritt
-die Details hinzugefügt: Narben, Gesichtsfalten, Hautirritationen, Beulen, etc. (Siehe Abbildung\ref{picture:antagonist_process})
+die Details hinzugefügt: Narben, Gesichtsfalten, Hautirritationen, Beulen, etc. (\textit{Abbildung \ref{picture:antagonist_process}})
 
 \begin{figure}[H]
     \centering
@@ -380,7 +381,7 @@ die Details hinzugefügt: Narben, Gesichtsfalten, Hautirritationen, Beulen, etc.
 
 Wenn man das Sculpt-Tool von Blender produktiv verwenden möchte, muss man sich in der 3D-Welt bewegen
 können. Vorallem wenn man mit relativen Details arbeitet ist es wichtig immer die richtige Perspektive zu erreichen.
-Die Tabelle\ref{table:blender_movement}) zeigt die wichtigsten Shortcuts um sich in Blender richtig bewegen zu können.
+Die Tabelle (\textit{Tabelle \ref{table:blender_movement}}) zeigt die wichtigsten Shortcuts um sich in Blender richtig bewegen zu können.
 
 \begin{longtable}{|p{4cm}|p{9.6cm}|}
     \hline
@@ -434,7 +435,7 @@ wird ein Loop-Cut gesetzt. Mittels dem Mausrad wird die Anzahl der Unterteilunge
 platziert den Loop-Cut / die Loop-Cuts in kontinuierlichen Abständen; beginnend in der Mitte. Die linke Maustaste
 platziert den Loop-Cut an der aktuellen Position. Wenn ein Loop-Cut an einer komplexen Stelle gesetzt wurde kann dieser
 mit \keys{ALT + Rechtsklick} markiert werden und mit \keys{2xG} im relativen Weg zu dem Objekt verschoben werden.
-(Siehe Abbildung \ref{picture:loop_cut_slide})
+(\textit{Abbildung \ref{picture:loop_cut_slide}})
 
 \begin{figure}[H]
     \centering
@@ -458,7 +459,7 @@ Extrudieren\citep{blender:extrude}:
 Extrudieren bedeutet, dass man eine Kopie einer Auswahl erstellt und diese automatisch mit der Auswahl verbindet.
 Wenn man einen Punkt auswählt und extrudiert (Shortcut \keys{E}), wird ein weiterer Punkt und eine Kante erstellt.
 Bei einer Kante, eine weitere Kante und eine Fläche, bei einer Fläche mit vier Punkten werden 5 weitere Flächen erstellt
-(Siehe Abbildung\ref{picture:extrude}).
+(\textit{Abbildung \ref{picture:extrude}}).
 
 \begin{figure}[H]
     \centering
@@ -476,7 +477,7 @@ Die Stärke und Art der Beeinflussung wird selbst bestimmt.
 Wenn man den Charakter mittels der Subdivision-Methode modelliert beginnt man in den meisten Fällen mit einem Würfel.
 Mittles Loop-Cut and Slide halbiert man den Würfel und entfernt eine Hälfte des Würfels. Man fügt dem Objekt einen
 Mirror-Modifikator hinzu, um nur eine Seite des Charakters zu modellieren. Dann erstellt man die Grund-Struktur des
-Körpers (Siehe Abbildung\ref{picture:base_body}).
+Körpers (\textit{Abbildung \ref{picture:base_body}}).
 
 \begin{figure}[H]
     \centering
@@ -488,7 +489,7 @@ Körpers (Siehe Abbildung\ref{picture:base_body}).
 Nachdem man die Grund-Struktur hat, kann man den Subdivision-Modifikator auf dem Objekt anwenden. Im Edit-Modus
 modelliert man dann diverse Details in das Modell. Um die Details zu modellieren ohne die Struktur des Objektes
 zu beschädigen kann man Proportional Edit aktivieren. Bei der Entwicklung des Hauptcharakters wurde das Gesicht
-nur schemenhaft modelliert, da das Spiel in der Ego-Perspektive umgesetzt wird (Siehe Abbildung\ref{picture:protagonist}).
+nur schemenhaft modelliert, da das Spiel in der Ego-Perspektive umgesetzt wird (\textit{Abbildung \ref{picture:protagonist}}).
 
 \begin{figure}[H]
     \centering
@@ -522,7 +523,7 @@ der UV-Map zu welchen Flächen des Objektes gehört.
 
 Bei der Umsetzung der Charaktere, wurde für jeden Teil ein eigenes UV-Layouts generiert. Es gibt auch die Möglichkeit,
 ein UV-Layout für den gesamten Charakter zu erstellen, wodurch weniger Materials benötigt werden. Jedes Material kann
-nur eine UV-Map texturieren (Siehe Abbildung\ref{picture:uv_layouts}).
+nur eine UV-Map texturieren (\textit{Abbildung \ref{picture:uv_layouts}}).
 
 \begin{figure}[H]
     \centering
@@ -532,7 +533,7 @@ nur eine UV-Map texturieren (Siehe Abbildung\ref{picture:uv_layouts}).
 \end{figure}
 
 Bei High-Resolution Modellen, wie dem Antagonisten wird kein UV-Layout erstellt. Das UV-Unwrapping folgt in solchen
-Fällen etwas später (Siehe Kapitel \ref{sec:normal_baking}).
+Fällen etwas später (\textit{Kapitel \ref{sec:normal_baking} Normal Baking}).
 
 
 %---------------------Normal Baking--------------------Normal Baking---------------------Normal Baking------------------
@@ -540,11 +541,11 @@ Fällen etwas später (Siehe Kapitel \ref{sec:normal_baking}).
 \label{sec:normal_baking}
 
 Das Modell des Antagonisten ist zu detailreich modelliert um es für ein Spiel zu verwenden. Da der Charakter mit dem
-Sculpt-Tool von Blender und der aktivierten \textit{Dyntopo} Einstellung (Siehe Kapitel \ref{sec:sculpting})modelliert
+Sculpt-Tool von Blender und der aktivierten \textit{Dyntopo} Einstellung (\textit{Kapitel \ref{sec:sculpting} Sculpting} - \textit{DynTopo})modelliert
 wurde, sind über eine Million
 Flächen entstanden. Dieses Modell des Antagonisten wird als High-Resolution Modell bezeichnet. Um einen verwendbaren
 Charakter zu erstellen muss man aus dem High-Resolution Modell ein Low-Resolution Modell erstellen und dann die
-Details mittels einer Normal-Textur \textit{gefälscht} darstellen (Mehr Informationen zu Normal Texturen im Kapitel\ref{sec:tex_normal}).
+Details mittels einer Normal-Textur \textit{gefälscht} darstellen (Mehr Informationen zu Normal Texturen im \textit{Kapitel \ref{sec:tex_normal} Bump und Normal Texturen}).
 Um ein Low-Resolution Modell des Antagonisten zu bekommen haben wir den Decimate-Modifikator verwendet\citep{blender:mod_decimate}.
 
 Der Decimate-Modifikator besitzt drei primäre Einstellungen:
@@ -556,7 +557,7 @@ kann dadurch sehr stark beeinflusst werden.
 
 Un-Subdived:
 
-Diese Methode löscht Kanten, die das Modell unkreisen. Es ist der gegenteilige Prozess von Loop-Cuts (Siehe Kapitel \ref{sec:subdivision}).
+Diese Methode löscht Kanten, die das Modell unkreisen. Es ist der gegenteilige Prozess von Loop-Cuts (\textit{Kapitel \ref{sec:subdivision} Subdivision Modelling}).
 Daher würde diese Methode nichts bei dem Antagonisten bewirken, weil er durch die \textit{Dyntopo} Einstellung aus
 Dreiecken besteht.
 
@@ -574,9 +575,9 @@ einen flüssigen Programmablauf, die Möglichkeit gute Animationen zu gestalten 
 mit relativ wenig Aufwand zu gestalten.
 
 Nachdem man das Objekt verringert hat, sollte noch im Edit-Modus kontrolliert werden, ob noch obsulete Flächen entfernt
-werden können (Siehe Abbildung \ref{picture:antagonist_decimated}). Wenn man das fertige Low-Resolution Modell hat,
-erstellt man ein UV-Layout (Kapitel \ref{sec:unwrapping}).
-Das UV-Layout wird benötigt, damit eine Normal-Textur (Kapitel \ref{sec:tex_normal}) erstellt werden kann.
+werden können (\textit{Abbildung \ref{picture:antagonist_decimated}}). Wenn man das fertige Low-Resolution Modell hat,
+erstellt man ein UV-Layout (\textit{Kapitel \ref{sec:unwrapping} UV-Unwrapping}).
+Das UV-Layout wird benötigt, damit eine Normal-Textur (\textit{Kapitel \ref{sec:tex_normal} Bump und Normal Texturen}) erstellt werden kann.
 
 \begin{figure}[H]
     \centering
@@ -590,7 +591,7 @@ Das UV-Layout wird benötigt, damit eine Normal-Textur (Kapitel \ref{sec:tex_nor
 Nun kann man die Normals des High-Resolution Modells generieren. Dafür müssen das High-Resolution und Low-Resolution
 Modell die exakt gleiche Position in der 3D-Welt haben. Im Properties Modus unter dem Bereich: "Bake" wählt man als
 Bake Mode: "Normals" aus. Der Normal Space wird auf: "Tangent" gesetzt. Das Auswahlkästchen "Selected to Active" muss
-noch angehakt werden (Siehe Abbildung \ref{picture:baking_settings}).
+noch angehakt werden (\textit{Abbildung \ref{picture:baking_settings}}).
 
 \begin{figure}[H]
     \centering
@@ -629,7 +630,7 @@ anpassen. Ein passendes Gesicht für den Antagonisten zu finden und abzufotograf
 geworden.
 
 Um das Texture-Painting Tool von Blender gut zu verwenden, ist es praktisch den UV/Image Editor neben der 3D-View
-geöffnet zu haben (Siehe Abbildung \ref{picture:tex_painting_windows}).
+geöffnet zu haben (\textit{Abbildung \ref{picture:tex_painting_windows}}).
 
 \begin{figure}[H]
     \centering
@@ -640,7 +641,7 @@ geöffnet zu haben (Siehe Abbildung \ref{picture:tex_painting_windows}).
 
 Bevor man beginnt Texturen zu zeichnen muss der Charakter ein fertiges UV-Layout und ein Material mit einer Textur
 besitzen. Das Material-Prinzip von Blender \citep{blender:materials_blender} wird in diesem Buch nicht behandelt.
-Die Materialien für dieses Projekt wurden in der Unreal-Engine erstellt (Siehe Kapitel \ref{sec:materials}).
+Die Materialien für dieses Projekt wurden in der Unreal-Engine erstellt (\textit{Kapitel \ref{sec:materials} Materialien}).
 Weitere Voreinstellungen sollten in dem "Slots" Bereich vorgenommen werden:
 
 \begin{figure}[H]
@@ -664,7 +665,7 @@ Slots Einstellungen:
     Dafür wird das Modell im Edit-Modus markiert, damit das UV-Layout
     angezeigt wird. Dann klickt man im UV-/Image Editor auf das  Plus neben
     dem "Image-Icon". Wenn man die gewünschte Resolution eingestellt hat klickt man
-    auf okay (Siehe Abbildung \ref{picture:new_image}).
+    auf okay (\textit{Abbildung \ref{picture:new_image}}).
 
 
     \begin{figure}[H]
@@ -730,7 +731,7 @@ erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen,
         Fügt eine Farbe der vorhandenen hinzu. Gut verwendbar mit der traditionellen Farbenlehre (Auf eine rote Fläche
         wird mittels der Add-Funktionen Grün hinzugefügt. Das Ergebnis ist Gelb).
         Die Add Funktion ist auch sehr hilfreich um eine Property-Map zu erstellen.
-        (Mehr Informationen zu einer Property gibt es in dem Kapitel \ref{sec:tex_inside_engine})
+        (Mehr Informationen zu einer Property gibt es in dem \textit{Kapitel \ref{sec:tex_inside_engine} Texturen in der Engine})
 
 
 
@@ -743,12 +744,12 @@ erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen,
 
     Texture Mask:
 
-    Die Texture Mask Einstellung hat die gleiche Auswirkung wie der Texture Bereich in dem Kapitel \ref{sec:sculpting}.
+    Die Texture Mask Einstellung hat die gleiche Auswirkung wie der Texture Bereich in dem \textit{Kapitel \ref{sec:sculpting} Sculpting} - \textit{Texture}.
     Es wird ein bestimmter Bereich der Zeichenfläche nicht verwendet. Das ist von der geladenen Textur abhängig.
     Die geladenen Textur nennt man eine Maske (Masken sind in den meisten Fällen schwarz-weiß Texturen).
     Eine Maske zu erstellen ist relativ einfach. Dafür kann ein beliebiges Fotoprogramm oder Blender selbst verwendet
     werden. Im UV-/ Image Editor muss ein neues schwarzes Bild erstellt werden. Nachdem das getan wurde, wechselt man
-    auf den Paint - Mode (Siehe Abbildung \ref{picture:paint_mode}).
+    auf den Paint - Mode (\textit{Abbildung \ref{picture:paint_mode}}).
 
     \begin{figure}[H]
         \centering
@@ -759,7 +760,7 @@ erwünschte Ziel zu erreichen, gibt es in dem "Tools" Bereich die Einstellungen,
 
     Um dann eine Maske zu zeichnen ist es nur wichtig, dass man nur mit Grauwerten arbeitet. Dafür ist es hilfreich,
     die Farbauswahl des Pinsel mittels dem HSV - Farbcode zu bestimmen. Der H-Wert (Hue) und S-Wert (Saturation) wird
-    auf null gesetzt. Der V-Wert (Value) bestimmt die Graustufe (Siehe Abbildung \ref{picture:hsv_color_code}).
+    auf null gesetzt. Der V-Wert (Value) bestimmt die Graustufe (\textit{Abbildung \ref{picture:hsv_color_code}}).
 
     \begin{figure}[H]
         \centering

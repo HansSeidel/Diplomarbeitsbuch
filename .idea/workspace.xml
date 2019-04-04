@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/SEI_Texturierung_Texturen in der Engine-InputMoeglichkeit.PNG" afterPath="$PROJECT_DIR$/images/SEI_Texturierung_TextureninderEngine-InputMoeglichkeit.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/SEI_Texturierung_Texturen in der Engine-MaterialOutput.PNG" afterPath="$PROJECT_DIR$/images/SEI_Texturierung_TextureninderEngine-MaterialOutput.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/SEI_Texturierung_Texturen in der Engine-Property-Map.PNG" afterPath="$PROJECT_DIR$/images/SEI_Texturierung_TextureninderEngine-Property-Map.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diplomarbeit.tex" afterPath="$PROJECT_DIR$/diplomarbeit.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" afterPath="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/blender/hil_rigging.tex" afterPath="$PROJECT_DIR$/text/blender/hil_rigging.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/blender/lic_cutscene.tex" afterPath="$PROJECT_DIR$/text/blender/lic_cutscene.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" afterPath="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" afterPath="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" />
     </list>
@@ -20,42 +13,76 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sei_charakter_gestaltung.tex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="724" column="94" lean-forward="false" selection-start-line="724" selection-start-column="94" selection-end-line="724" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sei_texturenUndMaterialien.tex" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="392" column="79" lean-forward="false" selection-start-line="392" selection-start-column="79" selection-end-line="392" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5696347">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="sei_charakter_gestaltung.tex" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="177">
+                  <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sei_texturenUndMaterialien.tex" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="303" column="41" lean-forward="false" selection-start-line="303" selection-start-column="41" selection-end-line="303" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="sei_charakter_gestaltung.tex" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="177">
+                  <caret line="619" column="27" lean-forward="false" selection-start-line="619" selection-start-column="7" selection-end-line="619" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="diplom.bib" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/diplom.bib">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="194">
+                  <caret line="420" column="0" lean-forward="false" selection-start-line="420" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sei_texturenUndMaterialien.tex" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="177">
+                  <caret line="140" column="18" lean-forward="false" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="18" />
+                  <folding>
+                    <marker date="1554383494578" expanded="true" signature="5620:5841" ph="..." />
+                    <marker date="1554383494578" expanded="true" signature="7115:7326" ph="..." />
+                    <marker date="1554383494578" expanded="true" signature="8628:8838" ph="..." />
+                    <marker date="1554383494578" expanded="true" signature="9749:10015" ph="..." />
+                    <marker date="1554383494578" expanded="true" signature="11008:11242" ph="..." />
+                    <marker date="1554383494578" expanded="true" signature="11378:12136" ph="\section{Materialien}..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>key</find>
-      <find>X</find>
-      <find>titlepage</find>
-      <find>c_unrel</find>
-      <find>kur</find>
-      <find>Einstellungen um ein Bild</find>
-      <find>Darstellun</find>
-      <find>Hand, B</find>
-      <find>links: c</find>
-      <find>Empfohlene</find>
-      <find>in dem man die</find>
       <find>Substrac</find>
       <find>von Man</find>
       <find>ohne das0</find>
@@ -75,6 +102,17 @@
       <find>Programm Materialize</find>
       <find>Beispiel eine ROughe</find>
       <find>Rechtkli</find>
+      <find>sculpting</find>
+      <find>normal_baking</find>
+      <find>tex_norma</find>
+      <find>tex_normal</find>
+      <find>sec:subdivision</find>
+      <find>sec:tex_ins</find>
+      <find>Kapitel</find>
+      <find>sec:texture_painting</find>
+      <find>unreal</find>
+      <find>KORR</find>
+      <find>\ref</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -131,8 +169,8 @@
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_cutscene.tex" />
         <option value="$PROJECT_DIR$/diplomarbeit.tex" />
-        <option value="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" />
+        <option value="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" />
       </list>
     </option>
   </component>
@@ -146,9 +184,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="1365" />
-    <option name="height" value="1399" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -443,7 +482,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176400000" />
+    <option name="totallyTimeSpent" value="178974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -455,7 +494,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.024671054" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11513158" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -504,28 +543,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/diplomarbeit.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="17" />
-          <folding>
-            <element signature="e#1194#1218#2" expanded="false" />
-            <element signature="e#1248#1284#2" expanded="false" />
-            <element signature="e#1332#1353#2" expanded="false" />
-            <element signature="e#1440#1469#2" expanded="false" />
-            <element signature="e#1577#1597#2" expanded="false" />
-            <element signature="e#1599#1618#2" expanded="false" />
-            <element signature="e#1620#1641#2" expanded="false" />
-            <element signature="e#1780#1808#2" expanded="false" />
-            <element signature="e#1847#1864#2" expanded="false" />
-            <element signature="e#1866#1888#2" expanded="false" />
-            <element signature="e#1935#1964#2" expanded="false" />
-            <element signature="e#1986#2010#2" expanded="false" />
-            <element signature="e#2086#2107#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -637,14 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="124" column="51" lean-forward="false" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diplom.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="95" column="31" lean-forward="false" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,18 +855,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="724" column="94" lean-forward="false" selection-start-line="724" selection-start-column="94" selection-end-line="724" selection-end-column="94" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/images/SEI_Texturierung_TextureninderEngine-Property-Map.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="392" column="79" lean-forward="false" selection-start-line="392" selection-start-column="79" selection-end-line="392" selection-end-column="79" />
+        <state relative-caret-position="85">
+          <caret line="303" column="41" lean-forward="false" selection-start-line="303" selection-start-column="41" selection-end-line="303" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="420" column="0" lean-forward="false" selection-start-line="420" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
           <folding />
         </state>
       </provider>
