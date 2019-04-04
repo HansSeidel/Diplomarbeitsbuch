@@ -22,7 +22,8 @@ Bei Union werden zwei Objekte zu einem Objekt zusammengefügt (\textit{Abbildung
 
 Bei Intersect wird das Objekt mit dem Modifikator an den überschneidenden Stellen in das Zielobjekt eingefügt (\textit{Abbildung \ref{modifikatoren:image1}, rechts. Das Zielobjekt ist orange markiert.}).
 
-\begin{figure}[h]
+\raggedbottom
+\begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Modifikatoren-Boolean.png}
     \caption{Difference-, Union- und Intersect-Operation}
@@ -38,7 +39,7 @@ und anschließend im Object Mode den Origin setzt.
 In \textit{Abbildung \ref{modifikatoren:image2}} kann man die Anwendung des Mirror Modifikators sehen. Der orangene Teil des Objekts ist in allen drei Beispielen das
 Grundobjekt, welches gespiegelt wird.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Modifikatoren-Mirror.png}
     \caption{Mirror-Modifikator mit Spiegelung um die Z-, Y- und X-Achse}
@@ -51,7 +52,7 @@ Der Array-Modifikator vervielfacht ein Objekt entlang einer Achse. Man kann den 
 angeben, damit diese regelmäßig wiederholt werden.\citep{blender:array_modifier} In \textit{Abbildung \ref{modifikatoren:image3}} sieht man den angewendeten Array-Modifikator.
 Die ausgewählten (orange umrandeten) Würfel werden auf der Y-Achse
 wiederholt, die anderen auf der Y- und Z-Achse.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Modifikatoren-Array.png}
     \caption{Array-Modifikator}
@@ -63,7 +64,7 @@ wiederholt, die anderen auf der Y- und Z-Achse.
 Mit dem Curve-Modifikator kann man ein beliebiges Objekt an eine Bezierkurve anpassen.\citep{blender:curve_modifier} In \textit{Abbildung \ref{modifikatoren:image4}} sieht man
 in der oberen Hälfte das Objekt und die Bezierkurve, in der unteren beide zusammengefügt.
 Außerdem zu erwähnen ist, dass das Rechteck mehrfach unterteilt ist damit es sich der Bezierkurve anpassen kann.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Modifikatoren-Curve.png}
     \caption{Curve-Modifikator}
@@ -76,7 +77,7 @@ Mit dem Bevel-Modifikator kann man Kanten, durch Flächen die nahe der Kanten hi
 Wichtige Einstellungen sind, der Abstand von der am äußersten hinzugefügten und der ursprünglichen Kante und die Anzahl der Kanten die hinzugefügt werden.
 Der Bevel Modifikator wurde oft verwendet, damit die erstellten Objekte echt aussehen, weil jedes Objekt z.B. eine Tischkante nie abrupt
 aufhört sondern zumindest ein bisschen abgerundet ist.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Modifikatoren-Bevel.png}
     \caption{Bevel-Modifikator}
@@ -90,7 +91,7 @@ Objekten die viele Flächen brauchen, damit sie detailliert genug dargestellt we
 wieder, so dass das Objekt noch gut genug aussieht. Das entfernen der überflüssigen Flächen verbessert die Performance sehr stark.
 In \textit{Abbildung \ref{modifikatoren:image6}} sieht man den ursprünglichen Würfel (orange) und den Würfel mit dem angewendeten
 Decimate Modifikator.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Modifikatoren-Decimate.png}
     \caption{Decimate-Modifikator}
@@ -104,9 +105,10 @@ In \textit{Abbildung \ref{modifikatoren:image7}} links wird Smooth Shading gar n
 den Kanten mit dem geringsten Winkel zu den Flächen angewendet und rechts wird Smooth Shading überall angewendet.
 
 Mehr zu Smooth Shading findet man in \textit{Kapitel \ref{objectMode:smoothshading} \dq Smooth Shading\dq}.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{images/Modifikatoren-Edgesplit.png}
     \caption{Edge-Split-Modifikator}
     \label{modifikatoren:image7}
 \end{figure}
+\flushbottom
