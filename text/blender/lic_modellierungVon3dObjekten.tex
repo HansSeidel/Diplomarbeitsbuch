@@ -1,13 +1,13 @@
 \section{Modellierung von 3D Objekten}
 \label{sec:Modellierung_von_3D_Objekten}
-Ein großer Teil in der Spielentwicklung, war das Modellieren. In diesem Kapitel wird gezeigt, wie man kompliziertere
+Ein großer Teil in der Spielentwicklung war das Modellieren. In diesem Kapitel wird gezeigt, wie man kompliziertere
 Modelle macht und auf was man achten muss.
 
 Es ist sehr wichtig, dass das Spiel mit einer guten Performance spielbar ist. Deswegen wurde beim Modellieren darauf geachtet,
 dass es pro Modell so wenig Flächen wie möglich gibt \citep{unreal:modellierungVon3dObjekten_performance}, denn diese müssen vom Computer berechnet werden.
 Darunter kann dann die Performance im Spiel leiden.
 Zwei wesentliche Gebäude des Spieles sind das Haus des Grabwächters und das Mausoleum inklusive aller enthaltenen Objekte.
-Weiters gibt es einige Objekte die für die Story relevant sind und Objekte, die modelliert wurden um das Spiel zu füllen.
+Weiters gibt es einige Objekte die für die Story relevant sind und Objekte die modelliert wurden um das Spiel zu füllen.
 
 Auflistung der Objekte:
 
@@ -116,8 +116,8 @@ Verwendete Modifikatoren: \textit{Kapitel \ref{Bevel:heading} \dq Bevel\dq}\verb
 Das Grab des Paracelsus ist ein Modell, welches einem echten Objekt nachempfunden ist. Um ein möglichst originalgetreues Ergebnis zu erhalten
 modelliert man das Objekt von einem Foto nach. Dafür importiert man zuerst ein Foto in Blender (\textit{Abbildung \ref{Paracelsus_Grab:image1}}).
 Man kann die Durchsichtikgeit des Bildes einstellen, bei welchen Winkel und auf welcher Achse das Bild sichtbar ist.
-In diesem Fall wurde das Bild auf 100\% Sichtbarkeit eingestellt damit man während dem Modellieren die Linien im Bild noch gut erkennt.
-Außerdem wurde es nur auf einer orthographischen Ansicht angezeigt, damit man es nur in der Ansicht sieht in der es sinnvoll ist, die Maße nachzumodellieren.
+In diesem Fall wurde die Sichtbarkeit des Bildes auf 100\% eingestellt, damit man während dem Modellieren die Linien im Bild noch gut erkennt.
+Außerdem wurde es nur auf einer orthographischen Ansicht angezeigt, damit man es nur in der Ansicht sieht, in der es sinnvoll ist, die Maße nachzumodellieren.
 
 \raggedbottom
 \begin{figure}[H]
@@ -140,7 +140,7 @@ durch eine Schätzung der Größen nachmodelliert worden.
 \end{figure}
 
 \subsubsection{Vase}
-Um die Vase für das Paracelsus Grab zu modellieren wurde eine Sphere benutzt und anschließend im Edit Mode verändert. Anschließend wurden die Verzierungen für die Vase gemacht.
+Um die Vase für das Paracelsus Grab zu modellieren, wurde eine Sphere benutzt, die anschließend im Edit Mode verändert wurde. Danach wurden die Verzierungen für die Vase gemacht.
 Dazu wurden zwei Bezier-Curves erstellt (\textit{Abbildung \ref{Paracelsus_Grab:image5}}). Die obere für die Einkerbungen und die untere für die Verzierung der Vase. Damit die Bezier-Curves eine
 Dicke haben, muss man sie mit einem Bezier-Circle verbinden, der die Dicke der Bezier-Curve bestimmt.
 Nach dem Erstellen der Bezier-Curves, wurden diese zu einem Mesh\todo{Mesh beschreiben} konvertiert, damit sie anschließend mittels Boolean-Modifikator mit der Vase verbunden
@@ -156,8 +156,8 @@ bzw. ausgeschnitten werden können.
 Verwendete Modifikatoren: \textit{Kapitel \ref{Curve:heading} \dq Curve\dq}\verb+;+ \textit{Kapitel \ref{Boolean:heading} \dq Boolean\dq}
 
 \subsubsection{Gesicht}
-Für die Modellierung des Gesichts wurde ein Brush\todo{Referenz zu Hans oder Fußnote} verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
-aber notwendig, damit nachher noch eine andere Textur mit einer eigenen Bumpmap\todo{Referenz zu Hans} verwendet werden kann. Um das Gesicht zu erstellen wurde zuerst auf einer Seite der Säule
+Für die Modellierung des Gesichts wurde ein Brush (\textit{Kapitel \ref{sec:sculpting} Sculpting}) verwendet. Diese Methode braucht zwar viele Flächen, was die Performance des Spiels beeinträchtigen kann, war
+aber notwendig, damit nachher noch eine andere Textur mit einer eigenen Bumpmap (\textit{Kapitel \ref{sec:tex_normal} Bump und Normal Texturen}) verwendet werden kann. Um das Gesicht zu erstellen wurde zuerst auf einer Seite der Säule
 die Fläche unterteilt. Danach wurde im Sculpt Mode eine Schwarzweiß Textur, welche aus dem ursprünglichen Bild des Paracelsus Grabes gefertigt wurde,
 eingefügt (\textit{Abbildung \ref{Paracelsus_Grab:image4}, rotes Rechteck}).
 Somit kann man mit dem Brush Höhen und Tiefen zeichnen. Außerdem wurden die Werte Strenght und Radius angepasst, damit die Brushstärke so hoch ist, dass bei der Bearbeitung die Flächen weit genug verschoben werden
