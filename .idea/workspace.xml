@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/text/sound/hil_sound.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/sound/hil_sound.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            <state relative-caret-position="395">
+              <caret line="648" column="37" selection-start-line="648" selection-start-column="37" selection-end-line="648" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -494,12 +494,12 @@
       <workItem from="1553291356913" duration="1578000" />
       <workItem from="1553708274739" duration="4659000" />
       <workItem from="1553851488044" duration="2247000" />
-      <workItem from="1554365447238" duration="9142000" />
+      <workItem from="1554365447238" duration="15884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186009000" />
+    <option name="totallyTimeSpent" value="192751000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,7 +514,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -529,7 +529,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.13418078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279678" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.24301676" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.24301676" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -872,8 +872,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="395">
+          <caret line="648" column="37" selection-start-line="648" selection-start-column="37" selection-end-line="648" selection-end-column="37" />
         </state>
       </provider>
     </entry>
