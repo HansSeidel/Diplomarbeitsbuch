@@ -95,10 +95,10 @@ einer Fläche sind die belichteten Seiten. Die Normal-Direction gibt an, aus wel
 wird und welche Neigung die Fläche hat (\texit{Abbildung \ref{picture:normals}}).
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Bump-NormalTexturen-Normals.png}
-    \caption{In diesem Bild sieht man die Normal-Direction der verschiedenen Flächen}
-    \label{picture:normals}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Texturierung_Bump-NormalTexturen-Normals.png}
+\caption{In diesem Bild sieht man die Normal-Direction der verschiedenen Flächen}
+\label{picture:normals}
 \end{figure}
 
 
@@ -122,10 +122,10 @@ reflektiert wird. Ein Roughness Wert von null (schwarz) entspricht kompletter Sp
 (weiß) entspricht gar keiner Spiegelung (\texit{Abbildung \ref{picture:roughness_illustration}}).
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Texturierung_Roughness-Roughness.png}
-    \caption{Darstellung der Lichtberechnung eines Roughness-Wertes}
-    \label{picture:roughness_illustration}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Texturierung_Roughness-Roughness.png}
+\caption{Darstellung der Lichtberechnung eines Roughness-Wertes}
+\label{picture:roughness_illustration}
 \end{figure}
 
 
@@ -150,10 +150,10 @@ alle Inputs verfügbar. Welche Inputs verfügbar sind, ist von der Material-Art 
 (\texit{Abbildung \ref{picture:mat_ue4_node}}).
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-MaterialOutput.png}
-    \caption{Eine Material Output Node und die aktiven Inputs}
-    \label{picture:mat_ue4_node}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-MaterialOutput.png}
+\caption{Eine Material Output Node und die aktiven Inputs}
+\label{picture:mat_ue4_node}
 \end{figure}
 
 
@@ -169,10 +169,10 @@ Zwischenräume eine geringere Roughness hätten als die Ziegel. Damit der erwün
 1-X Node verwendet um die Textur zu invertieren.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-InputMoeglichkeit.png}
-    \caption{Der Roughness input wurde einmal mit einem konstanten Wert verwendet und einmal mit einer Textur}
-    \label{picture:tex_mat_roughness}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-InputMoeglichkeit.png}
+\caption{Der Roughness input wurde einmal mit einem konstanten Wert verwendet und einmal mit einer Textur}
+\label{picture:tex_mat_roughness}
 \end{figure}
 
 
@@ -188,10 +188,10 @@ zwischen 0 und 1 ausgeben, funktioniert das einwandfrei. Damit hat man drei Text
 Property-Map vereint und es muss nur eine Textur geladen werden. (\texit{Abbildung \ref{picture:property_map}})
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-Property-Map.png}
-    \caption{Eine Property-Map und die einzelnen Informationen innerhalb der RGB-Kanäle}
-    \label{picture:property_map}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Texturierung_TextureninderEngine-Property-Map.png}
+\caption{Eine Property-Map und die einzelnen Informationen innerhalb der RGB-Kanäle}
+\label{picture:property_map}
 \end{figure}
 
 
@@ -217,47 +217,48 @@ erstellt, wenn man ein neues Material hinzufügt. In diesem Kapitel werden die w
 Projektes verwendet wurden unter die Lupe genommen:
 
 \begin{longtable}{|p{4cm}|p{9.6cm}|}
-    \hline
-    \endfirsthead
-    \textbf{Input} & \textbf{Beschreibung}\\
-    \hline
-    \endhead
+\hline
+\endfirsthead
+\textbf{Input} & \textbf{Beschreibung}\\
+\hline
+\endhead
+\textbf{Input} & \textbf{Beschreibung}\\
+\hline
+Base Color & Die Base-Farbe bestimmt das diffuse Aussehen des Materials \\
+\hline
 
-    Base Color & Die Base-Farbe bestimmt das diffuse Aussehen des Materials \\
-    \hline
+Metallic & Der Metallic Input bestimmt, ob das Material ein Metall ist oder nicht. Im Normalfall wird für
+diesen Wert 0 oder 1 verwendet. 0 bedeutet, das Material ist metallisch, 1 bedeutet, es ist nicht
+metallisch. Ein Wert zwischen 0 und 1 lässt das Material unrealistisch erscheinen, was gerne
+für Science-Fiction Materialien verwendet wird (z.B. organisches Metall) \\
+\hline
 
-    Metallic & Der Metallic Input bestimmt, ob das Material ein Metall ist oder nicht. Im Normalfall wird für
-    diesen Wert 0 oder 1 verwendet. 0 bedeutet, das Material ist metallisch, 1 bedeutet, es ist nicht
-    metallisch. Ein Wert zwischen 0 und 1 lässt das Material unrealistisch erscheinen, was gerne
-    für Science-Fiction Materialien verwendet wird (z.B. organisches Metall) \\
-    \hline
+Roughness & Der Roughness Input bestimmt die Lichtberechnung der Reflektion. Umso niedriger der Wert
+ist, desto stärker spiegelt das Material \\
+\hline
 
-    Roughness & Der Roughness Input bestimmt die Lichtberechnung der Reflektion. Umso niedriger der Wert
-    ist, desto stärker spiegelt das Material \\
-    \hline
+Emissive Color & Die Emissive Color lässt das Material leuchten. Dieser Input kann für Ampeln, Items die man im Spiel
+finden muss oder Neon-Lichter gut eingesetzt werden \\
+\hline
 
-    Emissive Color & Die Emissive Color lässt das Material leuchten. Dieser Input kann für Ampeln, Items die man im Spiel
-    finden muss oder Neon-Lichter gut eingesetzt werden \\
-    \hline
+Opacity & Der Opacity Input ist standardmäßig nicht verfügbar. Um die Opacity zu verwenden, muss man die
+Material-Node anklicken und im Details-Bereich den Blend-Mode auf "Translucent" umstellen
+(\texit{Abbildung \ref{picture:translucent}}). Der Opacity Input bestimmt, ob und wie stark man durch das Material hindurchsehen
+kann. Dieser Input wird hauptsächlich durch Texture-Masken (\textit{Kapitel \ref{sec:texture_painting} - Textur Mask}) verwendet \\
+\hline
 
-    Opacity & Der Opacity Input ist standardmäßig nicht verfügbar. Um die Opacity zu verwenden, muss man die
-    Material-Node anklicken und im Details-Bereich den Blend-Mode auf "Translucent" umstellen
-    (\texit{Abbildung \ref{picture:translucent}}). Der Opacity Input bestimmt, ob und wie stark man durch das Material hindurchsehen
-    kann. Dieser Input wird hauptsächlich durch Texture-Masken (\textit{Kapitel \ref{sec:texture_painting} - Textur Mask}) verwendet \\
-    \hline
+Normal & Der Normal Input ist für Normal-Texturen gedacht. Er bestimmt die \textit{gefälschte} Tiefe des Objektes \\
+\hline
 
-    Normal & Der Normal Input ist für Normal-Texturen gedacht. Er bestimmt die \textit{gefälschte} Tiefe des Objektes \\
-    \hline
-
-    \caption{Material Inputs der Output Node}
-    \label{table:mat_inputs}
+\caption{Material Inputs der Output Node}
+\label{table:mat_inputs}
 \end{longtable}
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Materialien_Material_Inputs-TranscluentType.png}
-    \caption{In diesem Bereich kann man die Material-Art verändert. Dadurch werden einige Inputs aktiviert oder deaktiviert}
-    \label{picture:translucent}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Materialien_Material_Inputs-TranscluentType.png}
+\caption{In diesem Bereich kann man die Material-Art verändert. Dadurch werden einige Inputs aktiviert oder deaktiviert}
+\label{picture:translucent}
 \end{figure}
 
 
@@ -278,10 +279,10 @@ Funktion suchen. Im Suchbereich mittels dem Suchbegriff "Landscape Layer Blend",
 werden. Diese wird mit dem Material Attributes Input verbunden (\texit{Abbildung \ref{picture:layer_blend}}).
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MatLayerBegin.png}
-    \caption{Layer Blend Node und Material Attributes Einstellung}
-    \label{picture:layer_blend}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MatLayerBegin.png}
+\caption{Layer Blend Node und Material Attributes Einstellung}
+\label{picture:layer_blend}
 \end{figure}
 
 Wenn man nun die Layer Blend Node anklickt, kann man im Details Bereich Layers hinzufügen. Jeder hinzugefügte Layer
@@ -290,10 +291,10 @@ Materialien dar. Der Blend Type bestimmt, wie ein Material hinzugefügt wird und
 Materialien verhält. Der Layer Input, welcher für das Basis-Material verwendet wird, braucht die Einstellung "LB Weight Blend".
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MatLayerLayers.png}
-    \caption{Die Layer Blend Node hat mehrere Inputs bekommen}
-    \label{picture:layers}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MatLayerLayers.png}
+\caption{Die Layer Blend Node hat mehrere Inputs bekommen}
+\label{picture:layers}
 \end{figure}
 
 Um die Layer-Inputs verbinden zu können muss die "MakeMaterialAttributes"-Funktion verwendet werden. Dieser
@@ -310,10 +311,10 @@ Funktion auch (Rechtsklick im Graph-Editor und nach dem Namen suchen). Material-
 den gleichen Ablauf öfters mit verschiedenen Parameter wiederholen muss.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MatFunctionErstellen.png}
-    \caption{Erstellen einer Material Funktion}
-    \label{picture:make_mat_func}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MatFunctionErstellen.png}
+\caption{Erstellen einer Material Funktion}
+\label{picture:make_mat_func}
 \end{figure}
 
 Material-Funktionen haben Input und Output-Parameter. Diese bestimmen die Inputs und Outputs der Node, wenn die
@@ -321,10 +322,10 @@ Funktion implementiert wird (\texit{Abbildung \ref{picture:use_mat_func}}). Die 
 Drop in einem Material hinzugefügt werden oder mittels der "MaterialFunctionCall" Funktion.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MatFunctionVerwenden.png}
-    \caption{Darstellung der Inputs / Outputs einer Material Funktion und die Verwendung in einem Material}
-    \label{picture:use_mat_func}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MatFunctionVerwenden.png}
+\caption{Darstellung der Inputs / Outputs einer Material Funktion und die Verwendung in einem Material}
+\label{picture:use_mat_func}
 \end{figure}
 
 Material-Instanzen\citep{ue:mat_instances}:
@@ -339,10 +340,10 @@ welche Grundform die Dellen haben sollen, ob Rost vorhanden ist, wie viel des Me
 Grundform hat der Rost.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MetalBaseMat.png}
-    \caption{Basis Material um Instanzen des Basis-Materials zu erstellen}
-    \label{picture:base_metal_material}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MetalBaseMat.png}
+\caption{Basis Material um Instanzen des Basis-Materials zu erstellen}
+\label{picture:base_metal_material}
 \end{figure}
 
 Um eine Material-Instanz zu erstellen, klickt man mit der rechten Maustaste auf ein bestehendes Material. Danach klickt
@@ -351,22 +352,22 @@ Material-Parameter besitzen.
 
 Material-Parameters:
 
-    Material-Parameter können auf verschiedene Arten  erstellt werden:
-    \begin{itemize}
-        \item  Mittels Rechtsklick auf einen Input und der Option "Promote to Parameter"
-        \item  Mittels Rechtsklick auf eine Konstante oder Textur und der Option "Convert to Parameter"
-        \item  Mittels Rechtsklick im Graph-Editor und der Suche nach "Parameters"
-    \end{itemize}
+Material-Parameter können auf verschiedene Arten erstellt werden:
+\begin{itemize}
+\item  Mittels Rechtsklick auf einen Input und der Option "Promote to Parameter"
+\item  Mittels Rechtsklick auf eine Konstante oder Textur und der Option "Convert to Parameter"
+\item  Mittels Rechtsklick im Graph-Editor und der Suche nach "Parameters"
+\end{itemize}
 
 Die zwei größten Vorteile von Material-Instanzen sind, dass Änderungen sofort in der 3D-View ersichtlich sind und
 verschiedene Varianten eines Basis-Materials leicht zu erstellen sind. Die erstelleten Parameter kann man dann im
 Details Bereich der Material-Instanz einstellen (\texit{Abbildung \ref{picture:edit_mat_instance}}).
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MetalMatInst.png}
-    \caption{Editieren einer Material Instance in dem Details Bereich}
-    \label{picture:edit_mat_instance}
+\centering
+\includegraphics[width=.9\textwidth]{SEI_Materialien_Material-Layer-MetalMatInst.png}
+\caption{Editieren einer Material Instance in dem Details Bereich}
+\label{picture:edit_mat_instance}
 \end{figure}
 
 %---Wichtige Algorithmen/Funktionen---------Wichtige Algorithmen/Funktionen-------Wichtige Algorithmen/Funktionen-------
@@ -377,33 +378,35 @@ Im letzten Kapitel über die Materialien in der Unreal-Engine werden die wichtig
 Funktionen aufgezählt und beschrieben, die im Laufe der Diplomarbeit verwendet wurden.
 
 \begin{longtable}{|p{4cm}|p{9.6cm}|}
-    \hline
-    \endfirsthead
-    \textbf{Algorithmus / Funktion} & \textbf{Beschreibung}\\
-    \hline
-    \endhead
+\hline
+\endfirsthead
+\textbf{Algorithmus / Funktion} & \textbf{Beschreibung}\\
+\hline
+\endhead
+\textbf{Algorithmus / Funktion} & \textbf{Beschreibung}\\
+\hline
 
-    1-X & Invertiert den Wert \\
-    \hline
+1-X & Invertiert den Wert \\
+\hline
 
-    Lerp (LinearInterpolation) & Dieser Algorithmus orientiert sich an einem Alpha Wert. Der Alpha Wert muss ein
-    Input zwischen 0 und 1 sein. Wenn der Alpha Wert 0 ist wird als Output der Wert
-    verwendet, welcher sich in dem A-Input befindet. Wenn der Alpha Wert 1 ist wird
-    als Output der Wert verwendet, welcher sich in dem B-Input befindet. Wenn der
-    Alpha Wert sich zwischen 0 und 1 befindet, wird der - dem entsprechende prozentuale -
-    Wert zwischen dem A- und B-Input als Output-Wert verwendet \\
-    \hline
+Lerp (LinearInterpolation) & Dieser Algorithmus orientiert sich an einem Alpha Wert. Der Alpha Wert muss ein
+Input zwischen 0 und 1 sein. Wenn der Alpha Wert 0 ist wird als Output der Wert
+verwendet, welcher sich in dem A-Input befindet. Wenn der Alpha Wert 1 ist wird
+als Output der Wert verwendet, welcher sich in dem B-Input befindet. Wenn der
+Alpha Wert sich zwischen 0 und 1 befindet, wird der - dem entsprechende prozentuale -
+Wert zwischen dem A- und B-Input als Output-Wert verwendet \\
+\hline
 
-    Add & Addiert zwei Werte \\
-    \hline
+Add & Addiert zwei Werte \\
+\hline
 
-    Multiply & Multipliziert zwei Werte. Bei dieser Funktion ist zu beachten, dass die Farbe Schwarz
-    den Wert 0 hat. Sobald zwei Farben / oder Texturen miteinander multipliziert
-    werden, wird es bei schwarzen Stellen keine Veränderung geben \\
-    \hline
+Multiply & Multipliziert zwei Werte. Bei dieser Funktion ist zu beachten, dass die Farbe Schwarz
+den Wert 0 hat. Sobald zwei Farben / oder Texturen miteinander multipliziert
+werden, wird es bei schwarzen Stellen keine Veränderung geben \\
+\hline
 
-    \caption{Material Funktionen}
-    \label{table:mat_algorithms}
+\caption{Material Funktionen}
+\label{table:mat_algorithms}
 \end{longtable}
 
 Unreal-Engine bietet noch viele weiter Funktionen an, die allerdings nicht hier gelistet werden. Die hier gelisteten
