@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/diplom.bib" beforeDir="false" afterPath="$PROJECT_DIR$/diplom.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/website/c_website.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/website/c_website.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,20 +32,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diplom.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-854">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="31">
+              <caret line="662" column="21" lean-forward="true" selection-start-line="662" selection-start-column="21" selection-end-line="662" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diplom.bib">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="568" column="30" selection-start-line="568" selection-start-column="30" selection-end-line="568" selection-end-column="30" />
+            <state relative-caret-position="354">
+              <caret line="73" column="104" lean-forward="true" selection-start-line="73" selection-start-column="104" selection-end-line="73" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -53,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
+            <state relative-caret-position="1037">
               <caret line="61" column="110" selection-start-line="61" selection-start-column="110" selection-end-line="61" selection-end-column="110" />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
+            <state relative-caret-position="3400">
               <caret line="200" column="10" selection-start-line="200" selection-start-column="10" selection-end-line="200" selection-end-column="10" />
             </state>
           </provider>
@@ -115,8 +115,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/text/blender/hil_rigging.tex" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/text/blender/hil_rigging.tex" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -138,7 +138,6 @@
         <option value="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien" />
         <option value="$PROJECT_DIR$/text/blender/sei_charakterGestaltung.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" />
-        <option value="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" />
         <option value="$PROJECT_DIR$/text/planung/sei_planung.tex" />
         <option value="$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex" />
         <option value="$PROJECT_DIR$/text/formatierung.tex" />
@@ -161,19 +160,21 @@
         <option value="$PROJECT_DIR$/text/00_vorlage/00_Vorwort.tex" />
         <option value="$PROJECT_DIR$/text/00_vorlage/00_vorwort.tex" />
         <option value="$PROJECT_DIR$/diplomarbeit.tex" />
-        <option value="$PROJECT_DIR$/diplom.bib" />
         <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
         <option value="$PROJECT_DIR$/text/website/c_website.tex" />
+        <option value="$PROJECT_DIR$/diplom.bib" />
+        <option value="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" />
+        <option value="$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="1365" />
-    <option name="height" value="1100" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -183,6 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,36 +195,7 @@
             <path>
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="roh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
               <item name="text" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="00_vorlage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="blender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="planung" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
@@ -241,7 +214,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,6 +231,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\neonr_000\Desktop\Schule\#DA G.O.I\Diplomarbeitsbuch\images\roh" />
       <recent name="C:\Users\Tobias Röhrer\Desktop\Schule\#DA G.O.I\Diplomarbetisbuch\LaTex\Diplomarbeitsbuch\images\roh" />
       <recent name="C:\Users\Benjamin\Documents\Diplomarbeitsbuch\images" />
       <recent name="C:\Users\Benjamin\Documents\Diplomarbeitsbuch\text" />
@@ -501,11 +474,12 @@
       <workItem from="1553291356913" duration="1578000" />
       <workItem from="1553708274739" duration="4659000" />
       <workItem from="1553851488044" duration="2247000" />
+      <workItem from="1554365447238" duration="3726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176867000" />
+    <option name="totallyTimeSpent" value="180593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -517,10 +491,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-6" y="0" width="781" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08955224" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3814147" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -533,7 +507,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.13418078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279678" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.24702059" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -751,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_abstract.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_erklaerung.tex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -838,31 +805,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="200" column="10" selection-start-line="200" selection-start-column="10" selection-end-line="200" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diplom.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="568" column="30" selection-start-line="568" selection-start-column="30" selection-end-line="568" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="1037">
           <caret line="61" column="110" selection-start-line="61" selection-start-column="110" selection-end-line="61" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3400">
+          <caret line="200" column="10" selection-start-line="200" selection-start-column="10" selection-end-line="200" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-854">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="544">
+          <caret line="89" column="12" lean-forward="true" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_abstract.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="662" column="21" lean-forward="true" selection-start-line="662" selection-start-column="21" selection-end-line="662" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="73" column="104" lean-forward="true" selection-start-line="73" selection-start-column="104" selection-end-line="73" selection-end-column="104" />
         </state>
       </provider>
     </entry>

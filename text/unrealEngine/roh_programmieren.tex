@@ -1,9 +1,323 @@
 %Author: Tobias Röhrer
 \section{Blueprints}
-    \subsection{Classes}
-    \subsection{Nodes}
-    \subsection{HO-Interaktion}
-    \subsection{Grabwächter}
+In der Unreal Engine 4, der Game Engine für unser Spiel, gibt es die Möglichkeit die Spielfunktionen nicht per Programmiersprache zu verwirklichen, sondern per Blueprints.
+Diese sind eine Art von visuellem Programmieren. [https://docs.unrealengine.com/en-us/Engine/Blueprints 2019-04-01]
+Die Unreal Engine selbst arbeitet im Hintergrund mit C++, aber mit den Blueprints kann man Funktionen einbauen, ohne programmieren zu müssen. [https://docs.unrealengine.com/en-us/Programming 2019-04-01]
+Blueprints kann man in mehrere Teile teilen.
+Sie haben bestimmte Parent-Classes, bestehen aus dem Viewport, dem Construction Script und dem Event Graph und verwenden Nodes, um die Logik umzusetzen. [https://docs.unrealengine.com/en-us/Engine/Blueprints/GettingStarted 2019-04-01]
+\subsection{Parent Classes} [https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Types/ClassBlueprint 2019-04-01]
+Bevor eine Blueprintklasse erstellt wird, muss eine Parent Class, eine Elternklasse, definiert werden.
+Dies erlaubt es, Funktionen und Variable zu vererben.
+Die am meisten verwendeten Klassen sind folgende:
+\begin{itemize}
+    \item Actor [https://docs.unrealengine.com/en-us/Programming/UnrealArchitecture/Actors 2019-04-01]
+    Ein Actor ist ein Objekt, welches in der Welt oder dem Level platziert oder gespawned werden kann.
+    \item Pawn [https://docs.unrealengine.com/en-US/Gameplay/Framework/Pawn 2019-04-01]
+    Ein Pawn ist ein Actor, welcher „besessen“ werden kann.
+    Das heißt, dass er von einem Controller Input bekommen kann.
+    \item Character [https://docs.unrealengine.com/en-us/Gameplay/Framework/Pawn/Character 2019-04-01]
+    Ein Character ist ein Pawn, welcher unter anderem die Möglichkeit hat, zu gehen, zu laufen und zu springen.
+    \item PlayerController [https://docs.unrealengine.com/en-us/Gameplay/Framework/Controller/PlayerController 2019-04-01]
+    Ein PlayerController ist ein Actor, der dafür verantwortlich ist, einen Pawn für den Spieler zu kontrollieren.
+    \item Game Mode [https://docs.unrealengine.com/en-us/Gameplay/Framework/GameMode 2019-04-01]
+    Der Game Mode definiert das gerade gespielte Spiel, dessen Regelwerk und Ähnliches.
+\end{itemize}
+\subsection{Nodes} [https://docs.unrealengine.com/en-us/Engine/Blueprints/UserGuide/Nodes 2019-04-01]
+Nodes sind die einzelnen graphisch dargestellten Programm-Bausteine.
+Sie haben das Aussehen eines Rechtecks mit abgerundeten Ecken und besitzen kleine Kreise und weiße Pfeile rechts und links.
+Die Pfeile zeigen den Programmablauf.
+Ist an der linken Seite etwas an dem weißen Pfeil angebracht, so wird die Node nach der links angebrachten Node im Programmablauf ausgeführt.
+Die Kreise zeigen Ein- und Ausgänge für Variable, wie etwa Strings, Integers, Floats oder Objekte.
+Links sind die Eingänge und rechts die Ausgänge.
+{IMG: EU_BP_Nodes.PNG}
+\subsection{Viewport} [https://docs.unrealengine.com/en-us/Engine/Blueprints/Editor/UIComponents/Viewport 2019-04-01]
+Der Viewport zeigt an, welche Komponenten in der Blueprintklasse platziert sind.
+Zieht man die Blueprintklasse in ein Level hinein, so wird dort das platziert, was man im Blueprint-Viewport sieht.
+Fügt man also im Viewport des Blueprints einen Würfel hinzu und zieht den Blueprint dann in ein Level, so sieht man dort den eben verwendeten Würfel.
+Diese Funktion ist hilfreich, wenn man z.B. die Objekte eines Blueprints animieren oder entfernen will, denn auf Objekte im Viewport eines Blueprints hat dieser das Besitzrecht bzw. das Recht diese Objekte abzuändern wie es der User will.
+{IMG: UE_BP_Viewport.PNG}
+\subsection{Event Graph} [https://docs.unrealengine.com/en-us/Engine/Blueprints/UserGuide/EventGraph 2019-04-01]
+Im Event Graph wird mithilfe der Nodes „programmiert“.
+Es gibt verschiedene Event-Nodes, mit denen ein „Programmierstrang“ beginnen kann.
+Als Beispiel gibt es das Event BeginPlay, das gefeuert wird, sobald dieser Blueprint beim Spielen erzeugt wird.
+Ein weiteres Beispiel wäre das Event ActorBeginOverlap einer Collisionbox, das gefeuert wird, wenn ein Spieler in diese Box hineingeht.
+{IMG: UE_BP_EventGraph.PNG}
+\subsection{Construction Script} [https://docs.unrealengine.com/en-us/Engine/Blueprints/UserGuide/UserConstructionScript 2019-04-01]
+Das Construction Script ist mit dem Event Graph vergleichbar, jedoch wird es zu einem anderen Zeitpunkt ausgeführt und beinhaltet nicht alle Nodes, dafür auch andere, wie der Event Graph.
+Das Construction Script wird dann ausgeführt, wenn der Blueprint constructed wird – also eine Instanz dessen im Level erstellt wird, oder diese Instanz verändert wird.
+Veränderungen beinhalten Skalierung, Rotation, Verschiebung oder eine Änderung eines Variableneingangs.
+{IMG: UE_BP_ConstructionScript.PNG}
 \section{Interface}
-    \subsection{Startmenü}
+Um ein Hauptmenü und ein Pausemenü, sowie angezeigte Information während des Spielens darstellen zu können, stellt die Unreal Engine 4 Widget Blueprints bereit.
+\subsection{Widgets} [https://docs.unrealengine.com/en-us/Engine/UMG/UserGuide/WidgetBlueprints 2019-04-01]
+Ein Widget besteht aus zwei Teilen, dem Unreal Motion Graphics (UMG) Designer und dem Graph Teil.
+In dem Designer kann man seine Menüs graphisch gestalten.
+In dem Graph Teil kann man dann den Elementen des Designers mithilfe von Blueprints Funktionen zuweisen.
+Die in dieser Diplomarbeit verwendeten Designelemente beinhalten:
+{IMG: UE_UI_Overview.PNG}
+\begin{itemize}
+    \item Buttons
+    Buttons sind Elemente, welche vorgefertigte Events im Event-Graph für Hover und Click haben.
+    Außerdem haben sie die Möglichkeit, unterschiedlich angezeigt zu werden, je nachdem, ob der Button gerade geklickt wird, gehovert wird, oder weder noch.
+    \item Text
+    Textelemente sind einfache Elemente, die Text in verschiedenen Größen, Farben und anderen Gestaltungseigenschaften anzeigen können.
+    Vorgefertigte Events weisen sie nicht auf.
+    \item Boxes
+    Boxes sind reine Gruppierungselemente.
+    Sie bieten die Möglichkeit mehrere beliebige andere Elemente untergeordnet zu haben, welche anschließend ihre Position mit der Box mitverändern.
+    Es gibt sowohl horizontale als auch vertikale Boxen, welche ihre Kinder dementsprechend in sich sortieren.
+    Um diese Boxen für den späteren Gebrauch anzeigen und verstecken zu können, muss man sie aber erst als Variable deklarieren.
+    Dies ist mithilfe einer Checkbox in den Details möglich.
+    \item Slider
+    Slider sind Elemente, welche einen beliebigen Wert zwischen 0 und 1 annehmen können.
+    Dieser wird auf einer horizontalen Achse dargestellt, während am linken Ende die 0 ist, und am rechten die 1.
+    Slider haben unter anderem das Graph Event „OnValueChange“, welches ausgelöst wird, wenn der Spieler den Wert ändert.
+    \item Comboboxes
+    Comboboxes sind im Prinzip Drop-Down Listen.
+    Mit ihnen kann der Spieler aus einer Anzahl an fixen Werten Auswählen.
+    Comboboxen haben Events für das Ändern der Auswahl sowie das Öffnen der Auswahl.
+\end{itemize}
+
+%--------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+
+AI
+Artificial Intelligence (AI), also künstliche Intelligenz, ist eines der wohl kompliziertesten Themen in der Spieleindustrie. Die Unreal Engine 4 bietet hierfür ein Set an vorgefertigten Funktionen, die alle zusammenspielen, um eine Künstliche Intelligenz zu schaffen.
+-	Blackboard [https://docs.unrealengine.com/en-us/Engine/AI/BehaviorTrees 2019-04-01]
+Ein Blackboard wird benützt, um Werte zu speichern. Behavior Trees können auf Blackboards und deren Daten zugreifen und diese verändern. Wertet ein Behavior Tree beispielsweise einen Wert aus, muss aber an einer anderen Stelle anhand dieses Wertes eine Entscheidung treffen, so wird dieser Wert in dem Blackboard gespeichert und kann dann wiederverwendet werden.
+{IMG: UE_AI_BB.PNG}
+-	Behavior Tree
+[ALSO REFERENCE AIBB
+Mithilfe des Behavior Trees wird das Verhalten des Antagonisten bestimmt. Er verwendet das Blackboard, um Daten zu speichern und auszulesen.
+In einem Behavior Tree gibt es mehrere Nodes, ähnlich wie in einem Blueprint.
+Die Reihenfolge in der die Nodes eines Behavior Trees ausgeführt werden, ist wie folgt. Beginnend von oben immer nach unten und dann von links nach rechts.
+[https://docs.unrealengine.com/en-us/Engine/AI/BehaviorTrees/NodeReference 2019-04-01]
+Root Node
+Die Root Node ist der Ausgangspunkt eines Behavior Trees. Sie kann nur ein Kind, eine Child Node, haben.
+Composite Node
+Eine Composite Node bestimmt die Art und Weise, wie damit umgegangen wird, wenn eines ihrer Kinder scheitert oder Erfolg hat. Es gibt drei unterschiedliche Composite Nodes: Selector, Sequence und Simple Parallel. Eine Selector Node zirkuliert solange durch ihre Kinder, bis eines Erfolg hat. Danach wird die nächste Node rechts der Selector Node ausgeführt. Eine Sequence Node ist praktisch das Gegenteil einer Selector Node. Sie zirkuliert so lange durch ihre Kinder, bis eines scheitert. Erst dann wird zur nächsten Node rechts der Sequence Node gewechselt. Eine simple Parallel Node ermöglich es, einen Task auszuführen, während gleichzeitig andere Logik ausgeführt werden kann.
+Decorator Node
+Eine Decorator Node ist direkt mit einer Composite Node oder einer Task Node in Verbindung. Sie ist vergleichbar mit einer IF-Abfrage, die getestet wird, bevor die mit ihr verbundene Node ausgeführt wird. Möchte man zum Beispiel testen, ob es einen bestimmten Charakter gibt, bevor man sich zu diesem hinbewegt, so kann dies in einer Decorator Node bewerkstelligt werden, bevor man die mit ihr verbundene Task Node „Move To“ ausführt.
+Service Node
+Eine Service Node ist ähnlich wie eine Decorator Node. Sie wird aber im Gegensatz zu dieser, in kurzen Abständen wiederholt ausgeführt, solange der Teilbaum unter der verbundenen Composite Node, oder die verbundene Task Node, ausgeführt wird.
+Task Node
+Eine Task Node bildet meist das „Blatt“ des Baumes. Diese Node kann keine Kinder haben, und beinhaltet Aufgaben, die erledigt werden sollen. Eine Task Node kann außerdem Bescheid geben, ob ihre Aufgabe erfolgreich war, oder ob sie fehlgeschlagen ist.
+{IMG: UE_AI_BT.PNG}
+-	AIController [https://docs.unrealengine.com/en-US/Gameplay/Framework/Controller/AIController 2019-04-01]
+Der AIController ist eine Art Blueprint, die für die Zusammenarbeit eines Character Blueprints mit einem Behavior Tree und einem Blackboard zuständig ist.
+Tätigkeiten
+Da nun die wichtigsten Grundinformationen geklärt sind, werde ich im Folgenden meine Arbeitsschritte genauer erläutern.
+-	HO-Interaktion
+Die Hauptobjekt-Interaktion spielt eine wichtige Rolle in der Spielmechanik. Der Spieler muss sieben Objekte einsammeln und in das Mausoleum bringen, um das Spiel zu beenden.
+Es gibt zwei Blueprintklassen – eine für das Aufheben der Hauptobjekte und eine für das Platzieren der Hauptobjekte. Außerdem werden einige Variablen in dem Blueprint für den FirstPersonCharacter gespeichert, da sie von beiden Blueprints gebraucht werden und so auch von beiden verwendet werden können. Diese Variablen beinhalten einen String, in dem steht, welches Objekt der Spieler im Moment hält („holdingObjects“), sowie eine Map, in welchem alle Objekte als solche gespeichert sind, die in der Welt platziert werden, sobald sie zum Mausoleum gebracht wurden („Objects“). Eine Map ist vergleichbar mit einem Array, jedoch hat sie pro Eintrag zwei Werte – auch möglich mit unterschiedlichen Datentypen. Ein Wert ist der Key, der andere die Value. In einer Map kann nach einem Key gesucht werden, bei einem Erfolg wird die zugehörige Value ausgegeben.
+Zusätzlich wird im FirstPersonCharacter Blueprint eine weitere Map gespeichert, welche für jedes Hauptobjekt eine Boolean Variable beinhaltet („placedObjects“). Eine Booleanvariable hat zwei mögliche Zustände, True und False. Diese Map beinhaltet somit die Information, ob ein beliebiges Objekt bereits platziert wurde oder nicht. Ein bereits platziertes Objekt hat beispielsweise „True“ als Wert eingetragen.
+{IMG: UE_HO_FPCharVars.PNG}
+Die Blueprintklasse für das Aufheben wird für jedes aufhebbare Objekt erneut im Level platziert. Also gibt es eine Instanz des Aufheben-Blueprints für die Kerzen, eine weitere für die Zementtrommel und für jedes andere ebenfalls eine, welche alle im Level platziert sind.
+Die Blueprintklasse für das Platzieren der Objekte wird nur einmal im Level platziert. Da der Platzieren-Blueprint allein für das Platzieren aller Objekte zuständig ist und auch auf alle nötigen Variablen für alle Objekte zugreifen kann, wird nur eine Instanz des Blueprints im Level benötigt.
+Eine Instanz des Aufheben-Blueprints kann sich um nur ein Objekt kümmern, während eine Instanz des Platzieren-Blueprints sich um alle Objekte kümmern kann.
+{IMG: UE_HO_PickupVSPlaceAmount.PNG}
+Pickup
+Die Klasse für das Aufheben beinhaltet im Viewport nur eine Collisionbox, die dazu benützt wird, die Inputs zu aktivieren, wenn der Spieler hineinläuft und wieder zu deaktivieren, wenn er hinausläuft. Diese einfache Mechanik wird im Event Graph durch die beiden Events ActorBeginOverlap und ActorEndOverlap der Collisionbox und den Nodes Enable und Disable Input umgesetzt. Die beiden Input Nodes haben als Eingangsparameter den Spielercontroller.
+{IMG: UE_HO_PickupCollBox.PNG}
+{IMG: UE_HO_PickupCollBoxBP.PNG}
+Der Blueprint beinhaltet zwei Variable, zuerst den String, der bestimmt, welches Objekt in dieser Instanz der Blueprintklasse aufgehoben werden kann („Objects“), sowie ein Array, in welchem bestimmt wird, welche Objekte in dieser Instanz angezeigt werden („ObjectActors“). Da diese beiden Variablen public sind, was durch das offene Auge neben der Variablen gekennzeichnet ist, können sie pro Instanz im Level-Editor definiert werden. {IMG: UE_HO_PickupVars.PNG}
+Die String Variable „Objects“ muss einen der Werte haben, welche in der, in dem „FirstPersonCharacter“ Blueprint gespeicherten, Map „placedObjects“ vordefiniert sind.
+{IMG: UE_HO_placedObjectsVar.PNG}
+In das Array „ObjectActors“ wird oder werden per Pipette ein oder mehrere im Level platzierte Objekte hinzugefügt, welche nach erfolgreichem Aufheben zerstört werden – also verschwinden.
+
+Das Event „E“, welches bei dem Druck der E-Taste ausgelöst wird, startet den „Strang“ des Aufhebens eines Objektes. Zuerst wird getestet, ob die Variable „ObjectActors“ befüllt ist, also ob es in dem Level überhaupt aufzuhebende Objekte gibt.
+{IMG: UE_HO_PickupBP1.PNG}
+Bei einem Erfolg wird dann überprüft, ob der Spieler bereits ein Objekt hält.
+{IMG: UE_HO_PickupBP2.PNG}
+Tut er das nicht, wird darauf getestet, ob das aufzuhebende Objekt bereits platziert wurde.
+{IMG: UE_HO_PickupBP3.PNG}
+Wurde es das nicht, wird zuerst dem „Objects“ String im FirstPersonCharacter der aktuelle Objektname zugewiesen, dann der Ton abgespielt (siehe Sektion „Audio einbinden“) und anschließend werden alle sich im Array „ObjectActors“ befindlichen Objekte zerstört.
+{IMG: UE_HO_PickupBP4.PNG}
+{IMG: UE_HO_PickupBP5.PNG}
+{IMG: UE_HO_PickupBP6.PNG}
+Place
+Im Viewport der Blueprintklasse für die Hauptobjektplatzierung befindet sich, wie auch in der für das Aufheben, eine Collisionbox. Sie wird außerdem auch auf dieselbe Art und Weise gehandhabt.
+In diesem Blueprint gibt es drei Variablen – alles Maps. Zwei dieser Maps sind jedoch leer und werden nur verwendet, um den Event Graph übersichtlicher zu gestalten – sozusagen als „Zwischenspeicher“ für die Maps „Objects“ und „placedObjects“ aus dem FirstPersonCharacter Blueprint.
+Die dritte Map „TransformActors“ bietet die Möglichkeit, im Level Editor die Objekte, wie sie im Endeffekt platziert werden sollen, zu platzieren. Danach müssen sie per Pipette in die Map eingebettet werden und ihnen als String-Key der passende Name zugewiesen werden. Um zu verhindern, dass die Objekte angezeigt werden, bevor sie platziert werden, können die jeweiligen Objekte als „Hidden in Game“ definiert werden.
+Da manche Objekte – wie zum Beispiel „kerze“ – aus mehreren 3D-Objekten bestehen („kerze1“, „kerze2“, „kerze3“), werden in der „TransfromActors“ Map, wo nötig, mehrere einzelne Objekte pro Gesamtobjekt eingefügt. Unterschieden wird zwischen den individuellen Objekten dann nur durch eine Nummer nach dem Namen.
+{IMG: UE_HO_PlaceVars.PNG}
+Nach dem der Blueprint erkennt, dass der Spieler in die Collisionbox eintritt, werden zuerst die oben erwähnten „Zwischenspeicher“-Variablen gesetzt, danach wird ausgewertet, ob der Spieler überhaupt ein Objekt trägt.
+{IMG: UE_HO_PlaceBP1.PNG}
+Tut er das, wird in einem Switch der Wert des „Object“-Strings ausgewertet. Wenn der String einem der Werte entspricht, fährt der Programmierstrang an dem passenden Pfad fort.
+{IMG: UE_HO_PlaceBP2.PNG}
+{IMG: UE_HO_PlaceBP3.PNG}
+Dann wird ausgewertet, ob das Objekt bereits platziert wurde.
+{IMG: UE_HO_PlaceBP4.PNG}
+Wurde es das nicht, werden die Koordinaten verwendet, um einen neuen Actor zu erstellen.
+{IMG: UE_HO_PlaceBP5.PNG}
+Diesem wird dann ein Static Mesh Component mit dem Static Mesh des zu platzierenden Objekts zugewiesen.
+{IMG: UE_HO_PlaceBP6.PNG}
+Dieser Schritt wird für jedes 3D-Objekt des zu platzierenden Gesamtobjekts wiederholt.
+{IMG: UE_HO_PlaceBP7.PNG}
+Danach wird in der „placedObjects“ Map die Variable für das platzierte Objekt auf True gesetzt, was signalisiert, dass dieses Objekt bereits platziert wurde.
+{IMG: UE_HO_PlaceBP8.PNG}
+Dann wird derselbe Ton abgespielt, welcher beim Aufheben auch abgespielt wird. Genaueres zu diesem Schritt finden Sie unter „Audio einbinden“.
+{IMG: UE_HO_PlaceBP9.PNG}
+Dann führen alle Pfade, welche zuvor von dem Switch zerteilt wurden, wieder in einen zusammen. Denn zum Abschluss wird der String „holdingObjects“ geleert und die „Zwischenspeicher“-Map „PlacedObjects“ wird dem Gegenstück im FirstPersonCharacter zugewiesen, sodass auf die aktualisierte Map auch von dem Aufheben-Blueprint zugegriffen werden kann.
+{IMG: UE_HO_PlaceBP10.PNG}
+
+-	Grabwächter
+Der Antagonist des Spiels, der Grabwächter, braucht die Funktion eigenständig dem Spieler nachzulaufen, also eine Art Künstlicher Intelligenz. Unreal Engine 4 hat zu diesem Thema eine Vielzahl an vorgefertigten Bausteinen.
+Character Blueprint
+Zuerst wird ein Blueprint mit der Elternklasse Character erstellt, in welchem die Meshes und Animationen des Antagonisten verwaltet werden. In den Class-Defaults kann man unter anderem in der Rubrik Animation den Animation Blueprint zuweisen, sodass der Character Blueprint weiß, welche Animationen zu welchem Zeitpunkt abgespielt werden sollen. Außerdem kann man in der Rubrik Mesh dem Blueprint das Skeletal Mesh übergeben, auf das dann die Animationen angewendet werden. Der Character Blueprint ist also dafür verantwortlich, was beim Spielen des Spiels angezeigt wird.
+{IMG: UE_AI_CharBPViewport.PNG}
+Außerdem ist in dem Event Graph des Antagonisten Characters der Programmierstrang, welcher den Tod des Protagonisten steuert. Überlappen sich der Protagonist und die Collision Capsule des Antagonisten, so wird zuerst eine SoundCue abgespielt.
+{IMG: UE_AI_CharBPBP1.PNG}
+Diese beinhaltet den „Grab“-Sound (Eng. „Zugreifen“) gefolgt von dem „Jumpscare“-Sound, wonach sich dann die „Gameover“-Music wiederholt abspielt.
+{IMG: UE_AI_DeathCue.PNG}
+Nach der „Play Sound 2D“-Node, welche nicht wartet bis die SoundCue fertig gespielt hat, bevor sie den „Strang“ weiterführt, wird das „Deathwidget“ angezeigt.
+{IMG: UE_AI_CharBPBP2.PNG}
+Dieses beinhaltet eine Animation, welche zuerst den gesamten Bildschirm schwarz werden lässt und danach einen Button anzeigt, welcher die Funktion bietet, zurück zum Hauptmenü zu gelangen. Der Button tut jedoch nicht nur das, er lädt das gesamte Level neu, was verursacht, dass der Spieler von vorne beginnt.
+{IMG: UE_AI_DeathwidgetBP.PNG}
+Blackboard
+In dem Fall des Antagonisten wird hier lediglich das Objekt des Spielers gespeichert, das wir dann als Ziel für den Antagonisten verwenden, sodass dieser dem Spieler immer nachläuft.
+{IMG: UE_AI_BBactual.PNG}
+Behavior Tree
+Der Behavior Tree des Antagonisten ist ebenfalls nicht kompliziert. Er besteht lediglich aus der Root Node, welche immer Teil des Behavior Trees ist, einer Selector Node und dem Task „Move To“, welcher als Input den Hauptcharakter geliefert bekommt. Dieser Task sorgt dafür, dass der Antagonist auf kürzestem Wege stets zum Hauptspieler läuft.
+{IMG: UE_AI_BTactual.PNG}
+AIController
+Der AIController des Antagonisten gibt im Event Graph zuerst an, welches Blackboard benutzt werden soll. Danach werden in das Blackboard Werte gefüllt, sodass der Behavior Tree auf diese dann zugreifen kann. Anschließend gibt der AIController an, welcher Behavior Tree verwendet werden soll.
+{IMG: UE_AI_AIController.PNG}
+Damit der AIController auf den richtigen Character angewandt wird, wird im Character Blueprint des Antagonisten in den Class Defaults unter der Rubrik Pawn als „AI Controller Class“ der richtige AIController ausgewählt.
+Animation Blueprint
+Zuletzt ist ebenfalls ein Animation Blueprint erstellt worden, mit dessen Hilfe die verschiedenen Animationen des Antagonisten (Idle, Walk, Run) geschwindigkeitsabhängig dargestellt werden. Dazu wird unter anderem ein Blendspace verwendet, welcher es ermöglicht, angenehm anzusehende Übergänge zwischen den Animationen zu erstellen. Mehr zu diesem Thema wird hier nicht besprochen, bei Interesse kann in der Dokumentation zur Unreal Engine 4 nachgelesen werden.
+Erzeugung/Zerstörung
+Damit der Hauptcharakter nicht während der Intro- und Outrosequenz gejagt wird, wird der Antagonist erst nach der Introsequenz gespawned (erzeugt) und vor der Outrosequenz zerstört.
+{IMG: UE_AI_Spawn.PNG}
+{IMG: UE_AI_Kill.PNG}
+
+-	Hauptcharakter
+Der Hauptcharakter wurde hauptsächlich automatisch von der Unreal Engine 4 beim Erstellen des Projektes erzeugt. Es wurden nur wenige Änderungen vorgenommen:
+o	Das Entfernen der ursprünglichen Meshes (Arme und Waffe)
+o	Das Entfernen der Möglichkeit zu schießen
+o	Das Hinzufügen des Modells des Hauptcharakters
+o	Das Hinzufügen eines Animation Blueprints für die Animationen Idle und Walk des Hauptcharakters
+o	Sowie das Speichern einiger Variablen für die Hauptobjekt-Interaktion (siehe HO-Interaktion)
+Für den Animation Blueprint des Hauptcharakters wird ebenfalls ein Blendspace verwendet.
+{IMG: UE_HC_CharBP_Viewport.PNG}
+Um die Geräusche eines Schrittes abspielen zu können, wurden in der Animation „Walk“ des Haupcharakters zwei Notifier eingesetzt. Notifier sind Events, die immer an einer bestimmten Stelle der Animation ausgelöst werden.
+{IMG: UE_HC_Notifier.PNG}
+Sie wurden so platziert, dass sie mit den Schritten in der Animation übereinstimmen. Nach einem solchen Schritt wird dann mittels der „Single Line Trace By Channel“-Node unter anderem die Position ausgerechnet, an der der Protagonist dem Boden am nächsten ist oder ihn berührt.
+Ob der Schritt einer des rechten oder des linken Fußes war, bestimmt welche Cue nun abgespielt wird.
+{IMG: UE_HC_Stepsound.PNG}
+-	Audio einbinden
+Um mit dem Spiel ein auditives Erlebnis mitzuliefern, werden auch Sounds eingebunden. Wie diese Sounds zu Stande gekommen sind, kann im Audio Teil von Stefan Hillinger nachgelesen werden.
+Eingebunden wurden in den Menüs die Sounds für Clicks und für das Hovern, so wie eine Menümusik. Im Spiel gibt es die Sounds für das Aufheben und Platzieren von Objekten.
+Zuerst wird von den importierten Sounds eine Cue erstellt. Mit deren Hilfe können die Sounds noch leicht abgeändert und modifiziert werden. Außerdem können je nach Bedarf auch andere Einstellungen vorgenommen werden. Beispielweise besteht die Möglichkeit, einen oder mehrere weitere Sounds in die Cue einzufügen und dann bei jedem Abspielen der Cue einen zufälligen Sound abzuspielen.
+{IMG: UE_Sound_Cue.PNG}
+Lautstärkeregler
+Um die Lautstärke global, also für jeden Sound zu verändern, gibt es eine „Universal Volume“ Float Variable in dem GameMode Blueprint. Diese kann in im Haupt- und Pausemenü über den Audioregler verändert werden. Auf das Event „On Value Changed“ folgt eine „Clamp“ Node, die dafür sorgt, dass die Float variable zwischen zwei definierbaren Grenzen bleibt. In diesem Fall sind diese 0,01 und 1.
+Verwendet wird die Float Variable später als Eingang für „Volume Multiplier“ bei Nodes, die mit Sound zu tun haben. Wenn dieser Eingang 0 wird, stoppt der Sound, und fängt erneut an zu spielen, wenn der Wert wieder größer als 0 ist. Um das zu vermeiden, verhindert die „Clamp“ Node, dass die Float Variable 0 erreichen kann. Danach wird der Wert in die „Universal Volume“ Variable eingefügt.
+{IMG: UE_Sound_SliderBP.PNG}
+Damit die währenddessen spielende Menümusik ihre Lautstärke gleichzeitig mitverändert, muss dies, da die Musik bereits spielt, manuell getätigt werden.
+Dies geschieht, indem die Musik beim ersten Abspielen nicht nur abgespielt, sondern auch als Variable im „FirstPersonCharacer“ gespeichert wird. Auf diese Variable kann man danach zugreifen, und die Lautstärke mit der Node „Set Volume Multiplier“ ändern. Bevor die Lautstärke jedoch geändert wird, wird zuerst getestet, ob der Sound in der Variablen derzeit überhaupt gespielt wird.
+{IMG: UE_Sound_SliderBP2.PNG}
+Menüsounds
+Damit der Spieler ein auditives Feedback zur Menübedienung hat, werden Sounds beim Hovern über Buttons und Klicken auf Buttons oder andere Elemente abgespielt. Dies geschieht einfach mit der Node „Play 2D Sound“, wobei in unserem Fall darauf geachtet werden muss, dass als Volume Multiplier die Variable „Universal Volume“ verwendet wird. Folgende Folge an Nodes wurde überall dort eingebaut, wo ein solcher Hover- oder Clicksound verwendet wird.
+{IMG: UE_Sound_ClickBP.PNG}
+Ingame Sounds
+Als Ingame Sounds gibt es das Geräusch eines Rucksacks, welches bei dem Aufheben und Ablegen eines Objektes abgespielt wird. Im Gegensatz zu den Menüsounds wird dieser Sound mit der Node „Play Sound At Location“ abgespielt, ebenfalls mit dem „Universal Volume“ als Eingang für den Volume Multiplier. In dem Pickup Blueprint wird als Location für die „Play Sound At Location“ Node die durchschnittliche Location aller aufgehobenen Objekte verwendet.
+{IMG: UE_Sound_Pickup.PNG}
+In dem Place Blueprint wird die Position des eben platzierten Objekts als Location verwendet.
+{IMG: UE_Sound_PlaceSingular.PNG}
+Wurden mehrere Objekte platziert, so wird der Durschnitt der Locations gebildet und dieser verwendet. Da wir für das platzieren der Objekte jedoch Transformations verwenden, müssen zuerst die Locations aus diesen extrahiert werden. In dem Fall, dass mehrere Objekte platziert wurden, werden alle extrahierten Locations dieser in ein Array gegeben, welches es uns dann ermöglicht den Durchschnitt aller Locations dieses Arrays zu bilden.
+{IMG: UE_sound_PlaceMultiple.PNG}
+
+-	Menüs
+Um Optionen einstellen zu können und das Spiel starten und pausieren zu können, wurden Menüs erstellt. Ein Hauptmenü, ein Pause Menü und ein Widget, welches während des Spiels angezeigt wird.
+-	Hauptmenü
+Dieses Menü wird mithilfe des folgenden Node-Setups im Levelblueprint zu Beginn des Spiels angezeigt.
+{IMG: UE_UI_GoToMain.PNG}
+Es beinhaltet zur linken Seite einige Buttons, welche bestimmte Bereiche zur rechten Seite des Widgets dank selbst eingefügter Funktion ein und ausblenden können.
+Die Hauptbuttons und ihre weiterführende Funktionalität sind folgende:
+o	Spiel fortsetzen und Neues Spiel
+Ein Klick auf diese Buttons lässt das Menü verschwinden und gibt dem Spieler die Kontrolle über den Hauptcharakter. Das Spiel beginnt.
+o	Optionen
+Bei Klick auf diesen Button wird eine Verticalbox mit einigen weiteren Funktionen angezeigt, während alle anderen Boxen wieder versteckt werden. Die nun angezeigte Box beinhaltet den Audio Slider, welcher bereits unter „Audio einbinden“ erklärt wurde. Außerdem können jetzt Einstellungen zur Graphik vorgenommen werden. In der ersten Zeile befinden sich zwei Comboboxen. Die linke der beiden beinhaltet verschiedene Auflösungsoptionen, während die rechte die Optionen beinhaltet, ob das Spiel im Vollbildmodus, als Fenster oder als Vollbildfenster angezeigt werden soll. Zuletzt gibt es eine weiter Combobox, welche die Einstellung erlaubt, die Graphikqualität des Spiels zu ändern.
+o	Steuerung
+Nach dem Öffnen der Steuerung wird ein Bild angezeigt, welches die Steuerung erklärt.
+o	Credits
+Ein Klick auf diesen Button lässt den Spieler nachsehen, wer dieses Spiel entwickelt hat.
+o	Beenden
+Dieser Button beendet das Spiel.
+{IMG: UE_UI_MainUMG1.PNG}
+Der Eventgraph beinhaltet folgende Funktionen.
+Construct Event
+Das Event „Construct“ wird beim Erstellen des Widgets aufgerufen, also wenn es erscheint. Der folgende Programmstrang pausiert zuerst das Spiel, sodass, während sich der Spieler im Menü befindet, nicht etwa der Antagonist weiterhin auf ihn zu läuft. Danach wird eine Option eingestellt, die den Mauszeiger anzeigen lässt. Weiterhin wird der Input Mode auf „UI only“ umgestellt.
+{IMG: UE_UI_MainBP1.PNG}
+Anschließend wird der derzeitige Wert der Variable „Universal Volume“ auf den Audioslider angewandt, mehr hierzu im Kapitel „Audio einbinden“.
+{IMG: UE_UI_MainBP2.PNG}
+Außerdem werden ebenfalls die Inhalte der Variablen für die Grafikeinstellungen auf die dazugehörigen UI-Elemente übertragen.
+{IMG: UE_UI_MainBP3.PNG}
+{IMG: UE_UI_MainBP4.PNG}
+Die genauen Bedeutungen der Variablen können im folgenden Teil über die Grafikoptionen nachgelesen werden.
+Spielen
+Nach dem auslösen des Events „OnClicked“ für einen der Buttons „Speil fortsetzen“ und „Neues Spiel“ wird zuerst der Clicksound abgespielt.
+{IMG: UE_UI_MainBP5.PNG}
+Dann werden die Einstellungen des Curseranzeigens und des Gamemodes zurückgestellt, sowie das aktuelle Widget aus dem Viewport entfernt.
+{IMG: UE_UI_MainBP6.PNG}
+Bevor das das In-Game Widget hinzugefügt wird, wird darauf getestet, ob das Spiel aus dem Hauptmenü zum ersten Mal gestartet wird. Ist dem so, so wird kein Widget hinzugefügt und die Möglichkeit den Hauptcharakter zu kontrollieren wird unterbunden, damit der Introsequenz nichts im Wege steht und der Spieler den Hauptcharakter während dieser nicht bewegen kann. Nach der Sequenz, und wenn das Spiel nicht zum ersten Mal aus dem Hauptmenü gestartet wird, wird dem Spieler die Kontrolle über den Hauptcharakter gegeben und das In-Game Widget wird angezeigt.
+Danach wird das Spiel aus dem Pause-Modus genommen.
+{IMG: UE_UI_MainBP7.PNG}
+Zuletzt wird die Menümusik beendet.
+{IMG: UE_UI_MainBP8.PNG}
+Box-Management
+Bei einem Klick auf einen der Buttons „Controls“, „Optionen“ oder „Credits“ werden alle Boxen bis auf die passende versteckt, und die passende wird angezeigt.
+{IMG: UE_UI_MainBP9.PNG}
+Danach wird der Klicksound abgespielt.
+Quit
+Nach einem Klick auf den „Quit Game“ Button wird, bevor mit einer einzelnen Node das Spiel beendet wird, der Klicksound abgespielt.
+{IMG: UE_UI_MainBP10.PNG}
+Lautstärkeregler
+Die Funktionalität des Lautstärkereglers wurde im Kaptiel „Audio einbinden“ bereits erklärt.
+Grafikoptionen
+Nach Auswahl einer Option für die Grafikqualität wird zuerst der Clicksound abgespielt.
+{IMG: UE_UI_MainBP11.PNG}
+Anschließend werden die nötigen Variablen aus dem „FirstPersonGamemode“ geholt. Diese beinhalten ein Array an Strings „Graphics Text“, welche die im Userinterface anzuzeigenden Auswahlmöglichkeiten darstellen, sowie ein Array „Graphics Settings“ mit den in der „Execute Console Command“ auszuführenden Befehlen und eine Integer Variable „Graphics Selected“, welche speichert, welche Option aktuell ausgewählt ist.
+Zuerst wird nach der ausgesuchten Option im „Graphics Text“ gesucht und der aus der „Find“-Node zurückgegebene Index wird verwendet, um das richtige Konsolenkommando aus dem Array „Graphics Settings“ zu selektieren und auszuführen. Abschließend wird der Index als neuer Wert der „Graphics Selected“-Variable gesetzt.
+{IMG: UE_UI_MainBP12.PNG}
+
+Die Optionen für das Ändern der Auflösung und des Fenstermodus haben viel miteinander zu tun. Beide beginnen mit dem Abspielen des Klicksounds.
+{IMG: UE_UI_MainBP13.PNG}
+Danach suchen sich beide alle nötigen Variablen aus dem „FirstPersonGameMode“. Diese beinhalten für die Auflösung ein „Resolution Text“-Array, welches die anzuzeigenden Auswahlmöglichkeiten speichert, welche gleichzeitig die verwendbaren Werte für das Konsolenkommando darstellen, und eine Integer Variable, die speichert, welche Auflösung im Moment selektiert ist. Für den Fenstermodus gibt es, wie für die Grafikqualität, ein String Array „WindowMode Text“ mit den Auswahlmöglichkeiten, ein weiteres String Array „WindowMode Settings“ und eine Integervariable mit dem aktuell selektierten Index.
+Der String, welcher als Kommando in die „Excute Console Command“-Node eingespeist wird, setzt sich aus der im Widget gespeicherten String Variable „Res String Template“, der Auflösung und abschließend dem Fenstermodus zusammen. So ein String könnte zum Beispiel so aussehen: „r.setRes 1920x1080w“ für eine Auflösung von 1920px mal 1080px im „windowed“-Modus, oder etwa „r.setRes 800x400f“ für eine Auflösung von 800px mal 400px im Fullscreen Modus. Für den „Windowed Fullscreen“-Modus wären die Buchstaben „wf“ hinten anzuhängen.
+Es wird also in beiden Fällen, sowohl beim Ändern der Auflösung als auch beim Ändern des Fenstermodus ein solcher String erzeugt.
+Die richtigen Werte für die Auflösung und den Fenstermodus werden auf die gleiche Art und Weise beim Erstellen des Menüs in die richtigen Variablen eingefügt, wie es auch mit dem Wert der Grafikqualität passiert.
+Der einzige Unterschied zwischen den beiden Optionen ist folgender: Der Strang für das Ändern der Auflösung passt die Indexvariable „Resolution Selected“ an, aber die Indexvariable für den Fenstermodus wird nur verwendet, nicht verändert. Der Strang für das Ändern des Fenstermodus tut genau das Gegenteil, er ändert die Indexvariable „Window Mode Selected“, aber die Indexvariable für die Auflösung wird nur verwendet.
+{IMG: UE_UI_MainBP14.PNG}
+Sound
+Zu guter Letzt werden die „OnOpening“-Events der Comboboxen und die „OnHovered“-Events aller Buttons verwendet, um einen Clicksound abzuspielen.
+{IMG: UE_UI_MainBP15.PNG}
+-	Pausemenü
+Das Pausemenü unterscheidet sich vom Hauptmenü nur darin, dass es statt den Buttons „Neues Spiel“ und „Spiel fortsetzen“ nur den Button „Fortsetzen“ beinhaltet, sowie statt dem „Beenden“ Button den Button „Back to Main“.
+{IMG: UE_UI_PauseUMG1.PNG}
+Der Fortsetzen-Button macht genau dasselbe wie die beiden Buttons des Hauptmenüs, außer dem Prüfen, ob das Spiel aus diesem Menü zum ersten Mal gestartet wird. Diese Funktion wird im Pausemenü nicht gebraucht.
+Der Button „Back to Main” lässt nach dem Abspielen des Klicksounds das eigene Widget verschwinden und zeigt stattdessen das Hauptmenü-Widget an.
+{IMG: UE_UI_PauseBP1.PNG}
+-	Ingame Widget
+Das während dem Spielen angezeigte Widget ist nicht bedienbar, sondern wird nur passiv am Bildschirm angezeigt. Es beinhaltet links unten einen Platzhalter für eine Minimap und rechts oben eine Anzeige dafür, wie viele Objekte der Spieler bereits platziert hat.
+{IMG: UE_UI_InGameUMG.PNG}
+Um die Anzahl der gesammelten Objekte anzuzeigen, kann man im UMG für ein Textfeld für das Attribut „Content“ ein Binding erstellen.
+{IMG: UE_UI_InGameVarBinging.PNG}
+Dies erlaubt einem, eine Funktion in Form eines Blueprints zu erstellen, welche als Ausgangswert den Inhalt des Textfelds hat.
+In diesem Fall zählt die Funktion, wie viele Objekte bereits platziert wurden
+{IMG: UE_UI_InGameBP.PNG}
+
+
+Export [https://docs.unrealengine.com/en-us/Engine/Basics/Projects/Packaging 2019-04-01]
+Die Unreal Engine 4 bietet für das Exportieren bzw „Builden“ eines Projekts in eine ausführbare .exe Datei einfach Funktionen. Man kann über ein simples Menü auswählen, für welches Betriebssystem mit welcher Architektur das Projekt exportiert werden soll, und dann passiert der Rest automatisch.
+{IMG: UE_Build.PNG}
+
+
+
+\section{Blueprints}
+\section{Interface}
+\subsection{Startmenü}
 \section{Export}
