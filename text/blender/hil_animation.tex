@@ -3,7 +3,7 @@
 \label{animation:principles}
 Die 12 Prinzipien der Animation wurden zuerst 1981 im Buch \dq The Illusion of Life: Disney Animation\dq, von Ollie Johnston und Frank Thomas,
 niedergeschrieben und veröffentlicht. Das Buch wird von vielen als \dq Die Bibel der Animation\dq bezeichnet. Der Sinn hinter diesen Prinzipien ist es eine möglichst
-akkurate Animation nach den Gesetzen der Physik zu zeichnen\verb-/- gestalten. Auch heutzutage lassen sich die Prinzipien auf moderne Computeranimation anwenden.
+akkurate Animation nach den Gesetzen der Physik zu zeichnen \verb-/- gestalten. Auch heutzutage lassen sich die Prinzipien auf moderne Computeranimation anwenden.
 
 \subsubsection{Squash and Stretch}
 Squash and Stretch (übersetzt: quetschen und dehnen) soll Objekten und Charakteren Gewicht und Flexibilität geben.
@@ -84,7 +84,7 @@ also auch über jedes Armature und Objekt, und deren Keyframes, einen Überblick
 
 \subsubsection{Action Editor}
 Das Action Sheet ist Teil des Dope Sheets und ist auch ähnlich aufgebaut. Nur bezieht sich das Action Sheet auf ein Objekt und dessen Actions.
-Actions kann man als Datentyp für Animationen sehen. Somit ist es logisch das man mit dem Action Editor die verschiedenen Actions verwalten und erstellen kann.
+Actions kann man als Datentyp für Animationen sehen. Somit ist es logisch, dass man mit dem Action Editor die verschiedenen Actions verwalten und erstellen kann.
 
 \begin{figure}[H]
                 \centering
@@ -162,16 +162,16 @@ hat eine zusätzliche \dq Running\dq Animation. Oft sind die Bewegungen von echt
 zu beachten. Animiert wird mithilfe des Pose to Pose Prinzip. Ein weiterer wichtiger Punkt ist es das die Animation in einer Endlosschleife
 ohne sichtbaren Ruckler spielt. Um dies zu erreichen muss die erste Pose ident mit der letzten Pose sein.
 
-\subsubsection{Die Idle Animation}
-Eine Idle Animation ist eine rastende Pose für den Charakter. Diese ist meistens stehend so auch wie für die beiden Charaktere.
+\subsubsection{Die Idle-Animation}
+Eine Idle-Animation ist eine rastende Pose für den Charakter. Diese ist meistens stehend so auch wie für die beiden Charaktere.
 Da die stehende Pose von echten Menschen oft zu wenig deutlich ist und als Animation künstlich aussieht muss man sie deutlicher und übertriebener darstellen.
 
-Die Gestaltung der beiden Idle Animationen ist verschieden für beide Charaktere. Der Hauptcharakter ist neutral, während der Antagonist kräftig und angsteinflößend erscheinen soll.
+Die Gestaltung der beiden Idle-Animationen ist verschieden für beide Charaktere. Der Hauptcharakter ist neutral, während der Antagonist kräftig und angsteinflößend erscheinen soll.
 
 \paragraph{Hauptcharakter:}
-Für eine einfache Idle Animation braucht man nur zwei Posen. Generell sollten die Beine etwas breiter dastehen und die Füße werden leicht nach außen gedreht.
+Für eine einfache Idle-Animation braucht man nur zwei Posen. Generell sollten die Beine etwas breiter dastehen und die Füße werden leicht nach außen gedreht.
 Die Arme werden in ruhender Position nach unten bewegt. In der ersten Pose ist die Hüfte etwas höher und die Arme und Finger in einer Position gebracht.
-In der zweiten ist sie niedriger und die Arme und Finger haben sich ein kleines Stück bewegt. Damit die Animation eine Endlosschleife ist kopiert man die erste Pose \verb-/-
+In der zweiten ist sie niedriger und die Arme und Finger haben sich ein kleines Stück bewegt. Damit die Animation eine Endlosschleife ist, kopiert man die erste Pose \verb-/-
 Keyframes einfach auf die letzte Frame. Damit der erste und letzte Frame nicht gleich ist,
 was einen Ruckler erzeugen würde, setzt man die letzte angezeigte Frame, eine Frame vor der Pose. Das erste Bild zeigt Pose 1 und das zweite Pose 2.
 
@@ -179,7 +179,7 @@ was einen Ruckler erzeugen würde, setzt man die letzte angezeigte Frame, eine F
     \centering
 
     \includegraphics[width=.8\textwidth]{images/animation_idle.png}
-    \caption{Die zwei Posen der Idle Animation}
+    \caption{Die zwei Posen der Idle-Animation}
 \end{figure}
 
 \paragraph{Antagonist / Grabwächter:}
@@ -190,7 +190,7 @@ Außerdem bewegt sich sein Kopf nach links und rechts da er nach dem Hauptcharak
     \centering
 
     \includegraphics[width=.8\textwidth]{images/animation_an_idle.PNG}
-    \caption{Eine Pose der Idle Animation des Antagonisten}
+    \caption{Eine Pose der Idle-Animation des Antagonisten}
 \end{figure}
 
 \subsubsection{Die Walking Animation}
@@ -207,12 +207,12 @@ Reverse Down und um eine Endlosschleife zu erzeugen, wieder die Contact Pose. Ge
 \end{figure}
 
 \paragraph{Hauptcharakter:}
-In der Contact Pose berühren beide Füße den Boden und die Arme schwingen am meisten aus. Die Arme schwingen gespiegelt von den Beinen.
+In der Contact Pose berühren beide Füße den Boden und die Arme schwingen am meisten aus. Die Arme schwingen gegengleich zu den Beinen.
 Die Hüfte ist dabei auf mittlerer Höhe. In der Down Pose ist die Hüfte am niedrigsten und die Arme schwingen wieder zurück.
 Ein Bein ist unter dem Körper und das andere schwingt zurück. In der Passing Pose schwingt das eine Bein wieder vorwärts während
 das andere unterm Körper bleibt. Die Hüfte ist wieder auf mittlerer Höhe und die Arme sind beide auf gleicher Höhe. In der Up Pose
 ist die Hüfte am höchsten, die Arme schwingen von einander weg und das Bein geht weiter vorwärts. Beide Beine setzen jetzt
-für die Reverse Contact Pose an. Um den Walk Cycle zu vervollständigen kann man die vorhandenen Posen nehmen und diese an den entsprechenden stellen spiegeln.
+für die Reverse Contact Pose an. Um den Walk Cycle zu vervollständigen, kann man die vorhandenen Posen nehmen und diese an den entsprechenden stellen spiegeln.
 
 \paragraph{Antagonist / Grabwächter:}
 Die Walk Animation ist im Grunde gleich zu der des Hauptcharakters.
