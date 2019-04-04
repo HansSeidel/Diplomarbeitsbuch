@@ -2,15 +2,18 @@
 Rigging ist ein allgemeiner Begriff der das Hinzufügen von Steuerelementen zu Objekten (Meshes) bezeichnet.
 Das riggen von Meshes funktioniert in Blender wie in vielen anderen Programmen.
 In Blender werden fünf Features oft benutzt. Dazu gehören die Armatures, Constraints, Lattice, Object Modifiers und Shape Keys.
+\citep{Blender:rigging}
 
 \subsection{Armatures}
 Ein Armature kann man sehr gut mit einem Skelett vergleichen.
 Wie ein echtes Skelett besteht ein Armature aus mehreren Knochen (Bones). Ein Armature hat so wie jedes Objekt eine Oirigin,
 Position und Rotation.
+\citep{Blender:armature}
 
 \subsubsection{Bones}
 Bones sind einzelne Knochen eines Armatures und diese Knochen können einzeln bewegt werden.
 Alle Meshes die eine Verbindung \verb-/- Beziehung mit dem Bone eingehen, deformieren und bewegen sich je nach Bewegung einzelner oder mehrerer Knochen. Bones werden nicht gerendert.
+\citep{Blender:bones}
 
 Es gibt zwei verschiedene Arten von Bones: Deforming Bones und Control Bones
 
@@ -25,6 +28,7 @@ Als weiteres Beispiel können wir annehmen, dass ein Control Bone mit einem Defo
 Jeder Bone hat drei Teile, die Root, den Body und die Tip. Die Root ist der Anfang eines Bones, der Body ist der eigentliche Bone und die Tip ist das Ende.
 Jeweils die Root und die Tip beschreiben die Position des eigentlichen Bones.
 Grundsätzlich wird der Weg in Richtung Root als Parents bezeichnet und der Weg in Richtung Tips Childs.
+\citep{Blender:bonesAufbau}
 
 \begin{figure}[H]
     \centering
@@ -36,12 +40,14 @@ Grundsätzlich wird der Weg in Richtung Root als Parents bezeichnet und der Weg 
 \paragraph{Beeinflussung eines Bones:}
 Einzelne Bones beeinflussen nicht das ganze Mesh, sondern einzelne, nahestehende, Vertices. Genauso wie die Knochen in unserem Körper die in der Nähe liegenden Muskeln und Haut beeinflussen.
 Wie stark die verschiedenen Vertices durch einen Bone beeinflusst werden kann man durch Weight Painting auf dem Mesh \dq aufmalen\dq.
+\citep{Blender:Skinning}
 
 \paragraph{Bearbeiten eines Bones:}
 Wie Meshes kann ein Bone eine beliebige Größe haben, sowie in die Länge gezogen oder gedreht werden.
 Die Drehung oder \dq Bone Roll\dq hat einen Einfluss auf die Bewegung des Bones. Deswegen ist es wichtig, dass Bones die gleiche Rotation aufweisen. Das gilt besonders bei Charakter Models mit einer linken und rechten Seite.
 Wenn die Bones auf der rechten und linken Seite nicht die gleiche Rotation aufweisen, kann es passieren, dass sich die Bones anders verhalten, wenn man Posen von einer Seite zur anderen kopiert.
 Dies kann die ganze Pose kaputt machen und man muss sie manuell reparieren.
+\citep{Blender:boneRoll}
 
 Um die Rotation der Bones zu ändern, kann man das Armature auswählen und in den Edit Modus wechseln.
 Im Edit Modus wählt man mithilfe von der Taste \keys{a} alle Bones aus und mit dem Tastenkürzel \keys{\ctrl + n} öffnet sich ein Menü, um die Rotation auf
@@ -58,6 +64,7 @@ verschiedene Arten in verschiedene Positionen zu bringen.
 Jeder Bone ist ein Parent (Elternteil) oder / und ein Child (Kind) eines anderen Bones.
 Diese Relation beschreibt die Beeinflussung eines Bones auf den anderen. Jeder Bone wird von seinem Parent beeinflusst und beeinflusst selbst seine Childs-Bones.
 Im Bild \ref{Rigging:ParentChild} sieht man einen markierten Bone. Dieser hat zur linken ein Parent und zur rechten ein Child.
+\citep{Blender:boneRelations}
 
 \begin{figure}[H]
     \centering
