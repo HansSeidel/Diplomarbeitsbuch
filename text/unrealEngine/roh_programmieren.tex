@@ -5,9 +5,9 @@ Diese sind eine Art von visuellem Programmieren. \citep{ue:BPs}
 Die Unreal Engine selbst arbeitet im Hintergrund mit C++, aber mit den Blueprints kann man Funktionen einbauen, ohne programmieren zu müssen. \citep{ue:programming}
 Blueprints kann man in mehrere Teile teilen.
 Sie haben bestimmte Parent-Classes, bestehen aus dem Viewport, dem Construction Script und dem Event Graph und verwenden Nodes, um die Logik umzusetzen. \citep{ue:BPoverview}
-\subsection{Parent Classes} \citep{ue:BPParents}
+\subsection{Parent Classes}
 Bevor eine Blueprintklasse erstellt wird, muss eine Parent Class, eine Elternklasse, definiert werden.
-Dies erlaubt es, Funktionen und Variable zu vererben.
+Dies erlaubt es, Funktionen und Variable zu vererben.\citep{ue:BPParents}
 Die am meisten verwendeten Klassen sind folgende:
 \begin{itemize}
     \item Actor \citep{ue:BPActors}
@@ -22,8 +22,8 @@ Die am meisten verwendeten Klassen sind folgende:
     \item Game Mode \citep{ue:BPGameMode}
     Der Game Mode definiert das gerade gespielte Spiel, dessen Regelwerk und Ähnliches.
 \end{itemize}
-\subsection{Nodes} \citep{ue:node_introduction}
-Nodes sind die einzelnen graphisch dargestellten Programm-Bausteine.
+\subsection{Nodes}
+Nodes sind die einzelnen graphisch dargestellten Programm-Bausteine.\citep{ue:node_introduction}
 Sie haben das Aussehen eines Rechtecks mit abgerundeten Ecken und besitzen kleine Kreise und weiße Pfeile rechts und links.
 Die Pfeile zeigen den Programmablauf.
 Ist an der linken Seite etwas an dem weißen Pfeil angebracht, so wird die Node nach der links angebrachten Node im Programmablauf ausgeführt.
@@ -36,9 +36,9 @@ Links sind die Eingänge und rechts die Ausgänge.
     \caption{Ein Beispiel für Blueprint Nodes.}
     \label{UE:BP_Nodes}
 \end{figure}
-\subsection{Viewport} \citep{ue:BPViewport}
+\subsection{Viewport}
 Der Viewport zeigt an, welche Komponenten in der Blueprintklasse platziert sind.
-Zieht man die Blueprintklasse in ein Level hinein, so wird dort das platziert, was man im Blueprint-Viewport sieht.
+Zieht man die Blueprintklasse in ein Level hinein, so wird dort das platziert, was man im Blueprint-Viewport sieht.\citep{ue:BPViewport}
 Fügt man also im Viewport des Blueprints einen Würfel hinzu und zieht den Blueprint dann in ein Level, so sieht man dort den eben verwendeten Würfel.
 Diese Funktion ist hilfreich, wenn man z.B. die Objekte eines Blueprints animieren oder entfernen will, denn auf Objekte im Viewport eines Blueprints hat dieser das Besitzrecht bzw. das Recht diese Objekte abzuändern wie es der User will.
 \begin{figure}[H]
@@ -47,8 +47,8 @@ Diese Funktion ist hilfreich, wenn man z.B. die Objekte eines Blueprints animier
     \caption{Ein Beispiel eines Viewports. In dem Abgebildeten befindet sich nur eine Collision Box.}
     \label{UE:BP_Viewport}
 \end{figure}
-\subsection{Event Graph} \citep{ue:BPEventGraph}
-Im Event Graph wird mithilfe der Nodes „programmiert“.
+\subsection{Event Graph}
+Im Event Graph wird mithilfe der Nodes „programmiert“.\citep{ue:BPEventGraph}
 Es gibt verschiedene Event-Nodes, mit denen ein „Programmierstrang“ beginnen kann.
 Als Beispiel gibt es das Event BeginPlay, das gefeuert wird, sobald dieser Blueprint beim Spielen erzeugt wird.
 Ein weiteres Beispiel wäre das Event ActorBeginOverlap einer Collisionbox, das gefeuert wird, wenn ein Spieler in diese Box hineingeht.
@@ -58,8 +58,8 @@ Ein weiteres Beispiel wäre das Event ActorBeginOverlap einer Collisionbox, das 
     \caption{Ein Beispiel eines Eventgraphs.}
     \label{UE:BP_EventGraph}
 \end{figure}
-\subsection{Construction Script} \citep{ue:BPConScript}
-Das Construction Script ist mit dem Event Graph vergleichbar, jedoch wird es zu einem anderen Zeitpunkt ausgeführt und beinhaltet nicht alle Nodes, dafür auch andere, wie der Event Graph.
+\subsection{Construction Script}
+Das Construction Script ist mit dem Event Graph vergleichbar, jedoch wird es zu einem anderen Zeitpunkt ausgeführt und beinhaltet nicht alle Nodes, dafür auch andere, wie der Event Graph.\citep{ue:BPConScript}
 Das Construction Script wird dann ausgeführt, wenn der Blueprint constructed wird – also eine Instanz dessen im Level erstellt wird, oder diese Instanz verändert wird.
 Veränderungen beinhalten Skalierung, Rotation, Verschiebung oder eine Änderung eines Variableneingangs.
 \begin{figure}[H]
@@ -70,8 +70,8 @@ Veränderungen beinhalten Skalierung, Rotation, Verschiebung oder eine Änderung
 \end{figure}
 \section{Interface}
 Um ein Hauptmenü und ein Pausemenü, sowie angezeigte Information während des Spielens darstellen zu können, stellt die Unreal Engine 4 Widget Blueprints bereit.
-\subsection{Widgets} \citep{ue:UIWidgets}
-Ein Widget besteht aus zwei Teilen, dem Unreal Motion Graphics (UMG) Designer und dem Graph Teil.
+\subsection{Widgets}
+Ein Widget besteht aus zwei Teilen, dem Unreal Motion Graphics (UMG) Designer und dem Graph Teil.\citep{ue:UIWidgets}
 In dem Designer kann man seine Menüs graphisch gestalten.
 In dem Graph Teil kann man dann den Elementen des Designers mithilfe von Blueprints Funktionen zuweisen.
 Die in dieser Diplomarbeit verwendeten Designelemente beinhalten:
@@ -106,8 +106,8 @@ Die in dieser Diplomarbeit verwendeten Designelemente beinhalten:
 \section{AI}
 Artificial Intelligence (AI), also künstliche Intelligenz, ist eines der wohl kompliziertesten Themen in der Spieleindustrie.
 Die Unreal Engine 4 bietet hierfür ein Set an vorgefertigten Funktionen, die alle zusammenspielen, um eine Künstliche Intelligenz zu schaffen.
-\subsection{Blackboard} \citep{ue:AIBB}
-Ein Blackboard wird benützt, um Werte zu speichern.
+\subsection{Blackboard}
+Ein Blackboard wird benützt, um Werte zu speichern.\citep{ue:AIBB}
 Behavior Trees können auf Blackboards und deren Daten zugreifen und diese verändern.
 Wertet ein Behavior Tree beispielsweise einen Wert aus, muss aber an einer anderen Stelle anhand dieses Wertes eine Entscheidung treffen, so wird dieser Wert in dem Blackboard gespeichert und kann dann wiederverwendet werden.
 \begin{figure}[H]
@@ -117,13 +117,11 @@ Wertet ein Behavior Tree beispielsweise einen Wert aus, muss aber an einer ander
     \label{UE:AI_BB}
 \end{figure}
 \subsection{Behavior Tree}
-\citep{ue:AIBB}
-Mithilfe des Behavior Trees wird das Verhalten des Antagonisten bestimmt.
+Mithilfe des Behavior Trees wird das Verhalten des Antagonisten bestimmt.\citep{ue:AIBB}
 Er verwendet das Blackboard, um Daten zu speichern und auszulesen.
 In einem Behavior Tree gibt es mehrere Nodes, ähnlich wie in einem Blueprint.
 Die Reihenfolge in der die Nodes eines Behavior Trees ausgeführt werden, ist wie folgt.
-Beginnend von oben immer nach unten und dann von links nach rechts.
-\citep{ue:AIBTNodes}
+Beginnend von oben immer nach unten und dann von links nach rechts.\citep{ue:AIBTNodes}
 \subsubsection{Root Node}
 Die Root Node ist der Ausgangspunkt eines Behavior Trees.
 Sie kann nur ein Kind, eine Child Node, haben.
@@ -153,8 +151,8 @@ Diese Node kann keine Kinder haben, und beinhaltet Aufgaben, die erledigt werden
     \caption{Ein Beispiel eines Behavior Trees. Dieser hat von jeder Node mindestens eine.}
     \label{UE:AI_BT}
 \end{figure}
-\subsection{AIController} \citep{ue:AIAIController}
-Der AIController ist eine Art Blueprint, die für die Zusammenarbeit eines Character Blueprints mit einem Behavior Tree und einem Blackboard zuständig ist.
+\subsection{AIController}
+Der AIController ist eine Art Blueprint, die für die Zusammenarbeit eines Character Blueprints mit einem Behavior Tree und einem Blackboard zuständig ist.\citep{ue:AIAIController}
 
 \section{Tätigkeiten}
 Da nun die wichtigsten Grundinformationen geklärt sind, werde ich im Folgenden meine Arbeitsschritte genauer erläutern.
@@ -661,8 +659,8 @@ In diesem Fall zählt die Funktion, wie viele Objekte bereits platziert wurden
     \label{UE:UI_InGameBP}
 \end{figure}
 
-\section{Export} \citep{ue:Export}
-Die Unreal Engine 4 bietet für das Exportieren bzw „Builden“ eines Projekts in eine ausführbare .exe Datei einfach Funktionen. Man kann über ein simples Menü auswählen, für welches Betriebssystem mit welcher Architektur das Projekt exportiert werden soll, und dann passiert der Rest automatisch.
+\section{Export}
+Die Unreal Engine 4 bietet für das Exportieren bzw „Builden“ eines Projekts in eine ausführbare .exe Datei einfach Funktionen. Man kann über ein simples Menü auswählen, für welches Betriebssystem mit welcher Architektur das Projekt exportiert werden soll, und dann passiert der Rest automatisch.\citep{ue:Export}
 \begin{figure[H]}
     \centering
     \includegraphics[width=.9\textwidth]{roh/UE_Build.PNG}
