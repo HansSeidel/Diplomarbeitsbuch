@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130207c4-75c3-4b57-9003-91a1c1c807e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/diplomarbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/diplomarbeit.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/00_vorlage/00_vorwort.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/00_vorlage/00_vorwort.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text/website/c_website.tex" beforeDir="false" afterPath="$PROJECT_DIR$/text/website/c_website.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,24 +35,83 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex">
+        <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="436">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="68" column="82" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="82" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
+        <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_resumee.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            <state relative-caret-position="136">
+              <caret line="8" column="142" selection-start-line="8" selection-start-column="142" selection-end-line="8" selection-end-column="142" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_latex_shortcuts.tex">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_vorwort.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/00_vorlage/demo_fuelltext.tex">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="658" column="60" selection-start-line="658" selection-start-column="60" selection-end-line="658" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="124" column="51" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -58,11 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Armature mithilfe von</find>
-      <find>Bones aus</find>
-      <find>key</find>
-      <find>X</find>
-      <find>titlepage</find>
       <find>c_unrel</find>
       <find>kur</find>
       <find>itemize</find>
@@ -88,6 +145,11 @@
       <find>Anhang</find>
       <find>todo</find>
       <find>citep</find>
+      <find>Objekte abzu</find>
+      <find>zusätzlich</find>
+      <find>weiß, welche</find>
+      <find>Integer Variable, die speic</find>
+      <find>generiert</find>
     </findStrings>
     <replaceStrings>
       <replace>[H]</replace>
@@ -142,21 +204,23 @@
         <option value="$PROJECT_DIR$/text/blender/lic_texturierungVorarbeiten.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_zusammensetzungMehrerer3dObjekte.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_cutscene.tex" />
-        <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
         <option value="$PROJECT_DIR$/text/blender/hil_rigging.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungsprogramm.tex" />
         <option value="$PROJECT_DIR$/text/00_vorlage/00_Vorwort.tex" />
-        <option value="$PROJECT_DIR$/text/00_vorlage/00_vorwort.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex" />
         <option value="$PROJECT_DIR$/diplom.bib" />
         <option value="$PROJECT_DIR$/text/00_vorlage/00_abstract.tex" />
         <option value="$PROJECT_DIR$/text/sound/hil_sound.tex" />
         <option value="$PROJECT_DIR$/text/blender/lic_modellierungVon3dObjekten.tex" />
         <option value="$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex" />
-        <option value="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" />
         <option value="$PROJECT_DIR$/diplomarbeit.tex" />
+        <option value="$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex" />
+        <option value="$PROJECT_DIR$/text/00_vorlage/00_vorwort.tex" />
         <option value="$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex" />
+        <option value="$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex" />
         <option value="$PROJECT_DIR$/text/website/c_website.tex" />
+        <option value="$PROJECT_DIR$/text/00_vorlage/resumee.tex" />
+        <option value="$PROJECT_DIR$/text/00_vorlage/00_resumee.tex" />
       </list>
     </option>
   </component>
@@ -192,7 +256,7 @@
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diplomarbeitsbuch" type="462c0819:PsiDirectoryNode" />
               <item name="text" type="462c0819:PsiDirectoryNode" />
-              <item name="blender" type="462c0819:PsiDirectoryNode" />
+              <item name="00_vorlage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Diplomarbeitsbuch" type="b2602c69:ProjectViewProjectNode" />
@@ -428,7 +492,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex</main-file>
-        <aux-dir />
+        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -438,7 +502,7 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>$PROJECT_DIR$/text/blender/sei_charakter_gestaltung.tex</main-file>
-        <aux-dir />
+        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -512,7 +576,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197171000" />
+    <option name="totallyTimeSpent" value="204038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,10 +588,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24425575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2971549" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -542,7 +606,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.13418078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279678" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.24245472" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15059589" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -643,21 +707,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text/lic_modellierung.tex" />
-    <entry file="file://$PROJECT_DIR$/text/00_vorlage/demo_fuelltext.tex">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_pandoclisting.tex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_latex_shortcuts.tex">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/planung/c_planung.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/sei_charakterGestaltung.tex" />
     <entry file="file://$PROJECT_DIR$/images/Lighting-Sky_Directional.png">
@@ -730,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/blender/lic_viewportShading.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -746,8 +793,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/formatierung.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="646">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -773,7 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_kurzfassung.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="187">
           <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
         </state>
       </provider>
@@ -787,18 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/planung/sei_planung.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#19#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_vorwort.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -806,13 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="102" column="42" lean-forward="true" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -840,13 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="162" column="44" selection-start-line="162" selection-start-column="44" selection-end-line="162" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -882,20 +905,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/unrealEngine/c_unrealEngine.tex">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/lic_lighting.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="124" column="51" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/blender/lic_exportierenVonBenderZuUnrealEngine4.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="175" selection-start-line="18" selection-start-column="175" selection-end-line="18" selection-end-column="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/roh_programmieren.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="658" column="60" selection-start-line="658" selection-start-column="60" selection-end-line="658" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/unrealEngine/sei_texturenUndMaterialien.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/text/website/c_website.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        <state relative-caret-position="442">
+          <caret line="68" column="82" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_latex_shortcuts.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_vorwort.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_vorlage/demo_fuelltext.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/00_vorlage/00_resumee.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="142" selection-start-line="8" selection-start-column="142" selection-end-line="8" selection-end-column="142" />
         </state>
       </provider>
     </entry>
