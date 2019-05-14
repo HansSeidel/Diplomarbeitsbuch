@@ -174,21 +174,12 @@ Zusätzlich wird im FirstPersonCharacter-Blueprint eine weitere Map gespeichert,
 Die Blueprintklasse für das Aufheben wird für jedes aufhebbare Objekt erneut im Level platziert. Also gibt es eine Instanz des Aufheben-Blueprints für die Kerzen, eine weitere für die Zementtrommel und für jedes andere ebenfalls eine, welche alle im Level platziert sind.
 Die Blueprintklasse für das Platzieren der Objekte wird nur einmal im Level platziert. Da der Platzieren-Blueprint allein für das Platzieren aller Objekte zuständig ist und auch auf alle nötigen Variablen für alle Objekte zugreifen kann, wird nur eine Instanz des Blueprints im Level benötigt.
 Eine Instanz des Aufheben-Blueprints kann sich um nur ein Objekt kümmern, während eine Instanz des Platzieren-Blueprints sich um alle Objekte kümmern kann.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=.9\textwidth]{roh/UE_HO_PickupVSPlaceAmount.PNG}
-    \caption{Eine Visualisierung der Mengen an Instanzen der Platzieren- und Aufheben-Blueprints. Links sind mehrere Aufheben-Blueprints, rechts ein Platzieren-Blueprint.}
-    \label{UE:HO_PickupVSPlaceAmount}
-\end{figure}
+
 \subsubsection{Pickup}
 Die Klasse für das Aufheben beinhaltet im Viewport nur eine Collisionbox, die dazu benützt wird, die Inputs zu aktivieren, wenn der Spieler hineinläuft und wieder zu deaktivieren, wenn er hinausläuft. Diese einfache Mechanik wird im Event Graph durch die beiden Events ActorBeginOverlap und ActorEndOverlap der Collisionbox und den Nodes Enable und Disable Input umgesetzt. Die beiden Input Nodes haben als Eingangsparameter den Spielercontroller.
 \begin{figure}[H]
-    \makebox[0.9\textwidth]{%
-    \includegraphics[width=0.4\textwidth]{roh/UE_HO_PickupCollBox.PNG}%
-    \hfill
-    \includegraphics[width=0.4\textwidth]{roh/UE_HO_PickupCollBoxBP.PNG}%
-    }%
-    \caption{Links: Der Vieport mit der Collision Box. Rechts: Das Blueprint-Setup für die Collision Box.}
+    \includegraphics[width=0.9\textwidth]{roh/UE_HO_PickupCollBoxBP.PNG}%
+    \caption{Das Blueprint-Setup für die Collision Box.}
     \label{UE:HO_PickupCollBox}
 \end{figure}
 Der Blueprint beinhaltet zwei Variablen, zuerst den String, der bestimmt, welches Objekt in dieser Instanz der Blueprintklasse aufgehoben werden kann („Objects“), sowie ein Array, in welchem bestimmt wird, welche Objekte in dieser Instanz angezeigt werden („ObjectActors“). Da diese beiden Variablen public sind, was durch das offene Auge neben der Variablen gekennzeichnet ist, können sie pro Instanz im Level-Editor definiert werden.
@@ -483,7 +474,7 @@ Dieses Menü wird mithilfe des folgenden Node-Setups im Levelblueprint zu Beginn
     \label{UE:UI_GoToMain}
 \end{figure}
 \paragraph{UMG}
-Das Menü beinhaltet zur linken Seite einige Buttons, welche bestimmte Bereiche zur rechten Seite des Widgets dank selbst eingefügter Funktion ein und ausblenden können.
+Das Menü beinhaltet zur linken Seite einige Buttons, welche bestimmte Bereiche, die sich auf der rechten Seite des Widgets befinden, dank selbst eingefügter Funktion ein- und ausblenden können.
 Die Hauptbuttons und ihre weiterführende Funktionalität sind folgende:
 \begin{itemize}
     \item Spiel fortsetzen und Neues Spiel
@@ -634,16 +625,16 @@ Dieses Menü wird mithilfe des folgenden Node-Setups im Levelblueprint zu Beginn
 \end{figure}
 \paragraph{UMG}
 Das Pausemenü unterscheidet sich vom Hauptmenü nur darin, dass es statt den Buttons „Neues Spiel“ und „Spiel fortsetzen“ nur den Button „Fortsetzen“ beinhaltet, sowie statt dem „Beenden“ Button den Button „Back to Main“.
-\begin{figure[H]}
-                \centering
-                \includegraphics[width=.9\textwidth]{roh/UE_UI_PauseUMG1.PNG}
-                \caption{Das Layout, wie es im UMG-Editor ersichtlich ist.}
-                \label{UE:UI_PauseUMG1}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{roh/UE_UI_PauseUMG1.PNG}
+    \caption{Das Layout, wie es im UMG-Editor ersichtlich ist.}
+    \label{UE:UI_PauseUMG1}
 \end{figure}
 
 Der Fortsetzen-Button macht genau dasselbe wie die beiden Buttons des Hauptmenüs, außer dem Prüfen, ob das Spiel aus diesem Menü zum ersten Mal gestartet wird. Diese Funktion wird im Pausemenü nicht gebraucht.
 Der Button „Back to Main” lässt nach dem Abspielen des Klicksounds das eigene Widget verschwinden und zeigt stattdessen das Hauptmenü-Widget an.
-\begin{figure[H]}
+\begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{roh/UE_UI_PauseBP1.PNG}
     \caption{Das dazugehörige Blueprint-Layout.}
@@ -653,7 +644,7 @@ Der Button „Back to Main” lässt nach dem Abspielen des Klicksounds das eige
 Dieses Widget wird nur über die beiden Menüs erzeugt.
 \paragraph{UMG}
 Das während dem Spielen angezeigte Widget ist nicht bedienbar, sondern wird nur passiv am Bildschirm angezeigt. Es beinhaltet links unten einen Platzhalter für eine Minimap und rechts oben eine Anzeige dafür, wie viele Objekte der Spieler bereits platziert hat.
-\begin{figure[H]}
+\begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{roh/UE_UI_InGameUMG.PNG}
     \caption{Das Layout, wie es im UMG-Editor ersichtlich ist.}
@@ -661,7 +652,7 @@ Das während dem Spielen angezeigte Widget ist nicht bedienbar, sondern wird nur
 \end{figure}
 \paragraph{Eventgraph}
 Um die Anzahl der gesammelten Objekte anzuzeigen, kann man im UMG für ein Textfeld für das Attribut „Content“ ein Binding erstellen.
-\begin{figure[H]}
+\begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{roh/UE_UI_InGameVarBinging.PNG}
     \caption{Im markierten Bereich ist die Option für das Variablen-Binding ersichtlich.}
@@ -669,7 +660,7 @@ Um die Anzahl der gesammelten Objekte anzuzeigen, kann man im UMG für ein Textf
 \end{figure}
 Dies erlaubt einem, eine Funktion in Form eines Blueprints zu erstellen, welche als Ausgangswert den Inhalt des Textfelds hat.
 In diesem Fall zählt die Funktion, wie viele Objekte bereits platziert wurden
-\begin{figure[H]}
+\begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{roh/UE_UI_InGameBP.PNG}
     \caption{Dies ist das Node-Setup der Funktion für das Zählen der gesammelten Objekte.}
@@ -678,7 +669,7 @@ In diesem Fall zählt die Funktion, wie viele Objekte bereits platziert wurden
 
 \section{Export}
 Die Unreal Engine 4 bietet für das Exportieren bzw „Builden“ eines Projekts in eine ausführbare .exe Datei einfach Funktionen. Man kann über ein simples Menü auswählen, für welches Betriebssystem mit welcher Architektur das Projekt exportiert werden soll, und dann passiert der Rest automatisch.\citep{ue:Export}
-\begin{figure[H]}
+\begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{roh/UE_Build.PNG}
     \caption{Der Menü-Weg zum Export.}
