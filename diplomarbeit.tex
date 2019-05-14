@@ -379,7 +379,9 @@ abschließenden Feinarbeiten an einem Spiel aussehen.
 %\input{markdown/einstellungen.md.tex}
 
 %\input{text/demo_fuelltext.tex}
-
+\chapter{Resümee}
+\renewcommand{\kapitelautor}{}
+\input{text/00_vorlage/00_resumee.tex}
 
 \appendix
 \printindex{}
@@ -390,27 +392,27 @@ abschließenden Feinarbeiten an einem Spiel aussehen.
 \bibliography{diplom}
 
 
-\cleardoublepage
-\newcommand{\Messbox}[2]{%Parameters: #1=Breite, #2=Hoehe
-\setlength{\unitlength}{1.0mm}%
-\begin{picture}(#1,#2)%
-\linethickness{0.05mm}%
-\put(0,0){\dashbox{0.2}(#1,#2)%
-{\parbox{#1mm}{%
-\centering\footnotesize
-%{\bf MESSBOX}\\
-% if \textrm fails use \rm
-Breite $ = #1 {\textrm\ mm}$\\
-Höhe $ = #2 {\textrm\ mm}$
-}}}\end{picture}
-}
-\begin{center} {\Large --- Druckgröße kontrollieren! ---}
-\bigskip
-
-\Messbox{100}{50} % Angabe der Breite/Hoehe in mm
-\bigskip
-
-{\Large --- Diese Seite nach dem Druck entfernen! ---}
-\todo{Diese Seite nach dem Druck entfernen!}
-\end{center}
+%\cleardoublepage
+%\newcommand{\Messbox}[2]{%Parameters: #1=Breite, #2=Hoehe
+%\setlength{\unitlength}{1.0mm}%
+%\begin{picture}(#1,#2)%
+%\linethickness{0.05mm}%
+%\put(0,0){\dashbox{0.2}(#1,#2)%
+%{\parbox{#1mm}{%
+%\centering\footnotesize
+%%{\bf MESSBOX}\\
+%% if \textrm fails use \rm
+%Breite $ = #1 {\textrm\ mm}$\\
+%Höhe $ = #2 {\textrm\ mm}$
+%}}}\end{picture}
+%}
+%\begin{center} {\Large --- Druckgröße kontrollieren! ---}
+%\bigskip
+%
+%\Messbox{100}{50} % Angabe der Breite/Hoehe in mm
+%\bigskip
+%
+%{\Large --- Diese Seite nach dem Druck entfernen! ---}
+%\todo{Diese Seite nach dem Druck entfernen!}
+%\end{center}
 \end{document}
